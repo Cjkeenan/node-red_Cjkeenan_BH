@@ -1,0 +1,12 @@
+{
+    "name": "node_red_bhFlows",
+    "description": "A Node-RED Project",
+    "version": "0.0.1",
+    "dependencies": {},
+    "node-red": {
+        "settings": {
+            "flowFile": "flows_PiHole-PiVPN-NUT-3B.json",
+            "credentialsFile": "flows_PiHole-PiVPN-NUT-3B_cred.json"
+        }
+    }
+}
