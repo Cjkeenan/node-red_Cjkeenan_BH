@@ -1073,7 +1073,7 @@
         "deviceId": "68",
         "command": "on",
         "commandArgs": "",
-        "x": 810,
+        "x": 770,
         "y": 280,
         "wires": [
             []
@@ -1088,7 +1088,7 @@
         "deviceId": "68",
         "command": "off",
         "commandArgs": "",
-        "x": 810,
+        "x": 770,
         "y": 240,
         "wires": [
             []
@@ -1116,7 +1116,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 570,
+        "x": 550,
         "y": 240,
         "wires": [
             [
@@ -1136,7 +1136,7 @@
         "deviceId": "68",
         "attribute": "switch",
         "sendEvent": false,
-        "x": 390,
+        "x": 370,
         "y": 240,
         "wires": [
             [
