@@ -28,6 +28,13 @@
         "info": "1) Turns lights on and off per the room you are in.\n2) Turns the fans on and off per the room you are in."
     },
     {
+        "id": "d61084e.39e0678",
+        "type": "tab",
+        "label": "Volume Fix [Alexa]",
+        "disabled": false,
+        "info": ""
+    },
+    {
         "id": "345f283.d5796d8",
         "type": "tab",
         "label": "Mode Change",
@@ -76,6 +83,10 @@
                     {
                         "id": "e67c4d69.4d19c",
                         "port": 1
+                    },
+                    {
+                        "id": "e67c4d69.4d19c",
+                        "port": 2
                     }
                 ]
             },
@@ -85,7 +96,7 @@
                 "wires": [
                     {
                         "id": "e67c4d69.4d19c",
-                        "port": 2
+                        "port": "3"
                     }
                 ]
             },
@@ -95,7 +106,7 @@
                 "wires": [
                     {
                         "id": "e67c4d69.4d19c",
-                        "port": 3
+                        "port": "4"
                     }
                 ]
             }
@@ -112,6 +123,64 @@
             "Master Bedroom"
         ],
         "icon": "node-red-contrib-alexa-remote2/alexa-remote-icon.png"
+    },
+    {
+        "id": "ac12c9d8.613d38",
+        "type": "subflow",
+        "name": "Mode Variables",
+        "info": "This subflow generates the volume and level data for hubitat devices per mode",
+        "category": "hubitat",
+        "in": [
+            {
+                "x": 60,
+                "y": 120,
+                "wires": [
+                    {
+                        "id": "c5d42927.3e5298"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 620,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "855041f7.b56ad",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 640,
+                "y": 120,
+                "wires": [
+                    {
+                        "id": "7ba362b4.9c660c",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 620,
+                "y": 160,
+                "wires": [
+                    {
+                        "id": "ddb474ac.518768",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "color": "#ACE043",
+        "outputLabels": [
+            "Day",
+            "Evening",
+            "Night"
+        ],
+        "icon": "node-red/leveldb.png"
     },
     {
         "id": "b130c189.ea4d2",
@@ -148,7 +217,7 @@
         "id": "fd6ba71d.7884c8",
         "type": "ui_base",
         "theme": {
-            "name": "theme-light",
+            "name": "theme-dark",
             "lightTheme": {
                 "default": "#0094CE",
                 "baseColor": "#0094CE",
@@ -160,7 +229,8 @@
                 "default": "#097479",
                 "baseColor": "#097479",
                 "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": false
+                "edited": true,
+                "reset": false
             },
             "customTheme": {
                 "name": "Untitled Theme 1",
@@ -170,44 +240,44 @@
             },
             "themeState": {
                 "base-color": {
-                    "default": "#0094CE",
-                    "value": "#0094CE",
+                    "default": "#097479",
+                    "value": "#097479",
                     "edited": false
                 },
                 "page-titlebar-backgroundColor": {
-                    "value": "#0094CE",
+                    "value": "#097479",
                     "edited": false
                 },
                 "page-backgroundColor": {
-                    "value": "#fafafa",
-                    "edited": false
-                },
-                "page-sidebar-backgroundColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "group-textColor": {
-                    "value": "#1bbfff",
-                    "edited": false
-                },
-                "group-borderColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "group-backgroundColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "widget-textColor": {
                     "value": "#111111",
                     "edited": false
                 },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
                 "widget-backgroundColor": {
-                    "value": "#0094ce",
+                    "value": "#097479",
                     "edited": false
                 },
                 "widget-borderColor": {
-                    "value": "#ffffff",
+                    "value": "#333333",
                     "edited": false
                 },
                 "base-font": {
@@ -302,7 +372,7 @@
         "console": false,
         "tostatus": false,
         "complete": "false",
-        "x": 450,
+        "x": 410,
         "y": 120,
         "wires": []
     },
@@ -314,7 +384,7 @@
         "func": "// Create a Date object from the payload\nvar date = new Date(msg.payload);\n// Change the payload to be a formatted Date string\nmsg.payload = date.toString();\n// Return the message so it can be sent on\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 270,
+        "x": 250,
         "y": 120,
         "wires": [
             [
@@ -352,7 +422,7 @@
         "console": false,
         "tostatus": false,
         "complete": "false",
-        "x": 450,
+        "x": 410,
         "y": 80,
         "wires": []
     },
@@ -417,7 +487,7 @@
         "repair": false,
         "outputs": 8,
         "x": 360,
-        "y": 200,
+        "y": 220,
         "wires": [
             [
                 "66c6aa71.bc40a4"
@@ -459,36 +529,6 @@
         "wires": [
             []
         ]
-    },
-    {
-        "id": "5fea28c0.6961f8",
-        "type": "change",
-        "z": "66f36db9.365884",
-        "name": "Summary Handler",
-        "rules": [
-            {
-                "t": "change",
-                "p": "payload.description.summary",
-                "pt": "msg",
-                "from": "^(echo )?",
-                "fromt": "re",
-                "to": "",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 150,
-        "y": 120,
-        "wires": [
-            [
-                "a752c08d.6cd72"
-            ]
-        ],
-        "info": "Strips the wake word from the summary (May not be needed anymore)"
     },
     {
         "id": "4eb34c1f.94c0a4",
@@ -545,7 +585,7 @@
         "command": "on",
         "commandArgs": "",
         "x": 870,
-        "y": 220,
+        "y": 260,
         "wires": [
             []
         ]
@@ -560,7 +600,7 @@
         "command": "on",
         "commandArgs": "",
         "x": 870,
-        "y": 260,
+        "y": 300,
         "wires": [
             []
         ]
@@ -575,7 +615,7 @@
         "command": "on",
         "commandArgs": "",
         "x": 870,
-        "y": 300,
+        "y": 340,
         "wires": [
             []
         ]
@@ -590,7 +630,7 @@
         "command": "on",
         "commandArgs": "",
         "x": 870,
-        "y": 340,
+        "y": 380,
         "wires": [
             []
         ]
@@ -606,7 +646,7 @@
         "y": 60,
         "wires": [
             [
-                "5fea28c0.6961f8"
+                "d6bbae7b.f27e7"
             ]
         ]
     },
@@ -659,37 +699,6 @@
         "wires": [
             []
         ]
-    },
-    {
-        "id": "3407811a.1e9e4e",
-        "type": "change",
-        "z": "68ba5945.906288",
-        "name": "Summary Handler",
-        "rules": [
-            {
-                "t": "change",
-                "p": "payload.description.summary",
-                "pt": "msg",
-                "from": "^(echo )?",
-                "fromt": "re",
-                "to": "",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 150,
-        "y": 120,
-        "wires": [
-            [
-                "80bb010d.082ce",
-                "e188401e.b56c"
-            ]
-        ],
-        "info": "Strips the wake word from the summary (May not be needed anymore)"
     },
     {
         "id": "6f6ae5ea.792f9c",
@@ -792,7 +801,7 @@
         "y": 60,
         "wires": [
             [
-                "3407811a.1e9e4e"
+                "1c34efac.1fc57"
             ]
         ]
     },
@@ -822,39 +831,9 @@
         "y": 60,
         "wires": [
             [
-                "4b5d11a1.b66a1"
+                "9f42114d.0e794"
             ]
         ]
-    },
-    {
-        "id": "4b5d11a1.b66a1",
-        "type": "change",
-        "z": "dc9b45b2.938878",
-        "name": "Summary Handler",
-        "rules": [
-            {
-                "t": "change",
-                "p": "payload.description.summary",
-                "pt": "msg",
-                "from": "^(echo )?",
-                "fromt": "re",
-                "to": "",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 150,
-        "y": 120,
-        "wires": [
-            [
-                "877751fb.e46e3"
-            ]
-        ],
-        "info": "Strips the wake word from the summary (May not be needed anymore)"
     },
     {
         "id": "877751fb.e46e3",
@@ -1073,7 +1052,7 @@
         "deviceId": "68",
         "command": "on",
         "commandArgs": "",
-        "x": 770,
+        "x": 730,
         "y": 280,
         "wires": [
             []
@@ -1088,7 +1067,7 @@
         "deviceId": "68",
         "command": "off",
         "commandArgs": "",
-        "x": 770,
+        "x": 730,
         "y": 240,
         "wires": [
             []
@@ -1116,7 +1095,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 550,
+        "x": 530,
         "y": 240,
         "wires": [
             [
@@ -1136,7 +1115,7 @@
         "deviceId": "68",
         "attribute": "switch",
         "sendEvent": false,
-        "x": 370,
+        "x": 350,
         "y": 240,
         "wires": [
             [
@@ -1183,7 +1162,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 160,
-        "y": 300,
+        "y": 280,
         "wires": [
             [
                 "8a4fbf62.e1fbb"
@@ -1210,6 +1189,11 @@
             },
             {
                 "t": "eq",
+                "v": "G090U509912424HF",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
                 "v": "G090U5099117264T",
                 "vt": "str"
             },
@@ -1221,10 +1205,11 @@
         ],
         "checkall": "false",
         "repair": false,
-        "outputs": 4,
+        "outputs": 5,
         "x": 460,
         "y": 140,
         "wires": [
+            [],
             [],
             [],
             [],
@@ -1235,11 +1220,12 @@
         ],
         "outputLabels": [
             "Great Room",
-            "Downstairs Bedroom",
+            "Downstairs Bedroom 1",
+            "Downstairs Bedroom 2",
             "Kitchen",
             "Master Bedroom"
         ],
-        "info": "Great Room - G090U509912423CC\nDownstairs Bedroom - G6G0XG100134018V\nKitchen - G090U5099117264T\nMaster Bedroom - G090U509911620T7"
+        "info": "Great Room - G090U509912423CC\nDownstairs Bedroom 1 - G6G0XG100134018V\nDownstairs Bedroom 2 - G090U509912424HF\nKitchen - G090U5099117264T\nMaster Bedroom - G090U509911620T7"
     },
     {
         "id": "798c588f.3a2d78",
@@ -1313,6 +1299,7 @@
         "type": "subflow:cb4b5b0a.f09b68",
         "z": "66f36db9.365884",
         "name": "",
+        "env": [],
         "x": 620,
         "y": 120,
         "wires": [
@@ -1336,7 +1323,7 @@
         "z": "66f36db9.365884",
         "name": "",
         "x": 620,
-        "y": 280,
+        "y": 320,
         "wires": [
             [
                 "e2c5e027.3d79"
@@ -1503,26 +1490,22 @@
     {
         "id": "c5d42927.3e5298",
         "type": "hubitat mode",
-        "z": "345f283.d5796d8",
+        "z": "ac12c9d8.613d38",
         "name": "",
         "server": "b130c189.ea4d2",
         "sendEvent": true,
-        "x": 230,
-        "y": 280,
+        "x": 190,
+        "y": 120,
         "wires": [
             [
-                "910dea66.534338",
-                "ae57b7da.109528",
-                "8e74d342.066a6",
-                "9672e767.fceda8",
-                "9f83e2cc.07492"
+                "910dea66.534338"
             ]
         ]
     },
     {
         "id": "910dea66.534338",
         "type": "switch",
-        "z": "345f283.d5796d8",
+        "z": "ac12c9d8.613d38",
         "name": "Mode Switch",
         "property": "payload.value",
         "propertyType": "msg",
@@ -1546,8 +1529,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 3,
-        "x": 430,
-        "y": 280,
+        "x": 330,
+        "y": 120,
         "wires": [
             [
                 "855041f7.b56ad"
@@ -1563,7 +1546,7 @@
     {
         "id": "855041f7.b56ad",
         "type": "change",
-        "z": "345f283.d5796d8",
+        "z": "ac12c9d8.613d38",
         "name": "Day",
         "rules": [
             {
@@ -1593,25 +1576,16 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 590,
-        "y": 240,
+        "x": 490,
+        "y": 80,
         "wires": [
-            [
-                "e1bf2646.a068a8",
-                "c02cfc03.3f358",
-                "2d2a8e8.4a5c572",
-                "4fa7d080.e694f",
-                "87177829.799d98",
-                "e4c569a1.755d98",
-                "cfeb43bf.07772",
-                "db41473e.5574e8"
-            ]
+            []
         ]
     },
     {
         "id": "7ba362b4.9c660c",
         "type": "change",
-        "z": "345f283.d5796d8",
+        "z": "ac12c9d8.613d38",
         "name": "Evening",
         "rules": [
             {
@@ -1641,22 +1615,16 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 600,
-        "y": 280,
+        "x": 500,
+        "y": 120,
         "wires": [
-            [
-                "4fa7d080.e694f",
-                "87177829.799d98",
-                "e4c569a1.755d98",
-                "cfeb43bf.07772",
-                "db41473e.5574e8"
-            ]
+            []
         ]
     },
     {
         "id": "ddb474ac.518768",
         "type": "change",
-        "z": "345f283.d5796d8",
+        "z": "ac12c9d8.613d38",
         "name": "Night",
         "rules": [
             {
@@ -1686,20 +1654,10 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 590,
-        "y": 320,
+        "x": 490,
+        "y": 160,
         "wires": [
-            [
-                "e1bf2646.a068a8",
-                "c02cfc03.3f358",
-                "2d2a8e8.4a5c572",
-                "4fa7d080.e694f",
-                "87177829.799d98",
-                "e4c569a1.755d98",
-                "cfeb43bf.07772",
-                "db41473e.5574e8",
-                "c55c8143.8aefc"
-            ]
+            []
         ]
     },
     {
@@ -1711,8 +1669,8 @@
         "deviceId": "610",
         "command": "initialize",
         "commandArgs": "",
-        "x": 460,
-        "y": 200,
+        "x": 360,
+        "y": 100,
         "wires": [
             []
         ]
@@ -1724,10 +1682,10 @@
         "name": "DB - Set Poll Interval",
         "server": "b130c189.ea4d2",
         "deviceId": "69",
-        "command": "setPollFreq",
+        "command": "setPollInterval",
         "commandArgs": "5",
-        "x": 460,
-        "y": 360,
+        "x": 360,
+        "y": 220,
         "wires": [
             []
         ]
@@ -1739,10 +1697,10 @@
         "name": "GR - Set Poll Interval",
         "server": "b130c189.ea4d2",
         "deviceId": "67",
-        "command": "setPollFreq",
+        "command": "setPollInterval",
         "commandArgs": "5",
-        "x": 460,
-        "y": 400,
+        "x": 360,
+        "y": 260,
         "wires": [
             []
         ]
@@ -1756,8 +1714,8 @@
         "deviceId": "69",
         "command": "presetLevel",
         "commandArgs": "",
-        "x": 870,
-        "y": 280,
+        "x": 730,
+        "y": 320,
         "wires": [
             []
         ]
@@ -1771,8 +1729,8 @@
         "deviceId": "67",
         "command": "presetLevel",
         "commandArgs": "",
-        "x": 870,
-        "y": 320,
+        "x": 730,
+        "y": 360,
         "wires": [
             []
         ]
@@ -1786,8 +1744,8 @@
         "deviceId": "68",
         "command": "presetLevel",
         "commandArgs": "",
-        "x": 870,
-        "y": 360,
+        "x": 730,
+        "y": 400,
         "wires": [
             []
         ]
@@ -1812,8 +1770,8 @@
                 }
             }
         },
-        "x": 870,
-        "y": 60,
+        "x": 730,
+        "y": 100,
         "wires": [
             []
         ]
@@ -1838,8 +1796,8 @@
                 }
             }
         },
-        "x": 870,
-        "y": 100,
+        "x": 730,
+        "y": 140,
         "wires": [
             []
         ]
@@ -1864,8 +1822,8 @@
                 }
             }
         },
-        "x": 880,
-        "y": 140,
+        "x": 740,
+        "y": 180,
         "wires": [
             []
         ]
@@ -1890,8 +1848,8 @@
                 }
             }
         },
-        "x": 880,
-        "y": 180,
+        "x": 740,
+        "y": 220,
         "wires": [
             []
         ]
@@ -1916,8 +1874,8 @@
                 }
             }
         },
-        "x": 870,
-        "y": 220,
+        "x": 730,
+        "y": 260,
         "wires": [
             []
         ]
@@ -2026,11 +1984,15 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 100,
-        "y": 300,
+        "x": 120,
+        "y": 180,
         "wires": [
             [
-                "c5d42927.3e5298"
+                "9f83e2cc.07492",
+                "9672e767.fceda8",
+                "8e74d342.066a6",
+                "ae57b7da.109528",
+                "59d071a7.8a464"
             ]
         ]
     },
@@ -2175,10 +2137,10 @@
         "name": "KT - Set Poll Interval",
         "server": "b130c189.ea4d2",
         "deviceId": "68",
-        "command": "setPollFreq",
+        "command": "setPollInterval",
         "commandArgs": "5",
-        "x": 460,
-        "y": 440,
+        "x": 360,
+        "y": 300,
         "wires": [
             []
         ]
@@ -2192,8 +2154,8 @@
         "deviceId": "1377",
         "command": "on",
         "commandArgs": "",
-        "x": 890,
-        "y": 420,
+        "x": 750,
+        "y": 460,
         "wires": [
             []
         ]
@@ -2207,8 +2169,8 @@
         "deviceId": "1351",
         "command": "on",
         "commandArgs": "",
-        "x": 890,
-        "y": 460,
+        "x": 750,
+        "y": 500,
         "wires": [
             []
         ]
@@ -2222,8 +2184,8 @@
         "deviceId": "385",
         "command": "on",
         "commandArgs": "",
-        "x": 890,
-        "y": 500,
+        "x": 750,
+        "y": 540,
         "wires": [
             []
         ]
@@ -2245,8 +2207,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 690,
-        "y": 460,
+        "x": 570,
+        "y": 500,
         "wires": [
             [
                 "831fec5d.5f762",
@@ -2259,30 +2221,14 @@
         "id": "486da55c.d30acc",
         "type": "hubitat location",
         "z": "345f283.d5796d8",
-        "name": "sysStart",
+        "name": "location",
         "server": "b130c189.ea4d2",
-        "x": 90,
-        "y": 220,
+        "x": 110,
+        "y": 60,
         "wires": [
             [
-                "bb86fe2b.b8d6e"
+                "a44ccae0.1fbd48"
             ]
-        ]
-    },
-    {
-        "id": "bb86fe2b.b8d6e",
-        "type": "function",
-        "z": "345f283.d5796d8",
-        "name": "Wait 5m",
-        "func": "setTimeout(function(){\n    node.status({fill:\"red\", shape:\"ring\", text:\" \"});\n    node.send(msg);\n}, 300000);\nnode.status({fill:\"blue\", shape:\"ring\", text:' '});",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 100,
-        "y": 260,
-        "wires": [
-            []
         ]
     },
     {
@@ -2308,13 +2254,13 @@
         "id": "90ec36f0.76ff08",
         "type": "switch",
         "z": "66eb8402.daa4fc",
-        "name": "down < 100",
+        "name": "down < 75",
         "property": "payload.speeds.download",
         "propertyType": "msg",
         "rules": [
             {
                 "t": "lt",
-                "v": "100",
+                "v": "75",
                 "vt": "num"
             }
         ],
@@ -2601,7 +2547,7 @@
         "dot": true,
         "ymin": "",
         "ymax": "",
-        "removeOlder": "2",
+        "removeOlder": "3",
         "removeOlderPoints": "",
         "removeOlderUnit": "86400",
         "cutout": "",
@@ -2687,7 +2633,7 @@
         "dot": true,
         "ymin": "",
         "ymax": "",
-        "removeOlder": "2",
+        "removeOlder": "3",
         "removeOlderPoints": "",
         "removeOlderUnit": "86400",
         "cutout": "",
@@ -2961,13 +2907,13 @@
         "id": "836dbe75.14f81",
         "type": "switch",
         "z": "66eb8402.daa4fc",
-        "name": "upload < 100",
+        "name": "upload < 75",
         "property": "payload.speeds.upload",
         "propertyType": "msg",
         "rules": [
             {
                 "t": "lt",
-                "v": "100",
+                "v": "75",
                 "vt": "num"
             }
         ],
@@ -2979,6 +2925,935 @@
         "wires": [
             [
                 "a03f104b.58ff8"
+            ]
+        ]
+    },
+    {
+        "id": "d6bbae7b.f27e7",
+        "type": "switch",
+        "z": "66f36db9.365884",
+        "name": "Wake Handler",
+        "property": "payload.domainAttributes",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "null",
+                "vt": "jsonata"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 140,
+        "y": 120,
+        "wires": [
+            [
+                "a752c08d.6cd72"
+            ]
+        ]
+    },
+    {
+        "id": "9f42114d.0e794",
+        "type": "switch",
+        "z": "dc9b45b2.938878",
+        "name": "Wake Handler",
+        "property": "payload.domainAttributes",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "null",
+                "vt": "jsonata"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 140,
+        "y": 120,
+        "wires": [
+            [
+                "877751fb.e46e3"
+            ]
+        ]
+    },
+    {
+        "id": "1c34efac.1fc57",
+        "type": "switch",
+        "z": "68ba5945.906288",
+        "name": "Wake Handler",
+        "property": "payload.domainAttributes",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "null",
+                "vt": "jsonata"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 140,
+        "y": 120,
+        "wires": [
+            [
+                "e188401e.b56c",
+                "80bb010d.082ce"
+            ]
+        ]
+    },
+    {
+        "id": "c0f915b6.e62fb8",
+        "type": "alexa-remote-echo",
+        "z": "d61084e.39e0678",
+        "name": "GR - Echo Play",
+        "account": "4553eef5.ffc05",
+        "config": {
+            "option": "tuneIn",
+            "value": {
+                "device": {
+                    "type": "str",
+                    "value": "G090U509912423CC"
+                },
+                "guideId": {
+                    "type": "str",
+                    "value": "s249973"
+                },
+                "contentType": {
+                    "type": "str",
+                    "value": "station"
+                }
+            }
+        },
+        "x": 560,
+        "y": 80,
+        "wires": [
+            [
+                "e97ff3a7.a2ed5"
+            ]
+        ]
+    },
+    {
+        "id": "68e807d.954b0f8",
+        "type": "alexa-remote-echo",
+        "z": "d61084e.39e0678",
+        "name": "KT - Echo Play",
+        "account": "4553eef5.ffc05",
+        "config": {
+            "option": "tuneIn",
+            "value": {
+                "device": {
+                    "type": "str",
+                    "value": "G090U5099117264T"
+                },
+                "guideId": {
+                    "type": "str",
+                    "value": "s249973"
+                },
+                "contentType": {
+                    "type": "str",
+                    "value": "station"
+                }
+            }
+        },
+        "x": 560,
+        "y": 200,
+        "wires": [
+            [
+                "704d4696.7b2828"
+            ]
+        ]
+    },
+    {
+        "id": "e4e76245.3c42",
+        "type": "alexa-remote-echo",
+        "z": "d61084e.39e0678",
+        "name": "DB - Echo M Play",
+        "account": "4553eef5.ffc05",
+        "config": {
+            "option": "tuneIn",
+            "value": {
+                "device": {
+                    "type": "str",
+                    "value": "G6G0XG100134018V"
+                },
+                "guideId": {
+                    "type": "str",
+                    "value": "s249973"
+                },
+                "contentType": {
+                    "type": "str",
+                    "value": "station"
+                }
+            }
+        },
+        "x": 570,
+        "y": 120,
+        "wires": [
+            [
+                "e3958915.0a6308"
+            ]
+        ]
+    },
+    {
+        "id": "eb6d4a12.1e44f8",
+        "type": "alexa-remote-echo",
+        "z": "d61084e.39e0678",
+        "name": "DB - Echo S Play",
+        "account": "4553eef5.ffc05",
+        "config": {
+            "option": "tuneIn",
+            "value": {
+                "device": {
+                    "type": "str",
+                    "value": "G090U509912424HF"
+                },
+                "guideId": {
+                    "type": "str",
+                    "value": "s249973"
+                },
+                "contentType": {
+                    "type": "str",
+                    "value": "station"
+                }
+            }
+        },
+        "x": 570,
+        "y": 160,
+        "wires": [
+            [
+                "d92d6856.919638"
+            ]
+        ]
+    },
+    {
+        "id": "afd82140.f445b",
+        "type": "alexa-remote-echo",
+        "z": "d61084e.39e0678",
+        "name": "MB - Echo Play",
+        "account": "4553eef5.ffc05",
+        "config": {
+            "option": "tuneIn",
+            "value": {
+                "device": {
+                    "type": "str",
+                    "value": "G090U509911620T7"
+                },
+                "guideId": {
+                    "type": "str",
+                    "value": "s249973"
+                },
+                "contentType": {
+                    "type": "str",
+                    "value": "station"
+                }
+            }
+        },
+        "x": 560,
+        "y": 240,
+        "wires": [
+            [
+                "b5615238.4cef5"
+            ]
+        ]
+    },
+    {
+        "id": "59a7d23a.cb8e5c",
+        "type": "alexa-remote-event",
+        "z": "d61084e.39e0678",
+        "name": "",
+        "account": "4553eef5.ffc05",
+        "event": "ws-device-activity",
+        "x": 130,
+        "y": 60,
+        "wires": [
+            [
+                "ffb8478e.103d68"
+            ]
+        ]
+    },
+    {
+        "id": "6118732f.6ede7c",
+        "type": "switch",
+        "z": "d61084e.39e0678",
+        "name": "Phrase Handler",
+        "property": "payload.description.summary",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "regex",
+                "v": "reset volumes",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "reset volume",
+                "vt": "str",
+                "case": false
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 320,
+        "y": 120,
+        "wires": [
+            [
+                "afd82140.f445b",
+                "68e807d.954b0f8",
+                "eb6d4a12.1e44f8",
+                "e4e76245.3c42",
+                "c0f915b6.e62fb8"
+            ],
+            [
+                "3f333fa.be852c"
+            ]
+        ]
+    },
+    {
+        "id": "ffb8478e.103d68",
+        "type": "switch",
+        "z": "d61084e.39e0678",
+        "name": "Wake Handler",
+        "property": "payload.domainAttributes",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "null",
+                "vt": "jsonata"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 140,
+        "y": 120,
+        "wires": [
+            [
+                "6118732f.6ede7c"
+            ]
+        ]
+    },
+    {
+        "id": "3f333fa.be852c",
+        "type": "subflow:cb4b5b0a.f09b68",
+        "z": "d61084e.39e0678",
+        "name": "",
+        "env": [],
+        "x": 300,
+        "y": 200,
+        "wires": [
+            [
+                "c0f915b6.e62fb8"
+            ],
+            [
+                "e4e76245.3c42",
+                "eb6d4a12.1e44f8"
+            ],
+            [
+                "68e807d.954b0f8"
+            ],
+            [
+                "afd82140.f445b"
+            ]
+        ]
+    },
+    {
+        "id": "57115256.c8f83c",
+        "type": "alexa-remote-event",
+        "z": "d61084e.39e0678",
+        "name": "",
+        "account": "4553eef5.ffc05",
+        "event": "ws-media-change",
+        "x": 130,
+        "y": 280,
+        "wires": [
+            [
+                "3f1bb185.ee904e",
+                "77edd238.0d301c"
+            ]
+        ]
+    },
+    {
+        "id": "558ee0bb.30b7f",
+        "type": "alexa-remote-echo",
+        "z": "d61084e.39e0678",
+        "name": "MB - Echo Volume",
+        "account": "4553eef5.ffc05",
+        "config": {
+            "option": "command",
+            "value": {
+                "device": {
+                    "type": "str",
+                    "value": "G090U509911620T7"
+                },
+                "what": "volume",
+                "value": {
+                    "type": "msg",
+                    "value": "payload.volume"
+                }
+            }
+        },
+        "x": 870,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5a515b3f.122a34",
+        "type": "alexa-remote-echo",
+        "z": "d61084e.39e0678",
+        "name": "DB - Echo S Volume",
+        "account": "4553eef5.ffc05",
+        "config": {
+            "option": "command",
+            "value": {
+                "device": {
+                    "type": "str",
+                    "value": "G090U509912424HF"
+                },
+                "what": "volume",
+                "value": {
+                    "type": "msg",
+                    "value": "payload.volume"
+                }
+            }
+        },
+        "x": 880,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "65f116d4.f76438",
+        "type": "alexa-remote-echo",
+        "z": "d61084e.39e0678",
+        "name": "DB - Echo M Volume",
+        "account": "4553eef5.ffc05",
+        "config": {
+            "option": "command",
+            "value": {
+                "device": {
+                    "type": "str",
+                    "value": "G6G0XG100134018V"
+                },
+                "what": "volume",
+                "value": {
+                    "type": "msg",
+                    "value": "payload.volume"
+                }
+            }
+        },
+        "x": 880,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9d412f46.25b99",
+        "type": "alexa-remote-echo",
+        "z": "d61084e.39e0678",
+        "name": "KT - Echo Volume",
+        "account": "4553eef5.ffc05",
+        "config": {
+            "option": "command",
+            "value": {
+                "device": {
+                    "type": "str",
+                    "value": "G090U5099117264T"
+                },
+                "what": "volume",
+                "value": {
+                    "type": "jsonata",
+                    "value": "msg.payload.volume+50"
+                }
+            }
+        },
+        "x": 870,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c1954c72.887de",
+        "type": "alexa-remote-echo",
+        "z": "d61084e.39e0678",
+        "name": "GR - Echo Volume",
+        "account": "4553eef5.ffc05",
+        "config": {
+            "option": "command",
+            "value": {
+                "device": {
+                    "type": "str",
+                    "value": "G090U509912423CC"
+                },
+                "what": "volume",
+                "value": {
+                    "type": "jsonata",
+                    "value": "msg.payload.volume+50"
+                }
+            }
+        },
+        "x": 870,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3bd73cb0.773a34",
+        "type": "alexa-remote-echo",
+        "z": "d61084e.39e0678",
+        "name": "GR - Echo Pause",
+        "account": "4553eef5.ffc05",
+        "config": {
+            "option": "command",
+            "value": {
+                "device": {
+                    "type": "str",
+                    "value": "G090U509912423CC"
+                },
+                "what": "pause"
+            }
+        },
+        "x": 430,
+        "y": 400,
+        "wires": [
+            [
+                "8cbf13ee.6bece"
+            ]
+        ]
+    },
+    {
+        "id": "ea17f4a9.8a2408",
+        "type": "alexa-remote-echo",
+        "z": "d61084e.39e0678",
+        "name": "DB - Echo M Pause",
+        "account": "4553eef5.ffc05",
+        "config": {
+            "option": "command",
+            "value": {
+                "device": {
+                    "type": "str",
+                    "value": "G6G0XG100134018V"
+                },
+                "what": "pause"
+            }
+        },
+        "x": 430,
+        "y": 440,
+        "wires": [
+            [
+                "8cbf13ee.6bece"
+            ]
+        ]
+    },
+    {
+        "id": "29113ff2.7a2d1",
+        "type": "alexa-remote-echo",
+        "z": "d61084e.39e0678",
+        "name": "DB - Echo S Pause",
+        "account": "4553eef5.ffc05",
+        "config": {
+            "option": "command",
+            "value": {
+                "device": {
+                    "type": "str",
+                    "value": "G090U509912424HF"
+                },
+                "what": "pause"
+            }
+        },
+        "x": 430,
+        "y": 480,
+        "wires": [
+            [
+                "8cbf13ee.6bece"
+            ]
+        ]
+    },
+    {
+        "id": "f81bf876.428948",
+        "type": "alexa-remote-echo",
+        "z": "d61084e.39e0678",
+        "name": "KT - Echo Pause",
+        "account": "4553eef5.ffc05",
+        "config": {
+            "option": "command",
+            "value": {
+                "device": {
+                    "type": "str",
+                    "value": "G090U5099117264T"
+                },
+                "what": "pause"
+            }
+        },
+        "x": 430,
+        "y": 520,
+        "wires": [
+            [
+                "8cbf13ee.6bece"
+            ]
+        ]
+    },
+    {
+        "id": "9434928a.e846d",
+        "type": "alexa-remote-echo",
+        "z": "d61084e.39e0678",
+        "name": "MB - Echo Pause",
+        "account": "4553eef5.ffc05",
+        "config": {
+            "option": "command",
+            "value": {
+                "device": {
+                    "type": "str",
+                    "value": "G090U509911620T7"
+                },
+                "what": "pause"
+            }
+        },
+        "x": 430,
+        "y": 560,
+        "wires": [
+            [
+                "8cbf13ee.6bece"
+            ]
+        ]
+    },
+    {
+        "id": "77edd238.0d301c",
+        "type": "subflow:cb4b5b0a.f09b68",
+        "z": "d61084e.39e0678",
+        "name": "",
+        "env": [],
+        "x": 160,
+        "y": 420,
+        "wires": [
+            [
+                "3bd73cb0.773a34"
+            ],
+            [
+                "ea17f4a9.8a2408",
+                "29113ff2.7a2d1"
+            ],
+            [
+                "f81bf876.428948"
+            ],
+            [
+                "9434928a.e846d"
+            ]
+        ]
+    },
+    {
+        "id": "26fc474d.0dffe8",
+        "type": "inject",
+        "z": "d61084e.39e0678",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 560,
+        "wires": [
+            [
+                "9434928a.e846d",
+                "f81bf876.428948",
+                "29113ff2.7a2d1",
+                "ea17f4a9.8a2408",
+                "3bd73cb0.773a34"
+            ]
+        ]
+    },
+    {
+        "id": "59d071a7.8a464",
+        "type": "subflow:ac12c9d8.613d38",
+        "z": "345f283.d5796d8",
+        "name": "",
+        "env": [],
+        "x": 380,
+        "y": 160,
+        "wires": [
+            [
+                "e1bf2646.a068a8",
+                "c02cfc03.3f358",
+                "2d2a8e8.4a5c572",
+                "4fa7d080.e694f",
+                "87177829.799d98",
+                "e4c569a1.755d98",
+                "cfeb43bf.07772",
+                "db41473e.5574e8"
+            ],
+            [
+                "4fa7d080.e694f",
+                "87177829.799d98",
+                "e4c569a1.755d98",
+                "cfeb43bf.07772",
+                "db41473e.5574e8"
+            ],
+            [
+                "e1bf2646.a068a8",
+                "c02cfc03.3f358",
+                "2d2a8e8.4a5c572",
+                "4fa7d080.e694f",
+                "87177829.799d98",
+                "e4c569a1.755d98",
+                "cfeb43bf.07772",
+                "db41473e.5574e8",
+                "c55c8143.8aefc"
+            ]
+        ]
+    },
+    {
+        "id": "8cbf13ee.6bece",
+        "type": "subflow:ac12c9d8.613d38",
+        "z": "d61084e.39e0678",
+        "name": "",
+        "env": [],
+        "x": 640,
+        "y": 480,
+        "wires": [
+            [
+                "c1954c72.887de",
+                "9d412f46.25b99",
+                "65f116d4.f76438",
+                "5a515b3f.122a34",
+                "558ee0bb.30b7f"
+            ],
+            [
+                "c1954c72.887de",
+                "9d412f46.25b99",
+                "65f116d4.f76438",
+                "5a515b3f.122a34",
+                "558ee0bb.30b7f"
+            ],
+            [
+                "558ee0bb.30b7f",
+                "5a515b3f.122a34",
+                "65f116d4.f76438",
+                "9d412f46.25b99",
+                "c1954c72.887de"
+            ]
+        ]
+    },
+    {
+        "id": "3f1bb185.ee904e",
+        "type": "hubitat command",
+        "z": "d61084e.39e0678",
+        "name": "Colin Notification",
+        "server": "b130c189.ea4d2",
+        "deviceId": "70",
+        "command": "deviceNotification",
+        "commandArgs": "Alexa \"On Media Change\" Triggered",
+        "x": 350,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e97ff3a7.a2ed5",
+        "type": "delay",
+        "z": "d61084e.39e0678",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "10",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 740,
+        "y": 80,
+        "wires": [
+            [
+                "3bd73cb0.773a34"
+            ]
+        ]
+    },
+    {
+        "id": "e3958915.0a6308",
+        "type": "delay",
+        "z": "d61084e.39e0678",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "10",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 740,
+        "y": 120,
+        "wires": [
+            [
+                "ea17f4a9.8a2408"
+            ]
+        ]
+    },
+    {
+        "id": "d92d6856.919638",
+        "type": "delay",
+        "z": "d61084e.39e0678",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "10",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 740,
+        "y": 160,
+        "wires": [
+            [
+                "29113ff2.7a2d1"
+            ]
+        ]
+    },
+    {
+        "id": "704d4696.7b2828",
+        "type": "delay",
+        "z": "d61084e.39e0678",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "10",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 740,
+        "y": 200,
+        "wires": [
+            [
+                "f81bf876.428948"
+            ]
+        ]
+    },
+    {
+        "id": "b5615238.4cef5",
+        "type": "delay",
+        "z": "d61084e.39e0678",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "10",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 740,
+        "y": 240,
+        "wires": [
+            [
+                "9434928a.e846d"
+            ]
+        ]
+    },
+    {
+        "id": "ed40bc41.95a34",
+        "type": "delay",
+        "z": "345f283.d5796d8",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "minutes",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 120,
+        "y": 140,
+        "wires": [
+            [
+                "ae57b7da.109528",
+                "59d071a7.8a464",
+                "8e74d342.066a6",
+                "9672e767.fceda8",
+                "9f83e2cc.07492"
+            ]
+        ]
+    },
+    {
+        "id": "743fd661.b952b8",
+        "type": "hubitat mode",
+        "z": "345f283.d5796d8",
+        "name": "",
+        "server": "b130c189.ea4d2",
+        "sendEvent": true,
+        "x": 130,
+        "y": 220,
+        "wires": [
+            [
+                "ae57b7da.109528",
+                "59d071a7.8a464",
+                "8e74d342.066a6",
+                "9672e767.fceda8",
+                "9f83e2cc.07492"
+            ]
+        ]
+    },
+    {
+        "id": "a44ccae0.1fbd48",
+        "type": "switch",
+        "z": "345f283.d5796d8",
+        "name": "sysStart",
+        "property": "payload.name",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "systemStart",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 120,
+        "y": 100,
+        "wires": [
+            [
+                "ed40bc41.95a34"
             ]
         ]
     }
