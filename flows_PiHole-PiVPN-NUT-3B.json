@@ -7,14 +7,14 @@
         "info": ""
     },
     {
-        "id": "66f36db9.365884",
+        "id": "5c3cd757.a086c8",
         "type": "tab",
         "label": "Motion Detection [Alexa]",
         "disabled": false,
         "info": "Enables and disables motion detection depending on the room you are in."
     },
     {
-        "id": "dc9b45b2.938878",
+        "id": "73f998b9.8842a8",
         "type": "tab",
         "label": "GM,GN Routines [Alexa]",
         "disabled": false,
@@ -45,6 +45,13 @@
         "id": "66eb8402.daa4fc",
         "type": "tab",
         "label": "Speed Test",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "f3e4e663.9ecbb8",
+        "type": "tab",
+        "label": "Automated Backups",
         "disabled": false,
         "info": ""
     },
@@ -427,230 +434,6 @@
         "wires": []
     },
     {
-        "id": "a752c08d.6cd72",
-        "type": "switch",
-        "z": "66f36db9.365884",
-        "name": "Phrase Handler",
-        "property": "payload.description.summary",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "regex",
-                "v": "disable (the )?motion sensor",
-                "vt": "str",
-                "case": false
-            },
-            {
-                "t": "regex",
-                "v": "disable (the )?motion sensing",
-                "vt": "str",
-                "case": false
-            },
-            {
-                "t": "regex",
-                "v": "turn off (the )?motion sensor",
-                "vt": "str",
-                "case": false
-            },
-            {
-                "t": "regex",
-                "v": "turn off (the )?motion sensing",
-                "vt": "str",
-                "case": false
-            },
-            {
-                "t": "regex",
-                "v": "enable (the )?motion sensor",
-                "vt": "str",
-                "case": false
-            },
-            {
-                "t": "regex",
-                "v": "turn on (the )?motion sensor",
-                "vt": "str",
-                "case": false
-            },
-            {
-                "t": "regex",
-                "v": "turn on (the )?motion sensing",
-                "vt": "str",
-                "case": false
-            },
-            {
-                "t": "regex",
-                "v": "enable (the )?motion sensing",
-                "vt": "str",
-                "case": false
-            }
-        ],
-        "checkall": "false",
-        "repair": false,
-        "outputs": 8,
-        "x": 360,
-        "y": 220,
-        "wires": [
-            [
-                "66c6aa71.bc40a4"
-            ],
-            [
-                "66c6aa71.bc40a4"
-            ],
-            [
-                "66c6aa71.bc40a4"
-            ],
-            [
-                "66c6aa71.bc40a4"
-            ],
-            [
-                "3a462ae9.3f3386"
-            ],
-            [
-                "3a462ae9.3f3386"
-            ],
-            [
-                "3a462ae9.3f3386"
-            ],
-            [
-                "3a462ae9.3f3386"
-            ]
-        ]
-    },
-    {
-        "id": "a1c2a3cc.4745f",
-        "type": "hubitat command",
-        "z": "66f36db9.365884",
-        "name": "GR - Motion Detection Off",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1377",
-        "command": "off",
-        "commandArgs": "",
-        "x": 870,
-        "y": 60,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "4eb34c1f.94c0a4",
-        "type": "hubitat command",
-        "z": "66f36db9.365884",
-        "name": "DB - Motion Detection Off",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1352",
-        "command": "off",
-        "commandArgs": "",
-        "x": 870,
-        "y": 100,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "fbbd97e6.2a95c8",
-        "type": "hubitat command",
-        "z": "66f36db9.365884",
-        "name": "KT - Motion Detection Off",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1351",
-        "command": "off",
-        "commandArgs": "",
-        "x": 870,
-        "y": 140,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "730f227.163d8dc",
-        "type": "hubitat command",
-        "z": "66f36db9.365884",
-        "name": "MB - Motion Detection Off",
-        "server": "b130c189.ea4d2",
-        "deviceId": "385",
-        "command": "off",
-        "commandArgs": "",
-        "x": 870,
-        "y": 180,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "e2c5e027.3d79",
-        "type": "hubitat command",
-        "z": "66f36db9.365884",
-        "name": "GR - Motion Detection On",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1377",
-        "command": "on",
-        "commandArgs": "",
-        "x": 870,
-        "y": 260,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "64ce407a.dd3d5",
-        "type": "hubitat command",
-        "z": "66f36db9.365884",
-        "name": "DB - Motion Detection On",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1352",
-        "command": "on",
-        "commandArgs": "",
-        "x": 870,
-        "y": 300,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "76e93b52.a451d4",
-        "type": "hubitat command",
-        "z": "66f36db9.365884",
-        "name": "KT - Motion Detection On",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1351",
-        "command": "on",
-        "commandArgs": "",
-        "x": 870,
-        "y": 340,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "5cff849e.54edec",
-        "type": "hubitat command",
-        "z": "66f36db9.365884",
-        "name": "MB - Motion Detection On",
-        "server": "b130c189.ea4d2",
-        "deviceId": "385",
-        "command": "on",
-        "commandArgs": "",
-        "x": 870,
-        "y": 380,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "6b8eaaa2.9e83e4",
-        "type": "alexa-remote-event",
-        "z": "66f36db9.365884",
-        "name": "",
-        "account": "4553eef5.ffc05",
-        "event": "ws-device-activity",
-        "x": 130,
-        "y": 60,
-        "wires": [
-            [
-                "d6bbae7b.f27e7"
-            ]
-        ]
-    },
-    {
         "id": "80bb010d.082ce",
         "type": "switch",
         "z": "68ba5945.906288",
@@ -675,7 +458,7 @@
         "repair": false,
         "outputs": 2,
         "x": 360,
-        "y": 380,
+        "y": 400,
         "wires": [
             [
                 "df44fb1a.f08208"
@@ -689,13 +472,13 @@
         "id": "1737ebff.565734",
         "type": "hubitat command",
         "z": "68ba5945.906288",
-        "name": "GR - Lights Off",
+        "name": "GR - Lights",
         "server": "b130c189.ea4d2",
-        "deviceId": "67",
+        "deviceId": "1572",
         "command": "off",
         "commandArgs": "",
-        "x": 800,
-        "y": 240,
+        "x": 790,
+        "y": 260,
         "wires": [
             []
         ]
@@ -704,13 +487,13 @@
         "id": "6f6ae5ea.792f9c",
         "type": "hubitat command",
         "z": "68ba5945.906288",
-        "name": "DB - Lights Off",
+        "name": "DB - Lights",
         "server": "b130c189.ea4d2",
-        "deviceId": "69",
+        "deviceId": "1574",
         "command": "off",
         "commandArgs": "",
-        "x": 800,
-        "y": 280,
+        "x": 790,
+        "y": 320,
         "wires": [
             []
         ]
@@ -719,13 +502,13 @@
         "id": "c73b5d38.e4ed6",
         "type": "hubitat command",
         "z": "68ba5945.906288",
-        "name": "KT - Lights Off",
+        "name": "KT - Lights",
         "server": "b130c189.ea4d2",
-        "deviceId": "68",
+        "deviceId": "1573",
         "command": "off",
         "commandArgs": "",
-        "x": 800,
-        "y": 320,
+        "x": 790,
+        "y": 380,
         "wires": [
             []
         ]
@@ -734,13 +517,13 @@
         "id": "83b32c58.41ce",
         "type": "hubitat command",
         "z": "68ba5945.906288",
-        "name": "MB - Lights Off",
+        "name": "MB - Lights",
         "server": "b130c189.ea4d2",
-        "deviceId": "501",
+        "deviceId": "1575",
         "command": "off",
         "commandArgs": "",
-        "x": 800,
-        "y": 360,
+        "x": 790,
+        "y": 440,
         "wires": [
             []
         ]
@@ -749,13 +532,13 @@
         "id": "666629d2.9fdf18",
         "type": "hubitat command",
         "z": "68ba5945.906288",
-        "name": "DB - Lights On",
+        "name": "DB - Lights",
         "server": "b130c189.ea4d2",
-        "deviceId": "69",
+        "deviceId": "1574",
         "command": "on",
         "commandArgs": "",
-        "x": 800,
-        "y": 440,
+        "x": 790,
+        "y": 560,
         "wires": [
             []
         ]
@@ -764,13 +547,13 @@
         "id": "a4468c2.dde517",
         "type": "hubitat command",
         "z": "68ba5945.906288",
-        "name": "KT - Lights On",
+        "name": "KT - Lights",
         "server": "b130c189.ea4d2",
-        "deviceId": "68",
+        "deviceId": "1573",
         "command": "on",
         "commandArgs": "",
-        "x": 800,
-        "y": 480,
+        "x": 790,
+        "y": 620,
         "wires": [
             []
         ]
@@ -779,13 +562,13 @@
         "id": "5b9d4c70.22d984",
         "type": "hubitat command",
         "z": "68ba5945.906288",
-        "name": "MB - Lights On",
+        "name": "MB - Lights",
         "server": "b130c189.ea4d2",
-        "deviceId": "501",
+        "deviceId": "1575",
         "command": "on",
         "commandArgs": "",
-        "x": 800,
-        "y": 520,
+        "x": 790,
+        "y": 680,
         "wires": [
             []
         ]
@@ -809,218 +592,15 @@
         "id": "cd66091.af90cf8",
         "type": "hubitat command",
         "z": "68ba5945.906288",
-        "name": "GR - Lights On",
+        "name": "GR - Lights",
         "server": "b130c189.ea4d2",
-        "deviceId": "67",
+        "deviceId": "1572",
         "command": "on",
         "commandArgs": "",
-        "x": 800,
-        "y": 400,
+        "x": 790,
+        "y": 500,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "319f8fec.295a9",
-        "type": "alexa-remote-event",
-        "z": "dc9b45b2.938878",
-        "name": "",
-        "account": "4553eef5.ffc05",
-        "event": "ws-device-activity",
-        "x": 130,
-        "y": 60,
-        "wires": [
-            [
-                "9f42114d.0e794"
-            ]
-        ]
-    },
-    {
-        "id": "877751fb.e46e3",
-        "type": "switch",
-        "z": "dc9b45b2.938878",
-        "name": "Phrase Handler",
-        "property": "payload.description.summary",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "regex",
-                "v": "good( )?night",
-                "vt": "str",
-                "case": false
-            },
-            {
-                "t": "regex",
-                "v": "good( )?morning",
-                "vt": "str",
-                "case": false
-            }
-        ],
-        "checkall": "false",
-        "repair": false,
-        "outputs": 2,
-        "x": 140,
-        "y": 180,
-        "wires": [
-            [
-                "fb0049b0.32fee8",
-                "ed6818c5.fee708",
-                "798c588f.3a2d78"
-            ],
-            [
-                "3bea0423.1031ec"
-            ]
-        ]
-    },
-    {
-        "id": "f5405e7e.7fc3e",
-        "type": "hubitat command",
-        "z": "dc9b45b2.938878",
-        "name": "GR - Motion Detection Off",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1377",
-        "command": "off",
-        "commandArgs": "",
-        "x": 870,
-        "y": 200,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "10aff0d8.39ffdf",
-        "type": "hubitat command",
-        "z": "dc9b45b2.938878",
-        "name": "DB - Motion Detection Off",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1352",
-        "command": "off",
-        "commandArgs": "",
-        "x": 870,
-        "y": 240,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "7c0be134.4c6ef",
-        "type": "hubitat command",
-        "z": "dc9b45b2.938878",
-        "name": "KT - Motion Detection Off",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1351",
-        "command": "off",
-        "commandArgs": "",
-        "x": 870,
-        "y": 280,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "db205b6f.2dd928",
-        "type": "hubitat command",
-        "z": "dc9b45b2.938878",
-        "name": "MB - Motion Detection Off",
-        "server": "b130c189.ea4d2",
-        "deviceId": "385",
-        "command": "off",
-        "commandArgs": "",
-        "x": 870,
-        "y": 320,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "fb0049b0.32fee8",
-        "type": "hubitat command",
-        "z": "dc9b45b2.938878",
-        "name": "Lock Back Door August Pro (Reliable)",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1441",
-        "command": "lock",
-        "commandArgs": "",
-        "x": 490,
-        "y": 60,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "d7892321.e2b98",
-        "type": "hubitat device",
-        "z": "dc9b45b2.938878",
-        "name": "Simplisafe Status",
-        "server": "b130c189.ea4d2",
-        "deviceId": "86",
-        "attribute": "",
-        "sendEvent": false,
-        "x": 610,
-        "y": 120,
-        "wires": [
-            [
-                "573ee710.15b2c8"
-            ]
-        ]
-    },
-    {
-        "id": "573ee710.15b2c8",
-        "type": "switch",
-        "z": "dc9b45b2.938878",
-        "name": "if OFF",
-        "property": "payload.alarm.currentValue",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "OFF",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 770,
-        "y": 120,
-        "wires": [
-            [
-                "73e51625.6077d8"
-            ]
-        ]
-    },
-    {
-        "id": "73e51625.6077d8",
-        "type": "hubitat command",
-        "z": "dc9b45b2.938878",
-        "name": "Arm Home",
-        "server": "b130c189.ea4d2",
-        "deviceId": "86",
-        "command": "home",
-        "commandArgs": "",
-        "x": 910,
-        "y": 120,
-        "wires": [
-            [
-                "ed6818c5.fee708"
-            ]
-        ]
-    },
-    {
-        "id": "ed6818c5.fee708",
-        "type": "hubitat command",
-        "z": "dc9b45b2.938878",
-        "name": "Poll Simplisafe",
-        "server": "b130c189.ea4d2",
-        "deviceId": "86",
-        "command": "poll",
-        "commandArgs": "",
-        "x": 420,
-        "y": 120,
-        "wires": [
-            [
-                "d7892321.e2b98"
-            ]
         ]
     },
     {
@@ -1053,7 +633,7 @@
         "command": "on",
         "commandArgs": "",
         "x": 730,
-        "y": 280,
+        "y": 300,
         "wires": [
             []
         ]
@@ -1228,35 +808,13 @@
         "info": "Great Room - G090U509912423CC\nDownstairs Bedroom 1 - G6G0XG100134018V\nDownstairs Bedroom 2 - G090U509912424HF\nKitchen - G090U5099117264T\nMaster Bedroom - G090U509911620T7"
     },
     {
-        "id": "798c588f.3a2d78",
-        "type": "subflow:cb4b5b0a.f09b68",
-        "z": "dc9b45b2.938878",
-        "name": "",
-        "x": 200,
-        "y": 260,
-        "wires": [
-            [
-                "ee9aa27c.9b7d4"
-            ],
-            [
-                "d0e446a9.3e6498"
-            ],
-            [
-                "a13fab3e.e16218"
-            ],
-            [
-                "676dc02e.04bd3"
-            ]
-        ]
-    },
-    {
         "id": "df44fb1a.f08208",
         "type": "subflow:cb4b5b0a.f09b68",
         "z": "68ba5945.906288",
         "name": "",
         "env": [],
-        "x": 580,
-        "y": 300,
+        "x": 560,
+        "y": 280,
         "wires": [
             [
                 "1737ebff.565734"
@@ -1277,8 +835,8 @@
         "type": "subflow:cb4b5b0a.f09b68",
         "z": "68ba5945.906288",
         "name": "",
-        "x": 580,
-        "y": 460,
+        "x": 560,
+        "y": 520,
         "wires": [
             [
                 "cd66091.af90cf8"
@@ -1291,199 +849,6 @@
             ],
             [
                 "5b9d4c70.22d984"
-            ]
-        ]
-    },
-    {
-        "id": "66c6aa71.bc40a4",
-        "type": "subflow:cb4b5b0a.f09b68",
-        "z": "66f36db9.365884",
-        "name": "",
-        "env": [],
-        "x": 620,
-        "y": 120,
-        "wires": [
-            [
-                "a1c2a3cc.4745f"
-            ],
-            [
-                "4eb34c1f.94c0a4"
-            ],
-            [
-                "fbbd97e6.2a95c8"
-            ],
-            [
-                "730f227.163d8dc"
-            ]
-        ]
-    },
-    {
-        "id": "3a462ae9.3f3386",
-        "type": "subflow:cb4b5b0a.f09b68",
-        "z": "66f36db9.365884",
-        "name": "",
-        "x": 620,
-        "y": 320,
-        "wires": [
-            [
-                "e2c5e027.3d79"
-            ],
-            [
-                "64ce407a.dd3d5"
-            ],
-            [
-                "76e93b52.a451d4"
-            ],
-            [
-                "5cff849e.54edec"
-            ]
-        ]
-    },
-    {
-        "id": "3589b155.2d1cae",
-        "type": "hubitat mode",
-        "z": "dc9b45b2.938878",
-        "name": "",
-        "server": "b130c189.ea4d2",
-        "sendEvent": false,
-        "x": 570,
-        "y": 200,
-        "wires": [
-            [
-                "ae2d58ea.4b6dd8"
-            ]
-        ]
-    },
-    {
-        "id": "ae2d58ea.4b6dd8",
-        "type": "switch",
-        "z": "dc9b45b2.938878",
-        "name": "!night",
-        "property": "payload.value",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "neq",
-                "v": "Night",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 690,
-        "y": 200,
-        "wires": [
-            [
-                "f5405e7e.7fc3e"
-            ]
-        ]
-    },
-    {
-        "id": "fb257009.d258e",
-        "type": "hubitat mode",
-        "z": "dc9b45b2.938878",
-        "name": "",
-        "server": "b130c189.ea4d2",
-        "sendEvent": false,
-        "x": 570,
-        "y": 320,
-        "wires": [
-            [
-                "25c27c85.838f84"
-            ]
-        ]
-    },
-    {
-        "id": "25c27c85.838f84",
-        "type": "switch",
-        "z": "dc9b45b2.938878",
-        "name": "!night",
-        "property": "payload.value",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "neq",
-                "v": "Night",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 690,
-        "y": 320,
-        "wires": [
-            [
-                "db205b6f.2dd928"
-            ]
-        ]
-    },
-    {
-        "id": "ee9aa27c.9b7d4",
-        "type": "hubitat command",
-        "z": "dc9b45b2.938878",
-        "name": "GR - Lights Off",
-        "server": "b130c189.ea4d2",
-        "deviceId": "67",
-        "command": "off",
-        "commandArgs": "",
-        "x": 420,
-        "y": 200,
-        "wires": [
-            [
-                "3589b155.2d1cae"
-            ]
-        ]
-    },
-    {
-        "id": "d0e446a9.3e6498",
-        "type": "hubitat command",
-        "z": "dc9b45b2.938878",
-        "name": "DB - Lights Off",
-        "server": "b130c189.ea4d2",
-        "deviceId": "69",
-        "command": "off",
-        "commandArgs": "",
-        "x": 420,
-        "y": 240,
-        "wires": [
-            [
-                "10aff0d8.39ffdf"
-            ]
-        ]
-    },
-    {
-        "id": "a13fab3e.e16218",
-        "type": "hubitat command",
-        "z": "dc9b45b2.938878",
-        "name": "KT - Lights Off",
-        "server": "b130c189.ea4d2",
-        "deviceId": "68",
-        "command": "off",
-        "commandArgs": "",
-        "x": 420,
-        "y": 280,
-        "wires": [
-            [
-                "7c0be134.4c6ef"
-            ]
-        ]
-    },
-    {
-        "id": "676dc02e.04bd3",
-        "type": "hubitat command",
-        "z": "dc9b45b2.938878",
-        "name": "MB - Lights Off",
-        "server": "b130c189.ea4d2",
-        "deviceId": "501",
-        "command": "off",
-        "commandArgs": "",
-        "x": 420,
-        "y": 320,
-        "wires": [
-            [
-                "fb257009.d258e"
             ]
         ]
     },
@@ -1679,12 +1044,12 @@
         "id": "8e74d342.066a6",
         "type": "hubitat command",
         "z": "345f283.d5796d8",
-        "name": "DB - Set Poll Interval",
+        "name": "DB - Kasa Dimmer",
         "server": "b130c189.ea4d2",
         "deviceId": "69",
         "command": "setPollInterval",
         "commandArgs": "5",
-        "x": 360,
+        "x": 370,
         "y": 220,
         "wires": [
             []
@@ -1694,13 +1059,13 @@
         "id": "9672e767.fceda8",
         "type": "hubitat command",
         "z": "345f283.d5796d8",
-        "name": "GR - Set Poll Interval",
+        "name": "GR - Kasa Dimmer",
         "server": "b130c189.ea4d2",
         "deviceId": "67",
         "command": "setPollInterval",
         "commandArgs": "5",
-        "x": 360,
-        "y": 260,
+        "x": 370,
+        "y": 280,
         "wires": [
             []
         ]
@@ -1709,13 +1074,13 @@
         "id": "2d2a8e8.4a5c572",
         "type": "hubitat command",
         "z": "345f283.d5796d8",
-        "name": "DB - Preset Level",
+        "name": "DB - Kasa Dimmer",
         "server": "b130c189.ea4d2",
         "deviceId": "69",
         "command": "presetLevel",
         "commandArgs": "",
         "x": 730,
-        "y": 320,
+        "y": 280,
         "wires": [
             []
         ]
@@ -1724,13 +1089,13 @@
         "id": "c02cfc03.3f358",
         "type": "hubitat command",
         "z": "345f283.d5796d8",
-        "name": "GR - Preset Level",
+        "name": "GR - Kasa Dimmer",
         "server": "b130c189.ea4d2",
         "deviceId": "67",
         "command": "presetLevel",
         "commandArgs": "",
         "x": 730,
-        "y": 360,
+        "y": 340,
         "wires": [
             []
         ]
@@ -1739,7 +1104,7 @@
         "id": "e1bf2646.a068a8",
         "type": "hubitat command",
         "z": "345f283.d5796d8",
-        "name": "KT - Preset Level",
+        "name": "KT - Kasa Dimmer",
         "server": "b130c189.ea4d2",
         "deviceId": "68",
         "command": "presetLevel",
@@ -1771,7 +1136,7 @@
             }
         },
         "x": 730,
-        "y": 100,
+        "y": 60,
         "wires": [
             []
         ]
@@ -1797,7 +1162,7 @@
             }
         },
         "x": 730,
-        "y": 140,
+        "y": 100,
         "wires": [
             []
         ]
@@ -1823,7 +1188,7 @@
             }
         },
         "x": 740,
-        "y": 180,
+        "y": 140,
         "wires": [
             []
         ]
@@ -1849,7 +1214,7 @@
             }
         },
         "x": 740,
-        "y": 220,
+        "y": 180,
         "wires": [
             []
         ]
@@ -1875,92 +1240,9 @@
             }
         },
         "x": 730,
-        "y": 260,
+        "y": 220,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "276b17b6.7c7328",
-        "type": "hubitat command",
-        "z": "dc9b45b2.938878",
-        "name": "GR - Motion Detection On",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1377",
-        "command": "on",
-        "commandArgs": "",
-        "x": 450,
-        "y": 380,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "7a04cd58.1ba754",
-        "type": "hubitat command",
-        "z": "dc9b45b2.938878",
-        "name": "DB - Motion Detection On",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1352",
-        "command": "on",
-        "commandArgs": "",
-        "x": 450,
-        "y": 420,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "5ff24605.db7248",
-        "type": "hubitat command",
-        "z": "dc9b45b2.938878",
-        "name": "KT - Motion Detection On",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1351",
-        "command": "on",
-        "commandArgs": "",
-        "x": 450,
-        "y": 460,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "753e5aa2.1c47d4",
-        "type": "hubitat command",
-        "z": "dc9b45b2.938878",
-        "name": "MB - Motion Detection On",
-        "server": "b130c189.ea4d2",
-        "deviceId": "385",
-        "command": "on",
-        "commandArgs": "",
-        "x": 450,
-        "y": 500,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "3bea0423.1031ec",
-        "type": "subflow:cb4b5b0a.f09b68",
-        "z": "dc9b45b2.938878",
-        "name": "",
-        "env": [],
-        "x": 200,
-        "y": 440,
-        "wires": [
-            [
-                "276b17b6.7c7328"
-            ],
-            [
-                "7a04cd58.1ba754"
-            ],
-            [
-                "5ff24605.db7248"
-            ],
-            [
-                "753e5aa2.1c47d4"
-            ]
         ]
     },
     {
@@ -2104,12 +1386,12 @@
         "id": "7d147fb3.279c5",
         "type": "hubitat command",
         "z": "68ba5945.906288",
-        "name": "MB - Heater/Fan On",
+        "name": "MB - Heater/Fan",
         "server": "b130c189.ea4d2",
         "deviceId": "66",
         "command": "on",
         "commandArgs": "",
-        "x": 820,
+        "x": 800,
         "y": 100,
         "wires": [
             []
@@ -2119,12 +1401,12 @@
         "id": "b02ae8f9.a1d848",
         "type": "hubitat command",
         "z": "68ba5945.906288",
-        "name": "MB - Heater/Fan Off",
+        "name": "MB - Heater/Fan",
         "server": "b130c189.ea4d2",
         "deviceId": "66",
         "command": "off",
         "commandArgs": "",
-        "x": 820,
+        "x": 800,
         "y": 180,
         "wires": [
             []
@@ -2134,13 +1416,13 @@
         "id": "9f83e2cc.07492",
         "type": "hubitat command",
         "z": "345f283.d5796d8",
-        "name": "KT - Set Poll Interval",
+        "name": "KT - Kasa Dimmer",
         "server": "b130c189.ea4d2",
         "deviceId": "68",
         "command": "setPollInterval",
         "commandArgs": "5",
-        "x": 360,
-        "y": 300,
+        "x": 370,
+        "y": 340,
         "wires": [
             []
         ]
@@ -2149,13 +1431,13 @@
         "id": "831fec5d.5f762",
         "type": "hubitat command",
         "z": "345f283.d5796d8",
-        "name": "GR - Motion Detection On",
+        "name": "GR - Motion Detection",
         "server": "b130c189.ea4d2",
         "deviceId": "1377",
         "command": "on",
         "commandArgs": "",
-        "x": 750,
-        "y": 460,
+        "x": 740,
+        "y": 480,
         "wires": [
             []
         ]
@@ -2164,13 +1446,13 @@
         "id": "c4b7b654.a635e8",
         "type": "hubitat command",
         "z": "345f283.d5796d8",
-        "name": "KT - Motion Detection On",
+        "name": "KT - Motion Detection",
         "server": "b130c189.ea4d2",
         "deviceId": "1351",
         "command": "on",
         "commandArgs": "",
-        "x": 750,
-        "y": 500,
+        "x": 740,
+        "y": 540,
         "wires": [
             []
         ]
@@ -2179,13 +1461,13 @@
         "id": "8987899c.d65958",
         "type": "hubitat command",
         "z": "345f283.d5796d8",
-        "name": "MB - Motion Detection On",
+        "name": "MB - Motion Detection",
         "server": "b130c189.ea4d2",
         "deviceId": "385",
         "command": "on",
         "commandArgs": "",
-        "x": 750,
-        "y": 540,
+        "x": 740,
+        "y": 600,
         "wires": [
             []
         ]
@@ -2208,7 +1490,7 @@
         "to": "",
         "reg": false,
         "x": 570,
-        "y": 500,
+        "y": 540,
         "wires": [
             [
                 "831fec5d.5f762",
@@ -2929,56 +2211,6 @@
         ]
     },
     {
-        "id": "d6bbae7b.f27e7",
-        "type": "switch",
-        "z": "66f36db9.365884",
-        "name": "Wake Handler",
-        "property": "payload.domainAttributes",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "null",
-                "vt": "jsonata"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 140,
-        "y": 120,
-        "wires": [
-            [
-                "a752c08d.6cd72"
-            ]
-        ]
-    },
-    {
-        "id": "9f42114d.0e794",
-        "type": "switch",
-        "z": "dc9b45b2.938878",
-        "name": "Wake Handler",
-        "property": "payload.domainAttributes",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "null",
-                "vt": "jsonata"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 140,
-        "y": 120,
-        "wires": [
-            [
-                "877751fb.e46e3"
-            ]
-        ]
-    },
-    {
         "id": "1c34efac.1fc57",
         "type": "switch",
         "z": "68ba5945.906288",
@@ -3602,14 +2834,16 @@
                 "87177829.799d98",
                 "e4c569a1.755d98",
                 "cfeb43bf.07772",
-                "db41473e.5574e8"
+                "db41473e.5574e8",
+                "c7e6bc92.df8ea"
             ],
             [
                 "4fa7d080.e694f",
                 "87177829.799d98",
                 "e4c569a1.755d98",
                 "cfeb43bf.07772",
-                "db41473e.5574e8"
+                "db41473e.5574e8",
+                "42314d69.d59214"
             ],
             [
                 "e1bf2646.a068a8",
@@ -3854,6 +3088,871 @@
         "wires": [
             [
                 "ed40bc41.95a34"
+            ]
+        ]
+    },
+    {
+        "id": "2bb7e3e6.86d69c",
+        "type": "comment",
+        "z": "f3e4e663.9ecbb8",
+        "name": "Generate Teleporter Backup Address",
+        "info": "Needs cookie -http://192.168.2.253/admin/scripts/pi-hole/php/teleporter.php",
+        "x": 450,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "bfe92a56.a7a0a8",
+        "type": "hubitat command",
+        "z": "345f283.d5796d8",
+        "name": "MB - Motion Detection",
+        "server": "b130c189.ea4d2",
+        "deviceId": "385",
+        "command": "off",
+        "commandArgs": "",
+        "x": 740,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "315c6b22.c39a64",
+        "type": "hubitat command",
+        "z": "345f283.d5796d8",
+        "name": "MB - Motion Detection",
+        "server": "b130c189.ea4d2",
+        "deviceId": "385",
+        "command": "on",
+        "commandArgs": "",
+        "x": 740,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c7e6bc92.df8ea",
+        "type": "change",
+        "z": "345f283.d5796d8",
+        "name": "arg fix",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "arguments",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 570,
+        "y": 660,
+        "wires": [
+            [
+                "bfe92a56.a7a0a8"
+            ]
+        ]
+    },
+    {
+        "id": "42314d69.d59214",
+        "type": "change",
+        "z": "345f283.d5796d8",
+        "name": "arg fix",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "arguments",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 570,
+        "y": 720,
+        "wires": [
+            [
+                "315c6b22.c39a64"
+            ]
+        ]
+    },
+    {
+        "id": "b663b6cf.389378",
+        "type": "alexa-remote-event",
+        "z": "73f998b9.8842a8",
+        "name": "",
+        "account": "4553eef5.ffc05",
+        "event": "ws-device-activity",
+        "x": 130,
+        "y": 60,
+        "wires": [
+            [
+                "10178a52.b714a6"
+            ]
+        ]
+    },
+    {
+        "id": "e96cba5a.0480d8",
+        "type": "switch",
+        "z": "73f998b9.8842a8",
+        "name": "Phrase Handler",
+        "property": "payload.description.summary",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "regex",
+                "v": "good( )?night",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "good( )?morning",
+                "vt": "str",
+                "case": false
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 140,
+        "y": 180,
+        "wires": [
+            [
+                "1f860f1a.769fd1",
+                "94023e4c.b2b4d",
+                "19d3d5eb.74bf0a"
+            ],
+            [
+                "6b1eb982.8dcaf8"
+            ]
+        ]
+    },
+    {
+        "id": "9cb3b387.dc6da",
+        "type": "hubitat command",
+        "z": "73f998b9.8842a8",
+        "name": "GR - Motion Detection",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1377",
+        "command": "off",
+        "commandArgs": "",
+        "x": 870,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "33f5a68d.21358a",
+        "type": "hubitat command",
+        "z": "73f998b9.8842a8",
+        "name": "DB - Motion Detection",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1352",
+        "command": "off",
+        "commandArgs": "",
+        "x": 870,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "901f1a7f.229298",
+        "type": "hubitat command",
+        "z": "73f998b9.8842a8",
+        "name": "KT - Motion Detection",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1351",
+        "command": "off",
+        "commandArgs": "",
+        "x": 870,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "47080bca.7ec5c4",
+        "type": "hubitat command",
+        "z": "73f998b9.8842a8",
+        "name": "MB - Motion Detection",
+        "server": "b130c189.ea4d2",
+        "deviceId": "385",
+        "command": "off",
+        "commandArgs": "",
+        "x": 870,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1f860f1a.769fd1",
+        "type": "hubitat command",
+        "z": "73f998b9.8842a8",
+        "name": "Back Door August Pro (Reliable)",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1441",
+        "command": "lock",
+        "commandArgs": "",
+        "x": 470,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ed251d47.20d8e",
+        "type": "hubitat device",
+        "z": "73f998b9.8842a8",
+        "name": "Simplisafe Status",
+        "server": "b130c189.ea4d2",
+        "deviceId": "86",
+        "attribute": "",
+        "sendEvent": false,
+        "x": 610,
+        "y": 120,
+        "wires": [
+            [
+                "cab7e870.5e4e98"
+            ]
+        ]
+    },
+    {
+        "id": "cab7e870.5e4e98",
+        "type": "switch",
+        "z": "73f998b9.8842a8",
+        "name": "if OFF",
+        "property": "payload.alarm.currentValue",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "OFF",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 770,
+        "y": 120,
+        "wires": [
+            [
+                "7896d4be.8fce0c"
+            ]
+        ]
+    },
+    {
+        "id": "7896d4be.8fce0c",
+        "type": "hubitat command",
+        "z": "73f998b9.8842a8",
+        "name": "Simplisafe Arm",
+        "server": "b130c189.ea4d2",
+        "deviceId": "86",
+        "command": "home",
+        "commandArgs": "",
+        "x": 920,
+        "y": 120,
+        "wires": [
+            [
+                "94023e4c.b2b4d"
+            ]
+        ]
+    },
+    {
+        "id": "94023e4c.b2b4d",
+        "type": "hubitat command",
+        "z": "73f998b9.8842a8",
+        "name": "Simplisafe",
+        "server": "b130c189.ea4d2",
+        "deviceId": "86",
+        "command": "poll",
+        "commandArgs": "",
+        "x": 410,
+        "y": 120,
+        "wires": [
+            [
+                "ed251d47.20d8e"
+            ]
+        ]
+    },
+    {
+        "id": "19d3d5eb.74bf0a",
+        "type": "subflow:cb4b5b0a.f09b68",
+        "z": "73f998b9.8842a8",
+        "name": "",
+        "x": 180,
+        "y": 360,
+        "wires": [
+            [
+                "410479d9.0625d8"
+            ],
+            [
+                "be21259d.1ec948"
+            ],
+            [
+                "62e2193c.2b9368"
+            ],
+            [
+                "14b0e991.d2c5a6"
+            ]
+        ]
+    },
+    {
+        "id": "7bdd715.d136d9",
+        "type": "hubitat mode",
+        "z": "73f998b9.8842a8",
+        "name": "",
+        "server": "b130c189.ea4d2",
+        "sendEvent": false,
+        "x": 570,
+        "y": 200,
+        "wires": [
+            [
+                "91cb62f.dc5b0a"
+            ]
+        ]
+    },
+    {
+        "id": "91cb62f.dc5b0a",
+        "type": "switch",
+        "z": "73f998b9.8842a8",
+        "name": "!night",
+        "property": "payload.value",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "Night",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 690,
+        "y": 200,
+        "wires": [
+            [
+                "9cb3b387.dc6da"
+            ]
+        ]
+    },
+    {
+        "id": "9c6cab25.ff2de8",
+        "type": "hubitat mode",
+        "z": "73f998b9.8842a8",
+        "name": "",
+        "server": "b130c189.ea4d2",
+        "sendEvent": false,
+        "x": 570,
+        "y": 380,
+        "wires": [
+            [
+                "314b1149.45429e"
+            ]
+        ]
+    },
+    {
+        "id": "314b1149.45429e",
+        "type": "switch",
+        "z": "73f998b9.8842a8",
+        "name": "!night",
+        "property": "payload.value",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "Night",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 690,
+        "y": 380,
+        "wires": [
+            [
+                "47080bca.7ec5c4"
+            ]
+        ]
+    },
+    {
+        "id": "410479d9.0625d8",
+        "type": "hubitat command",
+        "z": "73f998b9.8842a8",
+        "name": "GR - Lights",
+        "server": "b130c189.ea4d2",
+        "deviceId": "67",
+        "command": "off",
+        "commandArgs": "",
+        "x": 420,
+        "y": 200,
+        "wires": [
+            [
+                "7bdd715.d136d9"
+            ]
+        ]
+    },
+    {
+        "id": "be21259d.1ec948",
+        "type": "hubitat command",
+        "z": "73f998b9.8842a8",
+        "name": "DB - Lights",
+        "server": "b130c189.ea4d2",
+        "deviceId": "69",
+        "command": "off",
+        "commandArgs": "",
+        "x": 420,
+        "y": 260,
+        "wires": [
+            [
+                "33f5a68d.21358a"
+            ]
+        ]
+    },
+    {
+        "id": "62e2193c.2b9368",
+        "type": "hubitat command",
+        "z": "73f998b9.8842a8",
+        "name": "KT - Lights",
+        "server": "b130c189.ea4d2",
+        "deviceId": "68",
+        "command": "off",
+        "commandArgs": "",
+        "x": 420,
+        "y": 320,
+        "wires": [
+            [
+                "901f1a7f.229298"
+            ]
+        ]
+    },
+    {
+        "id": "14b0e991.d2c5a6",
+        "type": "hubitat command",
+        "z": "73f998b9.8842a8",
+        "name": "MB - Lights",
+        "server": "b130c189.ea4d2",
+        "deviceId": "501",
+        "command": "off",
+        "commandArgs": "",
+        "x": 420,
+        "y": 380,
+        "wires": [
+            [
+                "9c6cab25.ff2de8"
+            ]
+        ]
+    },
+    {
+        "id": "e87b6f2.9c7329",
+        "type": "hubitat command",
+        "z": "73f998b9.8842a8",
+        "name": "GR - Motion Detection",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1377",
+        "command": "on",
+        "commandArgs": "",
+        "x": 450,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7d33fcce.8c2964",
+        "type": "hubitat command",
+        "z": "73f998b9.8842a8",
+        "name": "DB - Motion Detection",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1352",
+        "command": "on",
+        "commandArgs": "",
+        "x": 450,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f8082117.809db",
+        "type": "hubitat command",
+        "z": "73f998b9.8842a8",
+        "name": "KT - Motion Detection",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1351",
+        "command": "on",
+        "commandArgs": "",
+        "x": 450,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "53eab9ae.4e62e8",
+        "type": "hubitat command",
+        "z": "73f998b9.8842a8",
+        "name": "MB - Motion Detection",
+        "server": "b130c189.ea4d2",
+        "deviceId": "385",
+        "command": "on",
+        "commandArgs": "",
+        "x": 450,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6b1eb982.8dcaf8",
+        "type": "subflow:cb4b5b0a.f09b68",
+        "z": "73f998b9.8842a8",
+        "name": "",
+        "env": [],
+        "x": 180,
+        "y": 620,
+        "wires": [
+            [
+                "e87b6f2.9c7329"
+            ],
+            [
+                "7d33fcce.8c2964"
+            ],
+            [
+                "f8082117.809db"
+            ],
+            [
+                "53eab9ae.4e62e8"
+            ]
+        ]
+    },
+    {
+        "id": "10178a52.b714a6",
+        "type": "switch",
+        "z": "73f998b9.8842a8",
+        "name": "Wake Handler",
+        "property": "payload.domainAttributes",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "null",
+                "vt": "jsonata"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 140,
+        "y": 120,
+        "wires": [
+            [
+                "e96cba5a.0480d8"
+            ]
+        ]
+    },
+    {
+        "id": "2cb4155c.cce7fa",
+        "type": "switch",
+        "z": "5c3cd757.a086c8",
+        "name": "Phrase Handler",
+        "property": "payload.description.summary",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "regex",
+                "v": "disable (the )?motion sensor",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "disable (the )?motion sensing",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "turn off (the )?motion sensor",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "turn off (the )?motion sensing",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "enable (the )?motion sensor",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "turn on (the )?motion sensor",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "turn on (the )?motion sensing",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "enable (the )?motion sensing",
+                "vt": "str",
+                "case": false
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 8,
+        "x": 360,
+        "y": 200,
+        "wires": [
+            [
+                "2d0e707f.31733"
+            ],
+            [
+                "2d0e707f.31733"
+            ],
+            [
+                "2d0e707f.31733"
+            ],
+            [
+                "2d0e707f.31733"
+            ],
+            [
+                "c97a0e5a.2dbbd"
+            ],
+            [
+                "c97a0e5a.2dbbd"
+            ],
+            [
+                "c97a0e5a.2dbbd"
+            ],
+            [
+                "c97a0e5a.2dbbd"
+            ]
+        ]
+    },
+    {
+        "id": "a17b47a4.460078",
+        "type": "hubitat command",
+        "z": "5c3cd757.a086c8",
+        "name": "GR - Motion Detection",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1377",
+        "command": "off",
+        "commandArgs": "",
+        "x": 870,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e05642db.52579",
+        "type": "hubitat command",
+        "z": "5c3cd757.a086c8",
+        "name": "DB - Motion Detection",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1352",
+        "command": "off",
+        "commandArgs": "",
+        "x": 870,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cb47b315.09e5d",
+        "type": "hubitat command",
+        "z": "5c3cd757.a086c8",
+        "name": "KT - Motion Detection",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1351",
+        "command": "off",
+        "commandArgs": "",
+        "x": 870,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8f0bcf48.a54aa",
+        "type": "hubitat command",
+        "z": "5c3cd757.a086c8",
+        "name": "MB - Motion Detection",
+        "server": "b130c189.ea4d2",
+        "deviceId": "385",
+        "command": "off",
+        "commandArgs": "",
+        "x": 870,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "42660c0d.123e94",
+        "type": "hubitat command",
+        "z": "5c3cd757.a086c8",
+        "name": "GR - Motion Detection",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1377",
+        "command": "on",
+        "commandArgs": "",
+        "x": 870,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d992582.db679a8",
+        "type": "hubitat command",
+        "z": "5c3cd757.a086c8",
+        "name": "DB - Motion Detection",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1352",
+        "command": "on",
+        "commandArgs": "",
+        "x": 870,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1f9824a1.aebd7b",
+        "type": "hubitat command",
+        "z": "5c3cd757.a086c8",
+        "name": "KT - Motion Detection",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1351",
+        "command": "on",
+        "commandArgs": "",
+        "x": 870,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "daaeaf91.84a0b",
+        "type": "hubitat command",
+        "z": "5c3cd757.a086c8",
+        "name": "MB - Motion Detection",
+        "server": "b130c189.ea4d2",
+        "deviceId": "385",
+        "command": "on",
+        "commandArgs": "",
+        "x": 870,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c88f961b.aa6f68",
+        "type": "alexa-remote-event",
+        "z": "5c3cd757.a086c8",
+        "name": "",
+        "account": "4553eef5.ffc05",
+        "event": "ws-device-activity",
+        "x": 130,
+        "y": 60,
+        "wires": [
+            [
+                "f8fadc39.24a54"
+            ]
+        ]
+    },
+    {
+        "id": "2d0e707f.31733",
+        "type": "subflow:cb4b5b0a.f09b68",
+        "z": "5c3cd757.a086c8",
+        "name": "",
+        "env": [],
+        "x": 600,
+        "y": 80,
+        "wires": [
+            [
+                "a17b47a4.460078"
+            ],
+            [
+                "e05642db.52579"
+            ],
+            [
+                "cb47b315.09e5d"
+            ],
+            [
+                "8f0bcf48.a54aa"
+            ]
+        ]
+    },
+    {
+        "id": "c97a0e5a.2dbbd",
+        "type": "subflow:cb4b5b0a.f09b68",
+        "z": "5c3cd757.a086c8",
+        "name": "",
+        "x": 600,
+        "y": 340,
+        "wires": [
+            [
+                "42660c0d.123e94"
+            ],
+            [
+                "d992582.db679a8"
+            ],
+            [
+                "1f9824a1.aebd7b"
+            ],
+            [
+                "daaeaf91.84a0b"
+            ]
+        ]
+    },
+    {
+        "id": "f8fadc39.24a54",
+        "type": "switch",
+        "z": "5c3cd757.a086c8",
+        "name": "Wake Handler",
+        "property": "payload.domainAttributes",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "null",
+                "vt": "jsonata"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 140,
+        "y": 120,
+        "wires": [
+            [
+                "2cb4155c.cce7fa"
             ]
         ]
     }
