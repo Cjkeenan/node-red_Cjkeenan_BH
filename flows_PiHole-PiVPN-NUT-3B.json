@@ -56,6 +56,20 @@
         "info": ""
     },
     {
+        "id": "116ef4ea.86891b",
+        "type": "tab",
+        "label": "Brandon's Template",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "e1557285.e3f86",
+        "type": "tab",
+        "label": "La France",
+        "disabled": false,
+        "info": ""
+    },
+    {
         "id": "cb4b5b0a.f09b68",
         "type": "subflow",
         "name": "Alexa Device Handler",
@@ -129,7 +143,7 @@
             "Kitchen",
             "Master Bedroom"
         ],
-        "icon": "node-red-contrib-alexa-remote2/alexa-remote-icon.png"
+        "icon": "node-red-contrib-hubitat/device.svg"
     },
     {
         "id": "ac12c9d8.613d38",
@@ -188,6 +202,45 @@
             "Night"
         ],
         "icon": "node-red/leveldb.png"
+    },
+    {
+        "id": "5618f29.6116b0c",
+        "type": "subflow",
+        "name": "Get Echo Serials",
+        "info": "This subflow gets the serial numbers and names for all echo devices",
+        "category": "alexa",
+        "in": [
+            {
+                "x": 320,
+                "y": 300,
+                "wires": [
+                    {
+                        "id": "2cb2a0cf.6c3d2"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1120,
+                "y": 300,
+                "wires": [
+                    {
+                        "id": "13cd680f.9ca1e8",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "color": "#6FBAD8",
+        "inputLabels": [
+            "Trigger"
+        ],
+        "outputLabels": [
+            "Names/Serials"
+        ],
+        "icon": "node-red/hash.svg"
     },
     {
         "id": "b130c189.ea4d2",
@@ -348,6 +401,37 @@
         "order": 1,
         "disabled": false,
         "hidden": false
+    },
+    {
+        "id": "d452a9d3.7a4488",
+        "type": "alexa-remote-account",
+        "z": "",
+        "name": "La France Alexa Account",
+        "authMethod": "proxy",
+        "proxyOwnIp": "192.168.2.253",
+        "proxyPort": "3456",
+        "cookieFile": "LFauthFile",
+        "refreshInterval": "3",
+        "alexaServiceHost": "pitangui.amazon.com",
+        "amazonPage": "amazon.com",
+        "acceptLanguage": "en-US",
+        "userAgent": "",
+        "useWsMqtt": "on",
+        "autoInit": "on"
+    },
+    {
+        "id": "433a14d5.44c6dc",
+        "type": "position-config",
+        "z": 0,
+        "name": "La France",
+        "isValide": "true",
+        "longitude": "0",
+        "latitude": "0",
+        "angleType": "deg",
+        "timeZoneOffset": "99",
+        "timeZoneDST": "0",
+        "stateTimeFormat": "3",
+        "stateDateFormat": "12"
     },
     {
         "id": "c4c56729.96e518",
@@ -1354,7 +1438,7 @@
         "type": "subflow:cb4b5b0a.f09b68",
         "z": "68ba5945.906288",
         "name": "",
-        "x": 580,
+        "x": 560,
         "y": 80,
         "wires": [
             [],
@@ -1371,7 +1455,7 @@
         "z": "68ba5945.906288",
         "name": "",
         "env": [],
-        "x": 580,
+        "x": 560,
         "y": 160,
         "wires": [
             [],
@@ -3954,6 +4038,1078 @@
             [
                 "2cb4155c.cce7fa"
             ]
+        ]
+    },
+    {
+        "id": "897fdfe1.a317a",
+        "type": "inject",
+        "z": "5618f29.6116b0c",
+        "name": "Trigger",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 290,
+        "y": 340,
+        "wires": [
+            [
+                "2cb2a0cf.6c3d2"
+            ]
+        ]
+    },
+    {
+        "id": "2cb2a0cf.6c3d2",
+        "type": "alexa-remote-echo",
+        "z": "5618f29.6116b0c",
+        "name": "",
+        "account": "d452a9d3.7a4488",
+        "config": {
+            "option": "get",
+            "value": {
+                "what": "device",
+                "device": {
+                    "type": "str",
+                    "value": "ALEXA_ALL_DSN"
+                }
+            }
+        },
+        "x": 450,
+        "y": 320,
+        "wires": [
+            [
+                "a007ddb2.26f0d"
+            ]
+        ]
+    },
+    {
+        "id": "a007ddb2.26f0d",
+        "type": "split",
+        "z": "5618f29.6116b0c",
+        "name": "Split Devices",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 630,
+        "y": 320,
+        "wires": [
+            [
+                "b4928870.9ad468"
+            ]
+        ]
+    },
+    {
+        "id": "b4928870.9ad468",
+        "type": "switch",
+        "z": "5618f29.6116b0c",
+        "name": "Filter Echos",
+        "property": "payload.deviceFamily",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "ECHO",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 790,
+        "y": 320,
+        "wires": [
+            [
+                "13cd680f.9ca1e8"
+            ]
+        ]
+    },
+    {
+        "id": "13cd680f.9ca1e8",
+        "type": "change",
+        "z": "5618f29.6116b0c",
+        "name": "Copy Relevant Data",
+        "rules": [
+            {
+                "t": "set",
+                "p": "device.serialNumber",
+                "pt": "msg",
+                "to": "payload.serialNumber",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "device.accountName",
+                "pt": "msg",
+                "to": "payload.accountName",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 980,
+        "y": 320,
+        "wires": [
+            [
+                "cf715b44.69d488"
+            ]
+        ]
+    },
+    {
+        "id": "cf715b44.69d488",
+        "type": "debug",
+        "z": "5618f29.6116b0c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "device",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1170,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "e970ea8b.9fe2c8",
+        "type": "subflow:5618f29.6116b0c",
+        "z": "f3e4e663.9ecbb8",
+        "name": "",
+        "env": [],
+        "x": 610,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e631b298.cd37",
+        "type": "inject",
+        "z": "f3e4e663.9ecbb8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 440,
+        "y": 420,
+        "wires": [
+            [
+                "e970ea8b.9fe2c8"
+            ]
+        ]
+    },
+    {
+        "id": "aa69c09b.970a2",
+        "type": "switch",
+        "z": "116ef4ea.86891b",
+        "name": "Phrase Handler (on/off general)",
+        "property": "payload.description.summary",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "regex",
+                "v": "turn off (the )?lights",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "turn on (the )?lights",
+                "vt": "str",
+                "case": false
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 410,
+        "y": 120,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "4084a695.121078",
+        "type": "alexa-remote-event",
+        "z": "116ef4ea.86891b",
+        "name": "Brandon's Devices",
+        "account": "4553eef5.ffc05",
+        "event": "ws-device-activity",
+        "x": 130,
+        "y": 60,
+        "wires": [
+            [
+                "85210287.bf1ff"
+            ]
+        ]
+    },
+    {
+        "id": "85210287.bf1ff",
+        "type": "switch",
+        "z": "116ef4ea.86891b",
+        "name": "Wake Handler",
+        "property": "payload.domainAttributes",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "null",
+                "vt": "jsonata"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 160,
+        "y": 300,
+        "wires": [
+            [
+                "aa69c09b.970a2",
+                "cc5b377c.34c4e8",
+                "288a9df7.2202d2"
+            ]
+        ]
+    },
+    {
+        "id": "cc5b377c.34c4e8",
+        "type": "switch",
+        "z": "116ef4ea.86891b",
+        "name": "Phrase Handler (off specific)",
+        "property": "payload.description.summary",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "regex",
+                "v": "turn off (the )?downstairs lights",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "turn off (the )?kitchen lights",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "turn off (the )?dining room lights",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "turn off all (the )?lights",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "etc...",
+                "vt": "str",
+                "case": false
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 5,
+        "x": 420,
+        "y": 300,
+        "wires": [
+            [],
+            [],
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "288a9df7.2202d2",
+        "type": "switch",
+        "z": "116ef4ea.86891b",
+        "name": "Phrase Handler (on specific)",
+        "property": "payload.description.summary",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "regex",
+                "v": "turn on (the )?downstairs lights",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "turn on (the )?kitchen lights",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "turn on (the )?dining room lights",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "turn on all (the )?lights",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "etc...",
+                "vt": "str",
+                "case": false
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 5,
+        "x": 420,
+        "y": 540,
+        "wires": [
+            [],
+            [],
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "f5068574.959678",
+        "type": "comment",
+        "z": "116ef4ea.86891b",
+        "name": "Device Handler (Serial Decoder)",
+        "info": "",
+        "x": 710,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "14c9df05.d01f21",
+        "type": "comment",
+        "z": "116ef4ea.86891b",
+        "name": "Device Handler (Serial Decoder)",
+        "info": "",
+        "x": 710,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "49cc1d8.77dfde4",
+        "type": "comment",
+        "z": "116ef4ea.86891b",
+        "name": "Downstairs Actions",
+        "info": "",
+        "x": 670,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "c8f56a2e.6f8628",
+        "type": "comment",
+        "z": "116ef4ea.86891b",
+        "name": "Kitchen Actions",
+        "info": "",
+        "x": 660,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "af561cc6.d04c5",
+        "type": "comment",
+        "z": "116ef4ea.86891b",
+        "name": "Dining Room Actions",
+        "info": "",
+        "x": 670,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "1f03eef2.2253d1",
+        "type": "comment",
+        "z": "116ef4ea.86891b",
+        "name": "All Actions",
+        "info": "",
+        "x": 640,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "9dedb83b.419a18",
+        "type": "comment",
+        "z": "116ef4ea.86891b",
+        "name": "etc...",
+        "info": "",
+        "x": 630,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "2a05c68.61da73a",
+        "type": "comment",
+        "z": "116ef4ea.86891b",
+        "name": "Downstairs Actions",
+        "info": "",
+        "x": 670,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "a984acbc.77b56",
+        "type": "comment",
+        "z": "116ef4ea.86891b",
+        "name": "Kitchen Actions",
+        "info": "",
+        "x": 660,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "8db0484d.9c2a08",
+        "type": "comment",
+        "z": "116ef4ea.86891b",
+        "name": "Dining Room Actions",
+        "info": "",
+        "x": 670,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "d6097de4.a50cd",
+        "type": "comment",
+        "z": "116ef4ea.86891b",
+        "name": "All Actions",
+        "info": "",
+        "x": 640,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "af5b41ea.15581",
+        "type": "comment",
+        "z": "116ef4ea.86891b",
+        "name": "etc...",
+        "info": "",
+        "x": 630,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "39bb0fcb.6ffa5",
+        "type": "alexa-remote-event",
+        "z": "116ef4ea.86891b",
+        "name": "Carter's Devices",
+        "account": "4553eef5.ffc05",
+        "event": "ws-device-activity",
+        "x": 120,
+        "y": 540,
+        "wires": [
+            [
+                "85210287.bf1ff"
+            ]
+        ]
+    },
+    {
+        "id": "6d76fdb7.158094",
+        "type": "subflow:5618f29.6116b0c",
+        "z": "116ef4ea.86891b",
+        "name": "",
+        "x": 440,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fbe443eb.5cf64",
+        "type": "inject",
+        "z": "116ef4ea.86891b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 280,
+        "y": 760,
+        "wires": [
+            [
+                "6d76fdb7.158094"
+            ]
+        ]
+    },
+    {
+        "id": "7be640d3.3a56a",
+        "type": "inject",
+        "z": "116ef4ea.86891b",
+        "name": "Trigger",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 290,
+        "y": 700,
+        "wires": [
+            [
+                "4014e8f4.ee2f58"
+            ]
+        ]
+    },
+    {
+        "id": "4014e8f4.ee2f58",
+        "type": "alexa-remote-echo",
+        "z": "116ef4ea.86891b",
+        "name": "",
+        "account": "4553eef5.ffc05",
+        "config": {
+            "option": "get",
+            "value": {
+                "what": "device",
+                "device": {
+                    "type": "str",
+                    "value": "ALEXA_ALL_DSN"
+                }
+            }
+        },
+        "x": 450,
+        "y": 700,
+        "wires": [
+            [
+                "81b06775.03f508"
+            ]
+        ]
+    },
+    {
+        "id": "81b06775.03f508",
+        "type": "split",
+        "z": "116ef4ea.86891b",
+        "name": "Split Devices",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 630,
+        "y": 700,
+        "wires": [
+            [
+                "16a88faf.02192"
+            ]
+        ]
+    },
+    {
+        "id": "16a88faf.02192",
+        "type": "switch",
+        "z": "116ef4ea.86891b",
+        "name": "Filter Echos",
+        "property": "payload.deviceFamily",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "ECHO",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 790,
+        "y": 700,
+        "wires": [
+            [
+                "9b62d419.598bb8"
+            ]
+        ]
+    },
+    {
+        "id": "9b62d419.598bb8",
+        "type": "change",
+        "z": "116ef4ea.86891b",
+        "name": "Copy Relevant Data",
+        "rules": [
+            {
+                "t": "set",
+                "p": "device.serialNumber",
+                "pt": "msg",
+                "to": "payload.serialNumber",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "device.accountName",
+                "pt": "msg",
+                "to": "payload.accountName",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 980,
+        "y": 700,
+        "wires": [
+            [
+                "1a010d30.7c1fa3"
+            ]
+        ]
+    },
+    {
+        "id": "1a010d30.7c1fa3",
+        "type": "debug",
+        "z": "116ef4ea.86891b",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "device",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1170,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "81c142d1.42856",
+        "type": "subflow:5618f29.6116b0c",
+        "z": "e1557285.e3f86",
+        "name": "",
+        "env": [],
+        "x": 580,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f2d6a1e1.a6f4a",
+        "type": "alexa-remote-smarthome",
+        "z": "e1557285.e3f86",
+        "name": "Fan Day",
+        "account": "d452a9d3.7a4488",
+        "config": {
+            "option": "action",
+            "value": [
+                {
+                    "entity": "03932712-3894-49bb-9505-4d58a8a37f6a",
+                    "action": "sceneActivate"
+                }
+            ]
+        },
+        "outputs": 1,
+        "x": 940,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dffb6a18.069798",
+        "type": "alexa-remote-event",
+        "z": "e1557285.e3f86",
+        "name": "",
+        "account": "d452a9d3.7a4488",
+        "event": "ws-device-activity",
+        "x": 190,
+        "y": 120,
+        "wires": [
+            [
+                "c8fb3c2b.e28c9",
+                "22090c11.1b7344"
+            ]
+        ]
+    },
+    {
+        "id": "5e3acd21.2ce824",
+        "type": "inject",
+        "z": "e1557285.e3f86",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 390,
+        "y": 700,
+        "wires": [
+            [
+                "81c142d1.42856"
+            ]
+        ]
+    },
+    {
+        "id": "e6eb5ab8.3088d8",
+        "type": "alexa-remote-smarthome",
+        "z": "e1557285.e3f86",
+        "name": "Fan Evening",
+        "account": "d452a9d3.7a4488",
+        "config": {
+            "option": "action",
+            "value": [
+                {
+                    "entity": "6b193ce2-f661-4f8d-b30b-e425a81271be",
+                    "action": "sceneActivate"
+                }
+            ]
+        },
+        "outputs": 1,
+        "x": 950,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "73e39005.b9e7e",
+        "type": "alexa-remote-smarthome",
+        "z": "e1557285.e3f86",
+        "name": "Fan Night/Morning",
+        "account": "d452a9d3.7a4488",
+        "config": {
+            "option": "action",
+            "value": [
+                {
+                    "entity": "bd8d9a95-2bc7-4698-bbf7-3cc541f586d3",
+                    "action": "sceneActivate"
+                }
+            ]
+        },
+        "outputs": 1,
+        "x": 970,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "22090c11.1b7344",
+        "type": "switch",
+        "z": "e1557285.e3f86",
+        "name": "Motion Handler",
+        "property": "payload.description.summary",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "what time",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "what date",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 440,
+        "y": 120,
+        "wires": [
+            [
+                "bd227bfd.da22e8",
+                "78903f12.c5128",
+                "2dc7aabb.e7e7b6",
+                "f00d1538.96cb78"
+            ],
+            []
+        ],
+        "outputLabels": [
+            "Motion",
+            "No Motion"
+        ]
+    },
+    {
+        "id": "c8fb3c2b.e28c9",
+        "type": "debug",
+        "z": "e1557285.e3f86",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 170,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "bd227bfd.da22e8",
+        "type": "change",
+        "z": "e1557285.e3f86",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "STOP",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 640,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a3d9aac.9918e58",
+        "type": "alexa-remote-smarthome",
+        "z": "e1557285.e3f86",
+        "name": "Fan Off",
+        "account": "d452a9d3.7a4488",
+        "config": {
+            "option": "action",
+            "value": [
+                {
+                    "entity": "ead47ff6-ccac-4f12-812d-e662dec04bf2",
+                    "action": "sceneActivate"
+                }
+            ]
+        },
+        "outputs": 1,
+        "x": 940,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "78903f12.c5128",
+        "type": "within-time-switch",
+        "z": "e1557285.e3f86",
+        "name": "Day",
+        "nameInt": "",
+        "positionConfig": "433a14d5.44c6dc",
+        "startTime": "goldenHourDawnEnd",
+        "startTimeType": "pdsTime",
+        "startOffset": 0,
+        "startOffsetType": "none",
+        "startOffsetMultiplier": 60000,
+        "endTime": "sunset",
+        "endTimeType": "pdsTime",
+        "endOffset": 0,
+        "endOffsetType": "none",
+        "endOffsetMultiplier": 60000,
+        "timeDays": "*",
+        "timeOnlyOddDays": false,
+        "timeOnlyEvenDays": false,
+        "timeMonths": "*",
+        "timedatestart": "",
+        "timedateend": "",
+        "propertyStart": "",
+        "propertyStartType": "none",
+        "propertyStartCompare": "true",
+        "propertyStartThreshold": "",
+        "propertyStartThresholdType": "num",
+        "startTimeAlt": "",
+        "startTimeAltType": "entered",
+        "startOffsetAlt": 0,
+        "startOffsetAltType": "none",
+        "startOffsetAltMultiplier": 60000,
+        "propertyEnd": "",
+        "propertyEndType": "none",
+        "propertyEndCompare": "true",
+        "propertyEndThreshold": "",
+        "propertyEndThresholdType": "num",
+        "endTimeAlt": "",
+        "endTimeAltType": "entered",
+        "endOffsetAlt": 0,
+        "endOffsetAltType": "none",
+        "endOffsetAltMultiplier": 60000,
+        "tsCompare": "0",
+        "x": 630,
+        "y": 60,
+        "wires": [
+            [
+                "f2d6a1e1.a6f4a"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "2dc7aabb.e7e7b6",
+        "type": "within-time-switch",
+        "z": "e1557285.e3f86",
+        "name": "Evening",
+        "nameInt": "",
+        "positionConfig": "433a14d5.44c6dc",
+        "startTime": "sunset",
+        "startTimeType": "pdsTime",
+        "startOffset": 0,
+        "startOffsetType": "none",
+        "startOffsetMultiplier": 60000,
+        "endTime": "23:59",
+        "endTimeType": "entered",
+        "endOffset": 0,
+        "endOffsetType": "none",
+        "endOffsetMultiplier": 60000,
+        "timeDays": "*",
+        "timeOnlyOddDays": false,
+        "timeOnlyEvenDays": false,
+        "timeMonths": "*",
+        "timedatestart": "",
+        "timedateend": "",
+        "propertyStart": "",
+        "propertyStartType": "none",
+        "propertyStartCompare": "true",
+        "propertyStartThreshold": "",
+        "propertyStartThresholdType": "num",
+        "startTimeAlt": "",
+        "startTimeAltType": "entered",
+        "startOffsetAlt": 0,
+        "startOffsetAltType": "none",
+        "startOffsetAltMultiplier": 60000,
+        "propertyEnd": "",
+        "propertyEndType": "none",
+        "propertyEndCompare": "true",
+        "propertyEndThreshold": "",
+        "propertyEndThresholdType": "num",
+        "endTimeAlt": "",
+        "endTimeAltType": "entered",
+        "endOffsetAlt": 0,
+        "endOffsetAltType": "none",
+        "endOffsetAltMultiplier": 60000,
+        "tsCompare": "0",
+        "x": 640,
+        "y": 100,
+        "wires": [
+            [
+                "e6eb5ab8.3088d8"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "f00d1538.96cb78",
+        "type": "within-time-switch",
+        "z": "e1557285.e3f86",
+        "name": "Night/Morning",
+        "nameInt": "",
+        "positionConfig": "433a14d5.44c6dc",
+        "startTime": "0:00",
+        "startTimeType": "entered",
+        "startOffset": 0,
+        "startOffsetType": "none",
+        "startOffsetMultiplier": 60000,
+        "endTime": "goldenHourDawnEnd",
+        "endTimeType": "pdsTime",
+        "endOffset": 0,
+        "endOffsetType": "none",
+        "endOffsetMultiplier": 60000,
+        "timeDays": "*",
+        "timeOnlyOddDays": false,
+        "timeOnlyEvenDays": false,
+        "timeMonths": "*",
+        "timedatestart": "",
+        "timedateend": "",
+        "propertyStart": "",
+        "propertyStartType": "none",
+        "propertyStartCompare": "true",
+        "propertyStartThreshold": "",
+        "propertyStartThresholdType": "num",
+        "startTimeAlt": "",
+        "startTimeAltType": "entered",
+        "startOffsetAlt": 0,
+        "startOffsetAltType": "none",
+        "startOffsetAltMultiplier": 60000,
+        "propertyEnd": "",
+        "propertyEndType": "none",
+        "propertyEndCompare": "true",
+        "propertyEndThreshold": "",
+        "propertyEndThresholdType": "num",
+        "endTimeAlt": "",
+        "endTimeAltType": "entered",
+        "endOffsetAlt": 0,
+        "endOffsetAltType": "none",
+        "endOffsetAltMultiplier": 60000,
+        "tsCompare": "0",
+        "x": 660,
+        "y": 140,
+        "wires": [
+            [
+                "73e39005.b9e7e"
+            ],
+            []
         ]
     }
 ]
