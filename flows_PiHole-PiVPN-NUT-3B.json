@@ -42,6 +42,13 @@
         "info": ""
     },
     {
+        "id": "7e547b10.f1db64",
+        "type": "tab",
+        "label": "Arlo",
+        "disabled": false,
+        "info": ""
+    },
+    {
         "id": "66eb8402.daa4fc",
         "type": "tab",
         "label": "Speed Test",
@@ -65,7 +72,7 @@
     {
         "id": "e1557285.e3f86",
         "type": "tab",
-        "label": "La France",
+        "label": "LF - Colin's Bedroom",
         "disabled": false,
         "info": ""
     },
@@ -264,7 +271,7 @@
         "authMethod": "proxy",
         "proxyOwnIp": "192.168.2.253",
         "proxyPort": "3456",
-        "cookieFile": "authFile",
+        "cookieFile": "/mnt/dietpi_userdata/node-red/alexaAuth/BH_authFile",
         "refreshInterval": "3",
         "alexaServiceHost": "pitangui.amazon.com",
         "amazonPage": "amazon.com",
@@ -409,8 +416,8 @@
         "name": "La France Alexa Account",
         "authMethod": "proxy",
         "proxyOwnIp": "192.168.2.253",
-        "proxyPort": "3456",
-        "cookieFile": "LFauthFile",
+        "proxyPort": "4567",
+        "cookieFile": "/mnt/dietpi_userdata/node-red/alexaAuth/LF_authFile",
         "refreshInterval": "3",
         "alexaServiceHost": "pitangui.amazon.com",
         "amazonPage": "amazon.com",
@@ -432,6 +439,12 @@
         "timeZoneDST": "0",
         "stateTimeFormat": "3",
         "stateDateFormat": "12"
+    },
+    {
+        "id": "283e8204.4178ae",
+        "type": "arlo-config",
+        "z": "",
+        "name": "KMK Arlo"
     },
     {
         "id": "c4c56729.96e518",
@@ -2062,7 +2075,7 @@
         "type": "file",
         "z": "66eb8402.daa4fc",
         "name": "Speed Test Data Save",
-        "filename": "/home/pi/.node-red/data/speedtest/speedtestData.json",
+        "filename": "/mnt/dietpi_userdata/node-red/data/speedtest/speedtestData.json",
         "appendNewline": false,
         "createDir": true,
         "overwriteFile": "true",
@@ -2094,7 +2107,7 @@
         "type": "file",
         "z": "66eb8402.daa4fc",
         "name": "Speed Test Data Save",
-        "filename": "/home/pi/.node-red/data/speedtest/speedtestDataPD.json",
+        "filename": "/mnt/dietpi_userdata/node-red/data/speedtest/speedtestDataPD.json",
         "appendNewline": false,
         "createDir": true,
         "overwriteFile": "true",
@@ -2125,7 +2138,7 @@
         "type": "file in",
         "z": "66eb8402.daa4fc",
         "name": "Speed Test Data Restore",
-        "filename": "/home/pi/.node-red/data/speedtest/speedtestData.json",
+        "filename": "/mnt/dietpi_userdata/node-red/data/speedtest/speedtestData.json",
         "format": "utf8",
         "x": 750,
         "y": 160,
@@ -2140,7 +2153,7 @@
         "type": "file in",
         "z": "66eb8402.daa4fc",
         "name": "Speed Test Data Restore",
-        "filename": "/home/pi/.node-red/data/speedtest/speedtestDataPD.json",
+        "filename": "/mnt/dietpi_userdata/node-red/data/speedtest/speedtestDataPD.json",
         "format": "utf8",
         "x": 750,
         "y": 200,
@@ -4189,47 +4202,6 @@
         "wires": []
     },
     {
-        "id": "e970ea8b.9fe2c8",
-        "type": "subflow:5618f29.6116b0c",
-        "z": "f3e4e663.9ecbb8",
-        "name": "",
-        "env": [],
-        "x": 610,
-        "y": 420,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "e631b298.cd37",
-        "type": "inject",
-        "z": "f3e4e663.9ecbb8",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 440,
-        "y": 420,
-        "wires": [
-            [
-                "e970ea8b.9fe2c8"
-            ]
-        ]
-    },
-    {
         "id": "aa69c09b.970a2",
         "type": "switch",
         "z": "116ef4ea.86891b",
@@ -4735,8 +4707,8 @@
         "z": "e1557285.e3f86",
         "name": "",
         "env": [],
-        "x": 580,
-        "y": 700,
+        "x": 590,
+        "y": 840,
         "wires": [
             []
         ]
@@ -4757,8 +4729,8 @@
             ]
         },
         "outputs": 1,
-        "x": 940,
-        "y": 80,
+        "x": 1260,
+        "y": 360,
         "wires": [
             []
         ]
@@ -4770,12 +4742,12 @@
         "name": "",
         "account": "d452a9d3.7a4488",
         "event": "ws-device-activity",
-        "x": 190,
-        "y": 120,
+        "x": 150,
+        "y": 240,
         "wires": [
             [
-                "c8fb3c2b.e28c9",
-                "22090c11.1b7344"
+                "5e799950.145b48",
+                "53101c6a.f83a74"
             ]
         ]
     },
@@ -4800,8 +4772,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 390,
-        "y": 700,
+        "x": 400,
+        "y": 840,
         "wires": [
             [
                 "81c142d1.42856"
@@ -4824,8 +4796,8 @@
             ]
         },
         "outputs": 1,
-        "x": 950,
-        "y": 140,
+        "x": 1270,
+        "y": 420,
         "wires": [
             []
         ]
@@ -4846,71 +4818,17 @@
             ]
         },
         "outputs": 1,
-        "x": 970,
-        "y": 200,
+        "x": 1290,
+        "y": 480,
         "wires": [
             []
         ]
-    },
-    {
-        "id": "22090c11.1b7344",
-        "type": "switch",
-        "z": "e1557285.e3f86",
-        "name": "Motion Handler",
-        "property": "payload.description.summary",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "what time",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "what date",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 440,
-        "y": 120,
-        "wires": [
-            [
-                "bd227bfd.da22e8",
-                "78903f12.c5128",
-                "2dc7aabb.e7e7b6",
-                "f00d1538.96cb78"
-            ],
-            []
-        ],
-        "outputLabels": [
-            "Motion",
-            "No Motion"
-        ]
-    },
-    {
-        "id": "c8fb3c2b.e28c9",
-        "type": "debug",
-        "z": "e1557285.e3f86",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 170,
-        "y": 280,
-        "wires": []
     },
     {
         "id": "bd227bfd.da22e8",
         "type": "change",
         "z": "e1557285.e3f86",
-        "name": "",
+        "name": "Stop Motion Timer",
         "rules": [
             {
                 "t": "set",
@@ -4925,10 +4843,13 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 640,
-        "y": 200,
+        "x": 730,
+        "y": 520,
         "wires": [
-            []
+            [
+                "73e39005.b9e7e",
+                "61d3530e.894b9c"
+            ]
         ]
     },
     {
@@ -4947,8 +4868,8 @@
             ]
         },
         "outputs": 1,
-        "x": 940,
-        "y": 280,
+        "x": 1260,
+        "y": 540,
         "wires": [
             []
         ]
@@ -4997,11 +4918,11 @@
         "endOffsetAltType": "none",
         "endOffsetAltMultiplier": 60000,
         "tsCompare": "0",
-        "x": 630,
-        "y": 60,
+        "x": 370,
+        "y": 300,
         "wires": [
             [
-                "f2d6a1e1.a6f4a"
+                "ca260f87.93f17"
             ],
             []
         ]
@@ -5050,11 +4971,11 @@
         "endOffsetAltType": "none",
         "endOffsetAltMultiplier": 60000,
         "tsCompare": "0",
-        "x": 640,
-        "y": 100,
+        "x": 360,
+        "y": 420,
         "wires": [
             [
-                "e6eb5ab8.3088d8"
+                "e6b00e94.ffe8d"
             ],
             []
         ]
@@ -5103,13 +5024,993 @@
         "endOffsetAltType": "none",
         "endOffsetAltMultiplier": 60000,
         "tsCompare": "0",
+        "x": 340,
+        "y": 540,
+        "wires": [
+            [
+                "fc1b8ba1.1f1e08"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "3a9c918f.31e2ee",
+        "type": "arlo-out",
+        "z": "7e547b10.f1db64",
+        "name": "240 Basestation",
+        "service": "283e8204.4178ae",
+        "device": "4R03777PA2C83",
+        "x": 900,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "7e633e33.22216",
+        "type": "hubitat device",
+        "z": "7e547b10.f1db64",
+        "name": "Presence - Brandon",
+        "server": "b130c189.ea4d2",
+        "deviceId": "493",
+        "attribute": "presence",
+        "sendEvent": true,
+        "x": 120,
+        "y": 600,
+        "wires": [
+            [
+                "39b093f4.f5bdbc"
+            ]
+        ]
+    },
+    {
+        "id": "9f7dd1e7.80f0b",
+        "type": "hubitat device",
+        "z": "7e547b10.f1db64",
+        "name": "Presence - Colin",
+        "server": "b130c189.ea4d2",
+        "deviceId": "196",
+        "attribute": "presence",
+        "sendEvent": true,
+        "x": 130,
+        "y": 720,
+        "wires": [
+            [
+                "39b093f4.f5bdbc"
+            ]
+        ]
+    },
+    {
+        "id": "686a0f13.80b6c",
+        "type": "hubitat device",
+        "z": "7e547b10.f1db64",
+        "name": "Presence - Hannah",
+        "server": "b130c189.ea4d2",
+        "deviceId": "494",
+        "attribute": "presence",
+        "sendEvent": true,
+        "x": 130,
+        "y": 660,
+        "wires": [
+            [
+                "39b093f4.f5bdbc"
+            ]
+        ]
+    },
+    {
+        "id": "a12adaac.d9d4b8",
+        "type": "hubitat device",
+        "z": "7e547b10.f1db64",
+        "name": "Presence - Kevin",
+        "server": "b130c189.ea4d2",
+        "deviceId": "199",
+        "attribute": "presence",
+        "sendEvent": true,
+        "x": 130,
+        "y": 360,
+        "wires": [
+            [
+                "39b093f4.f5bdbc"
+            ]
+        ]
+    },
+    {
+        "id": "fb38c864.f5b9d8",
+        "type": "hubitat device",
+        "z": "7e547b10.f1db64",
+        "name": "Presence - Marisa",
+        "server": "b130c189.ea4d2",
+        "deviceId": "496",
+        "attribute": "presence",
+        "sendEvent": true,
+        "x": 130,
+        "y": 540,
+        "wires": [
+            [
+                "39b093f4.f5bdbc"
+            ]
+        ]
+    },
+    {
+        "id": "858d9fbf.b9b2e",
+        "type": "hubitat device",
+        "z": "7e547b10.f1db64",
+        "name": "Presence - Shaun",
+        "server": "b130c189.ea4d2",
+        "deviceId": "495",
+        "attribute": "presence",
+        "sendEvent": true,
+        "x": 130,
+        "y": 480,
+        "wires": [
+            [
+                "39b093f4.f5bdbc"
+            ]
+        ]
+    },
+    {
+        "id": "5f50aa44.6c3514",
+        "type": "hubitat device",
+        "z": "7e547b10.f1db64",
+        "name": "Presence - Trish",
+        "server": "b130c189.ea4d2",
+        "deviceId": "200",
+        "attribute": "presence",
+        "sendEvent": true,
+        "x": 140,
+        "y": 420,
+        "wires": [
+            [
+                "39b093f4.f5bdbc"
+            ]
+        ]
+    },
+    {
+        "id": "61d3530e.894b9c",
+        "type": "stoptimer-varidelay",
+        "z": "e1557285.e3f86",
+        "duration": "1",
+        "durationType": "num",
+        "units": "Second",
+        "payloadtype": "num",
+        "payloadval": "0",
+        "name": "",
+        "reporting": "every_second",
+        "persist": false,
+        "x": 720,
+        "y": 580,
+        "wires": [
+            [
+                "a3d9aac.9918e58"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "e6b00e94.ffe8d",
+        "type": "switch",
+        "z": "e1557285.e3f86",
+        "name": "Motion Handler",
+        "property": "payload.description.summary",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "what time",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "what day",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 540,
+        "y": 420,
+        "wires": [
+            [
+                "cca5846.1475b78"
+            ],
+            [
+                "889fff4a.6443d"
+            ]
+        ],
+        "outputLabels": [
+            "Motion",
+            "No Motion"
+        ]
+    },
+    {
+        "id": "ca260f87.93f17",
+        "type": "switch",
+        "z": "e1557285.e3f86",
+        "name": "Motion Handler",
+        "property": "payload.description.summary",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "what time",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "what day",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 540,
+        "y": 300,
+        "wires": [
+            [
+                "a83420c1.dc341"
+            ],
+            [
+                "2c96f340.d344fc"
+            ]
+        ],
+        "outputLabels": [
+            "Motion",
+            "No Motion"
+        ]
+    },
+    {
+        "id": "fc1b8ba1.1f1e08",
+        "type": "switch",
+        "z": "e1557285.e3f86",
+        "name": "Motion Handler",
+        "property": "payload.description.summary",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "what time",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "what day",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 540,
+        "y": 540,
+        "wires": [
+            [
+                "bd227bfd.da22e8"
+            ],
+            [
+                "61d3530e.894b9c"
+            ]
+        ],
+        "outputLabels": [
+            "Motion",
+            "No Motion"
+        ]
+    },
+    {
+        "id": "889fff4a.6443d",
+        "type": "stoptimer-varidelay",
+        "z": "e1557285.e3f86",
+        "duration": "3",
+        "durationType": "num",
+        "units": "Minute",
+        "payloadtype": "num",
+        "payloadval": "0",
+        "name": "",
+        "reporting": "last_minute_seconds",
+        "persist": false,
+        "x": 720,
+        "y": 460,
+        "wires": [
+            [
+                "a3d9aac.9918e58"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "2c96f340.d344fc",
+        "type": "stoptimer-varidelay",
+        "z": "e1557285.e3f86",
+        "duration": "30",
+        "durationType": "num",
+        "units": "Second",
+        "payloadtype": "num",
+        "payloadval": "0",
+        "name": "",
+        "reporting": "every_second",
+        "persist": false,
+        "x": 730,
+        "y": 340,
+        "wires": [
+            [
+                "a3d9aac.9918e58"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "cca5846.1475b78",
+        "type": "change",
+        "z": "e1557285.e3f86",
+        "name": "Stop Motion Timer",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "STOP",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 730,
+        "y": 400,
+        "wires": [
+            [
+                "e6eb5ab8.3088d8",
+                "889fff4a.6443d"
+            ]
+        ]
+    },
+    {
+        "id": "a83420c1.dc341",
+        "type": "change",
+        "z": "e1557285.e3f86",
+        "name": "Stop Motion Timer",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "STOP",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 730,
+        "y": 280,
+        "wires": [
+            [
+                "f2d6a1e1.a6f4a",
+                "2c96f340.d344fc"
+            ]
+        ]
+    },
+    {
+        "id": "5e799950.145b48",
+        "type": "switch",
+        "z": "e1557285.e3f86",
+        "name": "Override Handler",
+        "property": "payload.description.summary",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "regex",
+                "v": "disable (the )?motion sensor",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "disable (the )?motion sensing",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "turn off (the )?motion sensor",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "turn off (the )?motion sensing",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "enable (the )?motion sensor",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "turn on (the )?motion sensor",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "turn on (the )?motion sensing",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "enable (the )?motion sensing",
+                "vt": "str",
+                "case": false
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 8,
+        "x": 150,
+        "y": 100,
+        "wires": [
+            [
+                "585fe293.44be3c"
+            ],
+            [
+                "585fe293.44be3c"
+            ],
+            [
+                "585fe293.44be3c"
+            ],
+            [
+                "585fe293.44be3c"
+            ],
+            [
+                "79caf9de.681fd8"
+            ],
+            [
+                "79caf9de.681fd8"
+            ],
+            [
+                "79caf9de.681fd8"
+            ],
+            [
+                "79caf9de.681fd8"
+            ]
+        ]
+    },
+    {
+        "id": "585fe293.44be3c",
+        "type": "function",
+        "z": "e1557285.e3f86",
+        "name": "Motion On",
+        "func": "// initialise the counter to 0 if it doesn't exist already\nvar myMotion = flow.get('motion',\"file\")||0;\nmyMotion = true\n// store the value back\nflow.set('motion',myMotion,\"file\");\n// make it part of the outgoing msg object\nmsg.payload.motion = motion;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 390,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "79caf9de.681fd8",
+        "type": "function",
+        "z": "e1557285.e3f86",
+        "name": "Motion Off",
+        "func": "// initialise the counter to 0 if it doesn't exist already\nvar myMotion = flow.get('motion',\"file\")||0;\nmyMotion = false\n// store the value back\nflow.set('motion',myMotion,\"file\");\n// make it part of the outgoing msg object\nmsg.payload.motion = motion;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 390,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "53101c6a.f83a74",
+        "type": "switch",
+        "z": "e1557285.e3f86",
+        "name": "if Motion On",
+        "property": "motion",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 170,
+        "y": 320,
+        "wires": [
+            [
+                "2dc7aabb.e7e7b6",
+                "78903f12.c5128",
+                "f00d1538.96cb78"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "8b43b0a6.e46b7",
+        "type": "inject",
+        "z": "7e547b10.f1db64",
+        "name": "Arm",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "mode",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 890,
+        "y": 120,
+        "wires": [
+            [
+                "3a9c918f.31e2ee"
+            ]
+        ]
+    },
+    {
+        "id": "80ce59ce.052888",
+        "type": "inject",
+        "z": "7e547b10.f1db64",
+        "name": "Disarm",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "mode",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 890,
+        "y": 240,
+        "wires": [
+            [
+                "3a9c918f.31e2ee"
+            ]
+        ]
+    },
+    {
+        "id": "8a8ff10b.c3fa9",
+        "type": "BooleanLogicUltimate",
+        "z": "7e547b10.f1db64",
+        "name": "",
+        "filtertrue": "both",
+        "persist": true,
+        "sInitializeWith": "false",
+        "triggertopic": "trigger",
+        "outputtriggeredby": "all",
+        "inputCount": "7",
+        "topic": "presence",
         "x": 660,
+        "y": 540,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "4452f68d.2a21e8",
+        "type": "change",
+        "z": "7e547b10.f1db64",
+        "name": "present",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 520,
+        "wires": [
+            [
+                "8a8ff10b.c3fa9"
+            ]
+        ]
+    },
+    {
+        "id": "39b093f4.f5bdbc",
+        "type": "switch",
+        "z": "7e547b10.f1db64",
+        "name": "Presence",
+        "property": "payload.value",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "present",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "not present",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 360,
+        "y": 540,
+        "wires": [
+            [
+                "4452f68d.2a21e8"
+            ],
+            [
+                "e215d913.297bb8"
+            ]
+        ]
+    },
+    {
+        "id": "e215d913.297bb8",
+        "type": "change",
+        "z": "7e547b10.f1db64",
+        "name": "!present",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 560,
+        "wires": [
+            [
+                "8a8ff10b.c3fa9"
+            ]
+        ]
+    },
+    {
+        "id": "5c164add.bdd174",
+        "type": "BooleanLogicUltimate",
+        "z": "7e547b10.f1db64",
+        "name": "",
+        "filtertrue": "both",
+        "persist": true,
+        "sInitializeWith": "false",
+        "triggertopic": "trigger",
+        "outputtriggeredby": "all",
+        "inputCount": "2",
+        "topic": "scheduled_presence",
+        "x": 680,
+        "y": 240,
+        "wires": [
+            [],
+            [
+                "e50f92be.bbfd7"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "135bf1b8.6d288e",
+        "type": "hubitat mode",
+        "z": "7e547b10.f1db64",
+        "name": "",
+        "server": "b130c189.ea4d2",
+        "sendEvent": true,
+        "x": 150,
+        "y": 220,
+        "wires": [
+            [
+                "ac32b038.b96a8"
+            ]
+        ]
+    },
+    {
+        "id": "2fe516ec.e6bc6a",
+        "type": "change",
+        "z": "7e547b10.f1db64",
+        "name": "Arm",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 450,
+        "y": 240,
+        "wires": [
+            [
+                "5c164add.bdd174"
+            ]
+        ]
+    },
+    {
+        "id": "adf74fc0.5e5d2",
+        "type": "change",
+        "z": "7e547b10.f1db64",
+        "name": "Disarm",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 460,
+        "y": 200,
+        "wires": [
+            [
+                "5c164add.bdd174"
+            ]
+        ]
+    },
+    {
+        "id": "ac32b038.b96a8",
+        "type": "switch",
+        "z": "7e547b10.f1db64",
+        "name": "Mode Switch",
+        "property": "payload.value",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Day",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Evening",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Night",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Away",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 290,
+        "y": 220,
+        "wires": [
+            [
+                "adf74fc0.5e5d2"
+            ],
+            [
+                "2fe516ec.e6bc6a"
+            ],
+            [
+                "2fe516ec.e6bc6a"
+            ],
+            [
+                "2fe516ec.e6bc6a"
+            ]
+        ]
+    },
+    {
+        "id": "e50f92be.bbfd7",
+        "type": "change",
+        "z": "7e547b10.f1db64",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "mode",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 690,
+        "y": 180,
+        "wires": [
+            [
+                "3a9c918f.31e2ee"
+            ]
+        ]
+    },
+    {
+        "id": "427bee3c.6d4c1",
+        "type": "hubitat device",
+        "z": "7e547b10.f1db64",
+        "name": "Presence - Overall",
+        "server": "b130c189.ea4d2",
+        "deviceId": "198",
+        "attribute": "presence",
+        "sendEvent": true,
+        "x": 150,
+        "y": 120,
+        "wires": [
+            [
+                "fa6f0afc.8b33a8"
+            ]
+        ]
+    },
+    {
+        "id": "bc14a7b4.79cf28",
+        "type": "change",
+        "z": "7e547b10.f1db64",
+        "name": "Arm",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 450,
         "y": 140,
         "wires": [
             [
-                "73e39005.b9e7e"
+                "135bf1b8.6d288e",
+                "5c164add.bdd174"
+            ]
+        ]
+    },
+    {
+        "id": "fa6f0afc.8b33a8",
+        "type": "switch",
+        "z": "7e547b10.f1db64",
+        "name": "Presence",
+        "property": "payload.value",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "present",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "not present",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 320,
+        "y": 120,
+        "wires": [
+            [
+                "e84f9d5c.7fd68"
             ],
-            []
+            [
+                "bc14a7b4.79cf28"
+            ]
+        ]
+    },
+    {
+        "id": "e84f9d5c.7fd68",
+        "type": "change",
+        "z": "7e547b10.f1db64",
+        "name": "Disarm",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 460,
+        "y": 100,
+        "wires": [
+            [
+                "135bf1b8.6d288e",
+                "5c164add.bdd174"
+            ]
+        ]
+    },
+    {
+        "id": "d57b1566.afcb68",
+        "type": "inject",
+        "z": "7e547b10.f1db64",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 60,
+        "wires": [
+            [
+                "427bee3c.6d4c1"
+            ]
         ]
     }
 ]
