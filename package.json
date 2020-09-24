@@ -9,7 +9,10 @@
         "node-red-contrib-simpletime": "2.10.0",
         "node-red-contrib-speedtest-updated": "2.0.2",
         "node-red-dashboard": "2.23.0",
-        "node-red-contrib-sun-position": "1.1.6"
+        "node-red-contrib-sun-position": "1.1.6",
+        "node-red-contrib-arlo": "0.0.4",
+        "node-red-contrib-boolean-logic-ultimate": "1.0.20",
+        "node-red-contrib-stoptimer-varidelay": "0.4.4"
     },
     "node-red": {
         "settings": {
