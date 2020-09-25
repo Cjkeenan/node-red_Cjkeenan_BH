@@ -7,6 +7,13 @@
         "info": ""
     },
     {
+        "id": "4702b097.59f3b",
+        "type": "tab",
+        "label": "Link Outs",
+        "disabled": false,
+        "info": ""
+    },
+    {
         "id": "5c3cd757.a086c8",
         "type": "tab",
         "label": "Motion Detection [Alexa]",
@@ -44,7 +51,7 @@
     {
         "id": "7e547b10.f1db64",
         "type": "tab",
-        "label": "Arlo",
+        "label": "Arlo Geofenced Schedule",
         "disabled": false,
         "info": ""
     },
@@ -248,6 +255,87 @@
             "Names/Serials"
         ],
         "icon": "node-red/hash.svg"
+    },
+    {
+        "id": "1ca15330.84243d",
+        "type": "subflow",
+        "name": "Raw Presence Backup",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 60,
+                "wires": [
+                    {
+                        "id": "a12adaac.d9d4b8"
+                    },
+                    {
+                        "id": "5f50aa44.6c3514"
+                    },
+                    {
+                        "id": "858d9fbf.b9b2e"
+                    },
+                    {
+                        "id": "fb38c864.f5b9d8"
+                    },
+                    {
+                        "id": "7e633e33.22216"
+                    },
+                    {
+                        "id": "686a0f13.80b6c"
+                    },
+                    {
+                        "id": "9f7dd1e7.80f0b"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 900,
+                "y": 180,
+                "wires": [
+                    {
+                        "id": "8a8ff10b.c3fa9",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 900,
+                "y": 240,
+                "wires": [
+                    {
+                        "id": "8a8ff10b.c3fa9",
+                        "port": 1
+                    }
+                ]
+            },
+            {
+                "x": 900,
+                "y": 300,
+                "wires": [
+                    {
+                        "id": "8a8ff10b.c3fa9",
+                        "port": 2
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "color": "#DDAA99"
+    },
+    {
+        "id": "c72800c4.5f936",
+        "type": "subflow",
+        "name": "Geofenced Schedule Backup",
+        "info": "",
+        "category": "",
+        "in": [],
+        "out": [],
+        "env": [],
+        "color": "#DDAA99"
     },
     {
         "id": "b130c189.ea4d2",
@@ -554,8 +642,8 @@
         "checkall": "false",
         "repair": false,
         "outputs": 2,
-        "x": 360,
-        "y": 400,
+        "x": 540,
+        "y": 480,
         "wires": [
             [
                 "df44fb1a.f08208"
@@ -574,7 +662,7 @@
         "deviceId": "1572",
         "command": "off",
         "commandArgs": "",
-        "x": 790,
+        "x": 770,
         "y": 260,
         "wires": [
             []
@@ -589,7 +677,7 @@
         "deviceId": "1574",
         "command": "off",
         "commandArgs": "",
-        "x": 790,
+        "x": 770,
         "y": 320,
         "wires": [
             []
@@ -604,7 +692,7 @@
         "deviceId": "1573",
         "command": "off",
         "commandArgs": "",
-        "x": 790,
+        "x": 770,
         "y": 380,
         "wires": [
             []
@@ -619,7 +707,7 @@
         "deviceId": "1575",
         "command": "off",
         "commandArgs": "",
-        "x": 790,
+        "x": 770,
         "y": 440,
         "wires": [
             []
@@ -634,8 +722,8 @@
         "deviceId": "1574",
         "command": "on",
         "commandArgs": "",
-        "x": 790,
-        "y": 560,
+        "x": 770,
+        "y": 580,
         "wires": [
             []
         ]
@@ -649,8 +737,8 @@
         "deviceId": "1573",
         "command": "on",
         "commandArgs": "",
-        "x": 790,
-        "y": 620,
+        "x": 770,
+        "y": 640,
         "wires": [
             []
         ]
@@ -664,25 +752,10 @@
         "deviceId": "1575",
         "command": "on",
         "commandArgs": "",
-        "x": 790,
-        "y": 680,
+        "x": 770,
+        "y": 700,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "f5561f49.28d01",
-        "type": "alexa-remote-event",
-        "z": "68ba5945.906288",
-        "name": "",
-        "account": "4553eef5.ffc05",
-        "event": "ws-device-activity",
-        "x": 130,
-        "y": 60,
-        "wires": [
-            [
-                "1c34efac.1fc57"
-            ]
         ]
     },
     {
@@ -694,8 +767,8 @@
         "deviceId": "1572",
         "command": "on",
         "commandArgs": "",
-        "x": 790,
-        "y": 500,
+        "x": 770,
+        "y": 520,
         "wires": [
             []
         ]
@@ -910,7 +983,7 @@
         "z": "68ba5945.906288",
         "name": "",
         "env": [],
-        "x": 560,
+        "x": 540,
         "y": 280,
         "wires": [
             [
@@ -932,8 +1005,8 @@
         "type": "subflow:cb4b5b0a.f09b68",
         "z": "68ba5945.906288",
         "name": "",
-        "x": 560,
-        "y": 520,
+        "x": 540,
+        "y": 680,
         "wires": [
             [
                 "cd66091.af90cf8"
@@ -1423,7 +1496,7 @@
         "checkall": "false",
         "repair": false,
         "outputs": 6,
-        "x": 360,
+        "x": 340,
         "y": 120,
         "wires": [
             [
@@ -1451,7 +1524,7 @@
         "type": "subflow:cb4b5b0a.f09b68",
         "z": "68ba5945.906288",
         "name": "",
-        "x": 560,
+        "x": 540,
         "y": 80,
         "wires": [
             [],
@@ -1468,7 +1541,7 @@
         "z": "68ba5945.906288",
         "name": "",
         "env": [],
-        "x": 560,
+        "x": 540,
         "y": 160,
         "wires": [
             [],
@@ -1488,7 +1561,7 @@
         "deviceId": "66",
         "command": "on",
         "commandArgs": "",
-        "x": 800,
+        "x": 780,
         "y": 100,
         "wires": [
             []
@@ -1503,7 +1576,7 @@
         "deviceId": "66",
         "command": "off",
         "commandArgs": "",
-        "x": 800,
+        "x": 780,
         "y": 180,
         "wires": [
             []
@@ -2308,32 +2381,6 @@
         ]
     },
     {
-        "id": "1c34efac.1fc57",
-        "type": "switch",
-        "z": "68ba5945.906288",
-        "name": "Wake Handler",
-        "property": "payload.domainAttributes",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "null",
-                "vt": "jsonata"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 140,
-        "y": 120,
-        "wires": [
-            [
-                "e188401e.b56c",
-                "80bb010d.082ce"
-            ]
-        ]
-    },
-    {
         "id": "c0f915b6.e62fb8",
         "type": "alexa-remote-echo",
         "z": "d61084e.39e0678",
@@ -2356,8 +2403,8 @@
                 }
             }
         },
-        "x": 560,
-        "y": 80,
+        "x": 480,
+        "y": 60,
         "wires": [
             [
                 "e97ff3a7.a2ed5"
@@ -2387,8 +2434,8 @@
                 }
             }
         },
-        "x": 560,
-        "y": 200,
+        "x": 480,
+        "y": 180,
         "wires": [
             [
                 "704d4696.7b2828"
@@ -2418,8 +2465,8 @@
                 }
             }
         },
-        "x": 570,
-        "y": 120,
+        "x": 470,
+        "y": 100,
         "wires": [
             [
                 "e3958915.0a6308"
@@ -2449,8 +2496,8 @@
                 }
             }
         },
-        "x": 570,
-        "y": 160,
+        "x": 470,
+        "y": 140,
         "wires": [
             [
                 "d92d6856.919638"
@@ -2480,26 +2527,11 @@
                 }
             }
         },
-        "x": 560,
-        "y": 240,
+        "x": 480,
+        "y": 220,
         "wires": [
             [
                 "b5615238.4cef5"
-            ]
-        ]
-    },
-    {
-        "id": "59a7d23a.cb8e5c",
-        "type": "alexa-remote-event",
-        "z": "d61084e.39e0678",
-        "name": "",
-        "account": "4553eef5.ffc05",
-        "event": "ws-device-activity",
-        "x": 130,
-        "y": 60,
-        "wires": [
-            [
-                "ffb8478e.103d68"
             ]
         ]
     },
@@ -2527,7 +2559,7 @@
         "checkall": "false",
         "repair": false,
         "outputs": 2,
-        "x": 320,
+        "x": 220,
         "y": 120,
         "wires": [
             [
@@ -2543,37 +2575,12 @@
         ]
     },
     {
-        "id": "ffb8478e.103d68",
-        "type": "switch",
-        "z": "d61084e.39e0678",
-        "name": "Wake Handler",
-        "property": "payload.domainAttributes",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "null",
-                "vt": "jsonata"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 140,
-        "y": 120,
-        "wires": [
-            [
-                "6118732f.6ede7c"
-            ]
-        ]
-    },
-    {
         "id": "3f333fa.be852c",
         "type": "subflow:cb4b5b0a.f09b68",
         "z": "d61084e.39e0678",
         "name": "",
         "env": [],
-        "x": 300,
+        "x": 200,
         "y": 200,
         "wires": [
             [
@@ -2598,8 +2605,8 @@
         "name": "",
         "account": "4553eef5.ffc05",
         "event": "ws-media-change",
-        "x": 130,
-        "y": 280,
+        "x": 210,
+        "y": 340,
         "wires": [
             [
                 "3f1bb185.ee904e",
@@ -2627,8 +2634,8 @@
                 }
             }
         },
-        "x": 870,
-        "y": 560,
+        "x": 1150,
+        "y": 480,
         "wires": [
             []
         ]
@@ -2653,8 +2660,8 @@
                 }
             }
         },
-        "x": 880,
-        "y": 520,
+        "x": 1160,
+        "y": 440,
         "wires": [
             []
         ]
@@ -2679,8 +2686,8 @@
                 }
             }
         },
-        "x": 880,
-        "y": 480,
+        "x": 1160,
+        "y": 400,
         "wires": [
             []
         ]
@@ -2705,8 +2712,8 @@
                 }
             }
         },
-        "x": 870,
-        "y": 440,
+        "x": 1150,
+        "y": 360,
         "wires": [
             []
         ]
@@ -2731,8 +2738,8 @@
                 }
             }
         },
-        "x": 870,
-        "y": 400,
+        "x": 1150,
+        "y": 320,
         "wires": [
             []
         ]
@@ -2753,8 +2760,8 @@
                 "what": "pause"
             }
         },
-        "x": 430,
-        "y": 400,
+        "x": 710,
+        "y": 320,
         "wires": [
             [
                 "8cbf13ee.6bece"
@@ -2777,8 +2784,8 @@
                 "what": "pause"
             }
         },
-        "x": 430,
-        "y": 440,
+        "x": 710,
+        "y": 360,
         "wires": [
             [
                 "8cbf13ee.6bece"
@@ -2801,8 +2808,8 @@
                 "what": "pause"
             }
         },
-        "x": 430,
-        "y": 480,
+        "x": 710,
+        "y": 400,
         "wires": [
             [
                 "8cbf13ee.6bece"
@@ -2825,8 +2832,8 @@
                 "what": "pause"
             }
         },
-        "x": 430,
-        "y": 520,
+        "x": 710,
+        "y": 440,
         "wires": [
             [
                 "8cbf13ee.6bece"
@@ -2849,8 +2856,8 @@
                 "what": "pause"
             }
         },
-        "x": 430,
-        "y": 560,
+        "x": 710,
+        "y": 480,
         "wires": [
             [
                 "8cbf13ee.6bece"
@@ -2863,8 +2870,8 @@
         "z": "d61084e.39e0678",
         "name": "",
         "env": [],
-        "x": 160,
-        "y": 420,
+        "x": 440,
+        "y": 340,
         "wires": [
             [
                 "3bd73cb0.773a34"
@@ -2902,8 +2909,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 200,
-        "y": 560,
+        "x": 480,
+        "y": 480,
         "wires": [
             [
                 "9434928a.e846d",
@@ -2961,8 +2968,8 @@
         "z": "d61084e.39e0678",
         "name": "",
         "env": [],
-        "x": 640,
-        "y": 480,
+        "x": 920,
+        "y": 400,
         "wires": [
             [
                 "c1954c72.887de",
@@ -2996,8 +3003,8 @@
         "deviceId": "70",
         "command": "deviceNotification",
         "commandArgs": "Alexa \"On Media Change\" Triggered",
-        "x": 350,
-        "y": 280,
+        "x": 310,
+        "y": 420,
         "wires": [
             []
         ]
@@ -3017,8 +3024,8 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
-        "x": 740,
-        "y": 80,
+        "x": 660,
+        "y": 140,
         "wires": [
             [
                 "3bd73cb0.773a34"
@@ -3040,8 +3047,8 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
-        "x": 740,
-        "y": 120,
+        "x": 660,
+        "y": 140,
         "wires": [
             [
                 "ea17f4a9.8a2408"
@@ -3063,8 +3070,8 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
-        "x": 740,
-        "y": 160,
+        "x": 660,
+        "y": 140,
         "wires": [
             [
                 "29113ff2.7a2d1"
@@ -3086,8 +3093,8 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
-        "x": 740,
-        "y": 200,
+        "x": 660,
+        "y": 140,
         "wires": [
             [
                 "f81bf876.428948"
@@ -3109,8 +3116,8 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
-        "x": 740,
-        "y": 240,
+        "x": 660,
+        "y": 140,
         "wires": [
             [
                 "9434928a.e846d"
@@ -3134,25 +3141,6 @@
         "drop": false,
         "x": 120,
         "y": 140,
-        "wires": [
-            [
-                "ae57b7da.109528",
-                "59d071a7.8a464",
-                "8e74d342.066a6",
-                "9672e767.fceda8",
-                "9f83e2cc.07492"
-            ]
-        ]
-    },
-    {
-        "id": "743fd661.b952b8",
-        "type": "hubitat mode",
-        "z": "345f283.d5796d8",
-        "name": "",
-        "server": "b130c189.ea4d2",
-        "sendEvent": true,
-        "x": 130,
-        "y": 220,
         "wires": [
             [
                 "ae57b7da.109528",
@@ -3279,21 +3267,6 @@
         ]
     },
     {
-        "id": "b663b6cf.389378",
-        "type": "alexa-remote-event",
-        "z": "73f998b9.8842a8",
-        "name": "",
-        "account": "4553eef5.ffc05",
-        "event": "ws-device-activity",
-        "x": 130,
-        "y": 60,
-        "wires": [
-            [
-                "10178a52.b714a6"
-            ]
-        ]
-    },
-    {
         "id": "e96cba5a.0480d8",
         "type": "switch",
         "z": "73f998b9.8842a8",
@@ -3317,8 +3290,8 @@
         "checkall": "false",
         "repair": false,
         "outputs": 2,
-        "x": 140,
-        "y": 180,
+        "x": 300,
+        "y": 360,
         "wires": [
             [
                 "1f860f1a.769fd1",
@@ -3339,8 +3312,8 @@
         "deviceId": "1377",
         "command": "off",
         "commandArgs": "",
-        "x": 870,
-        "y": 200,
+        "x": 980,
+        "y": 60,
         "wires": [
             []
         ]
@@ -3354,8 +3327,8 @@
         "deviceId": "1352",
         "command": "off",
         "commandArgs": "",
-        "x": 870,
-        "y": 260,
+        "x": 980,
+        "y": 120,
         "wires": [
             []
         ]
@@ -3369,8 +3342,8 @@
         "deviceId": "1351",
         "command": "off",
         "commandArgs": "",
-        "x": 870,
-        "y": 320,
+        "x": 980,
+        "y": 180,
         "wires": [
             []
         ]
@@ -3384,8 +3357,8 @@
         "deviceId": "385",
         "command": "off",
         "commandArgs": "",
-        "x": 870,
-        "y": 380,
+        "x": 980,
+        "y": 240,
         "wires": [
             []
         ]
@@ -3399,8 +3372,8 @@
         "deviceId": "1441",
         "command": "lock",
         "commandArgs": "",
-        "x": 470,
-        "y": 60,
+        "x": 590,
+        "y": 320,
         "wires": [
             []
         ]
@@ -3414,8 +3387,8 @@
         "deviceId": "86",
         "attribute": "",
         "sendEvent": false,
-        "x": 610,
-        "y": 120,
+        "x": 730,
+        "y": 380,
         "wires": [
             [
                 "cab7e870.5e4e98"
@@ -3439,8 +3412,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 770,
-        "y": 120,
+        "x": 890,
+        "y": 380,
         "wires": [
             [
                 "7896d4be.8fce0c"
@@ -3456,8 +3429,8 @@
         "deviceId": "86",
         "command": "home",
         "commandArgs": "",
-        "x": 920,
-        "y": 120,
+        "x": 1040,
+        "y": 380,
         "wires": [
             [
                 "94023e4c.b2b4d"
@@ -3473,8 +3446,8 @@
         "deviceId": "86",
         "command": "poll",
         "commandArgs": "",
-        "x": 410,
-        "y": 120,
+        "x": 530,
+        "y": 380,
         "wires": [
             [
                 "ed251d47.20d8e"
@@ -3486,8 +3459,8 @@
         "type": "subflow:cb4b5b0a.f09b68",
         "z": "73f998b9.8842a8",
         "name": "",
-        "x": 180,
-        "y": 360,
+        "x": 290,
+        "y": 80,
         "wires": [
             [
                 "410479d9.0625d8"
@@ -3510,8 +3483,8 @@
         "name": "",
         "server": "b130c189.ea4d2",
         "sendEvent": false,
-        "x": 570,
-        "y": 200,
+        "x": 680,
+        "y": 60,
         "wires": [
             [
                 "91cb62f.dc5b0a"
@@ -3535,8 +3508,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 690,
-        "y": 200,
+        "x": 800,
+        "y": 60,
         "wires": [
             [
                 "9cb3b387.dc6da"
@@ -3550,8 +3523,8 @@
         "name": "",
         "server": "b130c189.ea4d2",
         "sendEvent": false,
-        "x": 570,
-        "y": 380,
+        "x": 680,
+        "y": 240,
         "wires": [
             [
                 "314b1149.45429e"
@@ -3575,8 +3548,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 690,
-        "y": 380,
+        "x": 800,
+        "y": 240,
         "wires": [
             [
                 "47080bca.7ec5c4"
@@ -3592,8 +3565,8 @@
         "deviceId": "67",
         "command": "off",
         "commandArgs": "",
-        "x": 420,
-        "y": 200,
+        "x": 530,
+        "y": 60,
         "wires": [
             [
                 "7bdd715.d136d9"
@@ -3609,8 +3582,8 @@
         "deviceId": "69",
         "command": "off",
         "commandArgs": "",
-        "x": 420,
-        "y": 260,
+        "x": 530,
+        "y": 120,
         "wires": [
             [
                 "33f5a68d.21358a"
@@ -3626,8 +3599,8 @@
         "deviceId": "68",
         "command": "off",
         "commandArgs": "",
-        "x": 420,
-        "y": 320,
+        "x": 530,
+        "y": 180,
         "wires": [
             [
                 "901f1a7f.229298"
@@ -3643,8 +3616,8 @@
         "deviceId": "501",
         "command": "off",
         "commandArgs": "",
-        "x": 420,
-        "y": 380,
+        "x": 530,
+        "y": 240,
         "wires": [
             [
                 "9c6cab25.ff2de8"
@@ -3660,7 +3633,7 @@
         "deviceId": "1377",
         "command": "on",
         "commandArgs": "",
-        "x": 450,
+        "x": 560,
         "y": 460,
         "wires": [
             []
@@ -3675,7 +3648,7 @@
         "deviceId": "1352",
         "command": "on",
         "commandArgs": "",
-        "x": 450,
+        "x": 560,
         "y": 520,
         "wires": [
             []
@@ -3690,7 +3663,7 @@
         "deviceId": "1351",
         "command": "on",
         "commandArgs": "",
-        "x": 450,
+        "x": 560,
         "y": 580,
         "wires": [
             []
@@ -3705,7 +3678,7 @@
         "deviceId": "385",
         "command": "on",
         "commandArgs": "",
-        "x": 450,
+        "x": 560,
         "y": 640,
         "wires": [
             []
@@ -3717,7 +3690,7 @@
         "z": "73f998b9.8842a8",
         "name": "",
         "env": [],
-        "x": 180,
+        "x": 290,
         "y": 620,
         "wires": [
             [
@@ -3731,31 +3704,6 @@
             ],
             [
                 "53eab9ae.4e62e8"
-            ]
-        ]
-    },
-    {
-        "id": "10178a52.b714a6",
-        "type": "switch",
-        "z": "73f998b9.8842a8",
-        "name": "Wake Handler",
-        "property": "payload.domainAttributes",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "null",
-                "vt": "jsonata"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 140,
-        "y": 120,
-        "wires": [
-            [
-                "e96cba5a.0480d8"
             ]
         ]
     },
@@ -3819,8 +3767,8 @@
         "checkall": "false",
         "repair": false,
         "outputs": 8,
-        "x": 360,
-        "y": 200,
+        "x": 280,
+        "y": 280,
         "wires": [
             [
                 "2d0e707f.31733"
@@ -3857,7 +3805,7 @@
         "deviceId": "1377",
         "command": "off",
         "commandArgs": "",
-        "x": 870,
+        "x": 550,
         "y": 60,
         "wires": [
             []
@@ -3872,7 +3820,7 @@
         "deviceId": "1352",
         "command": "off",
         "commandArgs": "",
-        "x": 870,
+        "x": 550,
         "y": 120,
         "wires": [
             []
@@ -3887,7 +3835,7 @@
         "deviceId": "1351",
         "command": "off",
         "commandArgs": "",
-        "x": 870,
+        "x": 550,
         "y": 180,
         "wires": [
             []
@@ -3902,7 +3850,7 @@
         "deviceId": "385",
         "command": "off",
         "commandArgs": "",
-        "x": 870,
+        "x": 550,
         "y": 240,
         "wires": [
             []
@@ -3917,7 +3865,7 @@
         "deviceId": "1377",
         "command": "on",
         "commandArgs": "",
-        "x": 870,
+        "x": 550,
         "y": 320,
         "wires": [
             []
@@ -3932,7 +3880,7 @@
         "deviceId": "1352",
         "command": "on",
         "commandArgs": "",
-        "x": 870,
+        "x": 550,
         "y": 380,
         "wires": [
             []
@@ -3947,7 +3895,7 @@
         "deviceId": "1351",
         "command": "on",
         "commandArgs": "",
-        "x": 870,
+        "x": 550,
         "y": 440,
         "wires": [
             []
@@ -3962,25 +3910,10 @@
         "deviceId": "385",
         "command": "on",
         "commandArgs": "",
-        "x": 870,
+        "x": 550,
         "y": 500,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "c88f961b.aa6f68",
-        "type": "alexa-remote-event",
-        "z": "5c3cd757.a086c8",
-        "name": "",
-        "account": "4553eef5.ffc05",
-        "event": "ws-device-activity",
-        "x": 130,
-        "y": 60,
-        "wires": [
-            [
-                "f8fadc39.24a54"
-            ]
         ]
     },
     {
@@ -3989,7 +3922,7 @@
         "z": "5c3cd757.a086c8",
         "name": "",
         "env": [],
-        "x": 600,
+        "x": 280,
         "y": 80,
         "wires": [
             [
@@ -4011,8 +3944,8 @@
         "type": "subflow:cb4b5b0a.f09b68",
         "z": "5c3cd757.a086c8",
         "name": "",
-        "x": 600,
-        "y": 340,
+        "x": 280,
+        "y": 480,
         "wires": [
             [
                 "42660c0d.123e94"
@@ -4025,31 +3958,6 @@
             ],
             [
                 "daaeaf91.84a0b"
-            ]
-        ]
-    },
-    {
-        "id": "f8fadc39.24a54",
-        "type": "switch",
-        "z": "5c3cd757.a086c8",
-        "name": "Wake Handler",
-        "property": "payload.domainAttributes",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "null",
-                "vt": "jsonata"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 140,
-        "y": 120,
-        "wires": [
-            [
-                "2cb4155c.cce7fa"
             ]
         ]
     },
@@ -4729,8 +4637,8 @@
             ]
         },
         "outputs": 1,
-        "x": 1260,
-        "y": 360,
+        "x": 980,
+        "y": 280,
         "wires": [
             []
         ]
@@ -4796,8 +4704,8 @@
             ]
         },
         "outputs": 1,
-        "x": 1270,
-        "y": 420,
+        "x": 990,
+        "y": 400,
         "wires": [
             []
         ]
@@ -4818,8 +4726,8 @@
             ]
         },
         "outputs": 1,
-        "x": 1290,
-        "y": 480,
+        "x": 1010,
+        "y": 520,
         "wires": [
             []
         ]
@@ -4868,8 +4776,8 @@
             ]
         },
         "outputs": 1,
-        "x": 1260,
-        "y": 540,
+        "x": 980,
+        "y": 640,
         "wires": [
             []
         ]
@@ -5036,25 +4944,25 @@
     {
         "id": "3a9c918f.31e2ee",
         "type": "arlo-out",
-        "z": "7e547b10.f1db64",
+        "z": "c72800c4.5f936",
         "name": "240 Basestation",
         "service": "283e8204.4178ae",
         "device": "4R03777PA2C83",
-        "x": 900,
-        "y": 180,
+        "x": 960,
+        "y": 200,
         "wires": []
     },
     {
         "id": "7e633e33.22216",
         "type": "hubitat device",
-        "z": "7e547b10.f1db64",
+        "z": "1ca15330.84243d",
         "name": "Presence - Brandon",
         "server": "b130c189.ea4d2",
         "deviceId": "493",
         "attribute": "presence",
         "sendEvent": true,
-        "x": 120,
-        "y": 600,
+        "x": 220,
+        "y": 300,
         "wires": [
             [
                 "39b093f4.f5bdbc"
@@ -5064,14 +4972,14 @@
     {
         "id": "9f7dd1e7.80f0b",
         "type": "hubitat device",
-        "z": "7e547b10.f1db64",
+        "z": "1ca15330.84243d",
         "name": "Presence - Colin",
         "server": "b130c189.ea4d2",
         "deviceId": "196",
         "attribute": "presence",
         "sendEvent": true,
-        "x": 130,
-        "y": 720,
+        "x": 230,
+        "y": 420,
         "wires": [
             [
                 "39b093f4.f5bdbc"
@@ -5081,14 +4989,14 @@
     {
         "id": "686a0f13.80b6c",
         "type": "hubitat device",
-        "z": "7e547b10.f1db64",
+        "z": "1ca15330.84243d",
         "name": "Presence - Hannah",
         "server": "b130c189.ea4d2",
         "deviceId": "494",
         "attribute": "presence",
         "sendEvent": true,
-        "x": 130,
-        "y": 660,
+        "x": 230,
+        "y": 360,
         "wires": [
             [
                 "39b093f4.f5bdbc"
@@ -5098,14 +5006,14 @@
     {
         "id": "a12adaac.d9d4b8",
         "type": "hubitat device",
-        "z": "7e547b10.f1db64",
+        "z": "1ca15330.84243d",
         "name": "Presence - Kevin",
         "server": "b130c189.ea4d2",
         "deviceId": "199",
         "attribute": "presence",
         "sendEvent": true,
-        "x": 130,
-        "y": 360,
+        "x": 230,
+        "y": 60,
         "wires": [
             [
                 "39b093f4.f5bdbc"
@@ -5115,14 +5023,14 @@
     {
         "id": "fb38c864.f5b9d8",
         "type": "hubitat device",
-        "z": "7e547b10.f1db64",
+        "z": "1ca15330.84243d",
         "name": "Presence - Marisa",
         "server": "b130c189.ea4d2",
         "deviceId": "496",
         "attribute": "presence",
         "sendEvent": true,
-        "x": 130,
-        "y": 540,
+        "x": 230,
+        "y": 240,
         "wires": [
             [
                 "39b093f4.f5bdbc"
@@ -5132,14 +5040,14 @@
     {
         "id": "858d9fbf.b9b2e",
         "type": "hubitat device",
-        "z": "7e547b10.f1db64",
+        "z": "1ca15330.84243d",
         "name": "Presence - Shaun",
         "server": "b130c189.ea4d2",
         "deviceId": "495",
         "attribute": "presence",
         "sendEvent": true,
-        "x": 130,
-        "y": 480,
+        "x": 230,
+        "y": 180,
         "wires": [
             [
                 "39b093f4.f5bdbc"
@@ -5149,14 +5057,14 @@
     {
         "id": "5f50aa44.6c3514",
         "type": "hubitat device",
-        "z": "7e547b10.f1db64",
+        "z": "1ca15330.84243d",
         "name": "Presence - Trish",
         "server": "b130c189.ea4d2",
         "deviceId": "200",
         "attribute": "presence",
         "sendEvent": true,
-        "x": 140,
-        "y": 420,
+        "x": 240,
+        "y": 120,
         "wires": [
             [
                 "39b093f4.f5bdbc"
@@ -5549,6 +5457,457 @@
     {
         "id": "8b43b0a6.e46b7",
         "type": "inject",
+        "z": "c72800c4.5f936",
+        "name": "Arm",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "mode",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 950,
+        "y": 140,
+        "wires": [
+            [
+                "3a9c918f.31e2ee"
+            ]
+        ]
+    },
+    {
+        "id": "80ce59ce.052888",
+        "type": "inject",
+        "z": "c72800c4.5f936",
+        "name": "Disarm",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "mode",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 950,
+        "y": 260,
+        "wires": [
+            [
+                "3a9c918f.31e2ee"
+            ]
+        ]
+    },
+    {
+        "id": "8a8ff10b.c3fa9",
+        "type": "BooleanLogicUltimate",
+        "z": "1ca15330.84243d",
+        "name": "",
+        "filtertrue": "both",
+        "persist": true,
+        "sInitializeWith": "false",
+        "triggertopic": "trigger",
+        "outputtriggeredby": "all",
+        "inputCount": "7",
+        "topic": "presence",
+        "x": 760,
+        "y": 240,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "4452f68d.2a21e8",
+        "type": "change",
+        "z": "1ca15330.84243d",
+        "name": "present",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 220,
+        "wires": [
+            [
+                "8a8ff10b.c3fa9"
+            ]
+        ]
+    },
+    {
+        "id": "39b093f4.f5bdbc",
+        "type": "switch",
+        "z": "1ca15330.84243d",
+        "name": "Presence",
+        "property": "payload.value",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "present",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "not present",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 460,
+        "y": 240,
+        "wires": [
+            [
+                "4452f68d.2a21e8"
+            ],
+            [
+                "e215d913.297bb8"
+            ]
+        ]
+    },
+    {
+        "id": "e215d913.297bb8",
+        "type": "change",
+        "z": "1ca15330.84243d",
+        "name": "!present",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 260,
+        "wires": [
+            [
+                "8a8ff10b.c3fa9"
+            ]
+        ]
+    },
+    {
+        "id": "5c164add.bdd174",
+        "type": "BooleanLogicUltimate",
+        "z": "c72800c4.5f936",
+        "name": "",
+        "filtertrue": "both",
+        "persist": true,
+        "sInitializeWith": "WaitForPayload",
+        "triggertopic": "trigger",
+        "outputtriggeredby": "all",
+        "inputCount": "2",
+        "topic": "mode",
+        "x": 740,
+        "y": 200,
+        "wires": [
+            [],
+            [
+                "3a9c918f.31e2ee"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "135bf1b8.6d288e",
+        "type": "hubitat mode",
+        "z": "c72800c4.5f936",
+        "name": "",
+        "server": "b130c189.ea4d2",
+        "sendEvent": true,
+        "x": 210,
+        "y": 240,
+        "wires": [
+            [
+                "ac32b038.b96a8"
+            ]
+        ]
+    },
+    {
+        "id": "2fe516ec.e6bc6a",
+        "type": "change",
+        "z": "c72800c4.5f936",
+        "name": "Arm",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 510,
+        "y": 260,
+        "wires": [
+            [
+                "5c164add.bdd174"
+            ]
+        ]
+    },
+    {
+        "id": "adf74fc0.5e5d2",
+        "type": "change",
+        "z": "c72800c4.5f936",
+        "name": "Disarm",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 220,
+        "wires": [
+            [
+                "5c164add.bdd174"
+            ]
+        ]
+    },
+    {
+        "id": "ac32b038.b96a8",
+        "type": "switch",
+        "z": "c72800c4.5f936",
+        "name": "Mode Switch",
+        "property": "payload.value",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Day",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Evening",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Night",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Away",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 350,
+        "y": 240,
+        "wires": [
+            [
+                "adf74fc0.5e5d2"
+            ],
+            [
+                "adf74fc0.5e5d2"
+            ],
+            [
+                "2fe516ec.e6bc6a"
+            ],
+            [
+                "2fe516ec.e6bc6a"
+            ]
+        ]
+    },
+    {
+        "id": "427bee3c.6d4c1",
+        "type": "hubitat device",
+        "z": "c72800c4.5f936",
+        "name": "Presence - Overall",
+        "server": "b130c189.ea4d2",
+        "deviceId": "198",
+        "attribute": "presence",
+        "sendEvent": true,
+        "x": 210,
+        "y": 140,
+        "wires": [
+            [
+                "fa6f0afc.8b33a8"
+            ]
+        ]
+    },
+    {
+        "id": "bc14a7b4.79cf28",
+        "type": "change",
+        "z": "c72800c4.5f936",
+        "name": "Arm",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 510,
+        "y": 160,
+        "wires": [
+            [
+                "135bf1b8.6d288e",
+                "5c164add.bdd174"
+            ]
+        ]
+    },
+    {
+        "id": "fa6f0afc.8b33a8",
+        "type": "switch",
+        "z": "c72800c4.5f936",
+        "name": "Presence",
+        "property": "payload.value",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "present",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "not present",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 380,
+        "y": 140,
+        "wires": [
+            [
+                "e84f9d5c.7fd68"
+            ],
+            [
+                "bc14a7b4.79cf28"
+            ]
+        ]
+    },
+    {
+        "id": "e84f9d5c.7fd68",
+        "type": "change",
+        "z": "c72800c4.5f936",
+        "name": "Disarm",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 120,
+        "wires": [
+            [
+                "135bf1b8.6d288e",
+                "5c164add.bdd174"
+            ]
+        ]
+    },
+    {
+        "id": "d57b1566.afcb68",
+        "type": "inject",
+        "z": "c72800c4.5f936",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 80,
+        "wires": [
+            [
+                "427bee3c.6d4c1"
+            ]
+        ]
+    },
+    {
+        "id": "e5a1b2d2.030f9",
+        "type": "arlo-out",
+        "z": "7e547b10.f1db64",
+        "name": "240 Basestation",
+        "service": "283e8204.4178ae",
+        "device": "4R03777PA2C83",
+        "x": 740,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "76b84738.3321c8",
+        "type": "inject",
         "z": "7e547b10.f1db64",
         "name": "Arm",
         "props": [
@@ -5567,16 +5926,16 @@
         "topic": "mode",
         "payload": "true",
         "payloadType": "bool",
-        "x": 890,
+        "x": 730,
         "y": 120,
         "wires": [
             [
-                "3a9c918f.31e2ee"
+                "e5a1b2d2.030f9"
             ]
         ]
     },
     {
-        "id": "80ce59ce.052888",
+        "id": "e8201cf6.8b20e",
         "type": "inject",
         "z": "7e547b10.f1db64",
         "name": "Disarm",
@@ -5596,160 +5955,16 @@
         "topic": "mode",
         "payload": "false",
         "payloadType": "bool",
-        "x": 890,
+        "x": 730,
         "y": 240,
         "wires": [
             [
-                "3a9c918f.31e2ee"
+                "e5a1b2d2.030f9"
             ]
         ]
     },
     {
-        "id": "8a8ff10b.c3fa9",
-        "type": "BooleanLogicUltimate",
-        "z": "7e547b10.f1db64",
-        "name": "",
-        "filtertrue": "both",
-        "persist": true,
-        "sInitializeWith": "false",
-        "triggertopic": "trigger",
-        "outputtriggeredby": "all",
-        "inputCount": "7",
-        "topic": "presence",
-        "x": 660,
-        "y": 540,
-        "wires": [
-            [],
-            [],
-            []
-        ]
-    },
-    {
-        "id": "4452f68d.2a21e8",
-        "type": "change",
-        "z": "7e547b10.f1db64",
-        "name": "present",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "true",
-                "tot": "bool"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 500,
-        "y": 520,
-        "wires": [
-            [
-                "8a8ff10b.c3fa9"
-            ]
-        ]
-    },
-    {
-        "id": "39b093f4.f5bdbc",
-        "type": "switch",
-        "z": "7e547b10.f1db64",
-        "name": "Presence",
-        "property": "payload.value",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "present",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "not present",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 360,
-        "y": 540,
-        "wires": [
-            [
-                "4452f68d.2a21e8"
-            ],
-            [
-                "e215d913.297bb8"
-            ]
-        ]
-    },
-    {
-        "id": "e215d913.297bb8",
-        "type": "change",
-        "z": "7e547b10.f1db64",
-        "name": "!present",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "false",
-                "tot": "bool"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 500,
-        "y": 560,
-        "wires": [
-            [
-                "8a8ff10b.c3fa9"
-            ]
-        ]
-    },
-    {
-        "id": "5c164add.bdd174",
-        "type": "BooleanLogicUltimate",
-        "z": "7e547b10.f1db64",
-        "name": "",
-        "filtertrue": "both",
-        "persist": true,
-        "sInitializeWith": "false",
-        "triggertopic": "trigger",
-        "outputtriggeredby": "all",
-        "inputCount": "2",
-        "topic": "scheduled_presence",
-        "x": 680,
-        "y": 240,
-        "wires": [
-            [],
-            [
-                "e50f92be.bbfd7"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "135bf1b8.6d288e",
-        "type": "hubitat mode",
-        "z": "7e547b10.f1db64",
-        "name": "",
-        "server": "b130c189.ea4d2",
-        "sendEvent": true,
-        "x": 150,
-        "y": 220,
-        "wires": [
-            [
-                "ac32b038.b96a8"
-            ]
-        ]
-    },
-    {
-        "id": "2fe516ec.e6bc6a",
+        "id": "b7b79b46.61f3d8",
         "type": "change",
         "z": "7e547b10.f1db64",
         "name": "Arm",
@@ -5767,16 +5982,16 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 450,
-        "y": 240,
+        "x": 510,
+        "y": 200,
         "wires": [
             [
-                "5c164add.bdd174"
+                "e5a1b2d2.030f9"
             ]
         ]
     },
     {
-        "id": "adf74fc0.5e5d2",
+        "id": "2be371d3.c1692e",
         "type": "change",
         "z": "7e547b10.f1db64",
         "name": "Disarm",
@@ -5794,16 +6009,16 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 460,
-        "y": 200,
+        "x": 520,
+        "y": 160,
         "wires": [
             [
-                "5c164add.bdd174"
+                "e5a1b2d2.030f9"
             ]
         ]
     },
     {
-        "id": "ac32b038.b96a8",
+        "id": "2bb84f58.c744",
         "type": "switch",
         "z": "7e547b10.f1db64",
         "name": "Mode Switch",
@@ -5834,158 +6049,127 @@
         "checkall": "true",
         "repair": false,
         "outputs": 4,
-        "x": 290,
-        "y": 220,
-        "wires": [
-            [
-                "adf74fc0.5e5d2"
-            ],
-            [
-                "2fe516ec.e6bc6a"
-            ],
-            [
-                "2fe516ec.e6bc6a"
-            ],
-            [
-                "2fe516ec.e6bc6a"
-            ]
-        ]
-    },
-    {
-        "id": "e50f92be.bbfd7",
-        "type": "change",
-        "z": "7e547b10.f1db64",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "mode",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 690,
+        "x": 350,
         "y": 180,
         "wires": [
             [
-                "3a9c918f.31e2ee"
+                "2be371d3.c1692e"
+            ],
+            [
+                "2be371d3.c1692e"
+            ],
+            [
+                "b7b79b46.61f3d8"
+            ],
+            [
+                "b7b79b46.61f3d8"
             ]
         ]
     },
     {
-        "id": "427bee3c.6d4c1",
-        "type": "hubitat device",
+        "id": "23ebb0ad.93fa9",
+        "type": "alexa-remote-event",
         "z": "7e547b10.f1db64",
-        "name": "Presence - Overall",
-        "server": "b130c189.ea4d2",
-        "deviceId": "198",
-        "attribute": "presence",
-        "sendEvent": true,
-        "x": 150,
-        "y": 120,
+        "name": "",
+        "account": "d452a9d3.7a4488",
+        "event": "ws-device-activity",
+        "x": 130,
+        "y": 80,
         "wires": [
             [
-                "fa6f0afc.8b33a8"
+                "3269284b.9fbe58"
             ]
         ]
     },
     {
-        "id": "bc14a7b4.79cf28",
-        "type": "change",
-        "z": "7e547b10.f1db64",
-        "name": "Arm",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "true",
-                "tot": "bool"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 450,
-        "y": 140,
-        "wires": [
-            [
-                "135bf1b8.6d288e",
-                "5c164add.bdd174"
-            ]
-        ]
-    },
-    {
-        "id": "fa6f0afc.8b33a8",
+        "id": "3269284b.9fbe58",
         "type": "switch",
         "z": "7e547b10.f1db64",
-        "name": "Presence",
-        "property": "payload.value",
+        "name": "Override Handler",
+        "property": "payload.description.summary",
         "propertyType": "msg",
         "rules": [
             {
-                "t": "eq",
-                "v": "present",
-                "vt": "str"
+                "t": "regex",
+                "v": "disable (the )?arlo",
+                "vt": "str",
+                "case": false
             },
             {
-                "t": "eq",
-                "v": "not present",
-                "vt": "str"
+                "t": "regex",
+                "v": "disarm (the )?arlo",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "turn off (the )?arlo",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "enable (the )?arlo",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "turn on (the )?arlo",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "arm (the )?arlo",
+                "vt": "str",
+                "case": false
             }
         ],
-        "checkall": "true",
+        "checkall": "false",
         "repair": false,
-        "outputs": 2,
-        "x": 320,
-        "y": 120,
+        "outputs": 6,
+        "x": 330,
+        "y": 80,
         "wires": [
             [
-                "e84f9d5c.7fd68"
+                "2be371d3.c1692e"
             ],
             [
-                "bc14a7b4.79cf28"
+                "2be371d3.c1692e"
+            ],
+            [
+                "2be371d3.c1692e"
+            ],
+            [
+                "b7b79b46.61f3d8"
+            ],
+            [
+                "b7b79b46.61f3d8"
+            ],
+            [
+                "b7b79b46.61f3d8"
             ]
         ]
     },
     {
-        "id": "e84f9d5c.7fd68",
-        "type": "change",
+        "id": "63550b0f.dce3c4",
+        "type": "link in",
         "z": "7e547b10.f1db64",
-        "name": "Disarm",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "false",
-                "tot": "bool"
-            }
+        "name": "Arlo Change",
+        "links": [
+            "19c790a8.4f13cf"
         ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 460,
-        "y": 100,
+        "x": 215,
+        "y": 180,
         "wires": [
             [
-                "135bf1b8.6d288e",
-                "5c164add.bdd174"
+                "2bb84f58.c744"
             ]
         ]
     },
     {
-        "id": "d57b1566.afcb68",
+        "id": "1212519a.eda15e",
         "type": "inject",
         "z": "7e547b10.f1db64",
         "name": "",
@@ -6005,11 +6189,179 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 140,
+        "x": 180,
+        "y": 220,
+        "wires": [
+            [
+                "2bb84f58.c744"
+            ]
+        ]
+    },
+    {
+        "id": "cec6d88e.0d5658",
+        "type": "alexa-remote-event",
+        "z": "4702b097.59f3b",
+        "name": "",
+        "account": "4553eef5.ffc05",
+        "event": "ws-device-activity",
+        "x": 150,
+        "y": 360,
+        "wires": [
+            [
+                "88c64ec0.d9d7e"
+            ]
+        ]
+    },
+    {
+        "id": "88c64ec0.d9d7e",
+        "type": "switch",
+        "z": "4702b097.59f3b",
+        "name": "Wake Handler",
+        "property": "payload.domainAttributes",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "null",
+                "vt": "jsonata"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 340,
+        "y": 360,
+        "wires": [
+            [
+                "da6ac8d6.218fe8"
+            ]
+        ]
+    },
+    {
+        "id": "da6ac8d6.218fe8",
+        "type": "link out",
+        "z": "4702b097.59f3b",
+        "name": "Alexa On Device Activity (Post Wake Handler)",
+        "links": [
+            "69216b2f.5a7f84",
+            "8b6715e.c7095e8",
+            "e3edea19.a9c2f8",
+            "68c646a1.6aa018"
+        ],
+        "x": 455,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "779a8cbf.6ea9d4",
+        "type": "hubitat mode",
+        "z": "4702b097.59f3b",
+        "name": "",
+        "server": "b130c189.ea4d2",
+        "sendEvent": true,
+        "x": 370,
+        "y": 160,
+        "wires": [
+            [
+                "19c790a8.4f13cf"
+            ]
+        ]
+    },
+    {
+        "id": "19c790a8.4f13cf",
+        "type": "link out",
+        "z": "4702b097.59f3b",
+        "name": "Hubitat Mode",
+        "links": [
+            "162f458b.b5ce3a",
+            "63550b0f.dce3c4"
+        ],
+        "x": 455,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "162f458b.b5ce3a",
+        "type": "link in",
+        "z": "345f283.d5796d8",
+        "name": "Mode Change",
+        "links": [
+            "19c790a8.4f13cf"
+        ],
+        "x": 175,
+        "y": 340,
+        "wires": [
+            [
+                "ae57b7da.109528",
+                "59d071a7.8a464",
+                "8e74d342.066a6",
+                "9672e767.fceda8",
+                "9f83e2cc.07492"
+            ]
+        ]
+    },
+    {
+        "id": "e3edea19.a9c2f8",
+        "type": "link in",
+        "z": "d61084e.39e0678",
+        "name": "Volume Trigger",
+        "links": [
+            "da6ac8d6.218fe8"
+        ],
+        "x": 175,
         "y": 60,
         "wires": [
             [
-                "427bee3c.6d4c1"
+                "6118732f.6ede7c"
+            ]
+        ]
+    },
+    {
+        "id": "69216b2f.5a7f84",
+        "type": "link in",
+        "z": "68ba5945.906288",
+        "name": "Light and Fan Trigger",
+        "links": [
+            "da6ac8d6.218fe8"
+        ],
+        "x": 155,
+        "y": 120,
+        "wires": [
+            [
+                "e188401e.b56c",
+                "80bb010d.082ce"
+            ]
+        ]
+    },
+    {
+        "id": "8b6715e.c7095e8",
+        "type": "link in",
+        "z": "73f998b9.8842a8",
+        "name": "Goodnight and Good Morning Trigger",
+        "links": [
+            "da6ac8d6.218fe8"
+        ],
+        "x": 175,
+        "y": 360,
+        "wires": [
+            [
+                "e96cba5a.0480d8"
+            ]
+        ]
+    },
+    {
+        "id": "68c646a1.6aa018",
+        "type": "link in",
+        "z": "5c3cd757.a086c8",
+        "name": "Motion Overrides",
+        "links": [
+            "da6ac8d6.218fe8"
+        ],
+        "x": 155,
+        "y": 280,
+        "wires": [
+            [
+                "2cb4155c.cce7fa"
             ]
         ]
     }
