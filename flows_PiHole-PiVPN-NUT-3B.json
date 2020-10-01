@@ -535,6 +535,15 @@
         "name": "KMK Arlo"
     },
     {
+        "id": "bdfee576.1c2a08",
+        "type": "alexa-smart-home-v3-conf",
+        "z": "",
+        "username": "240avenida",
+        "mqttserver": "mq-red.cb-net.co.uk",
+        "webapiurl": "red.cb-net.co.uk",
+        "contextName": "file"
+    },
+    {
         "id": "c4c56729.96e518",
         "type": "inject",
         "z": "993c3146.12722",
@@ -4615,8 +4624,8 @@
         "z": "e1557285.e3f86",
         "name": "",
         "env": [],
-        "x": 590,
-        "y": 840,
+        "x": 1250,
+        "y": 760,
         "wires": [
             []
         ]
@@ -4637,8 +4646,8 @@
             ]
         },
         "outputs": 1,
-        "x": 980,
-        "y": 280,
+        "x": 960,
+        "y": 60,
         "wires": [
             []
         ]
@@ -4650,12 +4659,12 @@
         "name": "",
         "account": "d452a9d3.7a4488",
         "event": "ws-device-activity",
-        "x": 150,
-        "y": 240,
+        "x": 170,
+        "y": 660,
         "wires": [
             [
                 "5e799950.145b48",
-                "53101c6a.f83a74"
+                "f59f40fd.ccc8f"
             ]
         ]
     },
@@ -4680,8 +4689,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 400,
-        "y": 840,
+        "x": 1060,
+        "y": 760,
         "wires": [
             [
                 "81c142d1.42856"
@@ -4704,8 +4713,8 @@
             ]
         },
         "outputs": 1,
-        "x": 990,
-        "y": 400,
+        "x": 970,
+        "y": 180,
         "wires": [
             []
         ]
@@ -4726,8 +4735,8 @@
             ]
         },
         "outputs": 1,
-        "x": 1010,
-        "y": 520,
+        "x": 990,
+        "y": 300,
         "wires": [
             []
         ]
@@ -4751,8 +4760,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 730,
-        "y": 520,
+        "x": 710,
+        "y": 300,
         "wires": [
             [
                 "73e39005.b9e7e",
@@ -4776,8 +4785,8 @@
             ]
         },
         "outputs": 1,
-        "x": 980,
-        "y": 640,
+        "x": 960,
+        "y": 420,
         "wires": [
             []
         ]
@@ -4826,8 +4835,8 @@
         "endOffsetAltType": "none",
         "endOffsetAltMultiplier": 60000,
         "tsCompare": "0",
-        "x": 370,
-        "y": 300,
+        "x": 350,
+        "y": 80,
         "wires": [
             [
                 "ca260f87.93f17"
@@ -4879,11 +4888,11 @@
         "endOffsetAltType": "none",
         "endOffsetAltMultiplier": 60000,
         "tsCompare": "0",
-        "x": 360,
-        "y": 420,
+        "x": 340,
+        "y": 200,
         "wires": [
             [
-                "e6b00e94.ffe8d"
+                "721fc686.712798"
             ],
             []
         ]
@@ -4932,11 +4941,11 @@
         "endOffsetAltType": "none",
         "endOffsetAltMultiplier": 60000,
         "tsCompare": "0",
-        "x": 340,
-        "y": 540,
+        "x": 320,
+        "y": 320,
         "wires": [
             [
-                "fc1b8ba1.1f1e08"
+                "4985e4fd.b7d07c"
             ],
             []
         ]
@@ -5083,8 +5092,8 @@
         "name": "",
         "reporting": "every_second",
         "persist": false,
-        "x": 720,
-        "y": 580,
+        "x": 700,
+        "y": 360,
         "wires": [
             [
                 "a3d9aac.9918e58"
@@ -5094,109 +5103,35 @@
         ]
     },
     {
-        "id": "e6b00e94.ffe8d",
-        "type": "switch",
-        "z": "e1557285.e3f86",
-        "name": "Motion Handler",
-        "property": "payload.description.summary",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "what time",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "what day",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 540,
-        "y": 420,
-        "wires": [
-            [
-                "cca5846.1475b78"
-            ],
-            [
-                "889fff4a.6443d"
-            ]
-        ],
-        "outputLabels": [
-            "Motion",
-            "No Motion"
-        ]
-    },
-    {
         "id": "ca260f87.93f17",
         "type": "switch",
         "z": "e1557285.e3f86",
         "name": "Motion Handler",
-        "property": "payload.description.summary",
+        "property": "payload",
         "propertyType": "msg",
         "rules": [
             {
                 "t": "eq",
-                "v": "what time",
+                "v": "ON",
                 "vt": "str"
             },
             {
                 "t": "eq",
-                "v": "what day",
+                "v": "OFF",
                 "vt": "str"
             }
         ],
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 540,
-        "y": 300,
+        "x": 520,
+        "y": 80,
         "wires": [
             [
                 "a83420c1.dc341"
             ],
             [
                 "2c96f340.d344fc"
-            ]
-        ],
-        "outputLabels": [
-            "Motion",
-            "No Motion"
-        ]
-    },
-    {
-        "id": "fc1b8ba1.1f1e08",
-        "type": "switch",
-        "z": "e1557285.e3f86",
-        "name": "Motion Handler",
-        "property": "payload.description.summary",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "what time",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "what day",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 540,
-        "y": 540,
-        "wires": [
-            [
-                "bd227bfd.da22e8"
-            ],
-            [
-                "61d3530e.894b9c"
             ]
         ],
         "outputLabels": [
@@ -5216,8 +5151,8 @@
         "name": "",
         "reporting": "last_minute_seconds",
         "persist": false,
-        "x": 720,
-        "y": 460,
+        "x": 700,
+        "y": 240,
         "wires": [
             [
                 "a3d9aac.9918e58"
@@ -5238,8 +5173,8 @@
         "name": "",
         "reporting": "every_second",
         "persist": false,
-        "x": 730,
-        "y": 340,
+        "x": 710,
+        "y": 120,
         "wires": [
             [
                 "a3d9aac.9918e58"
@@ -5267,8 +5202,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 730,
-        "y": 400,
+        "x": 710,
+        "y": 180,
         "wires": [
             [
                 "e6eb5ab8.3088d8",
@@ -5295,8 +5230,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 730,
-        "y": 280,
+        "x": 710,
+        "y": 60,
         "wires": [
             [
                 "f2d6a1e1.a6f4a",
@@ -5364,8 +5299,8 @@
         "checkall": "false",
         "repair": false,
         "outputs": 8,
-        "x": 150,
-        "y": 100,
+        "x": 170,
+        "y": 500,
         "wires": [
             [
                 "585fe293.44be3c"
@@ -5397,14 +5332,14 @@
         "id": "585fe293.44be3c",
         "type": "function",
         "z": "e1557285.e3f86",
-        "name": "Motion On",
-        "func": "// initialise the counter to 0 if it doesn't exist already\nvar myMotion = flow.get('motion',\"file\")||0;\nmyMotion = true\n// store the value back\nflow.set('motion',myMotion,\"file\");\n// make it part of the outgoing msg object\nmsg.payload.motion = motion;\nreturn msg;",
+        "name": "Motion Off",
+        "func": "// initialise the counter to 0 if it doesn't exist already\nvar myMotion = flow.get('motion',\"file\")||0;\nmyMotion = false\n// store the value back\nflow.set('motion',myMotion,\"file\");\n// make it part of the outgoing msg object\nmsg.payload.motion = motion;\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 390,
-        "y": 60,
+        "x": 410,
+        "y": 460,
         "wires": [
             []
         ]
@@ -5413,14 +5348,14 @@
         "id": "79caf9de.681fd8",
         "type": "function",
         "z": "e1557285.e3f86",
-        "name": "Motion Off",
-        "func": "// initialise the counter to 0 if it doesn't exist already\nvar myMotion = flow.get('motion',\"file\")||0;\nmyMotion = false\n// store the value back\nflow.set('motion',myMotion,\"file\");\n// make it part of the outgoing msg object\nmsg.payload.motion = motion;\nreturn msg;",
+        "name": "Motion On",
+        "func": "// initialise the counter to 0 if it doesn't exist already\nvar myMotion = flow.get('motion',\"file\")||0;\nmyMotion = true\n// store the value back\nflow.set('motion',myMotion,\"file\");\n// make it part of the outgoing msg object\nmsg.payload.motion = motion;\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 390,
-        "y": 140,
+        "x": 410,
+        "y": 540,
         "wires": [
             []
         ]
@@ -5430,7 +5365,7 @@
         "type": "switch",
         "z": "e1557285.e3f86",
         "name": "if Motion On",
-        "property": "motion",
+        "property": "#:(file)::motion",
         "propertyType": "flow",
         "rules": [
             {
@@ -5443,8 +5378,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 170,
-        "y": 320,
+        "x": 150,
+        "y": 140,
         "wires": [
             [
                 "2dc7aabb.e7e7b6",
@@ -6363,6 +6298,133 @@
             [
                 "2cb4155c.cce7fa"
             ]
+        ]
+    },
+    {
+        "id": "f59f40fd.ccc8f",
+        "type": "switch",
+        "z": "e1557285.e3f86",
+        "name": "Phrase Handler",
+        "property": "payload.description.summary",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "regex",
+                "v": "good( )?night",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "good( )?morning",
+                "vt": "str",
+                "case": false
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 700,
+        "y": 500,
+        "wires": [
+            [
+                "585fe293.44be3c",
+                "a3d9aac.9918e58"
+            ],
+            [
+                "79caf9de.681fd8"
+            ]
+        ]
+    },
+    {
+        "id": "9f25d049.ddeb3",
+        "type": "alexa-smart-home-v3",
+        "z": "e1557285.e3f86",
+        "conf": "bdfee576.1c2a08",
+        "device": "19089",
+        "acknowledge": true,
+        "name": "Virtual Motion",
+        "topic": "motion",
+        "x": 110,
+        "y": 60,
+        "wires": [
+            [
+                "53101c6a.f83a74"
+            ]
+        ]
+    },
+    {
+        "id": "4985e4fd.b7d07c",
+        "type": "switch",
+        "z": "e1557285.e3f86",
+        "name": "Motion Handler",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "ON",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "OFF",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 520,
+        "y": 320,
+        "wires": [
+            [
+                "bd227bfd.da22e8"
+            ],
+            [
+                "61d3530e.894b9c"
+            ]
+        ],
+        "outputLabels": [
+            "Motion",
+            "No Motion"
+        ]
+    },
+    {
+        "id": "721fc686.712798",
+        "type": "switch",
+        "z": "e1557285.e3f86",
+        "name": "Motion Handler",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "ON",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "OFF",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 520,
+        "y": 200,
+        "wires": [
+            [
+                "cca5846.1475b78"
+            ],
+            [
+                "889fff4a.6443d"
+            ]
+        ],
+        "outputLabels": [
+            "Motion",
+            "No Motion"
         ]
     }
 ]
