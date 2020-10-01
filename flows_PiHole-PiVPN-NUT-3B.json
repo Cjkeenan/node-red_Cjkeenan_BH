@@ -4619,18 +4619,6 @@
         "wires": []
     },
     {
-        "id": "81c142d1.42856",
-        "type": "subflow:5618f29.6116b0c",
-        "z": "e1557285.e3f86",
-        "name": "",
-        "env": [],
-        "x": 1250,
-        "y": 760,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "f2d6a1e1.a6f4a",
         "type": "alexa-remote-smarthome",
         "z": "e1557285.e3f86",
@@ -4659,41 +4647,11 @@
         "name": "",
         "account": "d452a9d3.7a4488",
         "event": "ws-device-activity",
-        "x": 170,
-        "y": 660,
+        "x": 130,
+        "y": 420,
         "wires": [
             [
-                "5e799950.145b48",
-                "f59f40fd.ccc8f"
-            ]
-        ]
-    },
-    {
-        "id": "5e3acd21.2ce824",
-        "type": "inject",
-        "z": "e1557285.e3f86",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 1060,
-        "y": 760,
-        "wires": [
-            [
-                "81c142d1.42856"
+                "c697b7af.93a0c8"
             ]
         ]
     },
@@ -5299,8 +5257,8 @@
         "checkall": "false",
         "repair": false,
         "outputs": 8,
-        "x": 170,
-        "y": 500,
+        "x": 350,
+        "y": 520,
         "wires": [
             [
                 "585fe293.44be3c"
@@ -5334,15 +5292,13 @@
         "z": "e1557285.e3f86",
         "name": "Motion Off",
         "func": "// initialise the counter to 0 if it doesn't exist already\nvar myMotion = flow.get('motion',\"file\")||0;\nmyMotion = false\n// store the value back\nflow.set('motion',myMotion,\"file\");\n// make it part of the outgoing msg object\nmsg.payload.motion = motion;\nreturn msg;",
-        "outputs": 1,
+        "outputs": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 410,
-        "y": 460,
-        "wires": [
-            []
-        ]
+        "x": 570,
+        "y": 480,
+        "wires": []
     },
     {
         "id": "79caf9de.681fd8",
@@ -5350,21 +5306,19 @@
         "z": "e1557285.e3f86",
         "name": "Motion On",
         "func": "// initialise the counter to 0 if it doesn't exist already\nvar myMotion = flow.get('motion',\"file\")||0;\nmyMotion = true\n// store the value back\nflow.set('motion',myMotion,\"file\");\n// make it part of the outgoing msg object\nmsg.payload.motion = motion;\nreturn msg;",
-        "outputs": 1,
+        "outputs": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 410,
-        "y": 540,
-        "wires": [
-            []
-        ]
+        "x": 570,
+        "y": 560,
+        "wires": []
     },
     {
         "id": "53101c6a.f83a74",
         "type": "switch",
         "z": "e1557285.e3f86",
-        "name": "if Motion On",
+        "name": "Motion Override",
         "property": "#:(file)::motion",
         "propertyType": "flow",
         "rules": [
@@ -5378,8 +5332,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 150,
-        "y": 140,
+        "x": 140,
+        "y": 120,
         "wires": [
             [
                 "2dc7aabb.e7e7b6",
@@ -6324,8 +6278,8 @@
         "checkall": "false",
         "repair": false,
         "outputs": 2,
-        "x": 700,
-        "y": 500,
+        "x": 360,
+        "y": 440,
         "wires": [
             [
                 "585fe293.44be3c",
@@ -6426,5 +6380,701 @@
             "Motion",
             "No Motion"
         ]
+    },
+    {
+        "id": "ab3a6427.8164d8",
+        "type": "alexa-smart-home-v3",
+        "z": "e1557285.e3f86",
+        "conf": "bdfee576.1c2a08",
+        "device": "19087",
+        "acknowledge": true,
+        "name": "Motion Sensor",
+        "topic": "",
+        "x": 340,
+        "y": 620,
+        "wires": [
+            [
+                "3bab14fd.a6348c"
+            ]
+        ]
+    },
+    {
+        "id": "5f171349.45d70c",
+        "type": "alexa-smart-home-v3",
+        "z": "e1557285.e3f86",
+        "conf": "bdfee576.1c2a08",
+        "device": "19088",
+        "acknowledge": true,
+        "name": "Motion Sensing",
+        "topic": "",
+        "x": 340,
+        "y": 700,
+        "wires": [
+            [
+                "3bab14fd.a6348c"
+            ]
+        ]
+    },
+    {
+        "id": "3bab14fd.a6348c",
+        "type": "switch",
+        "z": "e1557285.e3f86",
+        "name": "Override Handler",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "ON",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "OFF",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 350,
+        "y": 660,
+        "wires": [
+            [
+                "79caf9de.681fd8"
+            ],
+            [
+                "585fe293.44be3c"
+            ]
+        ],
+        "outputLabels": [
+            "Motion",
+            "No Motion"
+        ]
+    },
+    {
+        "id": "e6052e34.e22db",
+        "type": "time-inject",
+        "z": "e1557285.e3f86",
+        "name": "Day",
+        "nameInt": "⏲ golden hour dawn end = 75",
+        "positionConfig": "433a14d5.44c6dc",
+        "props": [
+            {
+                "p": "",
+                "pt": "msgPayload",
+                "v": "75",
+                "vt": "num",
+                "o": "",
+                "oT": "none",
+                "oM": "60000",
+                "f": 0,
+                "fS": 0,
+                "fT": "UNIX timestamp (ms)",
+                "fI": "0",
+                "next": true,
+                "days": ""
+            },
+            {
+                "p": "",
+                "pt": "msgTopic",
+                "v": "",
+                "vt": "str",
+                "o": "",
+                "oT": "none",
+                "oM": "60000",
+                "f": 0,
+                "fS": 0,
+                "fT": "UNIX timestamp (ms)",
+                "fI": "0",
+                "next": false,
+                "days": ""
+            }
+        ],
+        "injectTypeSelect": "time",
+        "intervalCount": 1,
+        "intervalCountType": "num",
+        "intervalCountMultiplier": 60000,
+        "time": "goldenHourDawnEnd",
+        "timeType": "pdsTime",
+        "offset": 0,
+        "offsetType": "none",
+        "offsetMultiplier": 60000,
+        "timeEnd": "",
+        "timeEndType": "entered",
+        "timeEndOffset": 0,
+        "timeEndOffsetType": "none",
+        "timeEndOffsetMultiplier": 60000,
+        "timeDays": "*",
+        "timeOnlyOddDays": false,
+        "timeOnlyEvenDays": false,
+        "timeMonths": "*",
+        "timedatestart": "",
+        "timedateend": "",
+        "property": "",
+        "propertyType": "none",
+        "propertyCompare": "true",
+        "propertyThreshold": "",
+        "propertyThresholdType": "num",
+        "timeAlt": "",
+        "timeAltType": "entered",
+        "timeAltDays": "*",
+        "timeAltOnlyOddDays": false,
+        "timeAltOnlyEvenDays": false,
+        "timeAltMonths": "*",
+        "timeAltOffset": 0,
+        "timeAltOffsetType": "none",
+        "timeAltOffsetMultiplier": 60000,
+        "once": false,
+        "onceDelay": 0.1,
+        "recalcTime": 2,
+        "x": 670,
+        "y": 660,
+        "wires": [
+            [
+                "2ba2e322.8d793c"
+            ]
+        ]
+    },
+    {
+        "id": "2ba2e322.8d793c",
+        "type": "alexa-remote-echo",
+        "z": "e1557285.e3f86",
+        "name": "Colin's Bedroom - Echo Volume",
+        "account": "d452a9d3.7a4488",
+        "config": {
+            "option": "command",
+            "value": {
+                "device": {
+                    "type": "str",
+                    "value": "G0014B0594641L0V"
+                },
+                "what": "volume",
+                "value": {
+                    "type": "msg",
+                    "value": "payload"
+                }
+            }
+        },
+        "x": 890,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "43b3b4b4.b1605c",
+        "type": "time-inject",
+        "z": "e1557285.e3f86",
+        "name": "Evening",
+        "nameInt": "⏲ sunset = 50",
+        "positionConfig": "433a14d5.44c6dc",
+        "props": [
+            {
+                "p": "",
+                "pt": "msgPayload",
+                "v": "50",
+                "vt": "num",
+                "o": "",
+                "oT": "none",
+                "oM": "60000",
+                "f": 0,
+                "fS": 0,
+                "fT": "UNIX timestamp (ms)",
+                "fI": "0",
+                "next": true,
+                "days": ""
+            },
+            {
+                "p": "",
+                "pt": "msgTopic",
+                "v": "",
+                "vt": "str",
+                "o": "",
+                "oT": "none",
+                "oM": "60000",
+                "f": 0,
+                "fS": 0,
+                "fT": "UNIX timestamp (ms)",
+                "fI": "0",
+                "next": false,
+                "days": ""
+            }
+        ],
+        "injectTypeSelect": "time",
+        "intervalCount": 1,
+        "intervalCountType": "num",
+        "intervalCountMultiplier": 60000,
+        "time": "sunset",
+        "timeType": "pdsTime",
+        "offset": 0,
+        "offsetType": "none",
+        "offsetMultiplier": 60000,
+        "timeEnd": "",
+        "timeEndType": "entered",
+        "timeEndOffset": 0,
+        "timeEndOffsetType": "none",
+        "timeEndOffsetMultiplier": 60000,
+        "timeDays": "*",
+        "timeOnlyOddDays": false,
+        "timeOnlyEvenDays": false,
+        "timeMonths": "*",
+        "timedatestart": "",
+        "timedateend": "",
+        "property": "",
+        "propertyType": "none",
+        "propertyCompare": "true",
+        "propertyThreshold": "",
+        "propertyThresholdType": "num",
+        "timeAlt": "",
+        "timeAltType": "entered",
+        "timeAltDays": "*",
+        "timeAltOnlyOddDays": false,
+        "timeAltOnlyEvenDays": false,
+        "timeAltMonths": "*",
+        "timeAltOffset": 0,
+        "timeAltOffsetType": "none",
+        "timeAltOffsetMultiplier": 60000,
+        "once": false,
+        "onceDelay": 0.1,
+        "recalcTime": 2,
+        "x": 660,
+        "y": 720,
+        "wires": [
+            [
+                "2ba2e322.8d793c"
+            ]
+        ]
+    },
+    {
+        "id": "7c9dd3b3.4e2a0c",
+        "type": "time-inject",
+        "z": "e1557285.e3f86",
+        "name": "Night/Morning",
+        "nameInt": "⏲ 0:00 = 25",
+        "positionConfig": "433a14d5.44c6dc",
+        "props": [
+            {
+                "p": "",
+                "pt": "msgPayload",
+                "v": "25",
+                "vt": "num",
+                "o": "",
+                "oT": "none",
+                "oM": "60000",
+                "f": 0,
+                "fS": 0,
+                "fT": "UNIX timestamp (ms)",
+                "fI": "0",
+                "next": true,
+                "days": ""
+            },
+            {
+                "p": "",
+                "pt": "msgTopic",
+                "v": "",
+                "vt": "str",
+                "o": "",
+                "oT": "none",
+                "oM": "60000",
+                "f": 0,
+                "fS": 0,
+                "fT": "UNIX timestamp (ms)",
+                "fI": "0",
+                "next": false,
+                "days": ""
+            }
+        ],
+        "injectTypeSelect": "time",
+        "intervalCount": 1,
+        "intervalCountType": "num",
+        "intervalCountMultiplier": 60000,
+        "time": "0:00",
+        "timeType": "entered",
+        "offset": 0,
+        "offsetType": "none",
+        "offsetMultiplier": 60000,
+        "timeEnd": "",
+        "timeEndType": "entered",
+        "timeEndOffset": 0,
+        "timeEndOffsetType": "none",
+        "timeEndOffsetMultiplier": 60000,
+        "timeDays": "*",
+        "timeOnlyOddDays": false,
+        "timeOnlyEvenDays": false,
+        "timeMonths": "*",
+        "timedatestart": "",
+        "timedateend": "",
+        "property": "",
+        "propertyType": "none",
+        "propertyCompare": "true",
+        "propertyThreshold": "",
+        "propertyThresholdType": "num",
+        "timeAlt": "",
+        "timeAltType": "entered",
+        "timeAltDays": "*",
+        "timeAltOnlyOddDays": false,
+        "timeAltOnlyEvenDays": false,
+        "timeAltMonths": "*",
+        "timeAltOffset": 0,
+        "timeAltOffsetType": "none",
+        "timeAltOffsetMultiplier": 60000,
+        "once": false,
+        "onceDelay": 0.1,
+        "recalcTime": 2,
+        "x": 650,
+        "y": 780,
+        "wires": [
+            [
+                "2ba2e322.8d793c"
+            ]
+        ]
+    },
+    {
+        "id": "fa9716f5.f729a8",
+        "type": "alexa-remote-init",
+        "z": "e1557285.e3f86",
+        "name": "",
+        "account": "d452a9d3.7a4488",
+        "option": "refresh",
+        "x": 960,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fd765dff.7bfed",
+        "type": "inject",
+        "z": "e1557285.e3f86",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 800,
+        "y": 520,
+        "wires": [
+            [
+                "fa9716f5.f729a8"
+            ]
+        ]
+    },
+    {
+        "id": "f4894861.c471d8",
+        "type": "catch",
+        "z": "e1557285.e3f86",
+        "name": "catch: Alexa",
+        "scope": [
+            "f2d6a1e1.a6f4a",
+            "dffb6a18.069798",
+            "e6eb5ab8.3088d8",
+            "73e39005.b9e7e",
+            "a3d9aac.9918e58",
+            "2ba2e322.8d793c"
+        ],
+        "uncaught": false,
+        "x": 790,
+        "y": 560,
+        "wires": [
+            [
+                "fa9716f5.f729a8",
+                "b2435ce5.48c79",
+                "7348748.5fd988c"
+            ]
+        ]
+    },
+    {
+        "id": "f7f23f72.8769f",
+        "type": "alexa-remote-init",
+        "z": "345f283.d5796d8",
+        "name": "",
+        "account": "4553eef5.ffc05",
+        "option": "refresh",
+        "x": 1160,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5fb140cc.85f56",
+        "type": "inject",
+        "z": "345f283.d5796d8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1000,
+        "y": 60,
+        "wires": [
+            [
+                "f7f23f72.8769f"
+            ]
+        ]
+    },
+    {
+        "id": "399a5d24.7952f2",
+        "type": "catch",
+        "z": "345f283.d5796d8",
+        "name": "catch: Alexa",
+        "scope": [
+            "db41473e.5574e8",
+            "cfeb43bf.07772",
+            "e4c569a1.755d98",
+            "87177829.799d98",
+            "4fa7d080.e694f"
+        ],
+        "uncaught": false,
+        "x": 990,
+        "y": 100,
+        "wires": [
+            [
+                "f7f23f72.8769f",
+                "64a37b20.98a5b4",
+                "d9af6774.a1ebc8"
+            ]
+        ]
+    },
+    {
+        "id": "f3a46699.643ff8",
+        "type": "alexa-remote-init",
+        "z": "d61084e.39e0678",
+        "name": "",
+        "account": "4553eef5.ffc05",
+        "option": "refresh",
+        "x": 1100,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e5e03de2.fc1c1",
+        "type": "inject",
+        "z": "d61084e.39e0678",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 940,
+        "y": 120,
+        "wires": [
+            [
+                "f3a46699.643ff8"
+            ]
+        ]
+    },
+    {
+        "id": "eb4583fa.1861b",
+        "type": "catch",
+        "z": "d61084e.39e0678",
+        "name": "catch: Alexa",
+        "scope": [
+            "c0f915b6.e62fb8",
+            "68e807d.954b0f8",
+            "e4e76245.3c42",
+            "eb6d4a12.1e44f8",
+            "afd82140.f445b",
+            "57115256.c8f83c",
+            "558ee0bb.30b7f",
+            "5a515b3f.122a34",
+            "65f116d4.f76438",
+            "9d412f46.25b99",
+            "c1954c72.887de",
+            "3bd73cb0.773a34",
+            "ea17f4a9.8a2408",
+            "29113ff2.7a2d1",
+            "f81bf876.428948",
+            "9434928a.e846d"
+        ],
+        "uncaught": false,
+        "x": 930,
+        "y": 160,
+        "wires": [
+            [
+                "f3a46699.643ff8",
+                "2931e256.cec95e",
+                "169e9dfb.2ef7b2"
+            ]
+        ]
+    },
+    {
+        "id": "b2435ce5.48c79",
+        "type": "function",
+        "z": "e1557285.e3f86",
+        "name": "Error Count",
+        "func": "// initialise the counter to 0 if it doesn't exist already\nvar myRemote2_error = global.get('LF_remote2_error',\"file\")||0;\nmyRemote2_error = myRemote2_error + 1\n// store the value back\nglobal.set('LF_remote2_error',myRemote2_error,\"file\");\n// make it part of the outgoing msg object\nmsg.payload.errorCount = remote2_error;\nreturn msg;",
+        "outputs": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1010,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "64a37b20.98a5b4",
+        "type": "function",
+        "z": "345f283.d5796d8",
+        "name": "Error Count",
+        "func": "// initialise the counter to 0 if it doesn't exist already\nvar myRemote2_error = global.get('BH_remote2_error',\"file\")||0;\nmyRemote2_error = myRemote2_error + 1\n// store the value back\nglobal.set('BH_remote2_error',myRemote2_error,\"file\");\n// make it part of the outgoing msg object\nmsg.payload.errorCount = remote2_error;\nreturn msg;",
+        "outputs": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1210,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "2931e256.cec95e",
+        "type": "function",
+        "z": "d61084e.39e0678",
+        "name": "Error Count",
+        "func": "// initialise the counter to 0 if it doesn't exist already\nvar myRemote2_error = global.get('BH_remote2_error',\"file\")||0;\nmyRemote2_error = myRemote2_error + 1\n// store the value back\nglobal.set('BH_remote2_error',myRemote2_error,\"file\");\n// make it part of the outgoing msg object\nmsg.payload.errorCount = remote2_error;\nreturn msg;",
+        "outputs": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1150,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "7348748.5fd988c",
+        "type": "debug",
+        "z": "e1557285.e3f86",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 930,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "d9af6774.a1ebc8",
+        "type": "debug",
+        "z": "345f283.d5796d8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1130,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "169e9dfb.2ef7b2",
+        "type": "debug",
+        "z": "d61084e.39e0678",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1070,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "c697b7af.93a0c8",
+        "type": "switch",
+        "z": "e1557285.e3f86",
+        "name": "Device Handler",
+        "property": "payload.deviceSerialNumber",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "G0014B0594641L0V",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "G090U5099117260L",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "G090L91072151BM5",
+                "vt": "str"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 3,
+        "x": 140,
+        "y": 480,
+        "wires": [
+            [
+                "f59f40fd.ccc8f",
+                "5e799950.145b48"
+            ],
+            [],
+            []
+        ],
+        "inputLabels": [
+            "Alexa Device Activity Payload"
+        ],
+        "outputLabels": [
+            "Colin Echo Flex",
+            "Den Echo Dot",
+            "Living Room Echo Dot"
+        ],
+        "info": "Great Room - G090U509912423CC\nDownstairs Bedroom 1 - G6G0XG100134018V\nDownstairs Bedroom 2 - G090U509912424HF\nKitchen - G090U5099117264T\nMaster Bedroom - G090U509911620T7"
     }
 ]
