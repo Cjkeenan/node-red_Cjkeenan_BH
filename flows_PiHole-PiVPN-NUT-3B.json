@@ -592,6 +592,12 @@
         "contextName": "file"
     },
     {
+        "id": "cd7fc366.3fdc9",
+        "type": "arlo-config",
+        "z": "",
+        "name": "CJK Arlo"
+    },
+    {
         "id": "c4c56729.96e518",
         "type": "inject",
         "z": "993c3146.12722",
@@ -1269,8 +1275,8 @@
         "deviceId": "610",
         "command": "initialize",
         "commandArgs": "",
-        "x": 360,
-        "y": 200,
+        "x": 340,
+        "y": 40,
         "wires": [
             []
         ]
@@ -1284,8 +1290,8 @@
         "deviceId": "69",
         "command": "setPollInterval",
         "commandArgs": "5",
-        "x": 370,
-        "y": 400,
+        "x": 350,
+        "y": 240,
         "wires": [
             []
         ]
@@ -1299,8 +1305,8 @@
         "deviceId": "67",
         "command": "setPollInterval",
         "commandArgs": "5",
-        "x": 370,
-        "y": 440,
+        "x": 350,
+        "y": 280,
         "wires": [
             []
         ]
@@ -1315,7 +1321,7 @@
         "command": "presetLevel",
         "commandArgs": "",
         "x": 730,
-        "y": 380,
+        "y": 260,
         "wires": [
             []
         ]
@@ -1330,7 +1336,7 @@
         "command": "presetLevel",
         "commandArgs": "",
         "x": 730,
-        "y": 420,
+        "y": 300,
         "wires": [
             []
         ]
@@ -1345,137 +1351,7 @@
         "command": "presetLevel",
         "commandArgs": "",
         "x": 730,
-        "y": 460,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "db41473e.5574e8",
-        "type": "alexa-remote-echo",
-        "z": "345f283.d5796d8",
-        "name": "GR - Echo Volume",
-        "account": "4553eef5.ffc05",
-        "config": {
-            "option": "command",
-            "value": {
-                "device": {
-                    "type": "str",
-                    "value": "G090U509912423CC"
-                },
-                "what": "volume",
-                "value": {
-                    "type": "jsonata",
-                    "value": "msg.payload.volume+50"
-                }
-            }
-        },
-        "x": 730,
-        "y": 160,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "cfeb43bf.07772",
-        "type": "alexa-remote-echo",
-        "z": "345f283.d5796d8",
-        "name": "KT - Echo Volume",
-        "account": "4553eef5.ffc05",
-        "config": {
-            "option": "command",
-            "value": {
-                "device": {
-                    "type": "str",
-                    "value": "G090U5099117264T"
-                },
-                "what": "volume",
-                "value": {
-                    "type": "jsonata",
-                    "value": "msg.payload.volume+50"
-                }
-            }
-        },
-        "x": 730,
-        "y": 200,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "e4c569a1.755d98",
-        "type": "alexa-remote-echo",
-        "z": "345f283.d5796d8",
-        "name": "DB - Echo M Volume",
-        "account": "4553eef5.ffc05",
-        "config": {
-            "option": "command",
-            "value": {
-                "device": {
-                    "type": "str",
-                    "value": "G6G0XG100134018V"
-                },
-                "what": "volume",
-                "value": {
-                    "type": "msg",
-                    "value": "payload.volume"
-                }
-            }
-        },
-        "x": 740,
-        "y": 240,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "87177829.799d98",
-        "type": "alexa-remote-echo",
-        "z": "345f283.d5796d8",
-        "name": "DB - Echo S Volume",
-        "account": "4553eef5.ffc05",
-        "config": {
-            "option": "command",
-            "value": {
-                "device": {
-                    "type": "str",
-                    "value": "G090U509912424HF"
-                },
-                "what": "volume",
-                "value": {
-                    "type": "msg",
-                    "value": "payload.volume"
-                }
-            }
-        },
-        "x": 740,
-        "y": 280,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "4fa7d080.e694f",
-        "type": "alexa-remote-echo",
-        "z": "345f283.d5796d8",
-        "name": "MB - Echo Volume",
-        "account": "4553eef5.ffc05",
-        "config": {
-            "option": "command",
-            "value": {
-                "device": {
-                    "type": "str",
-                    "value": "G090U509911620T7"
-                },
-                "what": "volume",
-                "value": {
-                    "type": "msg",
-                    "value": "payload.volume"
-                }
-            }
-        },
-        "x": 730,
-        "y": 320,
+        "y": 340,
         "wires": [
             []
         ]
@@ -1501,8 +1377,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 120,
-        "y": 340,
+        "x": 100,
+        "y": 180,
         "wires": [
             [
                 "9f83e2cc.07492",
@@ -1656,8 +1532,8 @@
         "deviceId": "68",
         "command": "setPollInterval",
         "commandArgs": "5",
-        "x": 370,
-        "y": 480,
+        "x": 350,
+        "y": 320,
         "wires": [
             []
         ]
@@ -1672,7 +1548,7 @@
         "command": "on",
         "commandArgs": "",
         "x": 740,
-        "y": 520,
+        "y": 400,
         "wires": [
             []
         ]
@@ -1687,7 +1563,7 @@
         "command": "on",
         "commandArgs": "",
         "x": 740,
-        "y": 560,
+        "y": 440,
         "wires": [
             []
         ]
@@ -1702,7 +1578,7 @@
         "command": "on",
         "commandArgs": "",
         "x": 740,
-        "y": 600,
+        "y": 480,
         "wires": [
             []
         ]
@@ -1713,8 +1589,8 @@
         "z": "345f283.d5796d8",
         "name": "location",
         "server": "b130c189.ea4d2",
-        "x": 110,
-        "y": 200,
+        "x": 90,
+        "y": 40,
         "wires": [
             [
                 "a44ccae0.1fbd48"
@@ -2653,136 +2529,6 @@
         ]
     },
     {
-        "id": "558ee0bb.30b7f",
-        "type": "alexa-remote-echo",
-        "z": "d61084e.39e0678",
-        "name": "MB - Echo Volume",
-        "account": "4553eef5.ffc05",
-        "config": {
-            "option": "command",
-            "value": {
-                "device": {
-                    "type": "str",
-                    "value": "G090U509911620T7"
-                },
-                "what": "volume",
-                "value": {
-                    "type": "msg",
-                    "value": "payload.volume"
-                }
-            }
-        },
-        "x": 1150,
-        "y": 480,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "5a515b3f.122a34",
-        "type": "alexa-remote-echo",
-        "z": "d61084e.39e0678",
-        "name": "DB - Echo S Volume",
-        "account": "4553eef5.ffc05",
-        "config": {
-            "option": "command",
-            "value": {
-                "device": {
-                    "type": "str",
-                    "value": "G090U509912424HF"
-                },
-                "what": "volume",
-                "value": {
-                    "type": "msg",
-                    "value": "payload.volume"
-                }
-            }
-        },
-        "x": 1160,
-        "y": 440,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "65f116d4.f76438",
-        "type": "alexa-remote-echo",
-        "z": "d61084e.39e0678",
-        "name": "DB - Echo M Volume",
-        "account": "4553eef5.ffc05",
-        "config": {
-            "option": "command",
-            "value": {
-                "device": {
-                    "type": "str",
-                    "value": "G6G0XG100134018V"
-                },
-                "what": "volume",
-                "value": {
-                    "type": "msg",
-                    "value": "payload.volume"
-                }
-            }
-        },
-        "x": 1160,
-        "y": 400,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "9d412f46.25b99",
-        "type": "alexa-remote-echo",
-        "z": "d61084e.39e0678",
-        "name": "KT - Echo Volume",
-        "account": "4553eef5.ffc05",
-        "config": {
-            "option": "command",
-            "value": {
-                "device": {
-                    "type": "str",
-                    "value": "G090U5099117264T"
-                },
-                "what": "volume",
-                "value": {
-                    "type": "jsonata",
-                    "value": "msg.payload.volume+50"
-                }
-            }
-        },
-        "x": 1150,
-        "y": 360,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "c1954c72.887de",
-        "type": "alexa-remote-echo",
-        "z": "d61084e.39e0678",
-        "name": "GR - Echo Volume",
-        "account": "4553eef5.ffc05",
-        "config": {
-            "option": "command",
-            "value": {
-                "device": {
-                    "type": "str",
-                    "value": "G090U509912423CC"
-                },
-                "what": "volume",
-                "value": {
-                    "type": "jsonata",
-                    "value": "msg.payload.volume+50"
-                }
-            }
-        },
-        "x": 1150,
-        "y": 320,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "3bd73cb0.773a34",
         "type": "alexa-remote-echo",
         "z": "d61084e.39e0678",
@@ -2802,7 +2548,7 @@
         "y": 320,
         "wires": [
             [
-                "8cbf13ee.6bece"
+                "37b3e0d2.a9e47"
             ]
         ]
     },
@@ -2826,7 +2572,7 @@
         "y": 360,
         "wires": [
             [
-                "8cbf13ee.6bece"
+                "37b3e0d2.a9e47"
             ]
         ]
     },
@@ -2850,7 +2596,7 @@
         "y": 400,
         "wires": [
             [
-                "8cbf13ee.6bece"
+                "37b3e0d2.a9e47"
             ]
         ]
     },
@@ -2874,7 +2620,7 @@
         "y": 440,
         "wires": [
             [
-                "8cbf13ee.6bece"
+                "37b3e0d2.a9e47"
             ]
         ]
     },
@@ -2898,7 +2644,7 @@
         "y": 480,
         "wires": [
             [
-                "8cbf13ee.6bece"
+                "37b3e0d2.a9e47"
             ]
         ]
     },
@@ -2965,46 +2711,34 @@
         "z": "345f283.d5796d8",
         "name": "",
         "env": [],
-        "x": 380,
-        "y": 300,
+        "x": 360,
+        "y": 140,
         "wires": [
             [
-                "db41473e.5574e8",
-                "cfeb43bf.07772",
-                "e4c569a1.755d98",
-                "87177829.799d98",
-                "4fa7d080.e694f",
                 "2d2a8e8.4a5c572",
                 "c02cfc03.3f358",
-                "e1bf2646.a068a8"
+                "e1bf2646.a068a8",
+                "e8dcbd52.b3479",
+                "d3943f7b.d410d"
             ],
             [
                 "47bb0961.81b4a8",
                 "bfe92a56.a7a0a8"
             ],
             [
-                "db41473e.5574e8",
-                "cfeb43bf.07772",
-                "e4c569a1.755d98",
-                "87177829.799d98",
-                "4fa7d080.e694f",
-                "2d2a8e8.4a5c572",
-                "c02cfc03.3f358",
-                "e1bf2646.a068a8"
+                "e8dcbd52.b3479",
+                "d3943f7b.d410d"
             ],
             [
                 "47bb0961.81b4a8",
                 "315c6b22.c39a64"
             ],
             [
-                "db41473e.5574e8",
-                "cfeb43bf.07772",
-                "e4c569a1.755d98",
-                "87177829.799d98",
-                "4fa7d080.e694f",
                 "2d2a8e8.4a5c572",
                 "c02cfc03.3f358",
-                "e1bf2646.a068a8"
+                "e1bf2646.a068a8",
+                "e8dcbd52.b3479",
+                "d3943f7b.d410d"
             ],
             [
                 "47bb0961.81b4a8",
@@ -3013,14 +2747,11 @@
                 "8987899c.d65958"
             ],
             [
-                "db41473e.5574e8",
-                "cfeb43bf.07772",
-                "e4c569a1.755d98",
-                "87177829.799d98",
-                "4fa7d080.e694f",
                 "2d2a8e8.4a5c572",
                 "c02cfc03.3f358",
-                "e1bf2646.a068a8"
+                "e1bf2646.a068a8",
+                "e8dcbd52.b3479",
+                "d3943f7b.d410d"
             ],
             [
                 "b604cd0b.fa921"
@@ -3033,39 +2764,27 @@
         "z": "d61084e.39e0678",
         "name": "",
         "env": [],
-        "x": 920,
-        "y": 400,
+        "x": 960,
+        "y": 380,
         "wires": [
             [
-                "c1954c72.887de",
-                "9d412f46.25b99",
-                "65f116d4.f76438",
-                "5a515b3f.122a34",
-                "558ee0bb.30b7f"
+                "2c373c81.374514",
+                "944292c6.6bb64"
             ],
             [],
             [
-                "c1954c72.887de",
-                "9d412f46.25b99",
-                "65f116d4.f76438",
-                "5a515b3f.122a34",
-                "558ee0bb.30b7f"
+                "2c373c81.374514",
+                "944292c6.6bb64"
             ],
             [],
             [
-                "c1954c72.887de",
-                "9d412f46.25b99",
-                "65f116d4.f76438",
-                "5a515b3f.122a34",
-                "558ee0bb.30b7f"
+                "2c373c81.374514",
+                "944292c6.6bb64"
             ],
             [],
             [
-                "c1954c72.887de",
-                "9d412f46.25b99",
-                "65f116d4.f76438",
-                "5a515b3f.122a34",
-                "558ee0bb.30b7f"
+                "2c373c81.374514",
+                "944292c6.6bb64"
             ],
             []
         ]
@@ -3215,8 +2934,8 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
-        "x": 120,
-        "y": 280,
+        "x": 100,
+        "y": 120,
         "wires": [
             [
                 "ae57b7da.109528",
@@ -3244,8 +2963,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 120,
-        "y": 240,
+        "x": 100,
+        "y": 80,
         "wires": [
             [
                 "ed40bc41.95a34"
@@ -3258,8 +2977,8 @@
         "z": "f3e4e663.9ecbb8",
         "name": "Generate Teleporter Backup Address",
         "info": "Needs cookie -http://192.168.2.253/admin/scripts/pi-hole/php/teleporter.php",
-        "x": 450,
-        "y": 120,
+        "x": 180,
+        "y": 60,
         "wires": []
     },
     {
@@ -3272,7 +2991,7 @@
         "command": "off",
         "commandArgs": "",
         "x": 740,
-        "y": 660,
+        "y": 540,
         "wires": [
             []
         ]
@@ -3287,7 +3006,7 @@
         "command": "on",
         "commandArgs": "",
         "x": 740,
-        "y": 720,
+        "y": 600,
         "wires": [
             []
         ]
@@ -5547,17 +5266,6 @@
         ]
     },
     {
-        "id": "e5a1b2d2.030f9",
-        "type": "arlo-out",
-        "z": "7e547b10.f1db64",
-        "name": "240 Basestation",
-        "service": "283e8204.4178ae",
-        "device": "4R03777PA2C83",
-        "x": 740,
-        "y": 180,
-        "wires": []
-    },
-    {
         "id": "76b84738.3321c8",
         "type": "inject",
         "z": "7e547b10.f1db64",
@@ -5578,11 +5286,12 @@
         "topic": "mode",
         "payload": "true",
         "payloadType": "bool",
-        "x": 730,
-        "y": 120,
+        "x": 770,
+        "y": 220,
         "wires": [
             [
-                "e5a1b2d2.030f9"
+                "e5a1b2d2.030f9",
+                "529a3e6a.a10a7"
             ]
         ]
     },
@@ -5607,11 +5316,12 @@
         "topic": "mode",
         "payload": "false",
         "payloadType": "bool",
-        "x": 730,
-        "y": 240,
+        "x": 770,
+        "y": 140,
         "wires": [
             [
-                "e5a1b2d2.030f9"
+                "e5a1b2d2.030f9",
+                "ad2d0123.2b95d"
             ]
         ]
     },
@@ -5627,6 +5337,13 @@
                 "pt": "msg",
                 "to": "true",
                 "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "mode",
+                "tot": "str"
             }
         ],
         "action": "",
@@ -5634,11 +5351,12 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 510,
+        "x": 550,
         "y": 200,
         "wires": [
             [
-                "e5a1b2d2.030f9"
+                "e5a1b2d2.030f9",
+                "529a3e6a.a10a7"
             ]
         ]
     },
@@ -5654,6 +5372,13 @@
                 "pt": "msg",
                 "to": "false",
                 "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "mode",
+                "tot": "str"
             }
         ],
         "action": "",
@@ -5661,60 +5386,12 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 520,
+        "x": 560,
         "y": 160,
         "wires": [
             [
-                "e5a1b2d2.030f9"
-            ]
-        ]
-    },
-    {
-        "id": "2bb84f58.c744",
-        "type": "switch",
-        "z": "7e547b10.f1db64",
-        "name": "Mode Switch",
-        "property": "payload.value",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "Day",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "Evening",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "Night",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "Away",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 4,
-        "x": 350,
-        "y": 180,
-        "wires": [
-            [
-                "2be371d3.c1692e"
-            ],
-            [
-                "2be371d3.c1692e"
-            ],
-            [
-                "b7b79b46.61f3d8"
-            ],
-            [
-                "b7b79b46.61f3d8"
+                "e5a1b2d2.030f9",
+                "ad2d0123.2b95d"
             ]
         ]
     },
@@ -5812,11 +5489,11 @@
         "links": [
             "19c790a8.4f13cf"
         ],
-        "x": 215,
-        "y": 180,
+        "x": 175,
+        "y": 160,
         "wires": [
             [
-                "2bb84f58.c744"
+                "bcf6c46b.6409c8"
             ]
         ]
     },
@@ -5841,11 +5518,11 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 180,
-        "y": 220,
+        "x": 140,
+        "y": 200,
         "wires": [
             [
-                "2bb84f58.c744"
+                "bcf6c46b.6409c8"
             ]
         ]
     },
@@ -5943,8 +5620,8 @@
         "links": [
             "19c790a8.4f13cf"
         ],
-        "x": 155,
-        "y": 480,
+        "x": 135,
+        "y": 320,
         "wires": [
             [
                 "ae57b7da.109528",
@@ -6261,8 +5938,8 @@
         "once": false,
         "onceDelay": 0.1,
         "recalcTime": 2,
-        "x": 1290,
-        "y": 260,
+        "x": 830,
+        "y": 640,
         "wires": [
             [
                 "2ba2e322.8d793c"
@@ -6289,8 +5966,8 @@
                 }
             }
         },
-        "x": 1510,
-        "y": 320,
+        "x": 1050,
+        "y": 700,
         "wires": [
             []
         ]
@@ -6371,8 +6048,8 @@
         "once": false,
         "onceDelay": 0.1,
         "recalcTime": 2,
-        "x": 1280,
-        "y": 320,
+        "x": 820,
+        "y": 700,
         "wires": [
             [
                 "2ba2e322.8d793c"
@@ -6455,8 +6132,8 @@
         "once": false,
         "onceDelay": 0.1,
         "recalcTime": 2,
-        "x": 1270,
-        "y": 380,
+        "x": 810,
+        "y": 760,
         "wires": [
             [
                 "2ba2e322.8d793c"
@@ -6469,9 +6146,9 @@
         "z": "e1557285.e3f86",
         "name": "",
         "account": "d452a9d3.7a4488",
-        "option": "refresh",
-        "x": 1480,
-        "y": 60,
+        "option": "initialise",
+        "x": 960,
+        "y": 500,
         "wires": [
             []
         ]
@@ -6497,8 +6174,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 1320,
-        "y": 60,
+        "x": 820,
+        "y": 500,
         "wires": [
             [
                 "fa9716f5.f729a8"
@@ -6519,8 +6196,8 @@
             "2ba2e322.8d793c"
         ],
         "uncaught": false,
-        "x": 1310,
-        "y": 100,
+        "x": 810,
+        "y": 540,
         "wires": [
             [
                 "fa9716f5.f729a8",
@@ -6536,8 +6213,8 @@
         "name": "",
         "account": "4553eef5.ffc05",
         "option": "initialise",
-        "x": 1160,
-        "y": 60,
+        "x": 320,
+        "y": 460,
         "wires": [
             []
         ]
@@ -6563,8 +6240,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 1020,
-        "y": 60,
+        "x": 180,
+        "y": 460,
         "wires": [
             [
                 "f7f23f72.8769f"
@@ -6584,8 +6261,8 @@
             "4fa7d080.e694f"
         ],
         "uncaught": false,
-        "x": 1010,
-        "y": 100,
+        "x": 170,
+        "y": 500,
         "wires": [
             [
                 "f7f23f72.8769f",
@@ -6600,8 +6277,8 @@
         "z": "d61084e.39e0678",
         "name": "",
         "account": "4553eef5.ffc05",
-        "option": "refresh",
-        "x": 1100,
+        "option": "initialise",
+        "x": 1080,
         "y": 120,
         "wires": [
             []
@@ -6680,8 +6357,8 @@
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 1530,
-        "y": 100,
+        "x": 1050,
+        "y": 540,
         "wires": []
     },
     {
@@ -6694,8 +6371,8 @@
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 1230,
-        "y": 100,
+        "x": 390,
+        "y": 500,
         "wires": []
     },
     {
@@ -6725,8 +6402,8 @@
         "targetType": "full",
         "statusVal": "payload",
         "statusType": "auto",
-        "x": 1450,
-        "y": 140,
+        "x": 950,
+        "y": 580,
         "wires": []
     },
     {
@@ -6742,8 +6419,8 @@
         "targetType": "full",
         "statusVal": "payload",
         "statusType": "auto",
-        "x": 1150,
-        "y": 140,
+        "x": 310,
+        "y": 540,
         "wires": []
     },
     {
@@ -6861,7 +6538,9 @@
         "x": 720,
         "y": 40,
         "wires": [
-            []
+            [
+                "f9ddd891.9143e8"
+            ]
         ]
     },
     {
@@ -6876,7 +6555,9 @@
         "x": 720,
         "y": 100,
         "wires": [
-            []
+            [
+                "efb5880a.0d4838"
+            ]
         ]
     },
     {
@@ -7149,6 +6830,245 @@
                 "80bb010d.082ce",
                 "ef0c564a.379998"
             ]
+        ]
+    },
+    {
+        "id": "f9ddd891.9143e8",
+        "type": "hubitat command",
+        "z": "345f283.d5796d8",
+        "name": "DK - Dynatrap",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1826",
+        "command": "on",
+        "commandArgs": "",
+        "x": 900,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "efb5880a.0d4838",
+        "type": "hubitat command",
+        "z": "345f283.d5796d8",
+        "name": "DK - Dynatrap",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1826",
+        "command": "off",
+        "commandArgs": "",
+        "x": 900,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e8dcbd52.b3479",
+        "type": "alexa-remote-routine",
+        "z": "345f283.d5796d8",
+        "name": "Bedroom Volume",
+        "account": "4553eef5.ffc05",
+        "routineNode": {
+            "type": "volume",
+            "payload": {
+                "value": {
+                    "type": "msg",
+                    "value": "payload.volume"
+                },
+                "mode": {
+                    "type": "str",
+                    "value": "set"
+                },
+                "devices": [
+                    "G090U509912424HF",
+                    "G6G0XG100134018V",
+                    "G090U509911620T7"
+                ]
+            }
+        },
+        "x": 730,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d3943f7b.d410d",
+        "type": "alexa-remote-routine",
+        "z": "345f283.d5796d8",
+        "name": "Common Area Volume",
+        "account": "4553eef5.ffc05",
+        "routineNode": {
+            "type": "volume",
+            "payload": {
+                "value": {
+                    "type": "jsonata",
+                    "value": "msg.payload.volume+50"
+                },
+                "mode": {
+                    "type": "str",
+                    "value": "set"
+                },
+                "devices": [
+                    "G090U509912423CC",
+                    "G090U5099117264T"
+                ]
+            }
+        },
+        "x": 740,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "944292c6.6bb64",
+        "type": "alexa-remote-routine",
+        "z": "d61084e.39e0678",
+        "name": "Bedroom Volume",
+        "account": "4553eef5.ffc05",
+        "routineNode": {
+            "type": "volume",
+            "payload": {
+                "value": {
+                    "type": "msg",
+                    "value": "payload.volume"
+                },
+                "mode": {
+                    "type": "str",
+                    "value": "set"
+                },
+                "devices": [
+                    "G090U509912424HF",
+                    "G6G0XG100134018V",
+                    "G090U509911620T7"
+                ]
+            }
+        },
+        "x": 1190,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2c373c81.374514",
+        "type": "alexa-remote-routine",
+        "z": "d61084e.39e0678",
+        "name": "Common Area Volume",
+        "account": "4553eef5.ffc05",
+        "routineNode": {
+            "type": "volume",
+            "payload": {
+                "value": {
+                    "type": "jsonata",
+                    "value": "msg.payload.volume+50"
+                },
+                "mode": {
+                    "type": "str",
+                    "value": "set"
+                },
+                "devices": [
+                    "G090U509912423CC",
+                    "G090U5099117264T"
+                ]
+            }
+        },
+        "x": 1200,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "37b3e0d2.a9e47",
+        "type": "delay",
+        "z": "d61084e.39e0678",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "x": 930,
+        "y": 480,
+        "wires": [
+            [
+                "8cbf13ee.6bece"
+            ]
+        ]
+    },
+    {
+        "id": "bcf6c46b.6409c8",
+        "type": "subflow:ac12c9d8.613d38",
+        "z": "7e547b10.f1db64",
+        "name": "",
+        "env": [],
+        "x": 340,
+        "y": 200,
+        "wires": [
+            [],
+            [
+                "2be371d3.c1692e"
+            ],
+            [],
+            [
+                "2be371d3.c1692e"
+            ],
+            [],
+            [
+                "b7b79b46.61f3d8"
+            ],
+            [],
+            [
+                "b7b79b46.61f3d8"
+            ]
+        ]
+    },
+    {
+        "id": "e5a1b2d2.030f9",
+        "type": "arlo-out",
+        "z": "7e547b10.f1db64",
+        "name": "240 Basestation",
+        "service": "cd7fc366.3fdc9",
+        "device": "4R03777PA2C83",
+        "x": 780,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "ad2d0123.2b95d",
+        "type": "hubitat command",
+        "z": "7e547b10.f1db64",
+        "name": "Arlo Disarm",
+        "server": "b130c189.ea4d2",
+        "deviceId": "2017",
+        "command": "off",
+        "commandArgs": "",
+        "x": 770,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "529a3e6a.a10a7",
+        "type": "hubitat command",
+        "z": "7e547b10.f1db64",
+        "name": "Arlo Arm",
+        "server": "b130c189.ea4d2",
+        "deviceId": "2017",
+        "command": "on",
+        "commandArgs": "",
+        "x": 760,
+        "y": 280,
+        "wires": [
+            []
         ]
     }
 ]
