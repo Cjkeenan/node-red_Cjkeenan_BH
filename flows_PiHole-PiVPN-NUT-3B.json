@@ -42,6 +42,13 @@
         "info": ""
     },
     {
+        "id": "f2fbef66.3730f",
+        "type": "tab",
+        "label": "Thermostat Auto Away",
+        "disabled": false,
+        "info": ""
+    },
+    {
         "id": "7e547b10.f1db64",
         "type": "tab",
         "label": "Arlo Geofenced Schedule",
@@ -160,19 +167,19 @@
         "category": "hubitat",
         "in": [
             {
-                "x": 100,
-                "y": 200,
+                "x": 60,
+                "y": 60,
                 "wires": [
                     {
-                        "id": "c5d42927.3e5298"
+                        "id": "be5a80cf.7fe59"
                     }
                 ]
             }
         ],
         "out": [
             {
-                "x": 600,
-                "y": 80,
+                "x": 680,
+                "y": 40,
                 "wires": [
                     {
                         "id": "98aa6dc5.7fb68",
@@ -181,18 +188,18 @@
                 ]
             },
             {
-                "x": 600,
-                "y": 120,
+                "x": 680,
+                "y": 80,
                 "wires": [
                     {
-                        "id": "910dea66.534338",
+                        "id": "fbbbf44.f20c308",
                         "port": 0
                     }
                 ]
             },
             {
-                "x": 600,
-                "y": 160,
+                "x": 680,
+                "y": 120,
                 "wires": [
                     {
                         "id": "ee672932.b889f8",
@@ -201,18 +208,18 @@
                 ]
             },
             {
-                "x": 600,
-                "y": 200,
+                "x": 680,
+                "y": 160,
                 "wires": [
                     {
-                        "id": "910dea66.534338",
-                        "port": 1
+                        "id": "fa1db06f.77cad",
+                        "port": 0
                     }
                 ]
             },
             {
-                "x": 600,
-                "y": 240,
+                "x": 680,
+                "y": 200,
                 "wires": [
                     {
                         "id": "f1d1cb2e.dcdff8",
@@ -221,18 +228,18 @@
                 ]
             },
             {
-                "x": 600,
-                "y": 280,
+                "x": 680,
+                "y": 240,
                 "wires": [
                     {
-                        "id": "910dea66.534338",
-                        "port": 2
+                        "id": "cbb6f5e3.a0c998",
+                        "port": 0
                     }
                 ]
             },
             {
-                "x": 600,
-                "y": 320,
+                "x": 680,
+                "y": 280,
                 "wires": [
                     {
                         "id": "88d18988.5bf308",
@@ -241,12 +248,12 @@
                 ]
             },
             {
-                "x": 600,
-                "y": 360,
+                "x": 680,
+                "y": 320,
                 "wires": [
                     {
-                        "id": "910dea66.534338",
-                        "port": 3
+                        "id": "660dffb4.d7181",
+                        "port": 0
                     }
                 ]
             }
@@ -1319,7 +1326,7 @@
         "server": "b130c189.ea4d2",
         "sendEvent": false,
         "x": 190,
-        "y": 200,
+        "y": 180,
         "wires": [
             [
                 "910dea66.534338"
@@ -1359,19 +1366,23 @@
         "repair": false,
         "outputs": 4,
         "x": 330,
-        "y": 200,
+        "y": 180,
         "wires": [
             [
-                "98aa6dc5.7fb68"
+                "98aa6dc5.7fb68",
+                "fbbbf44.f20c308"
             ],
             [
-                "ee672932.b889f8"
+                "ee672932.b889f8",
+                "fa1db06f.77cad"
             ],
             [
-                "f1d1cb2e.dcdff8"
+                "f1d1cb2e.dcdff8",
+                "cbb6f5e3.a0c998"
             ],
             [
-                "88d18988.5bf308"
+                "88d18988.5bf308",
+                "660dffb4.d7181"
             ]
         ]
     },
@@ -2609,23 +2620,19 @@
         "y": 380,
         "wires": [
             [
-                "2c373c81.374514",
-                "944292c6.6bb64"
+                "29191bda.024fd4"
             ],
             [],
             [
-                "2c373c81.374514",
-                "944292c6.6bb64"
+                "29191bda.024fd4"
             ],
             [],
             [
-                "2c373c81.374514",
-                "944292c6.6bb64"
+                "29191bda.024fd4"
             ],
             [],
             [
-                "2c373c81.374514",
-                "944292c6.6bb64"
+                "29191bda.024fd4"
             ],
             []
         ]
@@ -2819,7 +2826,9 @@
         "x": 960,
         "y": 60,
         "wires": [
-            []
+            [
+                "aea522c7.dfb08"
+            ]
         ]
     },
     {
@@ -2864,7 +2873,9 @@
         "x": 960,
         "y": 180,
         "wires": [
-            []
+            [
+                "bf7f93e1.85afd"
+            ]
         ]
     },
     {
@@ -6403,65 +6414,6 @@
         ]
     },
     {
-        "id": "944292c6.6bb64",
-        "type": "alexa-remote-routine",
-        "z": "d61084e.39e0678",
-        "name": "Bedroom Volume",
-        "account": "4553eef5.ffc05",
-        "routineNode": {
-            "type": "volume",
-            "payload": {
-                "value": {
-                    "type": "msg",
-                    "value": "payload.volume"
-                },
-                "mode": {
-                    "type": "str",
-                    "value": "set"
-                },
-                "devices": [
-                    "G090U509912424HF",
-                    "G6G0XG100134018V",
-                    "G090U509911620T7"
-                ]
-            }
-        },
-        "x": 1190,
-        "y": 360,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "2c373c81.374514",
-        "type": "alexa-remote-routine",
-        "z": "d61084e.39e0678",
-        "name": "Common Area Volume",
-        "account": "4553eef5.ffc05",
-        "routineNode": {
-            "type": "volume",
-            "payload": {
-                "value": {
-                    "type": "jsonata",
-                    "value": "msg.payload.volume+50"
-                },
-                "mode": {
-                    "type": "str",
-                    "value": "set"
-                },
-                "devices": [
-                    "G090U509912423CC",
-                    "G090U5099117264T"
-                ]
-            }
-        },
-        "x": 1200,
-        "y": 400,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "37b3e0d2.a9e47",
         "type": "delay",
         "z": "d61084e.39e0678",
@@ -6888,8 +6840,8 @@
                 "type": "num"
             }
         ],
-        "x": 490,
-        "y": 80,
+        "x": 530,
+        "y": 40,
         "wires": [
             []
         ]
@@ -6941,8 +6893,8 @@
                 "type": "num"
             }
         ],
-        "x": 500,
-        "y": 160,
+        "x": 540,
+        "y": 120,
         "wires": [
             []
         ]
@@ -6984,8 +6936,8 @@
                 "type": "num"
             }
         ],
-        "x": 490,
-        "y": 320,
+        "x": 530,
+        "y": 280,
         "wires": [
             []
         ]
@@ -7057,8 +7009,8 @@
                 "type": "num"
             }
         ],
-        "x": 490,
-        "y": 240,
+        "x": 530,
+        "y": 200,
         "wires": [
             []
         ]
@@ -7322,7 +7274,7 @@
         "deviceId": "68",
         "command": "presetLevel",
         "commandArgs": "",
-        "x": 950,
+        "x": 1090,
         "y": 240,
         "wires": [
             []
@@ -7834,7 +7786,7 @@
         "z": "345f283.d5796d8",
         "name": "MB - Thermostat",
         "server": "b130c189.ea4d2",
-        "deviceId": "2055",
+        "deviceId": "2060",
         "command": "setThermostatMode",
         "commandArgs": "",
         "x": 1010,
@@ -7849,7 +7801,7 @@
         "z": "345f283.d5796d8",
         "name": "MB - Thermostat",
         "server": "b130c189.ea4d2",
-        "deviceId": "2055",
+        "deviceId": "2060",
         "command": "setHeatingSetpoint",
         "commandArgs": "",
         "x": 1010,
@@ -7864,7 +7816,7 @@
         "z": "345f283.d5796d8",
         "name": "GR - Thermostat",
         "server": "b130c189.ea4d2",
-        "deviceId": "2054",
+        "deviceId": "2059",
         "command": "setThermostatMode",
         "commandArgs": "",
         "x": 1010,
@@ -7879,7 +7831,7 @@
         "z": "345f283.d5796d8",
         "name": "GR - Thermostat",
         "server": "b130c189.ea4d2",
-        "deviceId": "2054",
+        "deviceId": "2059",
         "command": "setHeatingSetpoint",
         "commandArgs": "",
         "x": 1010,
@@ -7901,7 +7853,7 @@
                 "527c0cc9.c39f84"
             ],
             [
-                "eb102125.517d1"
+                "e5d94959.3d4588"
             ],
             [
                 "2bf257a5.75d838"
@@ -7912,6 +7864,7 @@
         "id": "6c5d02ff.dab1dc",
         "type": "subflow:435a82d9.b4e8dc",
         "z": "345f283.d5796d8",
+        "d": true,
         "name": "",
         "env": [],
         "x": 750,
@@ -7929,6 +7882,1280 @@
             [
                 "96204062.17227"
             ]
+        ]
+    },
+    {
+        "id": "29191bda.024fd4",
+        "type": "alexa-remote-routine",
+        "z": "d61084e.39e0678",
+        "name": "Echo Volumes",
+        "account": "4553eef5.ffc05",
+        "routineNode": {
+            "type": "node",
+            "payload": {
+                "type": "parallel",
+                "children": [
+                    {
+                        "type": "volume",
+                        "payload": {
+                            "value": {
+                                "type": "msg",
+                                "value": "payload.gr.volume"
+                            },
+                            "mode": {
+                                "type": "str",
+                                "value": "set"
+                            },
+                            "devices": [
+                                "G090U509912423CC"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "volume",
+                        "payload": {
+                            "value": {
+                                "type": "msg",
+                                "value": "payload.kt.volume"
+                            },
+                            "mode": {
+                                "type": "str",
+                                "value": "set"
+                            },
+                            "devices": [
+                                "G090U5099117264T"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "volume",
+                        "payload": {
+                            "value": {
+                                "type": "msg",
+                                "value": "payload.db.volume"
+                            },
+                            "mode": {
+                                "type": "str",
+                                "value": "set"
+                            },
+                            "devices": [
+                                "G090U509912424HF",
+                                "G6G0XG100134018V"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "volume",
+                        "payload": {
+                            "value": {
+                                "type": "msg",
+                                "value": "payload.mb.volume"
+                            },
+                            "mode": {
+                                "type": "str",
+                                "value": "set"
+                            },
+                            "devices": [
+                                "G090U509911620T7"
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        "x": 1180,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e5d94959.3d4588",
+        "type": "switch",
+        "z": "345f283.d5796d8",
+        "name": "!evening",
+        "property": "payload.value",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "Evening",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 920,
+        "y": 240,
+        "wires": [
+            [
+                "eb102125.517d1"
+            ]
+        ]
+    },
+    {
+        "id": "a501ed0c.a4ecd",
+        "type": "hubitat device",
+        "z": "f2fbef66.3730f",
+        "name": "GR - MS Clock",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1413",
+        "attribute": "motion",
+        "sendEvent": true,
+        "x": 160,
+        "y": 100,
+        "wires": [
+            [
+                "407b3b12.0bbb24"
+            ]
+        ]
+    },
+    {
+        "id": "ac423bf0.bea628",
+        "type": "hubitat device",
+        "z": "f2fbef66.3730f",
+        "name": "GR - MS Front Door",
+        "server": "b130c189.ea4d2",
+        "deviceId": "162",
+        "attribute": "motion",
+        "sendEvent": true,
+        "x": 140,
+        "y": 160,
+        "wires": [
+            [
+                "407b3b12.0bbb24"
+            ]
+        ]
+    },
+    {
+        "id": "6c943f38.4d16a",
+        "type": "hubitat device",
+        "z": "f2fbef66.3730f",
+        "name": "DR - MS Ship",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1348",
+        "attribute": "motion",
+        "sendEvent": true,
+        "x": 160,
+        "y": 220,
+        "wires": [
+            [
+                "407b3b12.0bbb24"
+            ]
+        ]
+    },
+    {
+        "id": "32d7afe4.d0bef",
+        "type": "hubitat device",
+        "z": "f2fbef66.3730f",
+        "name": "KT - MS Pantry",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1795",
+        "attribute": "motion",
+        "sendEvent": true,
+        "x": 160,
+        "y": 280,
+        "wires": [
+            [
+                "407b3b12.0bbb24"
+            ]
+        ]
+    },
+    {
+        "id": "97866b93.f42268",
+        "type": "hubitat device",
+        "z": "f2fbef66.3730f",
+        "name": "KT - MS Microwave",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1794",
+        "attribute": "motion",
+        "sendEvent": true,
+        "x": 150,
+        "y": 340,
+        "wires": [
+            [
+                "407b3b12.0bbb24"
+            ]
+        ]
+    },
+    {
+        "id": "9041ced4.5aa79",
+        "type": "BooleanLogicUltimate",
+        "z": "f2fbef66.3730f",
+        "name": "",
+        "filtertrue": "both",
+        "persist": true,
+        "sInitializeWith": "false",
+        "triggertopic": "trigger",
+        "outputtriggeredby": "all",
+        "inputCount": "5",
+        "topic": "Ground Floor Motion",
+        "x": 640,
+        "y": 120,
+        "wires": [
+            [],
+            [
+                "3b30fd1a.997232"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "74492898.e16828",
+        "type": "change",
+        "z": "f2fbef66.3730f",
+        "name": "active",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 470,
+        "y": 100,
+        "wires": [
+            [
+                "9041ced4.5aa79"
+            ]
+        ]
+    },
+    {
+        "id": "407b3b12.0bbb24",
+        "type": "switch",
+        "z": "f2fbef66.3730f",
+        "name": "Motion",
+        "property": "payload.value",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "active",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "inactive",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 350,
+        "y": 120,
+        "wires": [
+            [
+                "74492898.e16828"
+            ],
+            [
+                "8a8b8d7d.e87e6"
+            ]
+        ]
+    },
+    {
+        "id": "8a8b8d7d.e87e6",
+        "type": "change",
+        "z": "f2fbef66.3730f",
+        "name": "inactive",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 480,
+        "y": 140,
+        "wires": [
+            [
+                "9041ced4.5aa79"
+            ]
+        ]
+    },
+    {
+        "id": "640f8720.4f0e28",
+        "type": "stoptimer-varidelay",
+        "z": "f2fbef66.3730f",
+        "duration": "1",
+        "durationType": "num",
+        "units": "Hour",
+        "payloadtype": "num",
+        "payloadval": "0",
+        "name": "",
+        "reporting": "last_minute_seconds",
+        "persist": true,
+        "x": 530,
+        "y": 300,
+        "wires": [
+            [
+                "2a7d057a.d8708a"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "1b3d8792.2460c8",
+        "type": "hubitat command",
+        "z": "f2fbef66.3730f",
+        "name": "GR - Thermostat EcoMode",
+        "server": "b130c189.ea4d2",
+        "deviceId": "2061",
+        "command": "off",
+        "commandArgs": "",
+        "x": 800,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3b30fd1a.997232",
+        "type": "switch",
+        "z": "f2fbef66.3730f",
+        "name": "Motion",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 390,
+        "y": 260,
+        "wires": [
+            [
+                "8fc0f097.2a5be"
+            ],
+            [
+                "640f8720.4f0e28"
+            ]
+        ]
+    },
+    {
+        "id": "2a7d057a.d8708a",
+        "type": "hubitat command",
+        "z": "f2fbef66.3730f",
+        "name": "GR - Thermostat EcoMode",
+        "server": "b130c189.ea4d2",
+        "deviceId": "2061",
+        "command": "on",
+        "commandArgs": "",
+        "x": 800,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8fc0f097.2a5be",
+        "type": "change",
+        "z": "f2fbef66.3730f",
+        "name": "Stop Motion Timer",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "STOP",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 550,
+        "y": 220,
+        "wires": [
+            [
+                "1b3d8792.2460c8",
+                "640f8720.4f0e28"
+            ]
+        ]
+    },
+    {
+        "id": "d589a4be.874238",
+        "type": "comment",
+        "z": "f2fbef66.3730f",
+        "name": "Ground Floor Check",
+        "info": "",
+        "x": 130,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "ca1c15d4.926378",
+        "type": "hubitat device",
+        "z": "f2fbef66.3730f",
+        "name": "MB - MS Bath",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1418",
+        "attribute": "motion",
+        "sendEvent": true,
+        "x": 120,
+        "y": 480,
+        "wires": [
+            [
+                "8e517092.31acb"
+            ]
+        ]
+    },
+    {
+        "id": "6cb7bd3e.379414",
+        "type": "hubitat device",
+        "z": "f2fbef66.3730f",
+        "name": "MB - MS Door",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1354",
+        "attribute": "motion",
+        "sendEvent": true,
+        "x": 120,
+        "y": 540,
+        "wires": [
+            [
+                "8e517092.31acb"
+            ]
+        ]
+    },
+    {
+        "id": "5613b0c3.76b78",
+        "type": "BooleanLogicUltimate",
+        "z": "f2fbef66.3730f",
+        "name": "",
+        "filtertrue": "both",
+        "persist": true,
+        "sInitializeWith": "false",
+        "triggertopic": "trigger",
+        "outputtriggeredby": "all",
+        "inputCount": "2",
+        "topic": "Top Floor Motion",
+        "x": 580,
+        "y": 500,
+        "wires": [
+            [],
+            [
+                "cf390678.346948"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "909d5c28.2b83b",
+        "type": "change",
+        "z": "f2fbef66.3730f",
+        "name": "active",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 430,
+        "y": 480,
+        "wires": [
+            [
+                "5613b0c3.76b78"
+            ]
+        ]
+    },
+    {
+        "id": "8e517092.31acb",
+        "type": "switch",
+        "z": "f2fbef66.3730f",
+        "name": "Motion",
+        "property": "payload.value",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "active",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "inactive",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 290,
+        "y": 500,
+        "wires": [
+            [
+                "909d5c28.2b83b"
+            ],
+            [
+                "52591e99.d821b"
+            ]
+        ]
+    },
+    {
+        "id": "52591e99.d821b",
+        "type": "change",
+        "z": "f2fbef66.3730f",
+        "name": "inactive",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 420,
+        "y": 520,
+        "wires": [
+            [
+                "5613b0c3.76b78"
+            ]
+        ]
+    },
+    {
+        "id": "76367b7.cf6be84",
+        "type": "stoptimer-varidelay",
+        "z": "f2fbef66.3730f",
+        "duration": "1",
+        "durationType": "num",
+        "units": "Hour",
+        "payloadtype": "num",
+        "payloadval": "0",
+        "name": "",
+        "reporting": "last_minute_seconds",
+        "persist": true,
+        "x": 530,
+        "y": 680,
+        "wires": [
+            [
+                "e27297b2.3e1778"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "f45bc942.ceda18",
+        "type": "hubitat command",
+        "z": "f2fbef66.3730f",
+        "name": "MB - Thermostat EcoMode",
+        "server": "b130c189.ea4d2",
+        "deviceId": "2062",
+        "command": "off",
+        "commandArgs": "",
+        "x": 800,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cf390678.346948",
+        "type": "switch",
+        "z": "f2fbef66.3730f",
+        "name": "Motion",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 390,
+        "y": 640,
+        "wires": [
+            [
+                "1c5545a.1be0bba"
+            ],
+            [
+                "76367b7.cf6be84"
+            ]
+        ]
+    },
+    {
+        "id": "e27297b2.3e1778",
+        "type": "hubitat command",
+        "z": "f2fbef66.3730f",
+        "name": "MB - Thermostat EcoMode",
+        "server": "b130c189.ea4d2",
+        "deviceId": "2062",
+        "command": "on",
+        "commandArgs": "",
+        "x": 800,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1c5545a.1be0bba",
+        "type": "change",
+        "z": "f2fbef66.3730f",
+        "name": "Stop Motion Timer",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "STOP",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 550,
+        "y": 600,
+        "wires": [
+            [
+                "f45bc942.ceda18",
+                "76367b7.cf6be84"
+            ]
+        ]
+    },
+    {
+        "id": "aed3829b.198dd",
+        "type": "comment",
+        "z": "f2fbef66.3730f",
+        "name": "Top Floor Check",
+        "info": "",
+        "x": 120,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "bf7f93e1.85afd",
+        "type": "hubitat command",
+        "z": "73f998b9.8842a8",
+        "name": "MB - Thermostat",
+        "server": "b130c189.ea4d2",
+        "deviceId": "2060",
+        "command": "setHeatingSetpoint",
+        "commandArgs": "35",
+        "x": 1170,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "aea522c7.dfb08",
+        "type": "hubitat command",
+        "z": "73f998b9.8842a8",
+        "name": "GR - Thermostat",
+        "server": "b130c189.ea4d2",
+        "deviceId": "2059",
+        "command": "setHeatingSetpoint",
+        "commandArgs": "35",
+        "x": 1170,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "978ecc2.6cee13",
+        "type": "inject",
+        "z": "73f998b9.8842a8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 970,
+        "y": 240,
+        "wires": [
+            [
+                "bf7f93e1.85afd"
+            ]
+        ]
+    },
+    {
+        "id": "be5a80cf.7fe59",
+        "type": "change",
+        "z": "ac12c9d8.613d38",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "backup",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "backupTopic",
+                "pt": "msg",
+                "to": "topic",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 140,
+        "y": 120,
+        "wires": [
+            [
+                "c5d42927.3e5298"
+            ]
+        ]
+    },
+    {
+        "id": "fa1db06f.77cad",
+        "type": "change",
+        "z": "ac12c9d8.613d38",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "backup",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "backupTopic",
+                "tot": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "backup",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "backupTopic",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 560,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "660dffb4.d7181",
+        "type": "change",
+        "z": "ac12c9d8.613d38",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "backup",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "backupTopic",
+                "tot": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "backup",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "backupTopic",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 560,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cbb6f5e3.a0c998",
+        "type": "change",
+        "z": "ac12c9d8.613d38",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "backup",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "backupTopic",
+                "tot": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "backup",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "backupTopic",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 560,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fbbbf44.f20c308",
+        "type": "change",
+        "z": "ac12c9d8.613d38",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "backup",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "backupTopic",
+                "tot": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "backup",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "backupTopic",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 560,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6969088d.e81b58",
+        "type": "hubitat device",
+        "z": "f2fbef66.3730f",
+        "name": "MB - Thermostat",
+        "server": "b130c189.ea4d2",
+        "deviceId": "2060",
+        "attribute": "heatingSetpoint",
+        "sendEvent": true,
+        "x": 190,
+        "y": 880,
+        "wires": [
+            [
+                "b648c250.265a1"
+            ]
+        ]
+    },
+    {
+        "id": "b648c250.265a1",
+        "type": "subflow:ac12c9d8.613d38",
+        "z": "f2fbef66.3730f",
+        "name": "",
+        "env": [],
+        "x": 380,
+        "y": 880,
+        "wires": [
+            [],
+            [
+                "7819747.0fec08c"
+            ],
+            [],
+            [
+                "7819747.0fec08c"
+            ],
+            [],
+            [
+                "d943d65c.2ceeb8"
+            ],
+            [],
+            [
+                "f0c123cb.135e4"
+            ]
+        ]
+    },
+    {
+        "id": "12c2b19c.b3670e",
+        "type": "inject",
+        "z": "f2fbef66.3730f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 180,
+        "y": 980,
+        "wires": [
+            [
+                "6969088d.e81b58",
+                "fb70bb36.600b38"
+            ]
+        ]
+    },
+    {
+        "id": "7819747.0fec08c",
+        "type": "switch",
+        "z": "f2fbef66.3730f",
+        "name": "MB Check",
+        "property": "payload.value",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "65",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 570,
+        "y": 820,
+        "wires": [
+            [
+                "698c010b.ae6b6"
+            ]
+        ]
+    },
+    {
+        "id": "f0c123cb.135e4",
+        "type": "switch",
+        "z": "f2fbef66.3730f",
+        "name": "MB Check",
+        "property": "payload.value",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "35",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 570,
+        "y": 940,
+        "wires": [
+            [
+                "698c010b.ae6b6"
+            ]
+        ]
+    },
+    {
+        "id": "d943d65c.2ceeb8",
+        "type": "switch",
+        "z": "f2fbef66.3730f",
+        "name": "MB Check",
+        "property": "payload.value",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "35",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 570,
+        "y": 880,
+        "wires": [
+            [
+                "698c010b.ae6b6"
+            ]
+        ]
+    },
+    {
+        "id": "640b1671.e96ae8",
+        "type": "subflow:ac12c9d8.613d38",
+        "z": "f2fbef66.3730f",
+        "name": "",
+        "env": [],
+        "x": 380,
+        "y": 1080,
+        "wires": [
+            [],
+            [
+                "bb732eb5.70c7b"
+            ],
+            [],
+            [
+                "bb732eb5.70c7b"
+            ],
+            [],
+            [
+                "177737b7.458588"
+            ],
+            [],
+            [
+                "772a0151.2d82"
+            ]
+        ]
+    },
+    {
+        "id": "bb732eb5.70c7b",
+        "type": "switch",
+        "z": "f2fbef66.3730f",
+        "name": "GR Check",
+        "property": "payload.value",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "69",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 570,
+        "y": 1020,
+        "wires": [
+            [
+                "698c010b.ae6b6"
+            ]
+        ]
+    },
+    {
+        "id": "772a0151.2d82",
+        "type": "switch",
+        "z": "f2fbef66.3730f",
+        "name": "GR Check",
+        "property": "payload.value",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "35",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 570,
+        "y": 1140,
+        "wires": [
+            [
+                "698c010b.ae6b6"
+            ]
+        ]
+    },
+    {
+        "id": "177737b7.458588",
+        "type": "switch",
+        "z": "f2fbef66.3730f",
+        "name": "GR Check",
+        "property": "payload.value",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "45",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 570,
+        "y": 1080,
+        "wires": [
+            [
+                "698c010b.ae6b6"
+            ]
+        ]
+    },
+    {
+        "id": "fb70bb36.600b38",
+        "type": "hubitat device",
+        "z": "f2fbef66.3730f",
+        "name": "GR - Thermostat",
+        "server": "b130c189.ea4d2",
+        "deviceId": "2059",
+        "attribute": "heatingSetpoint",
+        "sendEvent": true,
+        "x": 190,
+        "y": 1080,
+        "wires": [
+            [
+                "640b1671.e96ae8"
+            ]
+        ]
+    },
+    {
+        "id": "698c010b.ae6b6",
+        "type": "change",
+        "z": "f2fbef66.3730f",
+        "name": "Generate Message",
+        "rules": [
+            {
+                "t": "set",
+                "p": "arguments",
+                "pt": "msg",
+                "to": "payload.displayName\t& \" \"\t& payload.name\t& \" at \"\t& payload.value\t& \"...please check logs.\"\t",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 810,
+        "y": 980,
+        "wires": [
+            [
+                "6bd81d47.b57244",
+                "ad04b16e.4ea1e"
+            ]
+        ]
+    },
+    {
+        "id": "6bd81d47.b57244",
+        "type": "debug",
+        "z": "f2fbef66.3730f",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 970,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "ad04b16e.4ea1e",
+        "type": "hubitat command",
+        "z": "f2fbef66.3730f",
+        "name": "Colin Notification",
+        "server": "b130c189.ea4d2",
+        "deviceId": "70",
+        "command": "deviceNotification",
+        "commandArgs": "",
+        "x": 1010,
+        "y": 980,
+        "wires": [
+            []
         ]
     }
 ]
