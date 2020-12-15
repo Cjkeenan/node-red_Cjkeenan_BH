@@ -710,7 +710,21 @@
         "out": [],
         "env": [],
         "color": "#ACE043",
-        "icon": "node-red-dashboard/ui_colour_picker.png"
+        "icon": "node-red-dashboard/ui_colour_picker.png",
+        "status": {
+            "x": 1040,
+            "y": 400,
+            "wires": [
+                {
+                    "id": "dbbb9989.d3edb8",
+                    "port": 2
+                },
+                {
+                    "id": "6d60329e.961f2c",
+                    "port": 2
+                }
+            ]
+        }
     },
     {
         "id": "7a22a12f.dcfd3",
@@ -733,12 +747,13 @@
             "19897a05.077a76",
             "7015b08c.1a59c",
             "73992bfd.8673e4",
-            "f8ce7b3f.ff69a8"
+            "f8ce7b3f.ff69a8",
+            "2b0a69c7.f80116"
         ],
-        "x": 14,
-        "y": 139,
+        "x": 34,
+        "y": 199,
         "w": 532,
-        "h": 209.5
+        "h": 229.5
     },
     {
         "id": "da906c01.3168e",
@@ -757,11 +772,14 @@
             "2cf6acef.7ff3b4",
             "e168c7e9.7c0a58",
             "ef0455d7.c394b8",
-            "ba96a7be.88a808"
+            "ba96a7be.88a808",
+            "65a692c2.29e92c",
+            "fcb2b3d7.ea53",
+            "9b5c74fb.213a08"
         ],
-        "x": 14,
-        "y": 319,
-        "w": 532,
+        "x": 34,
+        "y": 439,
+        "w": 572,
         "h": 202
     },
     {
@@ -782,8 +800,8 @@
             "e0fde455.a63148",
             "10f207f.699f0f8"
         ],
-        "x": 14,
-        "y": 19,
+        "x": 34,
+        "y": 39,
         "w": 532,
         "h": 82
     },
@@ -804,8 +822,8 @@
             "bf9bfc4d.29cbc",
             "346e72ef.2a49be"
         ],
-        "x": 14,
-        "y": 79,
+        "x": 34,
+        "y": 119,
         "w": 532,
         "h": 82
     },
@@ -831,8 +849,8 @@
             "109491e9.01648e",
             "7c3fac3c.7c1184"
         ],
-        "x": 594,
-        "y": 239,
+        "x": 614,
+        "y": 299,
         "w": 472,
         "h": 289.5
     },
@@ -854,10 +872,11 @@
             "da0483c.0b8398",
             "57054319.8ca22c",
             "aec974ed.66ef68",
-            "da0c9656.4c85a8"
+            "da0c9656.4c85a8",
+            "946f40b0.810bf"
         ],
-        "x": 594,
-        "y": 14,
+        "x": 614,
+        "y": 54,
         "w": 472,
         "h": 247
     },
@@ -884,9 +903,9 @@
             "654e6235.7b1b6c",
             "824209e0.28ad48"
         ],
-        "x": 1134,
-        "y": 19,
-        "w": 452,
+        "x": 1154,
+        "y": 59,
+        "w": 432,
         "h": 342
     },
     {
@@ -908,12 +927,46 @@
             "992229ca.2f4a18",
             "a2573f76.c6d4",
             "73396064.ff8d",
-            "89490a2d.afc628"
+            "89490a2d.afc628",
+            "7dfd7833.207ba8"
         ],
-        "x": 914,
-        "y": 599,
+        "x": 934,
+        "y": 639,
         "w": 672,
         "h": 202
+    },
+    {
+        "id": "911821c6.02bdd",
+        "type": "group",
+        "z": "d06ad5d7.7d1a38",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#2e333a",
+            "fill-opacity": "0.75",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "38cdc5a2.b7bf5a",
+            "185b0eb0.8c87e1",
+            "faba5db4.5e538",
+            "6f58cb1c.0479c4",
+            "6826bbfc.20a8b4",
+            "db14bbb8.fa7d38",
+            "c9f7daf5.c10e58",
+            "b6bec706.3933c8",
+            "f96a84.add1058",
+            "fca6d23.ec8263",
+            "fe04002.96a03",
+            "504ce0b.58c1a2",
+            "cb702f83.5dd9c"
+        ],
+        "x": 1614,
+        "y": 439,
+        "w": 852,
+        "h": 322
     },
     {
         "id": "b130c189.ea4d2",
@@ -7596,7 +7649,8 @@
         "y": 100,
         "wires": [
             [
-                "cbb3b899.a254a8"
+                "cbb3b899.a254a8",
+                "257f0ae5.8bca46"
             ]
         ]
     },
@@ -10162,8 +10216,8 @@
         "deviceId": "1795",
         "attribute": "motion",
         "sendEvent": true,
-        "x": 140,
-        "y": 180,
+        "x": 160,
+        "y": 240,
         "wires": [
             [
                 "61b718e4.b83798"
@@ -10181,8 +10235,8 @@
         "deviceId": "1794",
         "attribute": "motion",
         "sendEvent": true,
-        "x": 130,
-        "y": 240,
+        "x": 150,
+        "y": 280,
         "wires": [
             [
                 "61b718e4.b83798"
@@ -10212,8 +10266,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 330,
-        "y": 200,
+        "x": 310,
+        "y": 260,
         "wires": [
             [
                 "da18749d.085f98"
@@ -10243,8 +10297,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 470,
-        "y": 180,
+        "x": 430,
+        "y": 240,
         "wires": [
             [
                 "7015b08c.1a59c"
@@ -10271,8 +10325,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 460,
-        "y": 220,
+        "x": 440,
+        "y": 280,
         "wires": [
             [
                 "7015b08c.1a59c"
@@ -10292,12 +10346,12 @@
         "outputtriggeredby": "all",
         "inputCount": "2",
         "topic": "Kitchen Motion",
-        "x": 300,
-        "y": 300,
+        "x": 160,
+        "y": 380,
         "wires": [
             [],
             [
-                "f8ce7b3f.ff69a8"
+                "2b0a69c7.f80116"
             ],
             []
         ]
@@ -10315,8 +10369,8 @@
         "name": "",
         "reporting": "last_minute_seconds",
         "persist": true,
-        "x": 960,
-        "y": 300,
+        "x": 980,
+        "y": 360,
         "wires": [
             [
                 "7293a6a3.1913e8"
@@ -10332,8 +10386,8 @@
         "g": "d79efd7b.7886b",
         "name": "",
         "env": [],
-        "x": 700,
-        "y": 100,
+        "x": 720,
+        "y": 140,
         "wires": [
             [
                 "da0483c.0b8398"
@@ -10372,12 +10426,12 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 470,
-        "y": 300,
+        "x": 490,
+        "y": 380,
         "wires": [
             [
-                "7c4a0dd4.f78404",
-                "88f4a100.58223"
+                "88f4a100.58223",
+                "946f40b0.810bf"
             ],
             [
                 "e1948775.5b3508"
@@ -10391,8 +10445,8 @@
         "g": "b3ea31b2.17afa",
         "name": "",
         "env": [],
-        "x": 700,
-        "y": 380,
+        "x": 720,
+        "y": 440,
         "wires": [
             [],
             [
@@ -10432,8 +10486,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 710,
-        "y": 280,
+        "x": 730,
+        "y": 340,
         "wires": [
             [
                 "6b7dc0d3.cd05c",
@@ -10456,8 +10510,8 @@
         "name": "",
         "reporting": "last_minute_seconds",
         "persist": true,
-        "x": 960,
-        "y": 360,
+        "x": 980,
+        "y": 420,
         "wires": [
             [
                 "7293a6a3.1913e8"
@@ -10479,8 +10533,8 @@
         "name": "",
         "reporting": "last_minute_seconds",
         "persist": true,
-        "x": 960,
-        "y": 420,
+        "x": 980,
+        "y": 480,
         "wires": [
             [
                 "7293a6a3.1913e8"
@@ -10502,8 +10556,8 @@
         "name": "",
         "reporting": "last_minute_seconds",
         "persist": true,
-        "x": 960,
-        "y": 480,
+        "x": 980,
+        "y": 540,
         "wires": [
             [
                 "7293a6a3.1913e8"
@@ -10523,11 +10577,12 @@
         "deviceId": "68",
         "command": "off",
         "commandArgs": "",
-        "x": 1260,
-        "y": 640,
+        "x": 1280,
+        "y": 680,
         "wires": [
             [
-                "89490a2d.afc628"
+                "89490a2d.afc628",
+                "7dfd7833.207ba8"
             ]
         ]
     },
@@ -10542,11 +10597,12 @@
         "deviceId": "1090",
         "command": "off",
         "commandArgs": "",
-        "x": 1260,
-        "y": 680,
+        "x": 1280,
+        "y": 720,
         "wires": [
             [
-                "89490a2d.afc628"
+                "89490a2d.afc628",
+                "7dfd7833.207ba8"
             ]
         ]
     },
@@ -10561,11 +10617,12 @@
         "deviceId": "1092",
         "command": "off",
         "commandArgs": "",
-        "x": 1260,
-        "y": 720,
+        "x": 1280,
+        "y": 760,
         "wires": [
             [
-                "89490a2d.afc628"
+                "89490a2d.afc628",
+                "7dfd7833.207ba8"
             ]
         ]
     },
@@ -10580,11 +10637,12 @@
         "deviceId": "1093",
         "command": "off",
         "commandArgs": "",
-        "x": 1260,
-        "y": 760,
+        "x": 1280,
+        "y": 800,
         "wires": [
             [
-                "89490a2d.afc628"
+                "89490a2d.afc628",
+                "7dfd7833.207ba8"
             ]
         ]
     },
@@ -10610,8 +10668,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1250,
-        "y": 580,
+        "x": 1270,
+        "y": 620,
         "wires": [
             [
                 "f07ba3ca.98747",
@@ -10633,8 +10691,8 @@
         "deviceId": "2303",
         "attribute": "switch",
         "sendEvent": false,
-        "x": 980,
-        "y": 580,
+        "x": 1000,
+        "y": 620,
         "wires": [
             [
                 "5f6cf651.e5a838"
@@ -10698,8 +10756,8 @@
         "g": "d79efd7b.7886b",
         "name": "",
         "env": [],
-        "x": 940,
-        "y": 60,
+        "x": 960,
+        "y": 100,
         "wires": [
             [
                 "3b492c69.fad6d4",
@@ -10723,8 +10781,8 @@
         "deviceId": "1093",
         "command": "setLevel",
         "commandArgs": "",
-        "x": 1260,
-        "y": 180,
+        "x": 1280,
+        "y": 220,
         "wires": [
             [
                 "824209e0.28ad48"
@@ -10742,8 +10800,8 @@
         "deviceId": "1092",
         "command": "setLevel",
         "commandArgs": "",
-        "x": 1260,
-        "y": 140,
+        "x": 1280,
+        "y": 180,
         "wires": [
             [
                 "824209e0.28ad48"
@@ -10761,8 +10819,8 @@
         "deviceId": "1090",
         "command": "setLevel",
         "commandArgs": "",
-        "x": 1260,
-        "y": 100,
+        "x": 1280,
+        "y": 140,
         "wires": [
             [
                 "824209e0.28ad48"
@@ -10780,8 +10838,8 @@
         "deviceId": "68",
         "command": "setLevel",
         "commandArgs": "",
-        "x": 1260,
-        "y": 60,
+        "x": 1280,
+        "y": 100,
         "wires": [
             [
                 "824209e0.28ad48"
@@ -10799,8 +10857,8 @@
         "deviceId": "1093",
         "command": "setColorTemperature",
         "commandArgs": "",
-        "x": 1260,
-        "y": 320,
+        "x": 1280,
+        "y": 360,
         "wires": [
             [
                 "824209e0.28ad48"
@@ -10818,8 +10876,8 @@
         "deviceId": "1092",
         "command": "setColorTemperature",
         "commandArgs": "",
-        "x": 1260,
-        "y": 280,
+        "x": 1280,
+        "y": 320,
         "wires": [
             [
                 "824209e0.28ad48"
@@ -10837,8 +10895,8 @@
         "deviceId": "1090",
         "command": "setColorTemperature",
         "commandArgs": "",
-        "x": 1260,
-        "y": 240,
+        "x": 1280,
+        "y": 280,
         "wires": [
             [
                 "824209e0.28ad48"
@@ -10856,8 +10914,8 @@
         "deviceId": "2303",
         "attribute": "switch",
         "sendEvent": false,
-        "x": 940,
-        "y": 120,
+        "x": 960,
+        "y": 160,
         "wires": [
             [
                 "aec974ed.66ef68"
@@ -10887,8 +10945,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 950,
-        "y": 180,
+        "x": 970,
+        "y": 220,
         "wires": [
             [
                 "1ce3011f.bfec4f",
@@ -10911,7 +10969,7 @@
                 "t": "set",
                 "p": "reset",
                 "pt": "msg",
-                "to": "",
+                "to": "stop",
                 "tot": "str"
             }
         ],
@@ -10920,8 +10978,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1250,
-        "y": 540,
+        "x": 1270,
+        "y": 580,
         "wires": [
             [
                 "3169f08b.3f8f9"
@@ -10932,10 +10990,11 @@
         "id": "6baf946f.b2803c",
         "type": "subflow:836b4374.e4af2",
         "z": "d06ad5d7.7d1a38",
+        "d": true,
         "name": "",
         "env": [],
-        "x": 1280,
-        "y": 440,
+        "x": 1300,
+        "y": 480,
         "wires": []
     },
     {
@@ -10949,8 +11008,8 @@
         "deviceId": "2303",
         "attribute": "switch",
         "sendEvent": true,
-        "x": 140,
-        "y": 60,
+        "x": 160,
+        "y": 80,
         "wires": [
             [
                 "e0fde455.a63148"
@@ -10964,7 +11023,7 @@
         "g": "7b4c2b56.74bb34",
         "name": "",
         "pauseType": "delay",
-        "timeout": "500",
+        "timeout": "250",
         "timeoutUnits": "milliseconds",
         "rate": "1",
         "nbRateUnits": "1",
@@ -10973,8 +11032,8 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
-        "x": 1010,
-        "y": 640,
+        "x": 1030,
+        "y": 680,
         "wires": [
             [
                 "bb819bb9.678df8",
@@ -10990,13 +11049,13 @@
         "z": "d06ad5d7.7d1a38",
         "g": "bbd34e0c.99f3c",
         "name": "On Status",
-        "func": "// initialise the counter to 0 if it doesn't exist already\nvar myKT_Light = flow.get('KT_Light',\"file\")||0;\nmyKT_Light = 'on'\n// store the value back\nflow.set('KT_Light',myKT_Light,\"file\");",
+        "func": "// initialise the counter to 0 if it doesn't exist already\nvar myKT_Light = flow.get('KT_Light',\"memoryOnly\")||0;\nmyKT_Light = 'on'\n// store the value back\nflow.set('KT_Light',myKT_Light,\"memoryOnly\");",
         "outputs": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "x": 1500,
-        "y": 200,
+        "y": 240,
         "wires": []
     },
     {
@@ -11005,7 +11064,7 @@
         "z": "d06ad5d7.7d1a38",
         "g": "7b4c2b56.74bb34",
         "name": "Off Status",
-        "func": "// initialise the counter to 0 if it doesn't exist already\nvar myKT_Light = flow.get('KT_Light',\"file\")||0;\nmyKT_Light = 'off'\n// store the value back\nflow.set('KT_Light',myKT_Light,\"file\");",
+        "func": "// initialise the counter to 0 if it doesn't exist already\nvar myKT_Light = flow.get('KT_Light',\"memoryOnly\")||0;\nmyKT_Light = 'off'\n// store the value back\nflow.set('KT_Light',myKT_Light,\"memoryOnly\");",
         "outputs": 0,
         "noerr": 0,
         "initialize": "",
@@ -11031,11 +11090,12 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1260,
-        "y": 500,
+        "x": 1280,
+        "y": 540,
         "wires": [
             [
-                "6baf946f.b2803c"
+                "6baf946f.b2803c",
+                "c9f7daf5.c10e58"
             ]
         ]
     },
@@ -11044,16 +11104,16 @@
         "type": "hubitat command",
         "z": "836b4374.e4af2",
         "deviceLabel": "Kitchen - Undercabinet Light LM",
-        "name": "KT - Red LM",
+        "name": "KT - RedH LM",
         "server": "b130c189.ea4d2",
         "deviceId": "1090",
-        "command": "setColor",
-        "commandArgs": "{\"hue\":100,\"saturation\":100,\"level\":msg.payload.kt.level}",
-        "x": 350,
-        "y": 120,
+        "command": "setHue",
+        "commandArgs": "100",
+        "x": 200,
+        "y": 160,
         "wires": [
             [
-                "f0f429f9.e7e018"
+                "54ca3400.3e792c"
             ]
         ]
     },
@@ -11062,16 +11122,16 @@
         "type": "hubitat command",
         "z": "836b4374.e4af2",
         "deviceLabel": "Kitchen - Undercabinet Light LM",
-        "name": "KT - Green LM",
+        "name": "KT - GreenH LM",
         "server": "b130c189.ea4d2",
         "deviceId": "1090",
-        "command": "setColor",
-        "commandArgs": "{\"hue\":33,\"saturation\":100,\"level\":msg.payload.kt.level}",
-        "x": 660,
-        "y": 120,
+        "command": "setHue",
+        "commandArgs": "33",
+        "x": 760,
+        "y": 160,
         "wires": [
             [
-                "175282cd.360aed"
+                "3e399e6b.8035e2"
             ]
         ]
     },
@@ -11080,16 +11140,16 @@
         "type": "hubitat command",
         "z": "836b4374.e4af2",
         "deviceLabel": "Kitchen - Undercabinet Light LM",
-        "name": "KT - Geen LS",
+        "name": "KT - GreenH LS",
         "server": "b130c189.ea4d2",
         "deviceId": "1092",
-        "command": "setColor",
-        "commandArgs": "{\"hue\":33,\"saturation\":100,\"level\":msg.payload.kt.level}",
-        "x": 340,
-        "y": 200,
+        "command": "setHue",
+        "commandArgs": "70",
+        "x": 200,
+        "y": 240,
         "wires": [
             [
-                "4a7d5bc8.4af8e4"
+                "386168dc.7e7698"
             ]
         ]
     },
@@ -11098,16 +11158,16 @@
         "type": "hubitat command",
         "z": "836b4374.e4af2",
         "deviceLabel": "Kitchen - Undercabinet Light LM",
-        "name": "KT - Red LS",
+        "name": "KT - RedH LS",
         "server": "b130c189.ea4d2",
         "deviceId": "1092",
-        "command": "setColor",
-        "commandArgs": "{\"hue\":100,\"saturation\":100,\"level\":msg.payload.kt.level}",
-        "x": 670,
-        "y": 200,
+        "command": "setHue",
+        "commandArgs": "100",
+        "x": 760,
+        "y": 240,
         "wires": [
             [
-                "76183cb5.11b664"
+                "4f0c61a8.3a6c"
             ]
         ]
     },
@@ -11116,16 +11176,16 @@
         "type": "hubitat command",
         "z": "836b4374.e4af2",
         "deviceLabel": "Kitchen - Undercabinet Light LM",
-        "name": "KT - Red LR",
+        "name": "KT - RedH LR",
         "server": "b130c189.ea4d2",
         "deviceId": "1093",
-        "command": "setColor",
-        "commandArgs": "{\"hue\":100,\"saturation\":100,\"level\":msg.payload.kt.level}",
-        "x": 350,
-        "y": 280,
+        "command": "setHue",
+        "commandArgs": "100",
+        "x": 200,
+        "y": 320,
         "wires": [
             [
-                "3b094f03.c5b78"
+                "3c8e19ff.4a05c6"
             ]
         ]
     },
@@ -11134,16 +11194,16 @@
         "type": "hubitat command",
         "z": "836b4374.e4af2",
         "deviceLabel": "Kitchen - Undercabinet Light LM",
-        "name": "KT - Green LR",
+        "name": "KT - GreenH LR",
         "server": "b130c189.ea4d2",
         "deviceId": "1093",
-        "command": "setColor",
-        "commandArgs": "{\"hue\":33,\"saturation\":100,\"level\":msg.payload.kt.level}",
-        "x": 660,
-        "y": 280,
+        "command": "setHue",
+        "commandArgs": "33",
+        "x": 760,
+        "y": 320,
         "wires": [
             [
-                "3c8770bc.5f758"
+                "a997a1a4.adac4"
             ]
         ]
     },
@@ -11152,12 +11212,12 @@
         "type": "switch",
         "z": "836b4374.e4af2",
         "name": "STOP",
-        "property": "reset",
+        "property": "payload",
         "propertyType": "msg",
         "rules": [
             {
                 "t": "eq",
-                "v": "",
+                "v": "stop",
                 "vt": "str"
             },
             {
@@ -11171,154 +11231,16 @@
         "y": 60,
         "wires": [
             [
-                "f0f429f9.e7e018",
-                "175282cd.360aed",
-                "4a7d5bc8.4af8e4",
-                "76183cb5.11b664",
-                "3b094f03.c5b78",
-                "3c8770bc.5f758"
+                "87cd9a5a.873738",
+                "722f9bca.dbc9a4",
+                "dbbb9989.d3edb8",
+                "6c0e6956.f086e8",
+                "aa4072d9.9fc7f",
+                "6d60329e.961f2c"
             ],
             [
                 "ab45d00b.e3243",
                 "2c231d00.1fd8e4",
-                "f3777aca.4bdc68"
-            ]
-        ]
-    },
-    {
-        "id": "f0f429f9.e7e018",
-        "type": "delay",
-        "z": "836b4374.e4af2",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "15",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "x": 500,
-        "y": 120,
-        "wires": [
-            [
-                "f8c31b09.b1ec58"
-            ]
-        ]
-    },
-    {
-        "id": "4a7d5bc8.4af8e4",
-        "type": "delay",
-        "z": "836b4374.e4af2",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "15",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "x": 500,
-        "y": 200,
-        "wires": [
-            [
-                "ba4b84dd.9d8718"
-            ]
-        ]
-    },
-    {
-        "id": "3b094f03.c5b78",
-        "type": "delay",
-        "z": "836b4374.e4af2",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "15",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "x": 500,
-        "y": 280,
-        "wires": [
-            [
-                "555bd839.78a938"
-            ]
-        ]
-    },
-    {
-        "id": "175282cd.360aed",
-        "type": "delay",
-        "z": "836b4374.e4af2",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "15",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "x": 820,
-        "y": 120,
-        "wires": [
-            [
-                "ab45d00b.e3243"
-            ]
-        ]
-    },
-    {
-        "id": "76183cb5.11b664",
-        "type": "delay",
-        "z": "836b4374.e4af2",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "15",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "x": 820,
-        "y": 200,
-        "wires": [
-            [
-                "2c231d00.1fd8e4"
-            ]
-        ]
-    },
-    {
-        "id": "3c8770bc.5f758",
-        "type": "delay",
-        "z": "836b4374.e4af2",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "15",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "x": 820,
-        "y": 280,
-        "wires": [
-            [
                 "f3777aca.4bdc68"
             ]
         ]
@@ -11334,8 +11256,8 @@
         "deviceId": "1351",
         "attribute": "switch",
         "sendEvent": true,
-        "x": 140,
-        "y": 420,
+        "x": 360,
+        "y": 540,
         "wires": [
             [
                 "e168c7e9.7c0a58"
@@ -11365,8 +11287,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 470,
-        "y": 420,
+        "x": 530,
+        "y": 540,
         "wires": [
             [
                 "ef0455d7.c394b8",
@@ -11383,16 +11305,14 @@
         "z": "d06ad5d7.7d1a38",
         "g": "da906c01.3168e",
         "name": "Disabled Status",
-        "func": "// initialise the counter to 0 if it doesn't exist already\nvar myKT_Motion = flow.get('KT_Motion',\"file\")||0;\nmyKT_Motion = 'disabled'\n// store the value back\nflow.set('KT_Motion',myKT_Motion,\"file\");\nreturn msg",
-        "outputs": 1,
+        "func": "// initialise the counter to 0 if it doesn't exist already\nvar myKT_Motion = flow.get('KT_Motion',\"memoryOnly\")||0;\nmyKT_Motion = 'disabled'\n// store the value back\nflow.set('KT_Motion',myKT_Motion,\"memoryOnly\");\nreturn msg",
+        "outputs": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 160,
-        "y": 360,
-        "wires": [
-            []
-        ]
+        "x": 380,
+        "y": 480,
+        "wires": []
     },
     {
         "id": "7c3fac3c.7c1184",
@@ -11414,8 +11334,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 710,
-        "y": 480,
+        "x": 730,
+        "y": 540,
         "wires": [
             [
                 "6b7dc0d3.cd05c",
@@ -11431,16 +11351,14 @@
         "z": "d06ad5d7.7d1a38",
         "g": "da906c01.3168e",
         "name": "Enabled Status",
-        "func": "// initialise the counter to 0 if it doesn't exist already\nvar myKT_Motion = flow.get('KT_Motion',\"file\")||0;\nmyKT_Motion = 'enabled'\n// store the value back\nflow.set('KT_Motion',myKT_Motion,\"file\");\nreturn msg",
-        "outputs": 1,
+        "func": "// initialise the counter to 0 if it doesn't exist already\nvar myKT_Motion = flow.get('KT_Motion',\"memoryOnly\")||0;\nmyKT_Motion = 'enabled'\n// store the value back\nflow.set('KT_Motion',myKT_Motion,\"memoryOnly\");\nreturn msg",
+        "outputs": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 160,
-        "y": 480,
-        "wires": [
-            []
-        ]
+        "x": 380,
+        "y": 600,
+        "wires": []
     },
     {
         "id": "bf9bfc4d.29cbc",
@@ -11453,8 +11371,8 @@
         "deviceId": "68",
         "attribute": "switch",
         "sendEvent": true,
-        "x": 140,
-        "y": 120,
+        "x": 160,
+        "y": 160,
         "wires": [
             [
                 "346e72ef.2a49be"
@@ -11466,8 +11384,8 @@
         "type": "switch",
         "z": "d06ad5d7.7d1a38",
         "g": "d79efd7b.7886b",
-        "name": "override",
-        "property": "#:(file)::KT_Override",
+        "name": "override?",
+        "property": "KT_Override",
         "propertyType": "flow",
         "rules": [
             {
@@ -11477,8 +11395,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 980,
-        "y": 220,
+        "x": 1000,
+        "y": 260,
         "wires": [
             [
                 "6baf946f.b2803c",
@@ -11509,8 +11427,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 470,
-        "y": 120,
+        "x": 490,
+        "y": 160,
         "wires": [
             [
                 "7c4a0dd4.f78404"
@@ -11525,31 +11443,25 @@
         "type": "switch",
         "z": "d06ad5d7.7d1a38",
         "g": "7a22a12f.dcfd3",
-        "name": "Disabled?",
-        "property": "#:(file)::KT_Motion",
+        "name": "disabled?",
+        "property": "KT_Motion",
         "propertyType": "flow",
         "rules": [
             {
                 "t": "eq",
                 "v": "enabled",
                 "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "disabled",
-                "vt": "str"
             }
         ],
         "checkall": "true",
         "repair": false,
-        "outputs": 2,
-        "x": 460,
-        "y": 260,
+        "outputs": 1,
+        "x": 360,
+        "y": 380,
         "wires": [
             [
                 "73992bfd.8673e4"
-            ],
-            []
+            ]
         ]
     },
     {
@@ -11557,31 +11469,25 @@
         "type": "switch",
         "z": "d06ad5d7.7d1a38",
         "g": "568533ed.18d81c",
-        "name": "status",
-        "property": "#:(file)::KT_Light",
+        "name": "on?",
+        "property": "KT_Light",
         "propertyType": "flow",
         "rules": [
             {
                 "t": "eq",
                 "v": "on",
                 "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "off",
-                "vt": "str"
             }
         ],
         "checkall": "true",
         "repair": false,
-        "outputs": 2,
-        "x": 310,
-        "y": 60,
+        "outputs": 1,
+        "x": 330,
+        "y": 80,
         "wires": [
             [
                 "10f207f.699f0f8"
-            ],
-            []
+            ]
         ]
     },
     {
@@ -11590,13 +11496,13 @@
         "z": "d06ad5d7.7d1a38",
         "g": "568533ed.18d81c",
         "name": "Override On",
-        "func": "// initialise the counter to 0 if it doesn't exist already\nvar myKT_Override = flow.get('KT_Override',\"file\")||0;\nmyKT_Override = true\n// store the value back\nflow.set('KT_Override',myKT_Override,\"file\");\nreturn msg",
+        "func": "// initialise the counter to 0 if it doesn't exist already\nvar myKT_Override = flow.get('KT_Override',\"memoryOnly\")||0;\nmyKT_Override = true\n// store the value back\nflow.set('KT_Override',myKT_Override,\"memoryOnly\");\nreturn msg",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 450,
-        "y": 60,
+        "x": 470,
+        "y": 80,
         "wires": [
             [
                 "7c4a0dd4.f78404"
@@ -11608,13 +11514,13 @@
         "type": "function",
         "z": "d06ad5d7.7d1a38",
         "name": "Override Off",
-        "func": "// initialise the counter to 0 if it doesn't exist already\nvar myKT_Override = flow.get('KT_Override',\"file\")||0;\nmyKT_Override = false\n// store the value back\nflow.set('KT_Override',myKT_Override,\"file\");",
+        "func": "// initialise the counter to 0 if it doesn't exist already\nvar myKT_Override = flow.get('KT_Override',\"memoryOnly\")||0;\nmyKT_Override = false\n// store the value back\nflow.set('KT_Override',myKT_Override,\"memoryOnly\");",
         "outputs": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 1490,
-        "y": 380,
+        "x": 1510,
+        "y": 420,
         "wires": []
     },
     {
@@ -11624,11 +11530,9 @@
         "name": "",
         "rules": [
             {
-                "t": "move",
+                "t": "delete",
                 "p": "arguments",
-                "pt": "msg",
-                "to": "payload.arguments",
-                "tot": "msg"
+                "pt": "msg"
             }
         ],
         "action": "",
@@ -11636,13 +11540,14 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1260,
-        "y": 380,
+        "x": 1280,
+        "y": 420,
         "wires": [
             [
                 "6baf946f.b2803c",
                 "824209e0.28ad48",
-                "30c4f419.ef0bbc"
+                "30c4f419.ef0bbc",
+                "c9f7daf5.c10e58"
             ]
         ]
     },
@@ -11740,6 +11645,686 @@
         "y": 200,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "54ca3400.3e792c",
+        "type": "hubitat command",
+        "z": "836b4374.e4af2",
+        "deviceLabel": "Kitchen - Undercabinet Light LM",
+        "name": "KT - RedS LM",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1090",
+        "command": "setSaturation",
+        "commandArgs": "100",
+        "x": 380,
+        "y": 160,
+        "wires": [
+            [
+                "87cd9a5a.873738"
+            ]
+        ]
+    },
+    {
+        "id": "386168dc.7e7698",
+        "type": "hubitat command",
+        "z": "836b4374.e4af2",
+        "deviceLabel": "Kitchen - Undercabinet Light LM",
+        "name": "KT - GreenS LS",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1092",
+        "command": "setSaturation",
+        "commandArgs": "100",
+        "x": 380,
+        "y": 240,
+        "wires": [
+            [
+                "722f9bca.dbc9a4"
+            ]
+        ]
+    },
+    {
+        "id": "3c8e19ff.4a05c6",
+        "type": "hubitat command",
+        "z": "836b4374.e4af2",
+        "deviceLabel": "Kitchen - Undercabinet Light LM",
+        "name": "KT - RedS LR",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1093",
+        "command": "setSaturation",
+        "commandArgs": "100",
+        "x": 380,
+        "y": 320,
+        "wires": [
+            [
+                "dbbb9989.d3edb8"
+            ]
+        ]
+    },
+    {
+        "id": "a997a1a4.adac4",
+        "type": "hubitat command",
+        "z": "836b4374.e4af2",
+        "deviceLabel": "Kitchen - Undercabinet Light LM",
+        "name": "KT - GreenS LR",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1093",
+        "command": "setSaturation",
+        "commandArgs": "100",
+        "x": 940,
+        "y": 320,
+        "wires": [
+            [
+                "6d60329e.961f2c"
+            ]
+        ]
+    },
+    {
+        "id": "3e399e6b.8035e2",
+        "type": "hubitat command",
+        "z": "836b4374.e4af2",
+        "deviceLabel": "Kitchen - Undercabinet Light LM",
+        "name": "KT - GreenS LM",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1090",
+        "command": "setSaturation",
+        "commandArgs": "100",
+        "x": 940,
+        "y": 160,
+        "wires": [
+            [
+                "6c0e6956.f086e8"
+            ]
+        ]
+    },
+    {
+        "id": "4f0c61a8.3a6c",
+        "type": "hubitat command",
+        "z": "836b4374.e4af2",
+        "deviceLabel": "Kitchen - Undercabinet Light LM",
+        "name": "KT - RedS LM",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1092",
+        "command": "setSaturation",
+        "commandArgs": "100",
+        "x": 940,
+        "y": 240,
+        "wires": [
+            [
+                "aa4072d9.9fc7f"
+            ]
+        ]
+    },
+    {
+        "id": "87cd9a5a.873738",
+        "type": "stoptimer-varidelay",
+        "z": "836b4374.e4af2",
+        "duration": "15",
+        "durationType": "num",
+        "units": "Second",
+        "payloadtype": "num",
+        "payloadval": "0",
+        "name": "",
+        "reporting": "none",
+        "persist": true,
+        "x": 570,
+        "y": 180,
+        "wires": [
+            [
+                "f8c31b09.b1ec58"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "722f9bca.dbc9a4",
+        "type": "stoptimer-varidelay",
+        "z": "836b4374.e4af2",
+        "duration": "15",
+        "durationType": "num",
+        "units": "Second",
+        "payloadtype": "num",
+        "payloadval": "0",
+        "name": "",
+        "reporting": "none",
+        "persist": true,
+        "x": 570,
+        "y": 260,
+        "wires": [
+            [
+                "ba4b84dd.9d8718"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "dbbb9989.d3edb8",
+        "type": "stoptimer-varidelay",
+        "z": "836b4374.e4af2",
+        "duration": "15",
+        "durationType": "num",
+        "units": "Second",
+        "payloadtype": "num",
+        "payloadval": "0",
+        "name": "",
+        "reporting": "last_minute_seconds",
+        "persist": true,
+        "x": 570,
+        "y": 340,
+        "wires": [
+            [
+                "555bd839.78a938"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "6d60329e.961f2c",
+        "type": "stoptimer-varidelay",
+        "z": "836b4374.e4af2",
+        "duration": "15",
+        "durationType": "num",
+        "units": "Second",
+        "payloadtype": "num",
+        "payloadval": "0",
+        "name": "",
+        "reporting": "last_minute_seconds",
+        "persist": true,
+        "x": 1130,
+        "y": 300,
+        "wires": [
+            [
+                "f3777aca.4bdc68"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "aa4072d9.9fc7f",
+        "type": "stoptimer-varidelay",
+        "z": "836b4374.e4af2",
+        "duration": "15",
+        "durationType": "num",
+        "units": "Second",
+        "payloadtype": "num",
+        "payloadval": "0",
+        "name": "",
+        "reporting": "none",
+        "persist": true,
+        "x": 1130,
+        "y": 220,
+        "wires": [
+            [
+                "2c231d00.1fd8e4"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "6c0e6956.f086e8",
+        "type": "stoptimer-varidelay",
+        "z": "836b4374.e4af2",
+        "duration": "15",
+        "durationType": "num",
+        "units": "Second",
+        "payloadtype": "num",
+        "payloadval": "0",
+        "name": "",
+        "reporting": "none",
+        "persist": true,
+        "x": 1130,
+        "y": 140,
+        "wires": [
+            [
+                "ab45d00b.e3243"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "38cdc5a2.b7bf5a",
+        "type": "hubitat command",
+        "z": "d06ad5d7.7d1a38",
+        "g": "911821c6.02bdd",
+        "deviceLabel": "Kitchen - Undercabinet Light LM",
+        "name": "KT - RedH LM",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1090",
+        "command": "setHue",
+        "commandArgs": "98",
+        "x": 1880,
+        "y": 560,
+        "wires": [
+            [
+                "b6bec706.3933c8"
+            ]
+        ]
+    },
+    {
+        "id": "185b0eb0.8c87e1",
+        "type": "hubitat command",
+        "z": "d06ad5d7.7d1a38",
+        "g": "911821c6.02bdd",
+        "deviceLabel": "Kitchen - Undercabinet Light LM",
+        "name": "KT - GreenH LM",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1090",
+        "command": "setHue",
+        "commandArgs": "31",
+        "x": 2200,
+        "y": 560,
+        "wires": [
+            [
+                "fe04002.96a03"
+            ]
+        ]
+    },
+    {
+        "id": "faba5db4.5e538",
+        "type": "hubitat command",
+        "z": "d06ad5d7.7d1a38",
+        "g": "911821c6.02bdd",
+        "deviceLabel": "Kitchen - Undercabinet Light LM",
+        "name": "KT - GreenH LS",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1092",
+        "command": "setHue",
+        "commandArgs": "31",
+        "x": 1880,
+        "y": 640,
+        "wires": [
+            [
+                "f96a84.add1058"
+            ]
+        ]
+    },
+    {
+        "id": "6f58cb1c.0479c4",
+        "type": "hubitat command",
+        "z": "d06ad5d7.7d1a38",
+        "g": "911821c6.02bdd",
+        "deviceLabel": "Kitchen - Undercabinet Light LM",
+        "name": "KT - RedH LS",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1092",
+        "command": "setHue",
+        "commandArgs": "98",
+        "x": 2200,
+        "y": 640,
+        "wires": [
+            [
+                "504ce0b.58c1a2"
+            ]
+        ]
+    },
+    {
+        "id": "6826bbfc.20a8b4",
+        "type": "hubitat command",
+        "z": "d06ad5d7.7d1a38",
+        "g": "911821c6.02bdd",
+        "deviceLabel": "Kitchen - Undercabinet Light LM",
+        "name": "KT - RedH LR",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1093",
+        "command": "setHue",
+        "commandArgs": "98",
+        "x": 1880,
+        "y": 720,
+        "wires": [
+            [
+                "fca6d23.ec8263"
+            ]
+        ]
+    },
+    {
+        "id": "db14bbb8.fa7d38",
+        "type": "hubitat command",
+        "z": "d06ad5d7.7d1a38",
+        "g": "911821c6.02bdd",
+        "deviceLabel": "Kitchen - Undercabinet Light LM",
+        "name": "KT - GreenH LR",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1093",
+        "command": "setHue",
+        "commandArgs": "31",
+        "x": 2200,
+        "y": 720,
+        "wires": [
+            [
+                "cb702f83.5dd9c"
+            ]
+        ]
+    },
+    {
+        "id": "c9f7daf5.c10e58",
+        "type": "switch",
+        "z": "d06ad5d7.7d1a38",
+        "g": "911821c6.02bdd",
+        "name": "STOP",
+        "property": "reset",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "stop",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1690,
+        "y": 480,
+        "wires": [
+            [
+                "b6bec706.3933c8",
+                "f96a84.add1058",
+                "fca6d23.ec8263",
+                "fe04002.96a03",
+                "504ce0b.58c1a2",
+                "cb702f83.5dd9c"
+            ],
+            [
+                "38cdc5a2.b7bf5a",
+                "faba5db4.5e538",
+                "6826bbfc.20a8b4"
+            ]
+        ]
+    },
+    {
+        "id": "b6bec706.3933c8",
+        "type": "delay",
+        "z": "d06ad5d7.7d1a38",
+        "g": "911821c6.02bdd",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "15",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 2040,
+        "y": 540,
+        "wires": [
+            [
+                "185b0eb0.8c87e1"
+            ]
+        ]
+    },
+    {
+        "id": "f96a84.add1058",
+        "type": "delay",
+        "z": "d06ad5d7.7d1a38",
+        "g": "911821c6.02bdd",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "15",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 2040,
+        "y": 620,
+        "wires": [
+            [
+                "6f58cb1c.0479c4"
+            ]
+        ]
+    },
+    {
+        "id": "fca6d23.ec8263",
+        "type": "delay",
+        "z": "d06ad5d7.7d1a38",
+        "g": "911821c6.02bdd",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "15",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 2040,
+        "y": 700,
+        "wires": [
+            [
+                "db14bbb8.fa7d38"
+            ]
+        ]
+    },
+    {
+        "id": "fe04002.96a03",
+        "type": "delay",
+        "z": "d06ad5d7.7d1a38",
+        "g": "911821c6.02bdd",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "15",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 2380,
+        "y": 560,
+        "wires": [
+            [
+                "38cdc5a2.b7bf5a"
+            ]
+        ]
+    },
+    {
+        "id": "504ce0b.58c1a2",
+        "type": "delay",
+        "z": "d06ad5d7.7d1a38",
+        "g": "911821c6.02bdd",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "15",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 2380,
+        "y": 640,
+        "wires": [
+            [
+                "faba5db4.5e538"
+            ]
+        ]
+    },
+    {
+        "id": "cb702f83.5dd9c",
+        "type": "delay",
+        "z": "d06ad5d7.7d1a38",
+        "g": "911821c6.02bdd",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "15",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 2380,
+        "y": 720,
+        "wires": [
+            [
+                "6826bbfc.20a8b4"
+            ]
+        ]
+    },
+    {
+        "id": "2b0a69c7.f80116",
+        "type": "delay",
+        "z": "d06ad5d7.7d1a38",
+        "g": "7a22a12f.dcfd3",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "x": 330,
+        "y": 340,
+        "wires": [
+            [
+                "f8ce7b3f.ff69a8"
+            ]
+        ]
+    },
+    {
+        "id": "7dfd7833.207ba8",
+        "type": "function",
+        "z": "d06ad5d7.7d1a38",
+        "g": "7b4c2b56.74bb34",
+        "name": "Override On",
+        "func": "// initialise the counter to 0 if it doesn't exist already\nvar myKT_Override = flow.get('KT_Override',\"memoryOnly\")||0;\nmyKT_Override = true\n// store the value back\nflow.set('KT_Override',myKT_Override,\"memoryOnly\");\nreturn msg",
+        "outputs": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1510,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "946f40b0.810bf",
+        "type": "switch",
+        "z": "d06ad5d7.7d1a38",
+        "g": "d79efd7b.7886b",
+        "name": "off?",
+        "property": "KT_Light",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "off",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 730,
+        "y": 240,
+        "wires": [
+            [
+                "7c4a0dd4.f78404"
+            ]
+        ]
+    },
+    {
+        "id": "65a692c2.29e92c",
+        "type": "function",
+        "z": "d06ad5d7.7d1a38",
+        "g": "da906c01.3168e",
+        "name": "Initialize Variables",
+        "func": "// initialise the counter to 0 if it doesn't exist already\nvar myKT_Override = flow.get('KT_Override',\"memoryOnly\")||0;\nmyKT_Override = true\n// store the value back\nflow.set('KT_Override',myKT_Override,\"memoryOnly\");\n\n// initialise the counter to 0 if it doesn't exist already\nvar myKT_Light = flow.get('KT_Light',\"memoryOnly\")||0;\nmyKT_Light = 'off'\n// store the value back\nflow.set('KT_Light',myKT_Light,\"memoryOnly\");\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 150,
+        "y": 540,
+        "wires": [
+            [
+                "2cf6acef.7ff3b4"
+            ]
+        ]
+    },
+    {
+        "id": "fcb2b3d7.ea53",
+        "type": "link in",
+        "z": "d06ad5d7.7d1a38",
+        "g": "da906c01.3168e",
+        "name": "",
+        "links": [
+            "257f0ae5.8bca46"
+        ],
+        "x": 215,
+        "y": 500,
+        "wires": [
+            [
+                "65a692c2.29e92c"
+            ]
+        ]
+    },
+    {
+        "id": "257f0ae5.8bca46",
+        "type": "link out",
+        "z": "345f283.d5796d8",
+        "name": "Hub Start",
+        "links": [
+            "fcb2b3d7.ea53"
+        ],
+        "x": 275,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "9b5c74fb.213a08",
+        "type": "inject",
+        "z": "d06ad5d7.7d1a38",
+        "g": "da906c01.3168e",
+        "name": "Started!",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 580,
+        "wires": [
+            [
+                "65a692c2.29e92c"
+            ]
         ]
     }
 ]
