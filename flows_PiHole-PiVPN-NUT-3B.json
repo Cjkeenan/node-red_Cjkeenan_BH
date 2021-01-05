@@ -727,6 +727,39 @@
         }
     },
     {
+        "id": "7fd4877d.2ab0a8",
+        "type": "subflow",
+        "name": "Login to Hubitat",
+        "info": "",
+        "category": "hubitat",
+        "in": [
+            {
+                "x": 40,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "ebbab56c.e84458"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1000,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "b48176a3.71a648",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "color": "#ACE043",
+        "icon": "node-red-contrib-hubitat/command.svg"
+    },
+    {
         "id": "7a22a12f.dcfd3",
         "type": "group",
         "z": "d06ad5d7.7d1a38",
@@ -747,13 +780,10 @@
             "19897a05.077a76",
             "7015b08c.1a59c",
             "73992bfd.8673e4",
-            "f8ce7b3f.ff69a8",
-            "2b0a69c7.f80116"
+            "f8ce7b3f.ff69a8"
         ],
         "x": 34,
-        "y": 199,
-        "w": 532,
-        "h": 229.5
+        "y": 199
     },
     {
         "id": "da906c01.3168e",
@@ -775,12 +805,10 @@
             "ba96a7be.88a808",
             "65a692c2.29e92c",
             "fcb2b3d7.ea53",
-            "9b5c74fb.213a08"
+            "12822318.46878d"
         ],
         "x": 34,
-        "y": 439,
-        "w": 572,
-        "h": 202
+        "y": 439
     },
     {
         "id": "568533ed.18d81c",
@@ -801,9 +829,7 @@
             "10f207f.699f0f8"
         ],
         "x": 34,
-        "y": 39,
-        "w": 532,
-        "h": 82
+        "y": 39
     },
     {
         "id": "313d11f.0a7dfee",
@@ -823,9 +849,7 @@
             "346e72ef.2a49be"
         ],
         "x": 34,
-        "y": 119,
-        "w": 532,
-        "h": 82
+        "y": 119
     },
     {
         "id": "b3ea31b2.17afa",
@@ -850,9 +874,7 @@
             "7c3fac3c.7c1184"
         ],
         "x": 614,
-        "y": 299,
-        "w": 472,
-        "h": 289.5
+        "y": 299
     },
     {
         "id": "d79efd7b.7886b",
@@ -876,9 +898,7 @@
             "946f40b0.810bf"
         ],
         "x": 614,
-        "y": 54,
-        "w": 472,
-        "h": 247
+        "y": 54
     },
     {
         "id": "bbd34e0c.99f3c",
@@ -904,9 +924,7 @@
             "824209e0.28ad48"
         ],
         "x": 1154,
-        "y": 59,
-        "w": 432,
-        "h": 342
+        "y": 59
     },
     {
         "id": "7b4c2b56.74bb34",
@@ -931,9 +949,7 @@
             "7dfd7833.207ba8"
         ],
         "x": 934,
-        "y": 639,
-        "w": 672,
-        "h": 202
+        "y": 639
     },
     {
         "id": "911821c6.02bdd",
@@ -964,9 +980,7 @@
             "cb702f83.5dd9c"
         ],
         "x": 1614,
-        "y": 439,
-        "w": 852,
-        "h": 322
+        "y": 439
     },
     {
         "id": "b130c189.ea4d2",
@@ -1278,7 +1292,7 @@
         "checkall": "false",
         "repair": false,
         "outputs": 2,
-        "x": 740,
+        "x": 840,
         "y": 300,
         "wires": [
             [
@@ -1298,7 +1312,7 @@
         "deviceId": "1572",
         "command": "off",
         "commandArgs": "",
-        "x": 990,
+        "x": 1090,
         "y": 80,
         "wires": [
             []
@@ -1313,7 +1327,7 @@
         "deviceId": "1574",
         "command": "off",
         "commandArgs": "",
-        "x": 990,
+        "x": 1090,
         "y": 120,
         "wires": [
             []
@@ -1329,7 +1343,7 @@
         "deviceId": "68",
         "command": "off",
         "commandArgs": "",
-        "x": 990,
+        "x": 1090,
         "y": 160,
         "wires": [
             []
@@ -1344,7 +1358,7 @@
         "deviceId": "1575",
         "command": "off",
         "commandArgs": "",
-        "x": 990,
+        "x": 1090,
         "y": 200,
         "wires": [
             []
@@ -1359,7 +1373,7 @@
         "deviceId": "1574",
         "command": "on",
         "commandArgs": "",
-        "x": 990,
+        "x": 1090,
         "y": 440,
         "wires": [
             []
@@ -1375,7 +1389,7 @@
         "deviceId": "68",
         "command": "on",
         "commandArgs": "",
-        "x": 990,
+        "x": 1090,
         "y": 480,
         "wires": [
             []
@@ -1390,7 +1404,7 @@
         "deviceId": "1575",
         "command": "on",
         "commandArgs": "",
-        "x": 990,
+        "x": 1090,
         "y": 520,
         "wires": [
             []
@@ -1405,7 +1419,7 @@
         "deviceId": "1572",
         "command": "on",
         "commandArgs": "",
-        "x": 990,
+        "x": 1090,
         "y": 400,
         "wires": [
             []
@@ -1621,7 +1635,7 @@
         "z": "68ba5945.906288",
         "name": "",
         "env": [],
-        "x": 760,
+        "x": 860,
         "y": 140,
         "wires": [
             [
@@ -1643,7 +1657,7 @@
         "type": "subflow:cb4b5b0a.f09b68",
         "z": "68ba5945.906288",
         "name": "",
-        "x": 760,
+        "x": 860,
         "y": 460,
         "wires": [
             [
@@ -1764,7 +1778,7 @@
         "checkall": "false",
         "repair": false,
         "outputs": 4,
-        "x": 280,
+        "x": 380,
         "y": 260,
         "wires": [
             [
@@ -1786,7 +1800,7 @@
         "type": "subflow:cb4b5b0a.f09b68",
         "z": "68ba5945.906288",
         "name": "",
-        "x": 260,
+        "x": 360,
         "y": 80,
         "wires": [
             [],
@@ -1803,7 +1817,7 @@
         "z": "68ba5945.906288",
         "name": "",
         "env": [],
-        "x": 260,
+        "x": 360,
         "y": 180,
         "wires": [
             [],
@@ -2490,13 +2504,13 @@
         "id": "836dbe75.14f81",
         "type": "switch",
         "z": "66eb8402.daa4fc",
-        "name": "upload < 75",
+        "name": "upload < 15",
         "property": "payload.speeds.upload",
         "propertyType": "msg",
         "rules": [
             {
                 "t": "lt",
-                "v": "75",
+                "v": "15",
                 "vt": "num"
             }
         ],
@@ -3113,7 +3127,7 @@
         "checkall": "false",
         "repair": false,
         "outputs": 2,
-        "x": 300,
+        "x": 360,
         "y": 280,
         "wires": [
             [
@@ -3135,7 +3149,7 @@
         "deviceId": "1377",
         "command": "off",
         "commandArgs": "",
-        "x": 960,
+        "x": 1020,
         "y": 60,
         "wires": [
             []
@@ -3150,7 +3164,7 @@
         "deviceId": "1352",
         "command": "off",
         "commandArgs": "",
-        "x": 960,
+        "x": 1020,
         "y": 100,
         "wires": [
             []
@@ -3165,7 +3179,7 @@
         "deviceId": "1351",
         "command": "off",
         "commandArgs": "",
-        "x": 960,
+        "x": 1020,
         "y": 140,
         "wires": [
             []
@@ -3180,7 +3194,7 @@
         "deviceId": "385",
         "command": "off",
         "commandArgs": "",
-        "x": 960,
+        "x": 1020,
         "y": 180,
         "wires": [
             []
@@ -3195,7 +3209,7 @@
         "deviceId": "1441",
         "command": "lock",
         "commandArgs": "",
-        "x": 1110,
+        "x": 1170,
         "y": 240,
         "wires": [
             [
@@ -3212,7 +3226,7 @@
         "deviceId": "86",
         "attribute": "",
         "sendEvent": false,
-        "x": 710,
+        "x": 770,
         "y": 300,
         "wires": [
             [
@@ -3237,7 +3251,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 870,
+        "x": 930,
         "y": 300,
         "wires": [
             [
@@ -3254,7 +3268,7 @@
         "deviceId": "86",
         "command": "home",
         "commandArgs": "",
-        "x": 1020,
+        "x": 1080,
         "y": 300,
         "wires": [
             [
@@ -3271,7 +3285,7 @@
         "deviceId": "86",
         "command": "poll",
         "commandArgs": "",
-        "x": 530,
+        "x": 590,
         "y": 300,
         "wires": [
             [
@@ -3285,7 +3299,7 @@
         "z": "73f998b9.8842a8",
         "name": "",
         "env": [],
-        "x": 300,
+        "x": 360,
         "y": 80,
         "wires": [
             [
@@ -3309,7 +3323,7 @@
         "name": "",
         "server": "b130c189.ea4d2",
         "sendEvent": false,
-        "x": 670,
+        "x": 730,
         "y": 180,
         "wires": [
             [
@@ -3334,7 +3348,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 790,
+        "x": 850,
         "y": 180,
         "wires": [
             [
@@ -3351,7 +3365,7 @@
         "deviceId": "67",
         "command": "off",
         "commandArgs": "",
-        "x": 530,
+        "x": 590,
         "y": 60,
         "wires": [
             [
@@ -3368,7 +3382,7 @@
         "deviceId": "69",
         "command": "off",
         "commandArgs": "",
-        "x": 530,
+        "x": 590,
         "y": 100,
         "wires": [
             [
@@ -3385,7 +3399,7 @@
         "deviceId": "68",
         "command": "off",
         "commandArgs": "",
-        "x": 530,
+        "x": 590,
         "y": 140,
         "wires": [
             [
@@ -3402,7 +3416,7 @@
         "deviceId": "501",
         "command": "off",
         "commandArgs": "",
-        "x": 530,
+        "x": 590,
         "y": 180,
         "wires": [
             [
@@ -3419,7 +3433,7 @@
         "deviceId": "1377",
         "command": "on",
         "commandArgs": "",
-        "x": 560,
+        "x": 620,
         "y": 380,
         "wires": [
             []
@@ -3434,7 +3448,7 @@
         "deviceId": "1352",
         "command": "on",
         "commandArgs": "",
-        "x": 560,
+        "x": 620,
         "y": 420,
         "wires": [
             []
@@ -3449,7 +3463,7 @@
         "deviceId": "1351",
         "command": "on",
         "commandArgs": "",
-        "x": 560,
+        "x": 620,
         "y": 460,
         "wires": [
             []
@@ -3464,7 +3478,7 @@
         "deviceId": "385",
         "command": "on",
         "commandArgs": "",
-        "x": 560,
+        "x": 620,
         "y": 500,
         "wires": [
             []
@@ -3476,7 +3490,7 @@
         "z": "73f998b9.8842a8",
         "name": "",
         "env": [],
-        "x": 300,
+        "x": 360,
         "y": 480,
         "wires": [
             [
@@ -5328,7 +5342,7 @@
         "topic": "mode",
         "payload": "true",
         "payloadType": "bool",
-        "x": 770,
+        "x": 810,
         "y": 220,
         "wires": [
             [
@@ -5358,7 +5372,7 @@
         "topic": "mode",
         "payload": "false",
         "payloadType": "bool",
-        "x": 770,
+        "x": 810,
         "y": 140,
         "wires": [
             [
@@ -5393,7 +5407,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 550,
+        "x": 590,
         "y": 200,
         "wires": [
             [
@@ -5428,27 +5442,12 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 560,
+        "x": 600,
         "y": 160,
         "wires": [
             [
                 "e5a1b2d2.030f9",
                 "ad2d0123.2b95d"
-            ]
-        ]
-    },
-    {
-        "id": "23ebb0ad.93fa9",
-        "type": "alexa-remote-event",
-        "z": "7e547b10.f1db64",
-        "name": "",
-        "account": "d452a9d3.7a4488",
-        "event": "ws-device-activity",
-        "x": 130,
-        "y": 80,
-        "wires": [
-            [
-                "3269284b.9fbe58"
             ]
         ]
     },
@@ -5500,7 +5499,7 @@
         "checkall": "false",
         "repair": false,
         "outputs": 6,
-        "x": 330,
+        "x": 370,
         "y": 80,
         "wires": [
             [
@@ -5527,17 +5526,18 @@
         "id": "63550b0f.dce3c4",
         "type": "link in",
         "z": "7e547b10.f1db64",
-        "name": "Arlo Change",
+        "name": "HE Mode",
         "links": [
             "19c790a8.4f13cf"
         ],
-        "x": 175,
+        "x": 180,
         "y": 160,
         "wires": [
             [
                 "bcf6c46b.6409c8"
             ]
-        ]
+        ],
+        "l": true
     },
     {
         "id": "1212519a.eda15e",
@@ -5560,7 +5560,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 140,
+        "x": 180,
         "y": 200,
         "wires": [
             [
@@ -5614,17 +5614,15 @@
         "z": "4702b097.59f3b",
         "name": "Alexa On Device Activity (Post Wake Handler)",
         "links": [
-            "69216b2f.5a7f84",
             "8b6715e.c7095e8",
-            "e3edea19.a9c2f8",
-            "68c646a1.6aa018",
-            "5afa70e3.3f34e",
             "a8a82044.dc145",
-            "1918e30b.f1abed"
+            "e3edea19.a9c2f8",
+            "93c240cb.375db"
         ],
-        "x": 455,
+        "x": 620,
         "y": 360,
-        "wires": []
+        "wires": [],
+        "l": true
     },
     {
         "id": "779a8cbf.6ea9d4",
@@ -5633,8 +5631,8 @@
         "name": "",
         "server": "b130c189.ea4d2",
         "sendEvent": true,
-        "x": 370,
-        "y": 160,
+        "x": 590,
+        "y": 180,
         "wires": [
             [
                 "19c790a8.4f13cf"
@@ -5647,46 +5645,47 @@
         "z": "4702b097.59f3b",
         "name": "Hubitat Mode",
         "links": [
-            "162f458b.b5ce3a",
             "63550b0f.dce3c4",
-            "eed9d489.f6a9d8",
             "a7bacbdc.967fb8"
         ],
-        "x": 455,
-        "y": 160,
-        "wires": []
+        "x": 730,
+        "y": 180,
+        "wires": [],
+        "l": true
     },
     {
         "id": "e3edea19.a9c2f8",
         "type": "link in",
         "z": "d61084e.39e0678",
-        "name": "Volume Trigger",
+        "name": "Voice Trigger",
         "links": [
             "da6ac8d6.218fe8"
         ],
-        "x": 175,
+        "x": 230,
         "y": 60,
         "wires": [
             [
                 "6118732f.6ede7c"
             ]
-        ]
+        ],
+        "l": true
     },
     {
         "id": "8b6715e.c7095e8",
         "type": "link in",
         "z": "73f998b9.8842a8",
-        "name": "Goodnight and Good Morning Trigger",
+        "name": "Voice Trigger",
         "links": [
             "da6ac8d6.218fe8"
         ],
-        "x": 175,
+        "x": 190,
         "y": 280,
         "wires": [
             [
                 "e96cba5a.0480d8"
             ]
-        ]
+        ],
+        "l": true
     },
     {
         "id": "f59f40fd.ccc8f",
@@ -6099,8 +6098,8 @@
         "z": "e1557285.e3f86",
         "name": "",
         "account": "d452a9d3.7a4488",
-        "option": "initialise",
-        "x": 960,
+        "option": "refresh",
+        "x": 980,
         "y": 500,
         "wires": [
             []
@@ -6165,8 +6164,8 @@
         "z": "d61084e.39e0678",
         "name": "",
         "account": "4553eef5.ffc05",
-        "option": "refresh",
-        "x": 1100,
+        "option": "initialise",
+        "x": 1080,
         "y": 120,
         "wires": [
             []
@@ -6401,7 +6400,7 @@
         "checkall": "false",
         "repair": false,
         "outputs": 8,
-        "x": 1220,
+        "x": 1320,
         "y": 300,
         "wires": [
             [
@@ -6439,7 +6438,7 @@
         "deviceId": "1377",
         "command": "off",
         "commandArgs": "",
-        "x": 1500,
+        "x": 1600,
         "y": 80,
         "wires": [
             []
@@ -6454,7 +6453,7 @@
         "deviceId": "1352",
         "command": "off",
         "commandArgs": "",
-        "x": 1500,
+        "x": 1600,
         "y": 120,
         "wires": [
             []
@@ -6469,7 +6468,7 @@
         "deviceId": "1351",
         "command": "off",
         "commandArgs": "",
-        "x": 1500,
+        "x": 1600,
         "y": 160,
         "wires": [
             []
@@ -6484,7 +6483,7 @@
         "deviceId": "385",
         "command": "off",
         "commandArgs": "",
-        "x": 1500,
+        "x": 1600,
         "y": 200,
         "wires": [
             []
@@ -6499,7 +6498,7 @@
         "deviceId": "1377",
         "command": "on",
         "commandArgs": "",
-        "x": 1500,
+        "x": 1600,
         "y": 400,
         "wires": [
             []
@@ -6514,7 +6513,7 @@
         "deviceId": "1352",
         "command": "on",
         "commandArgs": "",
-        "x": 1500,
+        "x": 1600,
         "y": 440,
         "wires": [
             []
@@ -6529,7 +6528,7 @@
         "deviceId": "1351",
         "command": "on",
         "commandArgs": "",
-        "x": 1500,
+        "x": 1600,
         "y": 480,
         "wires": [
             []
@@ -6544,7 +6543,7 @@
         "deviceId": "385",
         "command": "on",
         "commandArgs": "",
-        "x": 1500,
+        "x": 1600,
         "y": 520,
         "wires": [
             []
@@ -6556,7 +6555,7 @@
         "z": "68ba5945.906288",
         "name": "",
         "env": [],
-        "x": 1240,
+        "x": 1340,
         "y": 140,
         "wires": [
             [
@@ -6578,7 +6577,7 @@
         "type": "subflow:cb4b5b0a.f09b68",
         "z": "68ba5945.906288",
         "name": "",
-        "x": 1240,
+        "x": 1340,
         "y": 460,
         "wires": [
             [
@@ -6599,11 +6598,11 @@
         "id": "a8a82044.dc145",
         "type": "link in",
         "z": "68ba5945.906288",
-        "name": "Light, Fan, Motion Trigger",
+        "name": "Voice Trigger",
         "links": [
             "da6ac8d6.218fe8"
         ],
-        "x": 135,
+        "x": 190,
         "y": 300,
         "wires": [
             [
@@ -6613,7 +6612,8 @@
                 "4cc0eb9.20b5514",
                 "241e69db.e11a06"
             ]
-        ]
+        ],
+        "l": true
     },
     {
         "id": "37b3e0d2.a9e47",
@@ -6644,7 +6644,7 @@
         "z": "7e547b10.f1db64",
         "name": "",
         "env": [],
-        "x": 340,
+        "x": 380,
         "y": 200,
         "wires": [
             [],
@@ -6673,7 +6673,7 @@
         "name": "240 Basestation",
         "service": "cd7fc366.3fdc9",
         "device": "4R03777PA2C83",
-        "x": 780,
+        "x": 820,
         "y": 180,
         "wires": []
     },
@@ -6686,7 +6686,7 @@
         "deviceId": "2017",
         "command": "off",
         "commandArgs": "",
-        "x": 770,
+        "x": 810,
         "y": 80,
         "wires": [
             []
@@ -6701,7 +6701,7 @@
         "deviceId": "2017",
         "command": "on",
         "commandArgs": "",
-        "x": 770,
+        "x": 810,
         "y": 280,
         "wires": [
             []
@@ -6713,7 +6713,7 @@
         "z": "68ba5945.906288",
         "name": "",
         "env": [],
-        "x": 260,
+        "x": 360,
         "y": 460,
         "wires": [
             [
@@ -6732,7 +6732,7 @@
         "z": "68ba5945.906288",
         "name": "",
         "env": [],
-        "x": 260,
+        "x": 360,
         "y": 560,
         "wires": [
             [
@@ -6793,7 +6793,7 @@
         "checkall": "false",
         "repair": false,
         "outputs": 6,
-        "x": 280,
+        "x": 380,
         "y": 360,
         "wires": [
             [
@@ -7381,7 +7381,7 @@
         "deviceId": "610",
         "command": "initialize",
         "commandArgs": "",
-        "x": 360,
+        "x": 440,
         "y": 60,
         "wires": [
             []
@@ -7396,7 +7396,7 @@
         "deviceId": "69",
         "command": "setPollInterval",
         "commandArgs": "5",
-        "x": 350,
+        "x": 430,
         "y": 260,
         "wires": [
             []
@@ -7411,7 +7411,7 @@
         "deviceId": "67",
         "command": "setPollInterval",
         "commandArgs": "5",
-        "x": 350,
+        "x": 430,
         "y": 300,
         "wires": [
             []
@@ -7426,7 +7426,7 @@
         "deviceId": "69",
         "command": "presetLevel",
         "commandArgs": "",
-        "x": 950,
+        "x": 1030,
         "y": 280,
         "wires": [
             []
@@ -7441,7 +7441,7 @@
         "deviceId": "67",
         "command": "presetLevel",
         "commandArgs": "",
-        "x": 950,
+        "x": 1030,
         "y": 200,
         "wires": [
             []
@@ -7456,7 +7456,7 @@
         "deviceId": "68",
         "command": "presetLevel",
         "commandArgs": "",
-        "x": 950,
+        "x": 1030,
         "y": 240,
         "wires": [
             []
@@ -7483,7 +7483,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 100,
+        "x": 180,
         "y": 200,
         "wires": [
             [
@@ -7504,7 +7504,7 @@
         "deviceId": "68",
         "command": "setPollInterval",
         "commandArgs": "5",
-        "x": 350,
+        "x": 430,
         "y": 340,
         "wires": [
             []
@@ -7519,7 +7519,7 @@
         "deviceId": "1351",
         "command": "on",
         "commandArgs": "",
-        "x": 740,
+        "x": 820,
         "y": 440,
         "wires": [
             [
@@ -7536,24 +7536,10 @@
         "deviceId": "385",
         "command": "on",
         "commandArgs": "",
-        "x": 960,
+        "x": 1040,
         "y": 440,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "69710185.668ba",
-        "type": "hubitat location",
-        "z": "345f283.d5796d8",
-        "name": "location",
-        "server": "b130c189.ea4d2",
-        "x": 90,
-        "y": 60,
-        "wires": [
-            [
-                "b4937f22.f5c47"
-            ]
         ]
     },
     {
@@ -7562,7 +7548,7 @@
         "z": "345f283.d5796d8",
         "name": "",
         "env": [],
-        "x": 340,
+        "x": 420,
         "y": 160,
         "wires": [
             [
@@ -7616,7 +7602,7 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
-        "x": 100,
+        "x": 180,
         "y": 140,
         "wires": [
             [
@@ -7629,32 +7615,6 @@
         ]
     },
     {
-        "id": "b4937f22.f5c47",
-        "type": "switch",
-        "z": "345f283.d5796d8",
-        "name": "sysStart",
-        "property": "payload.name",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "systemStart",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 100,
-        "y": 100,
-        "wires": [
-            [
-                "cbb3b899.a254a8",
-                "257f0ae5.8bca46"
-            ]
-        ]
-    },
-    {
         "id": "bae4798b.ce1e98",
         "type": "hubitat command",
         "z": "345f283.d5796d8",
@@ -7663,7 +7623,7 @@
         "deviceId": "385",
         "command": "off",
         "commandArgs": "",
-        "x": 740,
+        "x": 820,
         "y": 320,
         "wires": [
             []
@@ -7678,7 +7638,7 @@
         "deviceId": "385",
         "command": "on",
         "commandArgs": "",
-        "x": 740,
+        "x": 820,
         "y": 380,
         "wires": [
             []
@@ -7692,7 +7652,7 @@
         "links": [
             "19c790a8.4f13cf"
         ],
-        "x": 135,
+        "x": 215,
         "y": 340,
         "wires": [
             [
@@ -7710,8 +7670,8 @@
         "z": "345f283.d5796d8",
         "name": "",
         "account": "4553eef5.ffc05",
-        "option": "refresh",
-        "x": 340,
+        "option": "initialise",
+        "x": 400,
         "y": 480,
         "wires": [
             []
@@ -7738,7 +7698,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 180,
+        "x": 240,
         "y": 480,
         "wires": [
             [
@@ -7755,7 +7715,7 @@
             "6c8244ba.e4142c"
         ],
         "uncaught": false,
-        "x": 170,
+        "x": 250,
         "y": 520,
         "wires": [
             [
@@ -7775,7 +7735,7 @@
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 390,
+        "x": 470,
         "y": 520,
         "wires": []
     },
@@ -7792,7 +7752,7 @@
         "targetType": "full",
         "statusVal": "payload",
         "statusType": "auto",
-        "x": 310,
+        "x": 390,
         "y": 560,
         "wires": []
     },
@@ -7805,7 +7765,7 @@
         "deviceId": "366",
         "command": "off",
         "commandArgs": "",
-        "x": 720,
+        "x": 800,
         "y": 60,
         "wires": [
             [
@@ -7822,7 +7782,7 @@
         "deviceId": "366",
         "command": "on",
         "commandArgs": "",
-        "x": 720,
+        "x": 800,
         "y": 120,
         "wires": [
             [
@@ -7839,7 +7799,7 @@
         "deviceId": "1826",
         "command": "on",
         "commandArgs": "",
-        "x": 900,
+        "x": 980,
         "y": 60,
         "wires": [
             []
@@ -7854,7 +7814,7 @@
         "deviceId": "1826",
         "command": "off",
         "commandArgs": "",
-        "x": 900,
+        "x": 980,
         "y": 120,
         "wires": [
             []
@@ -7939,7 +7899,7 @@
                 ]
             }
         },
-        "x": 720,
+        "x": 800,
         "y": 180,
         "wires": [
             []
@@ -7954,7 +7914,7 @@
         "deviceId": "2060",
         "command": "setThermostatMode",
         "commandArgs": "",
-        "x": 1090,
+        "x": 1170,
         "y": 640,
         "wires": [
             []
@@ -7969,7 +7929,7 @@
         "deviceId": "2060",
         "command": "setHeatingSetpoint",
         "commandArgs": "",
-        "x": 1090,
+        "x": 1170,
         "y": 540,
         "wires": [
             []
@@ -7984,7 +7944,7 @@
         "deviceId": "2059",
         "command": "setThermostatMode",
         "commandArgs": "",
-        "x": 1090,
+        "x": 1170,
         "y": 600,
         "wires": [
             []
@@ -7999,7 +7959,7 @@
         "deviceId": "2059",
         "command": "setHeatingSetpoint",
         "commandArgs": "",
-        "x": 1090,
+        "x": 1170,
         "y": 500,
         "wires": [
             []
@@ -8011,7 +7971,7 @@
         "z": "345f283.d5796d8",
         "name": "",
         "env": [],
-        "x": 740,
+        "x": 820,
         "y": 240,
         "wires": [
             [
@@ -8032,7 +7992,7 @@
         "d": true,
         "name": "",
         "env": [],
-        "x": 760,
+        "x": 840,
         "y": 520,
         "wires": [
             [
@@ -9840,7 +9800,7 @@
         "checkall": "false",
         "repair": false,
         "outputs": 8,
-        "x": 1750,
+        "x": 1850,
         "y": 300,
         "wires": [
             [
@@ -9878,7 +9838,7 @@
         "deviceId": "1377",
         "command": "on",
         "commandArgs": "",
-        "x": 2040,
+        "x": 2140,
         "y": 100,
         "wires": [
             []
@@ -9893,7 +9853,7 @@
         "deviceId": "1352",
         "command": "on",
         "commandArgs": "",
-        "x": 2040,
+        "x": 2140,
         "y": 140,
         "wires": [
             []
@@ -9908,7 +9868,7 @@
         "deviceId": "385",
         "command": "on",
         "commandArgs": "",
-        "x": 2040,
+        "x": 2140,
         "y": 180,
         "wires": [
             []
@@ -9923,7 +9883,7 @@
         "deviceId": "1377",
         "command": "off",
         "commandArgs": "",
-        "x": 2040,
+        "x": 2140,
         "y": 420,
         "wires": [
             [
@@ -9940,7 +9900,7 @@
         "deviceId": "1352",
         "command": "off",
         "commandArgs": "",
-        "x": 2040,
+        "x": 2140,
         "y": 460,
         "wires": [
             []
@@ -9955,7 +9915,7 @@
         "deviceId": "385",
         "command": "off",
         "commandArgs": "",
-        "x": 2040,
+        "x": 2140,
         "y": 500,
         "wires": [
             [
@@ -9971,7 +9931,7 @@
         "z": "68ba5945.906288",
         "name": "",
         "env": [],
-        "x": 1780,
+        "x": 1880,
         "y": 140,
         "wires": [
             [
@@ -9991,7 +9951,7 @@
         "type": "subflow:cb4b5b0a.f09b68",
         "z": "68ba5945.906288",
         "name": "",
-        "x": 1780,
+        "x": 1880,
         "y": 460,
         "wires": [
             [
@@ -10015,7 +9975,7 @@
         "deviceId": "1572",
         "command": "on",
         "commandArgs": "",
-        "x": 2270,
+        "x": 2370,
         "y": 420,
         "wires": [
             []
@@ -10030,7 +9990,7 @@
         "deviceId": "22",
         "command": "setColorTemperature",
         "commandArgs": "3500",
-        "x": 2300,
+        "x": 2400,
         "y": 500,
         "wires": [
             [
@@ -10047,7 +10007,7 @@
         "deviceId": "23",
         "command": "setColorTemperature",
         "commandArgs": "3500",
-        "x": 2300,
+        "x": 2400,
         "y": 540,
         "wires": [
             [
@@ -10064,7 +10024,7 @@
         "deviceId": "21",
         "command": "off",
         "commandArgs": "",
-        "x": 2290,
+        "x": 2390,
         "y": 600,
         "wires": [
             []
@@ -10079,7 +10039,7 @@
         "deviceId": "22",
         "command": "setLevel",
         "commandArgs": "100",
-        "x": 2520,
+        "x": 2620,
         "y": 500,
         "wires": [
             []
@@ -10094,7 +10054,7 @@
         "deviceId": "23",
         "command": "setLevel",
         "commandArgs": "100",
-        "x": 2520,
+        "x": 2620,
         "y": 540,
         "wires": [
             []
@@ -10117,7 +10077,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 880,
+        "x": 940,
         "y": 240,
         "wires": [
             [
@@ -10134,7 +10094,7 @@
         "deviceId": "1441",
         "attribute": "",
         "sendEvent": false,
-        "x": 710,
+        "x": 770,
         "y": 240,
         "wires": [
             [
@@ -10151,7 +10111,7 @@
         "deviceId": "1441",
         "command": "refresh",
         "commandArgs": "",
-        "x": 540,
+        "x": 600,
         "y": 240,
         "wires": [
             [
@@ -10174,7 +10134,7 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
-        "x": 1320,
+        "x": 1380,
         "y": 240,
         "wires": [
             [
@@ -10197,7 +10157,7 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
-        "x": 1180,
+        "x": 1240,
         "y": 300,
         "wires": [
             [
@@ -10236,7 +10196,7 @@
         "attribute": "motion",
         "sendEvent": true,
         "x": 150,
-        "y": 280,
+        "y": 300,
         "wires": [
             [
                 "61b718e4.b83798"
@@ -10351,7 +10311,7 @@
         "wires": [
             [],
             [
-                "2b0a69c7.f80116"
+                "f8ce7b3f.ff69a8"
             ],
             []
         ]
@@ -10502,7 +10462,7 @@
         "type": "stoptimer-varidelay",
         "z": "d06ad5d7.7d1a38",
         "g": "b3ea31b2.17afa",
-        "duration": "1",
+        "duration": "2",
         "durationType": "num",
         "units": "Minute",
         "payloadtype": "num",
@@ -11049,7 +11009,7 @@
         "z": "d06ad5d7.7d1a38",
         "g": "bbd34e0c.99f3c",
         "name": "On Status",
-        "func": "// initialise the counter to 0 if it doesn't exist already\nvar myKT_Light = flow.get('KT_Light',\"memoryOnly\")||0;\nmyKT_Light = 'on'\n// store the value back\nflow.set('KT_Light',myKT_Light,\"memoryOnly\");",
+        "func": "// initialise the counter to 0 if it doesn't exist already\nvar myKT_Light = flow.get('KT_Light',\"memoryOnly\")||0;\nmyKT_Light = true\n// store the value back\nflow.set('KT_Light',myKT_Light,\"memoryOnly\");",
         "outputs": 0,
         "noerr": 0,
         "initialize": "",
@@ -11064,7 +11024,7 @@
         "z": "d06ad5d7.7d1a38",
         "g": "7b4c2b56.74bb34",
         "name": "Off Status",
-        "func": "// initialise the counter to 0 if it doesn't exist already\nvar myKT_Light = flow.get('KT_Light',\"memoryOnly\")||0;\nmyKT_Light = 'off'\n// store the value back\nflow.set('KT_Light',myKT_Light,\"memoryOnly\");",
+        "func": "// initialise the counter to 0 if it doesn't exist already\nvar myKT_Light = flow.get('KT_Light',\"memoryOnly\")||0;\nmyKT_Light = false\n// store the value back\nflow.set('KT_Light',myKT_Light,\"memoryOnly\");",
         "outputs": 0,
         "noerr": 0,
         "initialize": "",
@@ -11305,7 +11265,7 @@
         "z": "d06ad5d7.7d1a38",
         "g": "da906c01.3168e",
         "name": "Disabled Status",
-        "func": "// initialise the counter to 0 if it doesn't exist already\nvar myKT_Motion = flow.get('KT_Motion',\"memoryOnly\")||0;\nmyKT_Motion = 'disabled'\n// store the value back\nflow.set('KT_Motion',myKT_Motion,\"memoryOnly\");\nreturn msg",
+        "func": "// initialise the counter to 0 if it doesn't exist already\nvar myKT_Motion = flow.get('KT_Motion',\"memoryOnly\")||0;\nmyKT_Motion = false\n// store the value back\nflow.set('KT_Motion',myKT_Motion,\"memoryOnly\");\nreturn msg",
         "outputs": 0,
         "noerr": 0,
         "initialize": "",
@@ -11351,7 +11311,7 @@
         "z": "d06ad5d7.7d1a38",
         "g": "da906c01.3168e",
         "name": "Enabled Status",
-        "func": "// initialise the counter to 0 if it doesn't exist already\nvar myKT_Motion = flow.get('KT_Motion',\"memoryOnly\")||0;\nmyKT_Motion = 'enabled'\n// store the value back\nflow.set('KT_Motion',myKT_Motion,\"memoryOnly\");\nreturn msg",
+        "func": "// initialise the counter to 0 if it doesn't exist already\nvar myKT_Motion = flow.get('KT_Motion',\"memoryOnly\")||0;\nmyKT_Motion = true\n// store the value back\nflow.set('KT_Motion',myKT_Motion,\"memoryOnly\");\nreturn msg",
         "outputs": 0,
         "noerr": 0,
         "initialize": "",
@@ -11448,9 +11408,7 @@
         "propertyType": "flow",
         "rules": [
             {
-                "t": "eq",
-                "v": "enabled",
-                "vt": "str"
+                "t": "true"
             }
         ],
         "checkall": "true",
@@ -11469,14 +11427,12 @@
         "type": "switch",
         "z": "d06ad5d7.7d1a38",
         "g": "568533ed.18d81c",
-        "name": "on?",
+        "name": "light",
         "property": "KT_Light",
         "propertyType": "flow",
         "rules": [
             {
-                "t": "eq",
-                "v": "on",
-                "vt": "str"
+                "t": "true"
             }
         ],
         "checkall": "true",
@@ -11561,7 +11517,7 @@
         "deviceId": "2060",
         "command": "off",
         "commandArgs": "",
-        "x": 510,
+        "x": 610,
         "y": 580,
         "wires": [
             []
@@ -11577,7 +11533,7 @@
         "deviceId": "2059",
         "command": "off",
         "commandArgs": "",
-        "x": 510,
+        "x": 610,
         "y": 540,
         "wires": [
             []
@@ -11593,7 +11549,7 @@
         "deviceId": "2060",
         "command": "heat",
         "commandArgs": "",
-        "x": 510,
+        "x": 610,
         "y": 480,
         "wires": [
             []
@@ -11609,7 +11565,7 @@
         "deviceId": "2059",
         "command": "heat",
         "commandArgs": "",
-        "x": 510,
+        "x": 610,
         "y": 440,
         "wires": [
             []
@@ -11625,7 +11581,7 @@
         "deviceId": "2060",
         "command": "off",
         "commandArgs": "",
-        "x": 510,
+        "x": 610,
         "y": 100,
         "wires": [
             []
@@ -11641,7 +11597,7 @@
         "deviceId": "2060",
         "command": "cool",
         "commandArgs": "",
-        "x": 510,
+        "x": 610,
         "y": 200,
         "wires": [
             []
@@ -12185,30 +12141,6 @@
         ]
     },
     {
-        "id": "2b0a69c7.f80116",
-        "type": "delay",
-        "z": "d06ad5d7.7d1a38",
-        "g": "7a22a12f.dcfd3",
-        "name": "",
-        "pauseType": "rate",
-        "timeout": "5",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": true,
-        "x": 330,
-        "y": 340,
-        "wires": [
-            [
-                "f8ce7b3f.ff69a8"
-            ]
-        ]
-    },
-    {
         "id": "7dfd7833.207ba8",
         "type": "function",
         "z": "d06ad5d7.7d1a38",
@@ -12228,21 +12160,19 @@
         "type": "switch",
         "z": "d06ad5d7.7d1a38",
         "g": "d79efd7b.7886b",
-        "name": "off?",
+        "name": "light",
         "property": "KT_Light",
         "propertyType": "flow",
         "rules": [
             {
-                "t": "eq",
-                "v": "off",
-                "vt": "str"
+                "t": "false"
             }
         ],
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 730,
-        "y": 240,
+        "x": 690,
+        "y": 260,
         "wires": [
             [
                 "7c4a0dd4.f78404"
@@ -12255,7 +12185,7 @@
         "z": "d06ad5d7.7d1a38",
         "g": "da906c01.3168e",
         "name": "Initialize Variables",
-        "func": "// initialise the counter to 0 if it doesn't exist already\nvar myKT_Override = flow.get('KT_Override',\"memoryOnly\")||0;\nmyKT_Override = true\n// store the value back\nflow.set('KT_Override',myKT_Override,\"memoryOnly\");\n\n// initialise the counter to 0 if it doesn't exist already\nvar myKT_Light = flow.get('KT_Light',\"memoryOnly\")||0;\nmyKT_Light = 'off'\n// store the value back\nflow.set('KT_Light',myKT_Light,\"memoryOnly\");\n\nreturn msg",
+        "func": "// initialise the counter to 0 if it doesn't exist already\nvar myKT_Override = flow.get('KT_Override',\"memoryOnly\")||0;\nmyKT_Override = true\n// store the value back\nflow.set('KT_Override',myKT_Override,\"memoryOnly\");\n\n// initialise the counter to 0 if it doesn't exist already\nvar myKT_Light = flow.get('KT_Light',\"memoryOnly\")||0;\nmyKT_Light = false\n// store the value back\nflow.set('KT_Light',myKT_Light,\"memoryOnly\");\n\nreturn msg",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -12273,36 +12203,112 @@
         "type": "link in",
         "z": "d06ad5d7.7d1a38",
         "g": "da906c01.3168e",
-        "name": "",
+        "name": "HE Start",
         "links": [
-            "257f0ae5.8bca46"
+            "d4bae9fc.dde7c8"
         ],
-        "x": 215,
+        "x": 160,
         "y": 500,
         "wires": [
             [
                 "65a692c2.29e92c"
             ]
+        ],
+        "l": true
+    },
+    {
+        "id": "ed3dacdc.e614d",
+        "type": "hubitat location",
+        "z": "4702b097.59f3b",
+        "name": "location",
+        "server": "b130c189.ea4d2",
+        "x": 450,
+        "y": 240,
+        "wires": [
+            [
+                "ab00a87d.5575b8"
+            ]
         ]
     },
     {
-        "id": "257f0ae5.8bca46",
-        "type": "link out",
-        "z": "345f283.d5796d8",
-        "name": "Hub Start",
-        "links": [
-            "fcb2b3d7.ea53"
+        "id": "ab00a87d.5575b8",
+        "type": "switch",
+        "z": "4702b097.59f3b",
+        "name": "sysStart",
+        "property": "payload.name",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "systemStart",
+                "vt": "str"
+            }
         ],
-        "x": 275,
-        "y": 400,
-        "wires": []
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 580,
+        "y": 240,
+        "wires": [
+            [
+                "d4bae9fc.dde7c8"
+            ]
+        ]
     },
     {
-        "id": "9b5c74fb.213a08",
+        "id": "d4bae9fc.dde7c8",
+        "type": "link out",
+        "z": "4702b097.59f3b",
+        "name": "Hubitat Start",
+        "links": [
+            "a1e0216.9d6ffe",
+            "fcb2b3d7.ea53",
+            "4c2797e8.326be8"
+        ],
+        "x": 730,
+        "y": 240,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "a1e0216.9d6ffe",
+        "type": "link in",
+        "z": "345f283.d5796d8",
+        "name": "HE Start",
+        "links": [
+            "d4bae9fc.dde7c8"
+        ],
+        "x": 180,
+        "y": 60,
+        "wires": [
+            [
+                "cbb3b899.a254a8"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "93c240cb.375db",
+        "type": "link in",
+        "z": "7e547b10.f1db64",
+        "name": "Voice Trigger",
+        "links": [
+            "da6ac8d6.218fe8"
+        ],
+        "x": 190,
+        "y": 80,
+        "wires": [
+            [
+                "3269284b.9fbe58"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "da68c36b.0f2d9",
         "type": "inject",
-        "z": "d06ad5d7.7d1a38",
-        "g": "da906c01.3168e",
-        "name": "Started!",
+        "z": "4702b097.59f3b",
+        "name": "NR Start",
         "props": [
             {
                 "p": "payload"
@@ -12319,12 +12325,357 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
+        "x": 560,
+        "y": 300,
+        "wires": [
+            [
+                "72d1fff3.4f9c7"
+            ]
+        ]
+    },
+    {
+        "id": "72d1fff3.4f9c7",
+        "type": "link out",
+        "z": "4702b097.59f3b",
+        "name": "Node-RED Start",
+        "links": [
+            "12822318.46878d"
+        ],
+        "x": 720,
+        "y": 300,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "12822318.46878d",
+        "type": "link in",
+        "z": "d06ad5d7.7d1a38",
+        "g": "da906c01.3168e",
+        "name": "NR Start",
+        "links": [
+            "72d1fff3.4f9c7"
+        ],
         "x": 160,
         "y": 580,
         "wires": [
             [
                 "65a692c2.29e92c"
             ]
+        ],
+        "l": true
+    },
+    {
+        "id": "1f5aedb2.e46902",
+        "type": "function",
+        "z": "f3e4e663.9ecbb8",
+        "name": "Set Full File Path",
+        "func": "msg.filename = msg.filePath+msg.backupDate+msg.fileSuffix;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 750,
+        "y": 380,
+        "wires": [
+            [
+                "aa46a62f.dadf58"
+            ]
         ]
+    },
+    {
+        "id": "b5ff0f1.7d0cef",
+        "type": "http request",
+        "z": "7fd4877d.2ab0a8",
+        "name": "Get Cookie",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://192.168.2.240/login",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 390,
+        "y": 80,
+        "wires": [
+            [
+                "8889d059.eecc2"
+            ]
+        ]
+    },
+    {
+        "id": "df1841e2.1378d",
+        "type": "change",
+        "z": "f3e4e663.9ecbb8",
+        "name": "Set File Path Parts",
+        "rules": [
+            {
+                "t": "set",
+                "p": "filePath",
+                "pt": "msg",
+                "to": "/mnt/dietpi_userdata/node-red/he_backups/",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "backupDate",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "fileSuffix",
+                "pt": "msg",
+                "to": " - HE_Backup.lzf",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 550,
+        "y": 380,
+        "wires": [
+            [
+                "1f5aedb2.e46902"
+            ]
+        ]
+    },
+    {
+        "id": "87e7f2f8.fa594",
+        "type": "file",
+        "z": "f3e4e663.9ecbb8",
+        "name": "Save Backup",
+        "filename": "",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 370,
+        "y": 440,
+        "wires": [
+            [
+                "c3df676c.336198"
+            ]
+        ]
+    },
+    {
+        "id": "368218dd.c48d18",
+        "type": "moment",
+        "z": "f3e4e663.9ecbb8",
+        "name": "",
+        "topic": "",
+        "input": "",
+        "inputType": "msg",
+        "inTz": "America/Los_Angeles",
+        "adjAmount": 0,
+        "adjType": "days",
+        "adjDir": "add",
+        "format": "YYYY-MM-DD",
+        "locale": "en_US",
+        "output": "",
+        "outputType": "msg",
+        "outTz": "America/Los_Angeles",
+        "x": 340,
+        "y": 380,
+        "wires": [
+            [
+                "df1841e2.1378d"
+            ]
+        ]
+    },
+    {
+        "id": "92b03048.18558",
+        "type": "inject",
+        "z": "f3e4e663.9ecbb8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 380,
+        "wires": [
+            [
+                "368218dd.c48d18"
+            ]
+        ]
+    },
+    {
+        "id": "8889d059.eecc2",
+        "type": "function",
+        "z": "7fd4877d.2ab0a8",
+        "name": "Set Request Headers",
+        "func": "var cookies = msg.responseCookies;\nmsg.headers = {\nCookie : \"HUBSESSION=\" + cookies.HUBSESSION.value,\n'content-type':'application/x-www-form-urlencoded'};\n\n//Hubitat login username and password for form data\nvar data = 'username='+msg.username+'&password='+msg.password+'&submit=Login';\nmsg.payload = data;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 580,
+        "y": 80,
+        "wires": [
+            [
+                "afa2f260.945c6"
+            ]
+        ]
+    },
+    {
+        "id": "b48176a3.71a648",
+        "type": "function",
+        "z": "7fd4877d.2ab0a8",
+        "name": "Set Cookies",
+        "func": "var cookies = msg.responseCookies;\n//Set session cookies for the request header\nmsg.headers = {\nCookie : \"HUBSESSION=\" + cookies.HUBSESSION.value};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 890,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "afa2f260.945c6",
+        "type": "http request",
+        "z": "7fd4877d.2ab0a8",
+        "name": "Login",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://192.168.2.240/login",
+        "tls": "",
+        "persist": true,
+        "proxy": "",
+        "authType": "",
+        "x": 750,
+        "y": 80,
+        "wires": [
+            [
+                "b48176a3.71a648"
+            ]
+        ]
+    },
+    {
+        "id": "4d90908c.98924",
+        "type": "http request",
+        "z": "f3e4e663.9ecbb8",
+        "name": "Download Backup",
+        "method": "GET",
+        "ret": "bin",
+        "paytoqs": "ignore",
+        "url": "http://192.168.2.240/hub/backupDB?fileName=latest",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 190,
+        "y": 440,
+        "wires": [
+            [
+                "87e7f2f8.fa594"
+            ]
+        ]
+    },
+    {
+        "id": "ebbab56c.e84458",
+        "type": "change",
+        "z": "7fd4877d.2ab0a8",
+        "name": "Set Username/Password",
+        "rules": [
+            {
+                "t": "set",
+                "p": "username",
+                "pt": "msg",
+                "to": "Admin",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "password",
+                "pt": "msg",
+                "to": "Sx%5^8ZrqW4lr$REQkeD",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 190,
+        "y": 80,
+        "wires": [
+            [
+                "b5ff0f1.7d0cef"
+            ]
+        ]
+    },
+    {
+        "id": "aa46a62f.dadf58",
+        "type": "subflow:7fd4877d.2ab0a8",
+        "z": "f3e4e663.9ecbb8",
+        "name": "",
+        "env": [],
+        "x": 940,
+        "y": 380,
+        "wires": [
+            [
+                "4d90908c.98924"
+            ]
+        ]
+    },
+    {
+        "id": "c3df676c.336198",
+        "type": "exec",
+        "z": "f3e4e663.9ecbb8",
+        "command": " runuser -l  root -c ",
+        "addpay": false,
+        "append": "'rclone copy /mnt/dietpi_userdata/node-red/he_backups BH_3B_Backup:HE_backups'",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "Upload to GDrive",
+        "x": 750,
+        "y": 520,
+        "wires": [
+            [
+                "12b68123.0581bf"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "12b68123.0581bf",
+        "type": "debug",
+        "z": "f3e4e663.9ecbb8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1100,
+        "y": 520,
+        "wires": []
     }
 ]
