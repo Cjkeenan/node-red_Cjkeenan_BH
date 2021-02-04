@@ -70,23 +70,16 @@
         "info": ""
     },
     {
-        "id": "e1557285.e3f86",
-        "type": "tab",
-        "label": "LF - Colin's Bedroom",
-        "disabled": false,
-        "info": ""
-    },
-    {
-        "id": "116ef4ea.86891b",
-        "type": "tab",
-        "label": "Brandon's Template",
-        "disabled": false,
-        "info": ""
-    },
-    {
         "id": "f3e4e663.9ecbb8",
         "type": "tab",
         "label": "Automated Backups",
+        "disabled": true,
+        "info": ""
+    },
+    {
+        "id": "e1557285.e3f86",
+        "type": "tab",
+        "label": "LF - Colin's Bedroom",
         "disabled": false,
         "info": ""
     },
@@ -1344,7 +1337,7 @@
     {
         "id": "4553eef5.ffc05",
         "type": "alexa-remote-account",
-        "name": "",
+        "name": "Beach House Alexa Account",
         "authMethod": "proxy",
         "proxyOwnIp": "192.168.2.253",
         "proxyPort": "3456",
@@ -1518,14 +1511,6 @@
         "name": "KMK Arlo"
     },
     {
-        "id": "bdfee576.1c2a08",
-        "type": "alexa-smart-home-v3-conf",
-        "username": "240avenida",
-        "mqttserver": "mq-red.cb-net.co.uk",
-        "webapiurl": "red.cb-net.co.uk",
-        "contextName": "file"
-    },
-    {
         "id": "cd7fc366.3fdc9",
         "type": "arlo-config",
         "name": "CJK Arlo"
@@ -1559,6 +1544,13 @@
         "influxdbVersion": "1.x",
         "url": "",
         "rejectUnauthorized": false
+    },
+    {
+        "id": "b4d8ec3.84a421",
+        "type": "vsh-connection",
+        "name": "LF Alexa",
+        "port": "8883",
+        "accessTokenExpiry": "1612418443802"
     },
     {
         "id": "c4c56729.96e518",
@@ -4047,507 +4039,6 @@
         "wires": []
     },
     {
-        "id": "aa69c09b.970a2",
-        "type": "switch",
-        "z": "116ef4ea.86891b",
-        "name": "Phrase Handler (on/off general)",
-        "property": "payload.description.summary",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "regex",
-                "v": "turn off (the )?lights",
-                "vt": "str",
-                "case": false
-            },
-            {
-                "t": "regex",
-                "v": "turn on (the )?lights",
-                "vt": "str",
-                "case": false
-            }
-        ],
-        "checkall": "false",
-        "repair": false,
-        "outputs": 2,
-        "x": 410,
-        "y": 120,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
-        "id": "4084a695.121078",
-        "type": "alexa-remote-event",
-        "z": "116ef4ea.86891b",
-        "name": "Brandon's Devices",
-        "account": "4553eef5.ffc05",
-        "event": "ws-device-activity",
-        "x": 130,
-        "y": 60,
-        "wires": [
-            [
-                "85210287.bf1ff"
-            ]
-        ]
-    },
-    {
-        "id": "85210287.bf1ff",
-        "type": "switch",
-        "z": "116ef4ea.86891b",
-        "name": "Wake Handler",
-        "property": "payload.domainAttributes",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "null",
-                "vt": "jsonata"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 160,
-        "y": 300,
-        "wires": [
-            [
-                "aa69c09b.970a2",
-                "cc5b377c.34c4e8",
-                "288a9df7.2202d2"
-            ]
-        ]
-    },
-    {
-        "id": "cc5b377c.34c4e8",
-        "type": "switch",
-        "z": "116ef4ea.86891b",
-        "name": "Phrase Handler (off specific)",
-        "property": "payload.description.summary",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "regex",
-                "v": "turn off (the )?downstairs lights",
-                "vt": "str",
-                "case": false
-            },
-            {
-                "t": "regex",
-                "v": "turn off (the )?kitchen lights",
-                "vt": "str",
-                "case": false
-            },
-            {
-                "t": "regex",
-                "v": "turn off (the )?dining room lights",
-                "vt": "str",
-                "case": false
-            },
-            {
-                "t": "regex",
-                "v": "turn off all (the )?lights",
-                "vt": "str",
-                "case": false
-            },
-            {
-                "t": "regex",
-                "v": "etc...",
-                "vt": "str",
-                "case": false
-            }
-        ],
-        "checkall": "false",
-        "repair": false,
-        "outputs": 5,
-        "x": 420,
-        "y": 300,
-        "wires": [
-            [],
-            [],
-            [],
-            [],
-            []
-        ]
-    },
-    {
-        "id": "288a9df7.2202d2",
-        "type": "switch",
-        "z": "116ef4ea.86891b",
-        "name": "Phrase Handler (on specific)",
-        "property": "payload.description.summary",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "regex",
-                "v": "turn on (the )?downstairs lights",
-                "vt": "str",
-                "case": false
-            },
-            {
-                "t": "regex",
-                "v": "turn on (the )?kitchen lights",
-                "vt": "str",
-                "case": false
-            },
-            {
-                "t": "regex",
-                "v": "turn on (the )?dining room lights",
-                "vt": "str",
-                "case": false
-            },
-            {
-                "t": "regex",
-                "v": "turn on all (the )?lights",
-                "vt": "str",
-                "case": false
-            },
-            {
-                "t": "regex",
-                "v": "etc...",
-                "vt": "str",
-                "case": false
-            }
-        ],
-        "checkall": "false",
-        "repair": false,
-        "outputs": 5,
-        "x": 420,
-        "y": 540,
-        "wires": [
-            [],
-            [],
-            [],
-            [],
-            []
-        ]
-    },
-    {
-        "id": "f5068574.959678",
-        "type": "comment",
-        "z": "116ef4ea.86891b",
-        "name": "Device Handler (Serial Decoder)",
-        "info": "",
-        "x": 710,
-        "y": 100,
-        "wires": []
-    },
-    {
-        "id": "14c9df05.d01f21",
-        "type": "comment",
-        "z": "116ef4ea.86891b",
-        "name": "Device Handler (Serial Decoder)",
-        "info": "",
-        "x": 710,
-        "y": 140,
-        "wires": []
-    },
-    {
-        "id": "49cc1d8.77dfde4",
-        "type": "comment",
-        "z": "116ef4ea.86891b",
-        "name": "Downstairs Actions",
-        "info": "",
-        "x": 670,
-        "y": 460,
-        "wires": []
-    },
-    {
-        "id": "c8f56a2e.6f8628",
-        "type": "comment",
-        "z": "116ef4ea.86891b",
-        "name": "Kitchen Actions",
-        "info": "",
-        "x": 660,
-        "y": 500,
-        "wires": []
-    },
-    {
-        "id": "af561cc6.d04c5",
-        "type": "comment",
-        "z": "116ef4ea.86891b",
-        "name": "Dining Room Actions",
-        "info": "",
-        "x": 670,
-        "y": 540,
-        "wires": []
-    },
-    {
-        "id": "1f03eef2.2253d1",
-        "type": "comment",
-        "z": "116ef4ea.86891b",
-        "name": "All Actions",
-        "info": "",
-        "x": 640,
-        "y": 580,
-        "wires": []
-    },
-    {
-        "id": "9dedb83b.419a18",
-        "type": "comment",
-        "z": "116ef4ea.86891b",
-        "name": "etc...",
-        "info": "",
-        "x": 630,
-        "y": 620,
-        "wires": []
-    },
-    {
-        "id": "2a05c68.61da73a",
-        "type": "comment",
-        "z": "116ef4ea.86891b",
-        "name": "Downstairs Actions",
-        "info": "",
-        "x": 670,
-        "y": 220,
-        "wires": []
-    },
-    {
-        "id": "a984acbc.77b56",
-        "type": "comment",
-        "z": "116ef4ea.86891b",
-        "name": "Kitchen Actions",
-        "info": "",
-        "x": 660,
-        "y": 260,
-        "wires": []
-    },
-    {
-        "id": "8db0484d.9c2a08",
-        "type": "comment",
-        "z": "116ef4ea.86891b",
-        "name": "Dining Room Actions",
-        "info": "",
-        "x": 670,
-        "y": 300,
-        "wires": []
-    },
-    {
-        "id": "d6097de4.a50cd",
-        "type": "comment",
-        "z": "116ef4ea.86891b",
-        "name": "All Actions",
-        "info": "",
-        "x": 640,
-        "y": 340,
-        "wires": []
-    },
-    {
-        "id": "af5b41ea.15581",
-        "type": "comment",
-        "z": "116ef4ea.86891b",
-        "name": "etc...",
-        "info": "",
-        "x": 630,
-        "y": 380,
-        "wires": []
-    },
-    {
-        "id": "39bb0fcb.6ffa5",
-        "type": "alexa-remote-event",
-        "z": "116ef4ea.86891b",
-        "name": "Carter's Devices",
-        "account": "4553eef5.ffc05",
-        "event": "ws-device-activity",
-        "x": 120,
-        "y": 540,
-        "wires": [
-            [
-                "85210287.bf1ff"
-            ]
-        ]
-    },
-    {
-        "id": "6d76fdb7.158094",
-        "type": "subflow:5618f29.6116b0c",
-        "z": "116ef4ea.86891b",
-        "name": "",
-        "env": [],
-        "x": 440,
-        "y": 760,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "fbe443eb.5cf64",
-        "type": "inject",
-        "z": "116ef4ea.86891b",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 280,
-        "y": 760,
-        "wires": [
-            [
-                "6d76fdb7.158094"
-            ]
-        ]
-    },
-    {
-        "id": "7be640d3.3a56a",
-        "type": "inject",
-        "z": "116ef4ea.86891b",
-        "name": "Trigger",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 290,
-        "y": 700,
-        "wires": [
-            [
-                "4014e8f4.ee2f58"
-            ]
-        ]
-    },
-    {
-        "id": "4014e8f4.ee2f58",
-        "type": "alexa-remote-echo",
-        "z": "116ef4ea.86891b",
-        "name": "",
-        "account": "4553eef5.ffc05",
-        "config": {
-            "option": "get",
-            "value": {
-                "what": "device",
-                "device": {
-                    "type": "str",
-                    "value": "ALEXA_ALL_DSN"
-                }
-            }
-        },
-        "x": 450,
-        "y": 700,
-        "wires": [
-            [
-                "81b06775.03f508"
-            ]
-        ]
-    },
-    {
-        "id": "81b06775.03f508",
-        "type": "split",
-        "z": "116ef4ea.86891b",
-        "name": "Split Devices",
-        "splt": "\\n",
-        "spltType": "str",
-        "arraySplt": 1,
-        "arraySpltType": "len",
-        "stream": false,
-        "addname": "",
-        "x": 630,
-        "y": 700,
-        "wires": [
-            [
-                "16a88faf.02192"
-            ]
-        ]
-    },
-    {
-        "id": "16a88faf.02192",
-        "type": "switch",
-        "z": "116ef4ea.86891b",
-        "name": "Filter Echos",
-        "property": "payload.deviceFamily",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "ECHO",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 790,
-        "y": 700,
-        "wires": [
-            [
-                "9b62d419.598bb8"
-            ]
-        ]
-    },
-    {
-        "id": "9b62d419.598bb8",
-        "type": "change",
-        "z": "116ef4ea.86891b",
-        "name": "Copy Relevant Data",
-        "rules": [
-            {
-                "t": "set",
-                "p": "device.serialNumber",
-                "pt": "msg",
-                "to": "payload.serialNumber",
-                "tot": "msg"
-            },
-            {
-                "t": "set",
-                "p": "device.accountName",
-                "pt": "msg",
-                "to": "payload.accountName",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 980,
-        "y": 700,
-        "wires": [
-            [
-                "1a010d30.7c1fa3"
-            ]
-        ]
-    },
-    {
-        "id": "1a010d30.7c1fa3",
-        "type": "debug",
-        "z": "116ef4ea.86891b",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "device",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1170,
-        "y": 700,
-        "wires": []
-    },
-    {
         "id": "f2d6a1e1.a6f4a",
         "type": "alexa-remote-smarthome",
         "z": "e1557285.e3f86",
@@ -4994,7 +4485,7 @@
         "type": "switch",
         "z": "e1557285.e3f86",
         "name": "Motion Handler",
-        "property": "payload",
+        "property": "payload.powerState",
         "propertyType": "msg",
         "rules": [
             {
@@ -6115,28 +5606,11 @@
         ]
     },
     {
-        "id": "9f25d049.ddeb3",
-        "type": "alexa-smart-home-v3",
-        "z": "e1557285.e3f86",
-        "conf": "bdfee576.1c2a08",
-        "device": "19089",
-        "acknowledge": true,
-        "name": "Virtual Motion",
-        "topic": "motion",
-        "x": 110,
-        "y": 60,
-        "wires": [
-            [
-                "53101c6a.f83a74"
-            ]
-        ]
-    },
-    {
         "id": "4985e4fd.b7d07c",
         "type": "switch",
         "z": "e1557285.e3f86",
         "name": "Motion Handler",
-        "property": "payload",
+        "property": "payload.powerState",
         "propertyType": "msg",
         "rules": [
             {
@@ -6173,7 +5647,7 @@
         "type": "switch",
         "z": "e1557285.e3f86",
         "name": "Motion Handler",
-        "property": "payload",
+        "property": "payload.powerState",
         "propertyType": "msg",
         "rules": [
             {
@@ -7802,36 +7276,6 @@
         ]
     },
     {
-        "id": "e4a783ea.cf823",
-        "type": "hubitat command",
-        "z": "345f283.d5796d8",
-        "name": "DB - Kasa Dimmer",
-        "server": "b130c189.ea4d2",
-        "deviceId": "69",
-        "command": "setPollInterval",
-        "commandArgs": "5",
-        "x": 430,
-        "y": 260,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "1d054dd1.fa4132",
-        "type": "hubitat command",
-        "z": "345f283.d5796d8",
-        "name": "GR - Kasa Dimmer",
-        "server": "b130c189.ea4d2",
-        "deviceId": "67",
-        "command": "setPollInterval",
-        "commandArgs": "5",
-        "x": 430,
-        "y": 300,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "2bf257a5.75d838",
         "type": "hubitat command",
         "z": "345f283.d5796d8",
@@ -7901,27 +7345,9 @@
         "y": 200,
         "wires": [
             [
-                "f8201f73.c1d12",
-                "1d054dd1.fa4132",
-                "e4a783ea.cf823",
                 "11291787.f81d18",
                 "ee75fe96.c668b"
             ]
-        ]
-    },
-    {
-        "id": "f8201f73.c1d12",
-        "type": "hubitat command",
-        "z": "345f283.d5796d8",
-        "name": "KT - Kasa Dimmer",
-        "server": "b130c189.ea4d2",
-        "deviceId": "68",
-        "command": "setPollInterval",
-        "commandArgs": "5",
-        "x": 430,
-        "y": 340,
-        "wires": [
-            []
         ]
     },
     {
@@ -8021,10 +7447,7 @@
         "wires": [
             [
                 "11291787.f81d18",
-                "ee75fe96.c668b",
-                "e4a783ea.cf823",
-                "1d054dd1.fa4132",
-                "f8201f73.c1d12"
+                "ee75fe96.c668b"
             ]
         ]
     },
@@ -8067,14 +7490,11 @@
             "19c790a8.4f13cf"
         ],
         "x": 215,
-        "y": 340,
+        "y": 260,
         "wires": [
             [
                 "11291787.f81d18",
-                "ee75fe96.c668b",
-                "e4a783ea.cf823",
-                "1d054dd1.fa4132",
-                "f8201f73.c1d12"
+                "ee75fe96.c668b"
             ]
         ]
     },
@@ -8086,7 +7506,7 @@
         "account": "4553eef5.ffc05",
         "option": "initialise",
         "x": 400,
-        "y": 480,
+        "y": 360,
         "wires": [
             []
         ]
@@ -8113,7 +7533,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 240,
-        "y": 480,
+        "y": 360,
         "wires": [
             [
                 "13e3388f.1cc2b7"
@@ -8130,7 +7550,7 @@
         ],
         "uncaught": false,
         "x": 250,
-        "y": 520,
+        "y": 400,
         "wires": [
             [
                 "13e3388f.1cc2b7",
@@ -8150,7 +7570,7 @@
         "initialize": "",
         "finalize": "",
         "x": 470,
-        "y": 520,
+        "y": 400,
         "wires": []
     },
     {
@@ -8167,7 +7587,7 @@
         "statusVal": "payload",
         "statusType": "auto",
         "x": 390,
-        "y": 560,
+        "y": 440,
         "wires": []
     },
     {
@@ -9575,8 +8995,7 @@
         "y": 980,
         "wires": [
             [
-                "6bd81d47.b57244",
-                "ad04b16e.4ea1e"
+                "ce986122.c5b6a"
             ]
         ]
     },
@@ -9593,8 +9012,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 970,
-        "y": 940,
+        "x": 1010,
+        "y": 980,
         "wires": []
     },
     {
@@ -9606,8 +9025,8 @@
         "deviceId": "70",
         "command": "deviceNotification",
         "commandArgs": "",
-        "x": 1010,
-        "y": 980,
+        "x": 1050,
+        "y": 1020,
         "wires": [
             []
         ]
@@ -13084,9 +12503,9 @@
         "id": "c3df676c.336198",
         "type": "exec",
         "z": "f3e4e663.9ecbb8",
-        "command": " runuser -l  root -c ",
+        "command": "rclone copy /mnt/dietpi_userdata/node-red/he_backups BH_3B_Backup:HE_backups",
         "addpay": false,
-        "append": "'rclone copy /mnt/dietpi_userdata/node-red/he_backups BH_3B_Backup:HE_backups'",
+        "append": "",
         "useSpawn": "false",
         "timer": "",
         "oldrc": false,
@@ -13097,8 +12516,12 @@
             [
                 "12b68123.0581bf"
             ],
-            [],
-            []
+            [
+                "12b68123.0581bf"
+            ],
+            [
+                "12b68123.0581bf"
+            ]
         ]
     },
     {
@@ -13110,11 +12533,11 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 870,
+        "x": 890,
         "y": 200,
         "wires": []
     },
@@ -14045,7 +13468,7 @@
         "server": "",
         "client": "2dc2e126.6a7bae",
         "x": 150,
-        "y": 160,
+        "y": 500,
         "wires": [
             [
                 "5cb15e7b.24f5"
@@ -14057,13 +13480,13 @@
         "type": "function",
         "z": "a36e04ad.fc4098",
         "name": "Set Influx Data",
-        "func": "\nconst ACTIVE = 'active';\nconst CLOSED = 'closed';\nconst DETECTED = 'detected';\nconst FOLLOW_SCHEDULE = 'follow schedule';\nconst GOOD = 'good';\nconst HEATING = 'heating';\nconst LOCKED = 'locked';\nconst MUTED = 'muted';\nconst OFF = 'off';\nconst ON = 'on';\nconst OPEN = 'open';\nconst PRESENT = 'present';\nconst PUSHED = 'pushed';\nconst SLEEPING = 'sleeping';\nconst TOUCHED = 'touched';\nconst WET = 'wet';\n\nvar v = {\n    'value' : null,\n    'isBinary' : null\n};\n\nif(msg.name == \"acceleration\") {\n    v.value = (msg.value == ACTIVE ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"alarm\") {\n    v.value = (msg.value != OFF ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"button\") {\n    v.value = (msg.value != PUSHED ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"carbonMonoxide\") {\n    v.value = (msg.value == DETECTED ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"consumableStatus\") {\n    v.value = (msg.value == GOOD ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"contact\") {\n    v.value = (msg.value == OPEN ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"door\") {\n    v.value = (msg.value != OPEN ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"lock\") {\n    v.value = (msg.value == LOCKED ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"motion\") {\n    v.value = (msg.value == ACTIVE ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"mute\") {\n    v.value = (msg.value == MUTED ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"presence\") {\n    v.value = (msg.value == PRESENT ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"shock\") {\n    v.value = (msg.value == DETECTED ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"sleeping\") {\n    v.value = (msg.value == SLEEPING ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"smoke\") {\n    v.value = (msg.value == DETECTED ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"sound\") {\n    v.value = (msg.value == DETECTED ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"switch\") {\n    v.value = (msg.value == ON ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"tamper\") {\n    v.value = (msg.value == DETECTED ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"thermostatMode\") {\n    v.value = (msg.value != OFF ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"thermostatFanMode\") {\n    v.value = (msg.value != OFF ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"thermostatOperatingState\") {\n    v.value = (msg.value == HEATING ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"thermostatSetpointMode\") {\n    v.value = (msg.value != FOLLOW_SCHEDULE ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"touch\") {\n    v.value = (msg.value != TOUCHED ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"optimisation\") {\n    v.value = (msg.value == ACTIVE ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"windowFunction\") {\n    v.value = (msg.value == ACTIVE ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"water\") {\n    v.value = (msg.value == WET ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"windowShade\") {\n    v.value = (msg.value == CLOSED ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"threeAxis\") {\n    var vz = msg.value.split(',');\n    var x = vz[0];\n    var y = vz[1];\n    var z = vz[2];\n    v.value = {\n        x: vz[0],\n        y: vz[1],\n        z: vz[2]\n    };\n    v.isBinary = false;\n}\nelse if (msg.value.match(/.*[^0-9\\.,-].*/)) { // match if any characters are not digits, period, comma, or hyphen.\n    v.value = '\"' + msg.value + '\"';\n    v.isBinary = false;\n}\n\n// Catch any other general numerical event (carbonDioxide, power, energy, humidity, level, temperature, ultravioletIndex, voltage, etc).\nelse {\n    v.value = Number(msg.value);\n    v.isBinary = false;\n}\nif (msg.name == \"threeAxis\"){\n    msg.payload = [\n        {\n            measurement: msg.name,\n            fields: {\n                valueX: v.value.x,\n                valueY: v.value.y,\n                valueZ: v.value.z\n            },\n            tags:{\n                hub: msg.hubId ? msg.hubId : \"HE1\",\n                deviceId: msg.deviceId,\n                displayName: msg.displayName,\n                unit: msg.unit\n            },\n            timestamp: new Date()\n        }\n    ]\n} else if (v.isBinary)\n{\n    msg.payload = [\n        {\n            measurement: msg.name,\n            fields: {\n                value: msg.value,\n                valueBinary: v.value\n            },\n            tags:{\n                hub: msg.hubId ? msg.hubId : \"HE1\",\n                deviceId: msg.deviceId,\n                displayName: msg.displayName,\n                unit: msg.unit\n            },\n            timestamp: new Date()\n        }\n    ]    \n}\nelse\n{\n    msg.payload = [\n        {\n            measurement: msg.name,\n            fields: {\n                value: (Array.isArray(v.value) ? v.value.join(',') : v.value),\n            },\n            tags:{\n                hub: msg.hubId ? msg.hubId : \"HE1\",\n                deviceId: msg.deviceId,\n                displayName: msg.displayName,\n                unit: msg.unit\n            },\n            timestamp: new Date()\n        }\n    ]\n}\n//console.log(util.inspect(msg, {showHidden: false, depth: null}))\n\nreturn msg;",
+        "func": "\nconst ACTIVE = 'active';\nconst CLOSED = 'closed';\nconst DETECTED = 'detected';\nconst FOLLOW_SCHEDULE = 'follow schedule';\nconst GOOD = 'good';\nconst HEATING = 'heating';\nconst LOCKED = 'locked';\nconst MUTED = 'muted';\nconst OFF = 'off';\nconst ON = 'on';\nconst OPEN = 'open';\nconst PRESENT = 'present';\nconst PUSHED = 'pushed';\nconst SLEEPING = 'sleeping';\nconst TOUCHED = 'touched';\nconst WET = 'wet';\n\nvar v = {\n    'value' : null,\n    'isBinary' : null\n};\n\nif(msg.name == \"acceleration\") {\n    v.value = (msg.value == ACTIVE ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"alarm\") {\n    v.value = (msg.value != OFF ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"button\") {\n    v.value = (msg.value != PUSHED ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"carbonMonoxide\") {\n    v.value = (msg.value == DETECTED ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"consumableStatus\") {\n    v.value = (msg.value == GOOD ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"contact\") {\n    v.value = (msg.value == OPEN ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"door\") {\n    v.value = (msg.value != OPEN ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"lock\") {\n    v.value = (msg.value == LOCKED ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"lock\") {\n    v.value = (msg.value == LOCKED ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"motion\") {\n    v.value = (msg.value == ACTIVE ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"mute\") {\n    v.value = (msg.value == MUTED ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"presence\") {\n    v.value = (msg.value == PRESENT ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"shock\") {\n    v.value = (msg.value == DETECTED ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"sleeping\") {\n    v.value = (msg.value == SLEEPING ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"smoke\") {\n    v.value = (msg.value == DETECTED ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"sound\") {\n    v.value = (msg.value == DETECTED ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"switch\") {\n    v.value = (msg.value == ON ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"tamper\") {\n    v.value = (msg.value == DETECTED ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"thermostatMode\") {\n    v.value = (msg.value != OFF ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"thermostatFanMode\") {\n    v.value = (msg.value != OFF ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"thermostatOperatingState\") {\n    v.value = (msg.value == HEATING ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"thermostatSetpointMode\") {\n    v.value = (msg.value != FOLLOW_SCHEDULE ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"touch\") {\n    v.value = (msg.value != TOUCHED ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"optimisation\") {\n    v.value = (msg.value == ACTIVE ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"windowFunction\") {\n    v.value = (msg.value == ACTIVE ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"water\") {\n    v.value = (msg.value == WET ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"windowShade\") {\n    v.value = (msg.value == CLOSED ? 1 : 0);\n    v.isBinary = true;\n}\n\nelse if(msg.name == \"threeAxis\") {\n    var vz = msg.value.split(',');\n    var x = vz[0];\n    var y = vz[1];\n    var z = vz[2];\n    v.value = {\n        x: vz[0],\n        y: vz[1],\n        z: vz[2]\n    };\n    v.isBinary = false;\n}\nelse if (msg.value.match(/.*[^0-9\\.,-].*/)) { // match if any characters are not digits, period, comma, or hyphen.\n    v.value = '\"' + msg.value + '\"';\n    v.isBinary = false;\n}\n\n// Catch any other general numerical event (carbonDioxide, power, energy, humidity, level, temperature, ultravioletIndex, voltage, etc).\nelse {\n    v.value = Number(msg.value);\n    v.isBinary = false;\n}\nif (msg.name == \"threeAxis\"){\n    msg.payload = [\n        {\n            measurement: msg.name,\n            fields: {\n                valueX: v.value.x,\n                valueY: v.value.y,\n                valueZ: v.value.z\n            },\n            tags:{\n                hub: msg.hubId ? msg.hubId : \"HE1\",\n                deviceId: msg.deviceId,\n                displayName: msg.displayName,\n                unit: msg.unit\n            },\n            timestamp: new Date()\n        }\n    ]\n} else if (v.isBinary)\n{\n    msg.payload = [\n        {\n            measurement: msg.name,\n            fields: {\n                value: msg.value,\n                valueBinary: v.value\n            },\n            tags:{\n                hub: msg.hubId ? msg.hubId : \"HE1\",\n                deviceId: msg.deviceId,\n                displayName: msg.displayName,\n                unit: msg.unit\n            },\n            timestamp: new Date()\n        }\n    ]    \n}\nelse\n{\n    msg.payload = [\n        {\n            measurement: msg.name,\n            fields: {\n                value: (Array.isArray(v.value) ? v.value.join(',') : v.value),\n            },\n            tags:{\n                hub: msg.hubId ? msg.hubId : \"HE1\",\n                deviceId: msg.deviceId,\n                displayName: msg.displayName,\n                unit: msg.unit\n            },\n            timestamp: new Date()\n        }\n    ]\n}\n//console.log(util.inspect(msg, {showHidden: false, depth: null}))\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "x": 540,
-        "y": 160,
+        "y": 500,
         "wires": [
             [
                 "19e48438.225ddc"
@@ -14374,12 +13797,24 @@
                 "v": "lastDataPoint1",
                 "vt": "str",
                 "output": 1
+            },
+            {
+                "t": "eq",
+                "v": "switch",
+                "vt": "str",
+                "output": 1
+            },
+            {
+                "t": "eq",
+                "v": "level",
+                "vt": "str",
+                "output": 1
             }
         ],
         "checkall": "false",
         "outputs": 1,
         "x": 360,
-        "y": 160,
+        "y": 500,
         "wires": [
             [
                 "78153983.2b4b58"
@@ -14395,7 +13830,355 @@
         "retentionPolicy": "",
         "name": "",
         "x": 730,
-        "y": 160,
+        "y": 500,
         "wires": []
+    },
+    {
+        "id": "7d1427e2.d9ac28",
+        "type": "hubitat command",
+        "z": "a36e04ad.fc4098",
+        "deviceLabel": "",
+        "name": "DR - Motion Sensor",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1348",
+        "command": "refresh",
+        "commandArgs": "",
+        "x": 370,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "76f22507.b7a36c",
+        "type": "inject",
+        "z": "a36e04ad.fc4098",
+        "name": "Every 30 min",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1800",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 300,
+        "wires": [
+            [
+                "7d1427e2.d9ac28",
+                "2d2b066e.00430a",
+                "ade6b80a.8da618",
+                "f4a4d2e8.ddb4b",
+                "c2302937.22ae68",
+                "abe68f3b.38f8a",
+                "21acb091.d298",
+                "c98d8087.c6668"
+            ]
+        ]
+    },
+    {
+        "id": "2d2b066e.00430a",
+        "type": "hubitat command",
+        "z": "a36e04ad.fc4098",
+        "deviceLabel": "",
+        "name": "DB - Motion Sensor",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1347",
+        "command": "refresh",
+        "commandArgs": "",
+        "x": 370,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ade6b80a.8da618",
+        "type": "hubitat command",
+        "z": "a36e04ad.fc4098",
+        "deviceLabel": "",
+        "name": "GR - Motion Sensor Clock",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1413",
+        "command": "refresh",
+        "commandArgs": "",
+        "x": 390,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f4a4d2e8.ddb4b",
+        "type": "hubitat command",
+        "z": "a36e04ad.fc4098",
+        "deviceLabel": "",
+        "name": "GR - Motion Sensor Fireplace",
+        "server": "b130c189.ea4d2",
+        "deviceId": "162",
+        "command": "refresh",
+        "commandArgs": "",
+        "x": 410,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c2302937.22ae68",
+        "type": "hubitat command",
+        "z": "a36e04ad.fc4098",
+        "deviceLabel": "",
+        "name": "KT - Motion Sensor Microwave",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1794",
+        "command": "refresh",
+        "commandArgs": "",
+        "x": 410,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "abe68f3b.38f8a",
+        "type": "hubitat command",
+        "z": "a36e04ad.fc4098",
+        "deviceLabel": "",
+        "name": "KT - Motion Sensor Pantry",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1795",
+        "command": "refresh",
+        "commandArgs": "",
+        "x": 400,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "21acb091.d298",
+        "type": "hubitat command",
+        "z": "a36e04ad.fc4098",
+        "deviceLabel": "",
+        "name": "MB - Motion Sensor Bath",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1418",
+        "command": "refresh",
+        "commandArgs": "",
+        "x": 390,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c98d8087.c6668",
+        "type": "hubitat command",
+        "z": "a36e04ad.fc4098",
+        "deviceLabel": "",
+        "name": "MB - Motion Sensor Door",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1354",
+        "command": "refresh",
+        "commandArgs": "",
+        "x": 390,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "94c8bb0c.7defd8",
+        "type": "inject",
+        "z": "f3e4e663.9ecbb8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 310,
+        "y": 380,
+        "wires": [
+            [
+                "a1f3edce.990c1"
+            ]
+        ]
+    },
+    {
+        "id": "a1f3edce.990c1",
+        "type": "exec",
+        "z": "f3e4e663.9ecbb8",
+        "command": "rclone config file",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "",
+        "x": 550,
+        "y": 400,
+        "wires": [
+            [
+                "7f28b44f.c55d4c"
+            ],
+            [
+                "7f28b44f.c55d4c"
+            ],
+            [
+                "7f28b44f.c55d4c"
+            ]
+        ]
+    },
+    {
+        "id": "7f28b44f.c55d4c",
+        "type": "debug",
+        "z": "f3e4e663.9ecbb8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "66e3a5b.1c3e25c",
+        "type": "vsh-virtual-device",
+        "z": "e1557285.e3f86",
+        "name": "NR - Virtual Motion",
+        "topic": "Virtual Motion",
+        "connection": "b4d8ec3.84a421",
+        "template": "SWITCH",
+        "passthrough": true,
+        "diff": true,
+        "filter": false,
+        "x": 150,
+        "y": 60,
+        "wires": [
+            [
+                "53101c6a.f83a74"
+            ]
+        ]
+    },
+    {
+        "id": "a9d544fe.3e5728",
+        "type": "vsh-virtual-device",
+        "z": "e1557285.e3f86",
+        "name": "Motion Sensor",
+        "topic": "Motion Sensor Mask",
+        "connection": "b4d8ec3.84a421",
+        "template": "SWITCH",
+        "passthrough": true,
+        "diff": false,
+        "filter": false,
+        "x": 140,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "29e9a3ce.1fc30c",
+        "type": "vsh-virtual-device",
+        "z": "e1557285.e3f86",
+        "name": "Motion Sensing",
+        "topic": "Motion Sensing Mask",
+        "connection": "b4d8ec3.84a421",
+        "template": "SWITCH",
+        "passthrough": true,
+        "diff": false,
+        "filter": false,
+        "x": 140,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4de901cd.76fea",
+        "type": "inject",
+        "z": "e1557285.e3f86",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 760,
+        "wires": [
+            [
+                "82674c27.4319e"
+            ]
+        ]
+    },
+    {
+        "id": "82674c27.4319e",
+        "type": "subflow:5618f29.6116b0c",
+        "z": "e1557285.e3f86",
+        "name": "",
+        "env": [],
+        "x": 370,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ce986122.c5b6a",
+        "type": "delay",
+        "z": "f2fbef66.3730f",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "10",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "x": 820,
+        "y": 1020,
+        "wires": [
+            [
+                "ad04b16e.4ea1e",
+                "6bd81d47.b57244"
+            ]
+        ]
     }
 ]
