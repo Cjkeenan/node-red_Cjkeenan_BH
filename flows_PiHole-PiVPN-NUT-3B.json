@@ -287,34 +287,20 @@
         "category": "alexa",
         "in": [
             {
-                "x": 320,
-                "y": 300,
+                "x": 100,
+                "y": 320,
                 "wires": [
                     {
-                        "id": "2cb2a0cf.6c3d2"
+                        "id": "d6bd2709.bb14a8"
                     }
                 ]
             }
         ],
-        "out": [
-            {
-                "x": 1120,
-                "y": 300,
-                "wires": [
-                    {
-                        "id": "13cd680f.9ca1e8",
-                        "port": 0
-                    }
-                ]
-            }
-        ],
+        "out": [],
         "env": [],
         "color": "#6FBAD8",
         "inputLabels": [
             "Trigger"
-        ],
-        "outputLabels": [
-            "Names/Serials"
         ],
         "icon": "node-red/hash.svg"
     },
@@ -1218,9 +1204,7 @@
             "9fd1e83a.485598"
         ],
         "x": 234,
-        "y": 44,
-        "w": 492,
-        "h": 517
+        "y": 44
     },
     {
         "id": "26661ca0.b1d944",
@@ -1249,9 +1233,7 @@
             "8bbc4fd1.22f5b"
         ],
         "x": 734,
-        "y": 99,
-        "w": 472,
-        "h": 402
+        "y": 99
     },
     {
         "id": "641dcc83.ea3e04",
@@ -1285,9 +1267,7 @@
             "43f1bb07.4c8404"
         ],
         "x": 2334,
-        "y": 119,
-        "w": 1032,
-        "h": 462
+        "y": 119
     },
     {
         "id": "c9e65dc5.3adf2",
@@ -1328,9 +1308,7 @@
             "20c82f9f.76e01"
         ],
         "x": 1214,
-        "y": 59,
-        "w": 1112,
-        "h": 549.5
+        "y": 59
     },
     {
         "id": "8da5ebc3.3ce6e8",
@@ -1350,9 +1328,7 @@
             "de9ac35b.69b59"
         ],
         "x": 34,
-        "y": 39,
-        "w": 772,
-        "h": 82
+        "y": 39
     },
     {
         "id": "b130c189.ea4d2",
@@ -3924,154 +3900,6 @@
         ]
     },
     {
-        "id": "897fdfe1.a317a",
-        "type": "inject",
-        "z": "5618f29.6116b0c",
-        "name": "Trigger",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 290,
-        "y": 340,
-        "wires": [
-            [
-                "2cb2a0cf.6c3d2"
-            ]
-        ]
-    },
-    {
-        "id": "2cb2a0cf.6c3d2",
-        "type": "alexa-remote-echo",
-        "z": "5618f29.6116b0c",
-        "name": "",
-        "account": "d452a9d3.7a4488",
-        "config": {
-            "option": "get",
-            "value": {
-                "what": "device",
-                "device": {
-                    "type": "str",
-                    "value": "ALEXA_ALL_DSN"
-                }
-            }
-        },
-        "x": 450,
-        "y": 320,
-        "wires": [
-            [
-                "a007ddb2.26f0d"
-            ]
-        ]
-    },
-    {
-        "id": "a007ddb2.26f0d",
-        "type": "split",
-        "z": "5618f29.6116b0c",
-        "name": "Split Devices",
-        "splt": "\\n",
-        "spltType": "str",
-        "arraySplt": 1,
-        "arraySpltType": "len",
-        "stream": false,
-        "addname": "",
-        "x": 630,
-        "y": 320,
-        "wires": [
-            [
-                "b4928870.9ad468"
-            ]
-        ]
-    },
-    {
-        "id": "b4928870.9ad468",
-        "type": "switch",
-        "z": "5618f29.6116b0c",
-        "name": "Filter Echos",
-        "property": "payload.deviceFamily",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "ECHO",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 790,
-        "y": 320,
-        "wires": [
-            [
-                "13cd680f.9ca1e8"
-            ]
-        ]
-    },
-    {
-        "id": "13cd680f.9ca1e8",
-        "type": "change",
-        "z": "5618f29.6116b0c",
-        "name": "Copy Relevant Data",
-        "rules": [
-            {
-                "t": "set",
-                "p": "device.serialNumber",
-                "pt": "msg",
-                "to": "payload.serialNumber",
-                "tot": "msg"
-            },
-            {
-                "t": "set",
-                "p": "device.accountName",
-                "pt": "msg",
-                "to": "payload.accountName",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 980,
-        "y": 320,
-        "wires": [
-            [
-                "cf715b44.69d488"
-            ]
-        ]
-    },
-    {
-        "id": "cf715b44.69d488",
-        "type": "debug",
-        "z": "5618f29.6116b0c",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "device",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1170,
-        "y": 340,
-        "wires": []
-    },
-    {
         "id": "f2d6a1e1.a6f4a",
         "type": "alexa-remote-smarthome",
         "z": "e1557285.e3f86",
@@ -5726,7 +5554,7 @@
                 }
             }
         },
-        "x": 1050,
+        "x": 1030,
         "y": 700,
         "wires": [
             []
@@ -13879,47 +13707,6 @@
         ]
     },
     {
-        "id": "4de901cd.76fea",
-        "type": "inject",
-        "z": "e1557285.e3f86",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 200,
-        "y": 760,
-        "wires": [
-            [
-                "82674c27.4319e"
-            ]
-        ]
-    },
-    {
-        "id": "82674c27.4319e",
-        "type": "subflow:5618f29.6116b0c",
-        "z": "e1557285.e3f86",
-        "name": "",
-        "env": [],
-        "x": 370,
-        "y": 760,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "ce986122.c5b6a",
         "type": "delay",
         "z": "f2fbef66.3730f",
@@ -14042,6 +13829,315 @@
         "wires": [
             [
                 "66e3a5b.1c3e25c"
+            ]
+        ]
+    },
+    {
+        "id": "76405eee.612c6",
+        "type": "comment",
+        "z": "5618f29.6116b0c",
+        "name": "Modify the `Get Echo Devices` node to your configuration!",
+        "info": "",
+        "x": 290,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "5033ca0e.da4f04",
+        "type": "inject",
+        "z": "e1557285.e3f86",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 250,
+        "y": 680,
+        "wires": [
+            [
+                "448cb9a6.32ef68"
+            ]
+        ]
+    },
+    {
+        "id": "2cb2a0cf.6c3d2",
+        "type": "alexa-remote-echo",
+        "z": "5618f29.6116b0c",
+        "name": "",
+        "account": "d452a9d3.7a4488",
+        "config": {
+            "option": "get",
+            "value": {
+                "what": "device",
+                "device": {
+                    "type": "str",
+                    "value": "ALEXA_ALL_DSN"
+                }
+            }
+        },
+        "x": 390,
+        "y": 320,
+        "wires": [
+            [
+                "a007ddb2.26f0d"
+            ]
+        ]
+    },
+    {
+        "id": "a007ddb2.26f0d",
+        "type": "split",
+        "z": "5618f29.6116b0c",
+        "name": "Split Devices",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 570,
+        "y": 320,
+        "wires": [
+            [
+                "b4928870.9ad468"
+            ]
+        ]
+    },
+    {
+        "id": "b4928870.9ad468",
+        "type": "switch",
+        "z": "5618f29.6116b0c",
+        "name": "Filter Echos",
+        "property": "payload.deviceFamily",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "ECHO",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 730,
+        "y": 320,
+        "wires": [
+            [
+                "13cd680f.9ca1e8"
+            ]
+        ]
+    },
+    {
+        "id": "13cd680f.9ca1e8",
+        "type": "change",
+        "z": "5618f29.6116b0c",
+        "name": "Copy Relevant Data",
+        "rules": [
+            {
+                "t": "set",
+                "p": "device.serialNumber",
+                "pt": "msg",
+                "to": "payload.serialNumber",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "device.accountName",
+                "pt": "msg",
+                "to": "payload.accountName",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 920,
+        "y": 320,
+        "wires": [
+            [
+                "a871edc0.cec5b"
+            ]
+        ]
+    },
+    {
+        "id": "a871edc0.cec5b",
+        "type": "switch",
+        "z": "5618f29.6116b0c",
+        "name": "Filter?",
+        "property": "filter",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1090,
+        "y": 320,
+        "wires": [
+            [
+                "fb62e779.e34888"
+            ],
+            [
+                "4b282892.370b98"
+            ]
+        ]
+    },
+    {
+        "id": "d6bd2709.bb14a8",
+        "type": "change",
+        "z": "5618f29.6116b0c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "filter",
+                "pt": "msg",
+                "to": "payload and true",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 210,
+        "y": 320,
+        "wires": [
+            [
+                "2cb2a0cf.6c3d2"
+            ]
+        ]
+    },
+    {
+        "id": "116ebb3d.9b3195",
+        "type": "inject",
+        "z": "e1557285.e3f86",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 250,
+        "y": 720,
+        "wires": [
+            [
+                "448cb9a6.32ef68"
+            ]
+        ]
+    },
+    {
+        "id": "daf7ed1c.d9b53",
+        "type": "inject",
+        "z": "e1557285.e3f86",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 240,
+        "y": 800,
+        "wires": [
+            [
+                "448cb9a6.32ef68"
+            ]
+        ]
+    },
+    {
+        "id": "448cb9a6.32ef68",
+        "type": "subflow:5618f29.6116b0c",
+        "z": "e1557285.e3f86",
+        "name": "",
+        "env": [],
+        "x": 430,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "4b282892.370b98",
+        "type": "debug",
+        "z": "5618f29.6116b0c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1230,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "fb62e779.e34888",
+        "type": "debug",
+        "z": "5618f29.6116b0c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "device",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1230,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "594a97ef.bc7a48",
+        "type": "inject",
+        "z": "e1557285.e3f86",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 250,
+        "y": 760,
+        "wires": [
+            [
+                "448cb9a6.32ef68"
             ]
         ]
     }
