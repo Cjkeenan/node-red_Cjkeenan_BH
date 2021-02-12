@@ -716,12 +716,8 @@
             "y": 400,
             "wires": [
                 {
-                    "id": "dbbb9989.d3edb8",
-                    "port": 2
-                },
-                {
-                    "id": "6d60329e.961f2c",
-                    "port": 2
+                    "id": "edb7a7ed.2eb3e8",
+                    "port": 0
                 }
             ]
         }
@@ -818,7 +814,17 @@
             "OR",
             "XOR"
         ],
-        "icon": "font-awesome/fa-street-view"
+        "icon": "font-awesome/fa-street-view",
+        "status": {
+            "x": 780,
+            "y": 200,
+            "wires": [
+                {
+                    "id": "f1d071a9.ef536",
+                    "port": 0
+                }
+            ]
+        }
     },
     {
         "id": "64781044.3bdae",
@@ -879,7 +885,17 @@
             "OR",
             "XOR"
         ],
-        "icon": "font-awesome/fa-street-view"
+        "icon": "font-awesome/fa-street-view",
+        "status": {
+            "x": 780,
+            "y": 200,
+            "wires": [
+                {
+                    "id": "75f6710b.34cce",
+                    "port": 0
+                }
+            ]
+        }
     },
     {
         "id": "d1d55504.1f3638",
@@ -940,7 +956,17 @@
             "OR",
             "XOR"
         ],
-        "icon": "font-awesome/fa-street-view"
+        "icon": "font-awesome/fa-street-view",
+        "status": {
+            "x": 780,
+            "y": 200,
+            "wires": [
+                {
+                    "id": "778523f2.7c7a2c",
+                    "port": 0
+                }
+            ]
+        }
     },
     {
         "id": "7a22a12f.dcfd3",
@@ -1184,7 +1210,6 @@
             "b197f08b.eb07d",
             "7ce18ab4.787bf4",
             "c5d6a63.5a2d658",
-            "4cc0eb9.20b5514",
             "2bf29b86.33b394",
             "4011fa87.a3ff34",
             "2f5eb111.62008e",
@@ -1193,7 +1218,9 @@
             "9fd1e83a.485598"
         ],
         "x": 234,
-        "y": 24
+        "y": 44,
+        "w": 492,
+        "h": 517
     },
     {
         "id": "26661ca0.b1d944",
@@ -1222,7 +1249,9 @@
             "8bbc4fd1.22f5b"
         ],
         "x": 734,
-        "y": 39
+        "y": 99,
+        "w": 472,
+        "h": 402
     },
     {
         "id": "641dcc83.ea3e04",
@@ -1256,7 +1285,9 @@
             "43f1bb07.4c8404"
         ],
         "x": 2334,
-        "y": 59
+        "y": 119,
+        "w": 1032,
+        "h": 462
     },
     {
         "id": "c9e65dc5.3adf2",
@@ -1297,7 +1328,9 @@
             "20c82f9f.76e01"
         ],
         "x": 1214,
-        "y": 39
+        "y": 59,
+        "w": 1112,
+        "h": 549.5
     },
     {
         "id": "8da5ebc3.3ce6e8",
@@ -1647,13 +1680,13 @@
         "rules": [
             {
                 "t": "regex",
-                "v": "turn off (the )?lights",
+                "v": "turn off (the )?light(s)?",
                 "vt": "str",
                 "case": false
             },
             {
                 "t": "regex",
-                "v": "turn on (the )?lights",
+                "v": "turn on (the )?light(s)?",
                 "vt": "str",
                 "case": false
             }
@@ -1683,7 +1716,7 @@
         "command": "off",
         "commandArgs": "",
         "x": 1110,
-        "y": 80,
+        "y": 140,
         "wires": [
             []
         ]
@@ -1699,7 +1732,7 @@
         "command": "off",
         "commandArgs": "",
         "x": 1110,
-        "y": 120,
+        "y": 180,
         "wires": [
             []
         ]
@@ -1716,7 +1749,7 @@
         "command": "off",
         "commandArgs": "",
         "x": 1110,
-        "y": 160,
+        "y": 220,
         "wires": [
             []
         ]
@@ -1732,7 +1765,7 @@
         "command": "off",
         "commandArgs": "",
         "x": 1110,
-        "y": 200,
+        "y": 260,
         "wires": [
             []
         ]
@@ -1748,7 +1781,7 @@
         "command": "on",
         "commandArgs": "",
         "x": 1110,
-        "y": 440,
+        "y": 380,
         "wires": [
             []
         ]
@@ -1765,7 +1798,7 @@
         "command": "on",
         "commandArgs": "",
         "x": 1110,
-        "y": 480,
+        "y": 420,
         "wires": [
             []
         ]
@@ -1781,7 +1814,7 @@
         "command": "on",
         "commandArgs": "",
         "x": 1110,
-        "y": 520,
+        "y": 460,
         "wires": [
             []
         ]
@@ -1797,7 +1830,7 @@
         "command": "on",
         "commandArgs": "",
         "x": 1110,
-        "y": 400,
+        "y": 340,
         "wires": [
             []
         ]
@@ -2014,7 +2047,7 @@
         "name": "",
         "env": [],
         "x": 880,
-        "y": 140,
+        "y": 200,
         "wires": [
             [
                 "1737ebff.565734"
@@ -2037,7 +2070,7 @@
         "g": "26661ca0.b1d944",
         "name": "",
         "x": 880,
-        "y": 460,
+        "y": 400,
         "wires": [
             [
                 "cd66091.af90cf8"
@@ -2126,31 +2159,31 @@
         "type": "switch",
         "z": "68ba5945.906288",
         "g": "6a56d8cc.28eeb8",
-        "name": "Fan Phrase Handler",
+        "name": "Fan/Heater Phrase Handler",
         "property": "payload.description.summary",
         "propertyType": "msg",
         "rules": [
             {
                 "t": "regex",
-                "v": "turn on (the )?fan",
+                "v": "turn on (the )?(fan|climate control)",
                 "vt": "str",
                 "case": false
             },
             {
                 "t": "regex",
-                "v": "turn on (the )?climate control",
+                "v": "turn off (the )?(fan|climate control)",
                 "vt": "str",
                 "case": false
             },
             {
                 "t": "regex",
-                "v": "turn off (the )?fan",
+                "v": "turn off (the )?(heater|climate control|fireplace)",
                 "vt": "str",
                 "case": false
             },
             {
                 "t": "regex",
-                "v": "turn off (the )?climate control",
+                "v": "turn on (the )?(heater|climate control|fireplace)",
                 "vt": "str",
                 "case": false
             }
@@ -2158,20 +2191,20 @@
         "checkall": "false",
         "repair": false,
         "outputs": 4,
-        "x": 380,
-        "y": 260,
+        "x": 400,
+        "y": 300,
         "wires": [
             [
                 "b197f08b.eb07d"
             ],
             [
-                "b197f08b.eb07d"
-            ],
-            [
                 "15d1855a.e9ec2b"
             ],
             [
-                "15d1855a.e9ec2b"
+                "c5d6a63.5a2d658"
+            ],
+            [
+                "7ce18ab4.787bf4"
             ]
         ]
     },
@@ -2182,7 +2215,7 @@
         "g": "6a56d8cc.28eeb8",
         "name": "",
         "x": 360,
-        "y": 80,
+        "y": 100,
         "wires": [
             [],
             [],
@@ -2200,7 +2233,7 @@
         "name": "",
         "env": [],
         "x": 360,
-        "y": 180,
+        "y": 200,
         "wires": [
             [],
             [],
@@ -4627,79 +4660,25 @@
         "rules": [
             {
                 "t": "regex",
-                "v": "disable (the )?motion sensor",
+                "v": "(turn off|disable) (the )?(motion sensor|motion sensing)",
                 "vt": "str",
                 "case": false
             },
             {
                 "t": "regex",
-                "v": "disable (the )?motion sensing",
-                "vt": "str",
-                "case": false
-            },
-            {
-                "t": "regex",
-                "v": "turn off (the )?motion sensor",
-                "vt": "str",
-                "case": false
-            },
-            {
-                "t": "regex",
-                "v": "turn off (the )?motion sensing",
-                "vt": "str",
-                "case": false
-            },
-            {
-                "t": "regex",
-                "v": "enable (the )?motion sensor",
-                "vt": "str",
-                "case": false
-            },
-            {
-                "t": "regex",
-                "v": "turn on (the )?motion sensor",
-                "vt": "str",
-                "case": false
-            },
-            {
-                "t": "regex",
-                "v": "turn on (the )?motion sensing",
-                "vt": "str",
-                "case": false
-            },
-            {
-                "t": "regex",
-                "v": "enable (the )?motion sensing",
+                "v": "(turn on|enable) (the )?(motion sensor|motion sensing)",
                 "vt": "str",
                 "case": false
             }
         ],
         "checkall": "false",
         "repair": false,
-        "outputs": 8,
+        "outputs": 2,
         "x": 350,
         "y": 520,
         "wires": [
             [
                 "585fe293.44be3c"
-            ],
-            [
-                "585fe293.44be3c"
-            ],
-            [
-                "585fe293.44be3c"
-            ],
-            [
-                "585fe293.44be3c"
-            ],
-            [
-                "79caf9de.681fd8"
-            ],
-            [
-                "79caf9de.681fd8"
-            ],
-            [
-                "79caf9de.681fd8"
             ],
             [
                 "79caf9de.681fd8"
@@ -4753,7 +4732,7 @@
         "repair": false,
         "outputs": 2,
         "x": 140,
-        "y": 120,
+        "y": 200,
         "wires": [
             [
                 "2dc7aabb.e7e7b6",
@@ -5343,61 +5322,25 @@
         "rules": [
             {
                 "t": "regex",
-                "v": "disable (the )?arlo",
+                "v": "(disarm|disable|turn off) (the )?arlo",
                 "vt": "str",
                 "case": false
             },
             {
                 "t": "regex",
-                "v": "disarm (the )?arlo",
-                "vt": "str",
-                "case": false
-            },
-            {
-                "t": "regex",
-                "v": "turn off (the )?arlo",
-                "vt": "str",
-                "case": false
-            },
-            {
-                "t": "regex",
-                "v": "enable (the )?arlo",
-                "vt": "str",
-                "case": false
-            },
-            {
-                "t": "regex",
-                "v": "turn on (the )?arlo",
-                "vt": "str",
-                "case": false
-            },
-            {
-                "t": "regex",
-                "v": "arm (the )?arlo",
+                "v": "(arm|enable|turn on) (the )?arlo",
                 "vt": "str",
                 "case": false
             }
         ],
         "checkall": "false",
         "repair": false,
-        "outputs": 6,
+        "outputs": 2,
         "x": 370,
         "y": 80,
         "wires": [
             [
                 "2be371d3.c1692e"
-            ],
-            [
-                "2be371d3.c1692e"
-            ],
-            [
-                "2be371d3.c1692e"
-            ],
-            [
-                "b7b79b46.61f3d8"
-            ],
-            [
-                "b7b79b46.61f3d8"
             ],
             [
                 "b7b79b46.61f3d8"
@@ -5594,7 +5537,7 @@
         "repair": false,
         "outputs": 2,
         "x": 360,
-        "y": 440,
+        "y": 420,
         "wires": [
             [
                 "585fe293.44be3c",
@@ -5878,13 +5821,13 @@
         "type": "time-inject",
         "z": "e1557285.e3f86",
         "name": "Night/Morning",
-        "nameInt": "⏲ 0:00 = 25",
+        "nameInt": "⏲ 0:00 = 35",
         "positionConfig": "433a14d5.44c6dc",
         "props": [
             {
                 "p": "",
                 "pt": "msgPayload",
-                "v": "25",
+                "v": "35",
                 "vt": "num",
                 "o": "",
                 "oT": "none",
@@ -6216,79 +6159,25 @@
         "rules": [
             {
                 "t": "regex",
-                "v": "disable (the )?motion sensor",
+                "v": "(disable|turn off) (the )?(motion sensor|motion sensing)",
                 "vt": "str",
                 "case": false
             },
             {
                 "t": "regex",
-                "v": "disable (the )?motion sensing",
-                "vt": "str",
-                "case": false
-            },
-            {
-                "t": "regex",
-                "v": "turn off (the )?motion sensor",
-                "vt": "str",
-                "case": false
-            },
-            {
-                "t": "regex",
-                "v": "turn off (the )?motion sensing",
-                "vt": "str",
-                "case": false
-            },
-            {
-                "t": "regex",
-                "v": "enable (the )?motion sensor",
-                "vt": "str",
-                "case": false
-            },
-            {
-                "t": "regex",
-                "v": "turn on (the )?motion sensor",
-                "vt": "str",
-                "case": false
-            },
-            {
-                "t": "regex",
-                "v": "turn on (the )?motion sensing",
-                "vt": "str",
-                "case": false
-            },
-            {
-                "t": "regex",
-                "v": "enable (the )?motion sensing",
+                "v": "(enable|turn on) (the )?(motion sensor|motion sensing)",
                 "vt": "str",
                 "case": false
             }
         ],
         "checkall": "false",
         "repair": false,
-        "outputs": 8,
+        "outputs": 2,
         "x": 1340,
         "y": 300,
         "wires": [
             [
                 "f0bb1ed4.befeb"
-            ],
-            [
-                "f0bb1ed4.befeb"
-            ],
-            [
-                "f0bb1ed4.befeb"
-            ],
-            [
-                "f0bb1ed4.befeb"
-            ],
-            [
-                "f8c72644.d4f038"
-            ],
-            [
-                "f8c72644.d4f038"
-            ],
-            [
-                "f8c72644.d4f038"
             ],
             [
                 "f8c72644.d4f038"
@@ -6306,7 +6195,7 @@
         "command": "off",
         "commandArgs": "",
         "x": 1620,
-        "y": 80,
+        "y": 100,
         "wires": [
             []
         ]
@@ -6322,7 +6211,7 @@
         "command": "off",
         "commandArgs": "",
         "x": 1620,
-        "y": 120,
+        "y": 140,
         "wires": [
             []
         ]
@@ -6338,7 +6227,7 @@
         "command": "off",
         "commandArgs": "",
         "x": 1620,
-        "y": 160,
+        "y": 180,
         "wires": [
             []
         ]
@@ -6354,7 +6243,7 @@
         "command": "off",
         "commandArgs": "",
         "x": 1620,
-        "y": 200,
+        "y": 220,
         "wires": [
             []
         ]
@@ -6370,7 +6259,7 @@
         "command": "on",
         "commandArgs": "",
         "x": 1620,
-        "y": 400,
+        "y": 380,
         "wires": [
             [
                 "d16ecda4.01cc7"
@@ -6389,7 +6278,7 @@
         "command": "on",
         "commandArgs": "",
         "x": 1620,
-        "y": 460,
+        "y": 440,
         "wires": [
             [
                 "20c82f9f.76e01"
@@ -6407,7 +6296,7 @@
         "command": "on",
         "commandArgs": "",
         "x": 1620,
-        "y": 520,
+        "y": 500,
         "wires": [
             [
                 "af75de6f.2641"
@@ -6425,7 +6314,7 @@
         "command": "on",
         "commandArgs": "",
         "x": 1620,
-        "y": 580,
+        "y": 560,
         "wires": [
             [
                 "2d2dcea7.4096d2"
@@ -6440,7 +6329,7 @@
         "name": "",
         "env": [],
         "x": 1360,
-        "y": 180,
+        "y": 200,
         "wires": [
             [
                 "aa0f1e83.d2a4e"
@@ -6463,7 +6352,7 @@
         "g": "c9e65dc5.3adf2",
         "name": "",
         "x": 1360,
-        "y": 420,
+        "y": 400,
         "wires": [
             [
                 "89ab5121.73a8e"
@@ -6494,7 +6383,6 @@
                 "e188401e.b56c",
                 "80bb010d.082ce",
                 "ef0c564a.379998",
-                "4cc0eb9.20b5514",
                 "241e69db.e11a06"
             ]
         ],
@@ -6600,7 +6488,7 @@
         "name": "",
         "env": [],
         "x": 360,
-        "y": 460,
+        "y": 400,
         "wires": [
             [
                 "175246ab.d98c29"
@@ -6620,7 +6508,7 @@
         "name": "",
         "env": [],
         "x": 360,
-        "y": 560,
+        "y": 500,
         "wires": [
             [
                 "4011fa87.a3ff34"
@@ -6629,78 +6517,6 @@
             [],
             [
                 "2bf29b86.33b394"
-            ]
-        ]
-    },
-    {
-        "id": "4cc0eb9.20b5514",
-        "type": "switch",
-        "z": "68ba5945.906288",
-        "g": "6a56d8cc.28eeb8",
-        "name": "Heater Phrase Handler",
-        "property": "payload.description.summary",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "regex",
-                "v": "turn on (the )?heater",
-                "vt": "str",
-                "case": false
-            },
-            {
-                "t": "regex",
-                "v": "turn on (the )?climate control",
-                "vt": "str",
-                "case": false
-            },
-            {
-                "t": "regex",
-                "v": "turn on (the )?fireplace",
-                "vt": "str",
-                "case": false
-            },
-            {
-                "t": "regex",
-                "v": "turn off (the )?heater",
-                "vt": "str",
-                "case": false
-            },
-            {
-                "t": "regex",
-                "v": "turn off (the )?climate control",
-                "vt": "str",
-                "case": false
-            },
-            {
-                "t": "regex",
-                "v": "turn off (the )?fireplace",
-                "vt": "str",
-                "case": false
-            }
-        ],
-        "checkall": "false",
-        "repair": false,
-        "outputs": 6,
-        "x": 380,
-        "y": 360,
-        "wires": [
-            [
-                "7ce18ab4.787bf4"
-            ],
-            [
-                "7ce18ab4.787bf4"
-            ],
-            [
-                "7ce18ab4.787bf4"
-            ],
-            [
-                "c5d6a63.5a2d658"
-            ],
-            [
-                "c5d6a63.5a2d658"
-            ],
-            [
-                "c5d6a63.5a2d658"
             ]
         ]
     },
@@ -9584,79 +9400,25 @@
         "rules": [
             {
                 "t": "regex",
-                "v": "disable (the )?reading mode",
+                "v": "(disable|turn off) (the )?reading( mode)?",
                 "vt": "str",
                 "case": false
             },
             {
                 "t": "regex",
-                "v": "disable (the )?reading",
-                "vt": "str",
-                "case": false
-            },
-            {
-                "t": "regex",
-                "v": "turn off (the )?reading mode",
-                "vt": "str",
-                "case": false
-            },
-            {
-                "t": "regex",
-                "v": "turn off (the )?reading",
-                "vt": "str",
-                "case": false
-            },
-            {
-                "t": "regex",
-                "v": "enable (the )?reading mode",
-                "vt": "str",
-                "case": false
-            },
-            {
-                "t": "regex",
-                "v": "turn on (the )?reading",
-                "vt": "str",
-                "case": false
-            },
-            {
-                "t": "regex",
-                "v": "turn on (the )?reading mode",
-                "vt": "str",
-                "case": false
-            },
-            {
-                "t": "regex",
-                "v": "enable (the )?reading",
+                "v": "(enable|turn on) (the )?reading( mode)?",
                 "vt": "str",
                 "case": false
             }
         ],
         "checkall": "false",
         "repair": false,
-        "outputs": 8,
+        "outputs": 2,
         "x": 2470,
         "y": 300,
         "wires": [
             [
                 "4ef9f1f6.6c8db"
-            ],
-            [
-                "4ef9f1f6.6c8db"
-            ],
-            [
-                "4ef9f1f6.6c8db"
-            ],
-            [
-                "4ef9f1f6.6c8db"
-            ],
-            [
-                "21d751c8.f7de4e"
-            ],
-            [
-                "21d751c8.f7de4e"
-            ],
-            [
-                "21d751c8.f7de4e"
             ],
             [
                 "21d751c8.f7de4e"
@@ -9674,7 +9436,7 @@
         "command": "on",
         "commandArgs": "",
         "x": 2760,
-        "y": 100,
+        "y": 160,
         "wires": [
             []
         ]
@@ -9690,7 +9452,7 @@
         "command": "on",
         "commandArgs": "",
         "x": 2760,
-        "y": 140,
+        "y": 200,
         "wires": [
             []
         ]
@@ -9706,7 +9468,7 @@
         "command": "on",
         "commandArgs": "",
         "x": 2760,
-        "y": 180,
+        "y": 240,
         "wires": [
             []
         ]
@@ -9722,7 +9484,7 @@
         "command": "off",
         "commandArgs": "",
         "x": 2760,
-        "y": 420,
+        "y": 360,
         "wires": [
             [
                 "82e3eab1.1d37d8"
@@ -9740,7 +9502,7 @@
         "command": "off",
         "commandArgs": "",
         "x": 2760,
-        "y": 460,
+        "y": 400,
         "wires": [
             [
                 "43f1bb07.4c8404"
@@ -9758,7 +9520,7 @@
         "command": "off",
         "commandArgs": "",
         "x": 2760,
-        "y": 500,
+        "y": 440,
         "wires": [
             [
                 "7420ed20.3c1374",
@@ -9775,7 +9537,7 @@
         "name": "",
         "env": [],
         "x": 2500,
-        "y": 140,
+        "y": 200,
         "wires": [
             [
                 "ecbbc81f.d7d568"
@@ -9796,7 +9558,7 @@
         "g": "641dcc83.ea3e04",
         "name": "",
         "x": 2500,
-        "y": 460,
+        "y": 400,
         "wires": [
             [
                 "81c44ec6.0ea8f"
@@ -9822,7 +9584,7 @@
         "command": "setLevel",
         "commandArgs": "75",
         "x": 2990,
-        "y": 420,
+        "y": 360,
         "wires": [
             []
         ]
@@ -9838,7 +9600,7 @@
         "command": "setColorTemperature",
         "commandArgs": "3500",
         "x": 3020,
-        "y": 500,
+        "y": 440,
         "wires": [
             [
                 "8447f4.cf02d81"
@@ -9856,7 +9618,7 @@
         "command": "setColorTemperature",
         "commandArgs": "3500",
         "x": 3020,
-        "y": 540,
+        "y": 480,
         "wires": [
             [
                 "c00fd277.ad2e8"
@@ -9874,7 +9636,7 @@
         "command": "off",
         "commandArgs": "",
         "x": 3010,
-        "y": 600,
+        "y": 540,
         "wires": [
             []
         ]
@@ -9890,7 +9652,7 @@
         "command": "setLevel",
         "commandArgs": "100",
         "x": 3240,
-        "y": 500,
+        "y": 440,
         "wires": [
             []
         ]
@@ -9906,7 +9668,7 @@
         "command": "setLevel",
         "commandArgs": "100",
         "x": 3240,
-        "y": 540,
+        "y": 480,
         "wires": [
             []
         ]
@@ -11372,7 +11134,7 @@
         "command": "off",
         "commandArgs": "",
         "x": 610,
-        "y": 580,
+        "y": 520,
         "wires": [
             []
         ]
@@ -11389,7 +11151,7 @@
         "command": "off",
         "commandArgs": "",
         "x": 610,
-        "y": 540,
+        "y": 480,
         "wires": [
             []
         ]
@@ -11406,7 +11168,7 @@
         "command": "heat",
         "commandArgs": "",
         "x": 610,
-        "y": 480,
+        "y": 420,
         "wires": [
             []
         ]
@@ -11423,7 +11185,7 @@
         "command": "heat",
         "commandArgs": "",
         "x": 610,
-        "y": 440,
+        "y": 380,
         "wires": [
             []
         ]
@@ -11440,7 +11202,7 @@
         "command": "off",
         "commandArgs": "",
         "x": 610,
-        "y": 100,
+        "y": 120,
         "wires": [
             []
         ]
@@ -11457,7 +11219,7 @@
         "command": "cool",
         "commandArgs": "",
         "x": 610,
-        "y": 200,
+        "y": 220,
         "wires": [
             []
         ]
@@ -12646,7 +12408,7 @@
         "command": "off",
         "commandArgs": "",
         "x": 2990,
-        "y": 460,
+        "y": 400,
         "wires": [
             []
         ]
@@ -12662,7 +12424,7 @@
         "command": "on",
         "commandArgs": "",
         "x": 2230,
-        "y": 400,
+        "y": 380,
         "wires": [
             []
         ]
@@ -12678,7 +12440,7 @@
         "command": "on",
         "commandArgs": "",
         "x": 2230,
-        "y": 460,
+        "y": 440,
         "wires": [
             []
         ]
@@ -12695,7 +12457,7 @@
         "command": "on",
         "commandArgs": "",
         "x": 2230,
-        "y": 520,
+        "y": 500,
         "wires": [
             []
         ]
@@ -12711,7 +12473,7 @@
         "command": "on",
         "commandArgs": "",
         "x": 2230,
-        "y": 580,
+        "y": 560,
         "wires": [
             []
         ]
@@ -13113,7 +12875,7 @@
         "name": "",
         "env": [],
         "x": 1840,
-        "y": 520,
+        "y": 500,
         "wires": [
             [],
             [
@@ -13129,7 +12891,7 @@
         "g": "c9e65dc5.3adf2",
         "name": "",
         "x": 1850,
-        "y": 400,
+        "y": 380,
         "wires": [
             [],
             [
@@ -13145,7 +12907,7 @@
         "g": "c9e65dc5.3adf2",
         "name": "",
         "x": 1870,
-        "y": 580,
+        "y": 560,
         "wires": [
             [],
             [
@@ -13171,7 +12933,7 @@
         "repair": false,
         "outputs": 1,
         "x": 2080,
-        "y": 580,
+        "y": 560,
         "wires": [
             [
                 "4beb3347.e3821c"
@@ -13195,7 +12957,7 @@
         "repair": false,
         "outputs": 1,
         "x": 2080,
-        "y": 520,
+        "y": 500,
         "wires": [
             [
                 "10274dad.3ea232"
@@ -13221,7 +12983,7 @@
         "repair": false,
         "outputs": 1,
         "x": 2080,
-        "y": 460,
+        "y": 440,
         "wires": [
             [
                 "5545589a.449e08"
@@ -13245,7 +13007,7 @@
         "repair": false,
         "outputs": 1,
         "x": 2080,
-        "y": 400,
+        "y": 380,
         "wires": [
             [
                 "934512e6.71049"
@@ -13264,7 +13026,7 @@
         "attribute": "motion",
         "sendEvent": false,
         "x": 1830,
-        "y": 460,
+        "y": 440,
         "wires": [
             [
                 "f680cc.0634df38"
@@ -14072,10 +13834,10 @@
         "connection": "b4d8ec3.84a421",
         "template": "SWITCH",
         "passthrough": true,
-        "diff": true,
+        "diff": false,
         "filter": false,
-        "x": 150,
-        "y": 60,
+        "x": 130,
+        "y": 100,
         "wires": [
             [
                 "53101c6a.f83a74"
@@ -14178,6 +13940,108 @@
             [
                 "ad04b16e.4ea1e",
                 "6bd81d47.b57244"
+            ]
+        ]
+    },
+    {
+        "id": "edb7a7ed.2eb3e8",
+        "type": "status",
+        "z": "836b4374.e4af2",
+        "name": "",
+        "scope": [
+            "dbbb9989.d3edb8",
+            "6c0e6956.f086e8"
+        ],
+        "x": 940,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "778523f2.7c7a2c",
+        "type": "status",
+        "z": "d1d55504.1f3638",
+        "name": "",
+        "scope": [
+            "daee8f2a.149f4"
+        ],
+        "x": 680,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f1d071a9.ef536",
+        "type": "status",
+        "z": "16de2fad.7629a",
+        "name": "",
+        "scope": [
+            "4d988610.c291b8"
+        ],
+        "x": 680,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "75f6710b.34cce",
+        "type": "status",
+        "z": "64781044.3bdae",
+        "name": "",
+        "scope": [
+            "6ba94bd2.7531c4"
+        ],
+        "x": 680,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cc3191b7.fe9bd",
+        "type": "rbe",
+        "z": "d06ad5d7.7d1a38",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 440,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5c6eb93e.832348",
+        "type": "inject",
+        "z": "e1557285.e3f86",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 60,
+        "wires": [
+            [
+                "66e3a5b.1c3e25c"
             ]
         ]
     }
