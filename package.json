@@ -1,9 +1,8 @@
 {
     "name": "node_red_bhFlows",
     "description": "This is a collection of flows that I am using to control my beach house smart home powered by Hubitat",
-    "version": "0.0.1",
+    "version": "1.0",
     "dependencies": {
-        "node-red-contrib-alexa-remote2": "3.10.3",
         "node-red-contrib-cron-plus": "1.0.7",
         "node-red-contrib-hubitat": "1.2.1",
         "node-red-contrib-simpletime": "2.10.0",
@@ -13,7 +12,12 @@
         "node-red-contrib-arlo": "0.0.4",
         "node-red-contrib-boolean-logic-ultimate": "1.0.20",
         "node-red-contrib-stoptimer-varidelay": "0.4.4",
-        "node-red-contrib-alexa-smart-home": "0.4.67"
+        "node-red-contrib-alexa-cakebaked": "4.0.2",
+        "node-red-contrib-filter": "0.1.3",
+        "node-red-contrib-influxdb": "0.5.4",
+        "node-red-contrib-moment": "4.0.0",
+        "node-red-contrib-virtual-smart-home": "1.21.2",
+        "node-red-node-rbe": "0.2.9"
     },
     "node-red": {
         "settings": {
