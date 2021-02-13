@@ -1328,9 +1328,7 @@
             "de9ac35b.69b59"
         ],
         "x": 34,
-        "y": 39,
-        "w": 772,
-        "h": 82
+        "y": 39
     },
     {
         "id": "b130c189.ea4d2",
@@ -13861,7 +13859,7 @@
         "topic": "",
         "payload": "true",
         "payloadType": "bool",
-        "x": 250,
+        "x": 290,
         "y": 660,
         "wires": [
             [
@@ -14044,7 +14042,7 @@
         "topic": "",
         "payload": "false",
         "payloadType": "bool",
-        "x": 250,
+        "x": 290,
         "y": 700,
         "wires": [
             [
@@ -14073,7 +14071,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 240,
+        "x": 280,
         "y": 780,
         "wires": [
             [
@@ -14087,7 +14085,7 @@
         "z": "e1557285.e3f86",
         "name": "",
         "env": [],
-        "x": 430,
+        "x": 470,
         "y": 720,
         "wires": []
     },
@@ -14135,7 +14133,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 250,
+        "x": 290,
         "y": 740,
         "wires": [
             [
