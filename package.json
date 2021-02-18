@@ -3,7 +3,6 @@
     "description": "This is a collection of flows that I am using to control my beach house smart home powered by Hubitat",
     "version": "1.0",
     "dependencies": {
-        "node-red-contrib-cron-plus": "1.0.7",
         "node-red-contrib-hubitat": "1.2.1",
         "node-red-contrib-simpletime": "2.10.0",
         "node-red-contrib-speedtest-updated": "2.0.2",
