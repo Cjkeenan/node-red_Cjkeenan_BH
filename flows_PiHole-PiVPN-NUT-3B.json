@@ -13559,7 +13559,7 @@
         "name": "",
         "scope": [
             "dbbb9989.d3edb8",
-            "6c0e6956.f086e8"
+            "6d60329e.961f2c"
         ],
         "x": 940,
         "y": 400,
@@ -13977,9 +13977,9 @@
                 "vt": "str"
             }
         ],
-        "repeat": "234000",
+        "repeat": "3900",
         "crontab": "",
-        "once": false,
+        "once": true,
         "onceDelay": 0.1,
         "topic": "",
         "payload": "",
