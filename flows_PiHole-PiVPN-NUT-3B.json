@@ -7,10 +7,31 @@
         "info": ""
     },
     {
+        "id": "3b28216c.47740e",
+        "type": "tab",
+        "label": "GR - Motion Lighting",
+        "disabled": false,
+        "info": ""
+    },
+    {
         "id": "d06ad5d7.7d1a38",
         "type": "tab",
         "label": "KT - Motion Lighting",
-        "disabled": true,
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "cd3ea6b3.ac9c98",
+        "type": "tab",
+        "label": "DB - Motion Lighting",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "a994b807.c93cc8",
+        "type": "tab",
+        "label": "MB - Motion Lighting",
+        "disabled": false,
         "info": ""
     },
     {
@@ -763,32 +784,32 @@
         ],
         "out": [
             {
-                "x": 780,
+                "x": 900,
                 "y": 60,
                 "wires": [
                     {
-                        "id": "4d988610.c291b8",
+                        "id": "143964c2.7e311b",
                         "port": 0
                     }
                 ]
             },
             {
-                "x": 780,
+                "x": 900,
                 "y": 100,
                 "wires": [
                     {
-                        "id": "4d988610.c291b8",
-                        "port": 1
+                        "id": "c23ae65.7420018",
+                        "port": 0
                     }
                 ]
             },
             {
-                "x": 780,
+                "x": 900,
                 "y": 140,
                 "wires": [
                     {
-                        "id": "4d988610.c291b8",
-                        "port": 2
+                        "id": "e96109fa.be0a98",
+                        "port": 0
                     }
                 ]
             }
@@ -834,17 +855,17 @@
         ],
         "out": [
             {
-                "x": 780,
+                "x": 900,
                 "y": 60,
                 "wires": [
                     {
-                        "id": "6ba94bd2.7531c4",
+                        "id": "a88bd3c3.4aea",
                         "port": 0
                     }
                 ]
             },
             {
-                "x": 780,
+                "x": 900,
                 "y": 100,
                 "wires": [
                     {
@@ -854,12 +875,12 @@
                 ]
             },
             {
-                "x": 780,
+                "x": 900,
                 "y": 140,
                 "wires": [
                     {
-                        "id": "6ba94bd2.7531c4",
-                        "port": 2
+                        "id": "195d7e69.a3ffb2",
+                        "port": 0
                     }
                 ]
             }
@@ -905,32 +926,32 @@
         ],
         "out": [
             {
-                "x": 780,
-                "y": 60,
+                "x": 880,
+                "y": 40,
                 "wires": [
                     {
-                        "id": "daee8f2a.149f4",
+                        "id": "7c485b28.fb8024",
                         "port": 0
                     }
                 ]
             },
             {
-                "x": 780,
-                "y": 100,
+                "x": 880,
+                "y": 80,
                 "wires": [
                     {
-                        "id": "daee8f2a.149f4",
-                        "port": 1
+                        "id": "a9808922.600738",
+                        "port": 0
                     }
                 ]
             },
             {
-                "x": 780,
-                "y": 140,
+                "x": 880,
+                "y": 120,
                 "wires": [
                     {
-                        "id": "daee8f2a.149f4",
-                        "port": 2
+                        "id": "1b0b9ae3.fa88f5",
+                        "port": 0
                     }
                 ]
             }
@@ -949,6 +970,74 @@
             "wires": [
                 {
                     "id": "778523f2.7c7a2c",
+                    "port": 0
+                }
+            ]
+        }
+    },
+    {
+        "id": "5adc90df.95129",
+        "type": "subflow",
+        "name": "Downstairs Bedroom Motion Status",
+        "info": "",
+        "category": "hubitat",
+        "in": [
+            {
+                "x": 60,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "18c2ec58.1c65b4"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 860,
+                "y": 60,
+                "wires": [
+                    {
+                        "id": "bb616c0c.54e21",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 860,
+                "y": 100,
+                "wires": [
+                    {
+                        "id": "27f99255.fde67e",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 860,
+                "y": 140,
+                "wires": [
+                    {
+                        "id": "9a908123.8f922",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "color": "#ACE043",
+        "outputLabels": [
+            "AND",
+            "OR",
+            "XOR"
+        ],
+        "icon": "font-awesome/fa-street-view",
+        "status": {
+            "x": 740,
+            "y": 200,
+            "wires": [
+                {
+                    "id": "97fbe5ee.4ed028",
                     "port": 0
                 }
             ]
@@ -978,7 +1067,9 @@
             "f8ce7b3f.ff69a8"
         ],
         "x": 34,
-        "y": 199
+        "y": 199,
+        "w": 532,
+        "h": 229.5
     },
     {
         "id": "da906c01.3168e",
@@ -1003,7 +1094,9 @@
             "12822318.46878d"
         ],
         "x": 34,
-        "y": 439
+        "y": 439,
+        "w": 572,
+        "h": 202
     },
     {
         "id": "568533ed.18d81c",
@@ -1024,7 +1117,9 @@
             "10f207f.699f0f8"
         ],
         "x": 34,
-        "y": 39
+        "y": 39,
+        "w": 532,
+        "h": 82
     },
     {
         "id": "313d11f.0a7dfee",
@@ -1044,7 +1139,9 @@
             "346e72ef.2a49be"
         ],
         "x": 34,
-        "y": 119
+        "y": 119,
+        "w": 532,
+        "h": 82
     },
     {
         "id": "b3ea31b2.17afa",
@@ -1069,7 +1166,9 @@
             "7c3fac3c.7c1184"
         ],
         "x": 614,
-        "y": 299
+        "y": 299,
+        "w": 472,
+        "h": 289.5
     },
     {
         "id": "d79efd7b.7886b",
@@ -1093,7 +1192,9 @@
             "946f40b0.810bf"
         ],
         "x": 614,
-        "y": 54
+        "y": 54,
+        "w": 472,
+        "h": 247
     },
     {
         "id": "bbd34e0c.99f3c",
@@ -1119,7 +1220,9 @@
             "824209e0.28ad48"
         ],
         "x": 1154,
-        "y": 59
+        "y": 59,
+        "w": 432,
+        "h": 342
     },
     {
         "id": "7b4c2b56.74bb34",
@@ -1144,7 +1247,9 @@
             "7dfd7833.207ba8"
         ],
         "x": 934,
-        "y": 639
+        "y": 639,
+        "w": 672,
+        "h": 202
     },
     {
         "id": "911821c6.02bdd",
@@ -1175,7 +1280,9 @@
             "cb702f83.5dd9c"
         ],
         "x": 1614,
-        "y": 439
+        "y": 439,
+        "w": 852,
+        "h": 322
     },
     {
         "id": "6a56d8cc.28eeb8",
@@ -1203,8 +1310,10 @@
             "eea4bbeb.999658",
             "9fd1e83a.485598"
         ],
-        "x": 234,
-        "y": 44
+        "x": 239,
+        "y": 44,
+        "w": 487,
+        "h": 517
     },
     {
         "id": "26661ca0.b1d944",
@@ -1233,7 +1342,9 @@
             "8bbc4fd1.22f5b"
         ],
         "x": 734,
-        "y": 99
+        "y": 99,
+        "w": 472,
+        "h": 402
     },
     {
         "id": "641dcc83.ea3e04",
@@ -1266,8 +1377,10 @@
             "c00fd277.ad2e8",
             "43f1bb07.4c8404"
         ],
-        "x": 2334,
-        "y": 119
+        "x": 1754,
+        "y": 119,
+        "w": 1032,
+        "h": 462
     },
     {
         "id": "c9e65dc5.3adf2",
@@ -1283,10 +1396,6 @@
             "color": "#a4a4a4"
         },
         "nodes": [
-            "4beb3347.e3821c",
-            "10274dad.3ea232",
-            "5545589a.449e08",
-            "934512e6.71049",
             "ef0c564a.379998",
             "aa0f1e83.d2a4e",
             "af7899d5.486ec8",
@@ -1297,18 +1406,12 @@
             "b0f6010d.eac1c",
             "2a1a8e4b.ce15b2",
             "f0bb1ed4.befeb",
-            "f8c72644.d4f038",
-            "af75de6f.2641",
-            "2d2dcea7.4096d2",
-            "d16ecda4.01cc7",
-            "c4fd27f6.48e488",
-            "76a179c7.9945d8",
-            "f680cc.0634df38",
-            "9c9ffdd5.f3dfe",
-            "20c82f9f.76e01"
+            "f8c72644.d4f038"
         ],
         "x": 1214,
-        "y": 59
+        "y": 59,
+        "w": 532,
+        "h": 542
     },
     {
         "id": "8da5ebc3.3ce6e8",
@@ -1328,7 +1431,9 @@
             "de9ac35b.69b59"
         ],
         "x": 34,
-        "y": 39
+        "y": 39,
+        "w": 772,
+        "h": 82
     },
     {
         "id": "b130c189.ea4d2",
@@ -1350,7 +1455,7 @@
         "authMethod": "proxy",
         "proxyOwnIp": "192.168.2.253",
         "proxyPort": "3456",
-        "cookieFile": "/mnt/dietpi_userdata/node-red/alexaAuth/BH_authFile",
+        "cookieFile": "/home/pi/.node-red/alexaAuth/BH_authFile",
         "refreshInterval": "5",
         "alexaServiceHost": "pitangui.amazon.com",
         "amazonPage": "amazon.com",
@@ -1492,7 +1597,7 @@
         "authMethod": "proxy",
         "proxyOwnIp": "192.168.2.253",
         "proxyPort": "4567",
-        "cookieFile": "/mnt/dietpi_userdata/node-red/alexaAuth/LF_authFile",
+        "cookieFile": "/home/pi/.node-red/alexaAuth/LF_authFile",
         "refreshInterval": "5",
         "alexaServiceHost": "pitangui.amazon.com",
         "amazonPage": "amazon.com",
@@ -1559,7 +1664,7 @@
         "type": "vsh-connection",
         "name": "LF Alexa",
         "port": "8883",
-        "accessTokenExpiry": "1612418443802"
+        "accessTokenExpiry": "1614329146322"
     },
     {
         "id": "c4c56729.96e518",
@@ -1718,7 +1823,6 @@
         "type": "hubitat command",
         "z": "68ba5945.906288",
         "g": "26661ca0.b1d944",
-        "deviceLabel": "",
         "name": "KT - Lights",
         "server": "b130c189.ea4d2",
         "deviceId": "1573",
@@ -1767,7 +1871,6 @@
         "type": "hubitat command",
         "z": "68ba5945.906288",
         "g": "26661ca0.b1d944",
-        "deviceLabel": "",
         "name": "KT - Lights",
         "server": "b130c189.ea4d2",
         "deviceId": "1573",
@@ -2167,7 +2270,7 @@
         "checkall": "false",
         "repair": false,
         "outputs": 4,
-        "x": 400,
+        "x": 405,
         "y": 300,
         "wires": [
             [
@@ -2190,7 +2293,7 @@
         "z": "68ba5945.906288",
         "g": "6a56d8cc.28eeb8",
         "name": "",
-        "x": 360,
+        "x": 365,
         "y": 100,
         "wires": [
             [],
@@ -2208,7 +2311,7 @@
         "g": "6a56d8cc.28eeb8",
         "name": "",
         "env": [],
-        "x": 360,
+        "x": 365,
         "y": 200,
         "wires": [
             [],
@@ -2684,7 +2787,7 @@
         "type": "file",
         "z": "66eb8402.daa4fc",
         "name": "Speed Test Data Save",
-        "filename": "/mnt/dietpi_userdata/node-red/data/speedtest/speedtestData.json",
+        "filename": "/home/pi/.node-red/data/speedtest/speedtestData.json",
         "appendNewline": false,
         "createDir": true,
         "overwriteFile": "true",
@@ -2716,7 +2819,7 @@
         "type": "file",
         "z": "66eb8402.daa4fc",
         "name": "Speed Test Data Save",
-        "filename": "/mnt/dietpi_userdata/node-red/data/speedtest/speedtestDataPD.json",
+        "filename": "/home/pi/.node-red/data/speedtest/speedtestDataPD.json",
         "appendNewline": false,
         "createDir": true,
         "overwriteFile": "true",
@@ -2747,7 +2850,7 @@
         "type": "file in",
         "z": "66eb8402.daa4fc",
         "name": "Speed Test Data Restore",
-        "filename": "/mnt/dietpi_userdata/node-red/data/speedtest/speedtestData.json",
+        "filename": "/home/pi/.node-red/data/speedtest/speedtestData.json",
         "format": "utf8",
         "x": 750,
         "y": 160,
@@ -2762,7 +2865,7 @@
         "type": "file in",
         "z": "66eb8402.daa4fc",
         "name": "Speed Test Data Restore",
-        "filename": "/mnt/dietpi_userdata/node-red/data/speedtest/speedtestDataPD.json",
+        "filename": "/home/pi/.node-red/data/speedtest/speedtestDataPD.json",
         "format": "utf8",
         "x": 750,
         "y": 200,
@@ -2777,9 +2880,19 @@
         "type": "inject",
         "z": "66eb8402.daa4fc",
         "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
         "repeat": "",
         "crontab": "",
         "once": true,
+        "onceDelay": "",
         "topic": "",
         "payload": "restore",
         "payloadType": "str",
@@ -3520,6 +3633,8 @@
         "id": "33f5a68d.21358a",
         "type": "hubitat command",
         "z": "73f998b9.8842a8",
+        "d": true,
+        "deviceLabel": "",
         "name": "DB - Motion Detection",
         "server": "b130c189.ea4d2",
         "deviceId": "1352",
@@ -3565,7 +3680,6 @@
         "id": "1f860f1a.769fd1",
         "type": "hubitat command",
         "z": "73f998b9.8842a8",
-        "deviceLabel": "",
         "name": "Back Door August Pro (Reliable)",
         "server": "b130c189.ea4d2",
         "deviceId": "2410",
@@ -6053,6 +6167,7 @@
         "type": "hubitat command",
         "z": "68ba5945.906288",
         "g": "c9e65dc5.3adf2",
+        "deviceLabel": "",
         "name": "GR - Motion Detection",
         "server": "b130c189.ea4d2",
         "deviceId": "1377",
@@ -6061,9 +6176,7 @@
         "x": 1620,
         "y": 380,
         "wires": [
-            [
-                "d16ecda4.01cc7"
-            ]
+            []
         ]
     },
     {
@@ -6071,7 +6184,6 @@
         "type": "hubitat command",
         "z": "68ba5945.906288",
         "g": "c9e65dc5.3adf2",
-        "deviceLabel": "",
         "name": "DB - Motion Detection",
         "server": "b130c189.ea4d2",
         "deviceId": "1352",
@@ -6080,9 +6192,7 @@
         "x": 1620,
         "y": 440,
         "wires": [
-            [
-                "20c82f9f.76e01"
-            ]
+            []
         ]
     },
     {
@@ -6098,9 +6208,7 @@
         "x": 1620,
         "y": 500,
         "wires": [
-            [
-                "af75de6f.2641"
-            ]
+            []
         ]
     },
     {
@@ -6116,9 +6224,7 @@
         "x": 1620,
         "y": 560,
         "wires": [
-            [
-                "2d2dcea7.4096d2"
-            ]
+            []
         ]
     },
     {
@@ -6287,7 +6393,7 @@
         "g": "6a56d8cc.28eeb8",
         "name": "",
         "env": [],
-        "x": 360,
+        "x": 365,
         "y": 400,
         "wires": [
             [
@@ -6307,7 +6413,7 @@
         "g": "6a56d8cc.28eeb8",
         "name": "",
         "env": [],
-        "x": 360,
+        "x": 365,
         "y": 500,
         "wires": [
             [
@@ -6880,6 +6986,7 @@
         "id": "11291787.f81d18",
         "type": "hubitat command",
         "z": "345f283.d5796d8",
+        "deviceLabel": "",
         "name": "Refresh UPS Monitor",
         "server": "b130c189.ea4d2",
         "deviceId": "610",
@@ -9214,7 +9321,7 @@
         "checkall": "false",
         "repair": false,
         "outputs": 2,
-        "x": 2470,
+        "x": 1890,
         "y": 300,
         "wires": [
             [
@@ -9235,7 +9342,7 @@
         "deviceId": "1377",
         "command": "on",
         "commandArgs": "",
-        "x": 2760,
+        "x": 2180,
         "y": 160,
         "wires": [
             []
@@ -9251,7 +9358,7 @@
         "deviceId": "1352",
         "command": "on",
         "commandArgs": "",
-        "x": 2760,
+        "x": 2180,
         "y": 200,
         "wires": [
             []
@@ -9267,7 +9374,7 @@
         "deviceId": "385",
         "command": "on",
         "commandArgs": "",
-        "x": 2760,
+        "x": 2180,
         "y": 240,
         "wires": [
             []
@@ -9283,7 +9390,7 @@
         "deviceId": "1377",
         "command": "off",
         "commandArgs": "",
-        "x": 2760,
+        "x": 2180,
         "y": 360,
         "wires": [
             [
@@ -9301,7 +9408,7 @@
         "deviceId": "1352",
         "command": "off",
         "commandArgs": "",
-        "x": 2760,
+        "x": 2180,
         "y": 400,
         "wires": [
             [
@@ -9319,7 +9426,7 @@
         "deviceId": "385",
         "command": "off",
         "commandArgs": "",
-        "x": 2760,
+        "x": 2180,
         "y": 440,
         "wires": [
             [
@@ -9336,7 +9443,7 @@
         "g": "641dcc83.ea3e04",
         "name": "",
         "env": [],
-        "x": 2500,
+        "x": 1920,
         "y": 200,
         "wires": [
             [
@@ -9357,7 +9464,7 @@
         "z": "68ba5945.906288",
         "g": "641dcc83.ea3e04",
         "name": "",
-        "x": 2500,
+        "x": 1920,
         "y": 400,
         "wires": [
             [
@@ -9377,13 +9484,12 @@
         "type": "hubitat command",
         "z": "68ba5945.906288",
         "g": "641dcc83.ea3e04",
-        "deviceLabel": "",
         "name": "GR - Lights",
         "server": "b130c189.ea4d2",
         "deviceId": "1572",
         "command": "setLevel",
         "commandArgs": "75",
-        "x": 2990,
+        "x": 2410,
         "y": 360,
         "wires": [
             []
@@ -9399,7 +9505,7 @@
         "deviceId": "22",
         "command": "setColorTemperature",
         "commandArgs": "3500",
-        "x": 3020,
+        "x": 2440,
         "y": 440,
         "wires": [
             [
@@ -9417,7 +9523,7 @@
         "deviceId": "23",
         "command": "setColorTemperature",
         "commandArgs": "3500",
-        "x": 3020,
+        "x": 2440,
         "y": 480,
         "wires": [
             [
@@ -9435,7 +9541,7 @@
         "deviceId": "21",
         "command": "off",
         "commandArgs": "",
-        "x": 3010,
+        "x": 2430,
         "y": 540,
         "wires": [
             []
@@ -9451,7 +9557,7 @@
         "deviceId": "22",
         "command": "setLevel",
         "commandArgs": "100",
-        "x": 3240,
+        "x": 2660,
         "y": 440,
         "wires": [
             []
@@ -9467,7 +9573,7 @@
         "deviceId": "23",
         "command": "setLevel",
         "commandArgs": "100",
-        "x": 3240,
+        "x": 2660,
         "y": 480,
         "wires": [
             []
@@ -9502,7 +9608,6 @@
         "id": "8a6fbfea.46e12",
         "type": "hubitat device",
         "z": "73f998b9.8842a8",
-        "deviceLabel": "",
         "name": "Lock Status",
         "server": "b130c189.ea4d2",
         "deviceId": "2410",
@@ -9520,7 +9625,6 @@
         "id": "b674ffb.99ca3",
         "type": "hubitat command",
         "z": "73f998b9.8842a8",
-        "deviceLabel": "",
         "name": "Back Door Lock",
         "server": "b130c189.ea4d2",
         "deviceId": "2410",
@@ -9584,6 +9688,7 @@
         "id": "e665fc05.8ac82",
         "type": "hubitat device",
         "z": "d06ad5d7.7d1a38",
+        "d": true,
         "g": "7a22a12f.dcfd3",
         "deviceLabel": "",
         "name": "KT - MS Pantry",
@@ -9603,6 +9708,7 @@
         "id": "f5de1a5c.bb3c88",
         "type": "hubitat device",
         "z": "d06ad5d7.7d1a38",
+        "d": true,
         "g": "7a22a12f.dcfd3",
         "deviceLabel": "",
         "name": "KT - MS Microwave",
@@ -9946,7 +10052,6 @@
         "type": "hubitat command",
         "z": "d06ad5d7.7d1a38",
         "g": "7b4c2b56.74bb34",
-        "deviceLabel": "Kitchen - Overhead Lights",
         "name": "KT - Overhead Lights",
         "server": "b130c189.ea4d2",
         "deviceId": "68",
@@ -9966,7 +10071,6 @@
         "type": "hubitat command",
         "z": "d06ad5d7.7d1a38",
         "g": "7b4c2b56.74bb34",
-        "deviceLabel": "Kitchen - Overhead Lights",
         "name": "KT - Undercabinet LM",
         "server": "b130c189.ea4d2",
         "deviceId": "1090",
@@ -9986,7 +10090,6 @@
         "type": "hubitat command",
         "z": "d06ad5d7.7d1a38",
         "g": "7b4c2b56.74bb34",
-        "deviceLabel": "Kitchen - Overhead Lights",
         "name": "KT - Undercabinet LS",
         "server": "b130c189.ea4d2",
         "deviceId": "1092",
@@ -10006,7 +10109,6 @@
         "type": "hubitat command",
         "z": "d06ad5d7.7d1a38",
         "g": "7b4c2b56.74bb34",
-        "deviceLabel": "Kitchen - Overhead Lights",
         "name": "KT - Undercabinet LR",
         "server": "b130c189.ea4d2",
         "deviceId": "1093",
@@ -10060,7 +10162,6 @@
         "id": "7293a6a3.1913e8",
         "type": "hubitat device",
         "z": "d06ad5d7.7d1a38",
-        "deviceLabel": "",
         "name": "KT - Christmas Mode",
         "server": "b130c189.ea4d2",
         "deviceId": "2303",
@@ -10150,7 +10251,6 @@
         "type": "hubitat command",
         "z": "d06ad5d7.7d1a38",
         "g": "bbd34e0c.99f3c",
-        "deviceLabel": "Kitchen - Overhead Lights",
         "name": "KT - Undercabinet LR",
         "server": "b130c189.ea4d2",
         "deviceId": "1093",
@@ -10169,7 +10269,6 @@
         "type": "hubitat command",
         "z": "d06ad5d7.7d1a38",
         "g": "bbd34e0c.99f3c",
-        "deviceLabel": "Kitchen - Overhead Lights",
         "name": "KT - Undercabinet LS",
         "server": "b130c189.ea4d2",
         "deviceId": "1092",
@@ -10188,7 +10287,6 @@
         "type": "hubitat command",
         "z": "d06ad5d7.7d1a38",
         "g": "bbd34e0c.99f3c",
-        "deviceLabel": "Kitchen - Overhead Lights",
         "name": "KT - Undercabinet LM",
         "server": "b130c189.ea4d2",
         "deviceId": "1090",
@@ -10207,7 +10305,6 @@
         "type": "hubitat command",
         "z": "d06ad5d7.7d1a38",
         "g": "bbd34e0c.99f3c",
-        "deviceLabel": "Kitchen - Overhead Lights",
         "name": "KT - Overhead Lights",
         "server": "b130c189.ea4d2",
         "deviceId": "68",
@@ -10226,7 +10323,6 @@
         "type": "hubitat command",
         "z": "d06ad5d7.7d1a38",
         "g": "bbd34e0c.99f3c",
-        "deviceLabel": "Kitchen - Overhead Lights",
         "name": "KT - Undercabinet LR",
         "server": "b130c189.ea4d2",
         "deviceId": "1093",
@@ -10245,7 +10341,6 @@
         "type": "hubitat command",
         "z": "d06ad5d7.7d1a38",
         "g": "bbd34e0c.99f3c",
-        "deviceLabel": "Kitchen - Overhead Lights",
         "name": "KT - Undercabinet LS",
         "server": "b130c189.ea4d2",
         "deviceId": "1092",
@@ -10264,7 +10359,6 @@
         "type": "hubitat command",
         "z": "d06ad5d7.7d1a38",
         "g": "bbd34e0c.99f3c",
-        "deviceLabel": "Kitchen - Overhead Lights",
         "name": "KT - Undercabinet LM",
         "server": "b130c189.ea4d2",
         "deviceId": "1090",
@@ -10283,7 +10377,6 @@
         "type": "hubitat device",
         "z": "d06ad5d7.7d1a38",
         "g": "d79efd7b.7886b",
-        "deviceLabel": "",
         "name": "KT - Christmas Mode",
         "server": "b130c189.ea4d2",
         "deviceId": "2303",
@@ -10375,6 +10468,7 @@
         "id": "c77415ae.0c0898",
         "type": "hubitat device",
         "z": "d06ad5d7.7d1a38",
+        "d": true,
         "g": "568533ed.18d81c",
         "deviceLabel": "",
         "name": "KT - Christmas Mode",
@@ -10477,7 +10571,6 @@
         "id": "ab45d00b.e3243",
         "type": "hubitat command",
         "z": "836b4374.e4af2",
-        "deviceLabel": "Kitchen - Undercabinet Light LM",
         "name": "KT - RedH LM",
         "server": "b130c189.ea4d2",
         "deviceId": "1090",
@@ -10495,7 +10588,6 @@
         "id": "f8c31b09.b1ec58",
         "type": "hubitat command",
         "z": "836b4374.e4af2",
-        "deviceLabel": "Kitchen - Undercabinet Light LM",
         "name": "KT - GreenH LM",
         "server": "b130c189.ea4d2",
         "deviceId": "1090",
@@ -10513,7 +10605,6 @@
         "id": "2c231d00.1fd8e4",
         "type": "hubitat command",
         "z": "836b4374.e4af2",
-        "deviceLabel": "Kitchen - Undercabinet Light LM",
         "name": "KT - GreenH LS",
         "server": "b130c189.ea4d2",
         "deviceId": "1092",
@@ -10531,7 +10622,6 @@
         "id": "ba4b84dd.9d8718",
         "type": "hubitat command",
         "z": "836b4374.e4af2",
-        "deviceLabel": "Kitchen - Undercabinet Light LM",
         "name": "KT - RedH LS",
         "server": "b130c189.ea4d2",
         "deviceId": "1092",
@@ -10549,7 +10639,6 @@
         "id": "f3777aca.4bdc68",
         "type": "hubitat command",
         "z": "836b4374.e4af2",
-        "deviceLabel": "Kitchen - Undercabinet Light LM",
         "name": "KT - RedH LR",
         "server": "b130c189.ea4d2",
         "deviceId": "1093",
@@ -10567,7 +10656,6 @@
         "id": "555bd839.78a938",
         "type": "hubitat command",
         "z": "836b4374.e4af2",
-        "deviceLabel": "Kitchen - Undercabinet Light LM",
         "name": "KT - GreenH LR",
         "server": "b130c189.ea4d2",
         "deviceId": "1093",
@@ -10623,6 +10711,7 @@
         "id": "2cf6acef.7ff3b4",
         "type": "hubitat device",
         "z": "d06ad5d7.7d1a38",
+        "d": true,
         "g": "da906c01.3168e",
         "deviceLabel": "",
         "name": "KT - Motion Detection",
@@ -10738,6 +10827,7 @@
         "id": "bf9bfc4d.29cbc",
         "type": "hubitat device",
         "z": "d06ad5d7.7d1a38",
+        "d": true,
         "g": "313d11f.0a7dfee",
         "deviceLabel": "",
         "name": "KT - Overhead Lights",
@@ -10926,7 +11016,6 @@
         "type": "hubitat command",
         "z": "68ba5945.906288",
         "g": "6a56d8cc.28eeb8",
-        "deviceLabel": "",
         "name": "MB - Thermostat",
         "server": "b130c189.ea4d2",
         "deviceId": "2060",
@@ -10943,7 +11032,6 @@
         "type": "hubitat command",
         "z": "68ba5945.906288",
         "g": "6a56d8cc.28eeb8",
-        "deviceLabel": "",
         "name": "GR - Thermostat",
         "server": "b130c189.ea4d2",
         "deviceId": "2059",
@@ -10960,7 +11048,6 @@
         "type": "hubitat command",
         "z": "68ba5945.906288",
         "g": "6a56d8cc.28eeb8",
-        "deviceLabel": "",
         "name": "MB - Thermostat",
         "server": "b130c189.ea4d2",
         "deviceId": "2060",
@@ -10994,7 +11081,6 @@
         "type": "hubitat command",
         "z": "68ba5945.906288",
         "g": "6a56d8cc.28eeb8",
-        "deviceLabel": "",
         "name": "MB - Thermostat",
         "server": "b130c189.ea4d2",
         "deviceId": "2060",
@@ -11011,7 +11097,6 @@
         "type": "hubitat command",
         "z": "68ba5945.906288",
         "g": "6a56d8cc.28eeb8",
-        "deviceLabel": "",
         "name": "MB - Thermostat",
         "server": "b130c189.ea4d2",
         "deviceId": "2060",
@@ -11027,7 +11112,6 @@
         "id": "54ca3400.3e792c",
         "type": "hubitat command",
         "z": "836b4374.e4af2",
-        "deviceLabel": "Kitchen - Undercabinet Light LM",
         "name": "KT - RedS LM",
         "server": "b130c189.ea4d2",
         "deviceId": "1090",
@@ -11045,7 +11129,6 @@
         "id": "386168dc.7e7698",
         "type": "hubitat command",
         "z": "836b4374.e4af2",
-        "deviceLabel": "Kitchen - Undercabinet Light LM",
         "name": "KT - GreenS LS",
         "server": "b130c189.ea4d2",
         "deviceId": "1092",
@@ -11063,7 +11146,6 @@
         "id": "3c8e19ff.4a05c6",
         "type": "hubitat command",
         "z": "836b4374.e4af2",
-        "deviceLabel": "Kitchen - Undercabinet Light LM",
         "name": "KT - RedS LR",
         "server": "b130c189.ea4d2",
         "deviceId": "1093",
@@ -11081,7 +11163,6 @@
         "id": "a997a1a4.adac4",
         "type": "hubitat command",
         "z": "836b4374.e4af2",
-        "deviceLabel": "Kitchen - Undercabinet Light LM",
         "name": "KT - GreenS LR",
         "server": "b130c189.ea4d2",
         "deviceId": "1093",
@@ -11099,7 +11180,6 @@
         "id": "3e399e6b.8035e2",
         "type": "hubitat command",
         "z": "836b4374.e4af2",
-        "deviceLabel": "Kitchen - Undercabinet Light LM",
         "name": "KT - GreenS LM",
         "server": "b130c189.ea4d2",
         "deviceId": "1090",
@@ -11117,7 +11197,6 @@
         "id": "4f0c61a8.3a6c",
         "type": "hubitat command",
         "z": "836b4374.e4af2",
-        "deviceLabel": "Kitchen - Undercabinet Light LM",
         "name": "KT - RedS LM",
         "server": "b130c189.ea4d2",
         "deviceId": "1092",
@@ -11268,7 +11347,6 @@
         "type": "hubitat command",
         "z": "d06ad5d7.7d1a38",
         "g": "911821c6.02bdd",
-        "deviceLabel": "Kitchen - Undercabinet Light LM",
         "name": "KT - RedH LM",
         "server": "b130c189.ea4d2",
         "deviceId": "1090",
@@ -11287,7 +11365,6 @@
         "type": "hubitat command",
         "z": "d06ad5d7.7d1a38",
         "g": "911821c6.02bdd",
-        "deviceLabel": "Kitchen - Undercabinet Light LM",
         "name": "KT - GreenH LM",
         "server": "b130c189.ea4d2",
         "deviceId": "1090",
@@ -11306,7 +11383,6 @@
         "type": "hubitat command",
         "z": "d06ad5d7.7d1a38",
         "g": "911821c6.02bdd",
-        "deviceLabel": "Kitchen - Undercabinet Light LM",
         "name": "KT - GreenH LS",
         "server": "b130c189.ea4d2",
         "deviceId": "1092",
@@ -11325,7 +11401,6 @@
         "type": "hubitat command",
         "z": "d06ad5d7.7d1a38",
         "g": "911821c6.02bdd",
-        "deviceLabel": "Kitchen - Undercabinet Light LM",
         "name": "KT - RedH LS",
         "server": "b130c189.ea4d2",
         "deviceId": "1092",
@@ -11344,7 +11419,6 @@
         "type": "hubitat command",
         "z": "d06ad5d7.7d1a38",
         "g": "911821c6.02bdd",
-        "deviceLabel": "Kitchen - Undercabinet Light LM",
         "name": "KT - RedH LR",
         "server": "b130c189.ea4d2",
         "deviceId": "1093",
@@ -11363,7 +11437,6 @@
         "type": "hubitat command",
         "z": "d06ad5d7.7d1a38",
         "g": "911821c6.02bdd",
-        "deviceLabel": "Kitchen - Undercabinet Light LM",
         "name": "KT - GreenH LR",
         "server": "b130c189.ea4d2",
         "deviceId": "1093",
@@ -11834,7 +11907,7 @@
                 "t": "set",
                 "p": "filePath",
                 "pt": "msg",
-                "to": "/mnt/dietpi_userdata/node-red/he_backups/",
+                "to": "/home/pi/.node-red/he_backups/",
                 "tot": "str"
             },
             {
@@ -11876,7 +11949,7 @@
         "overwriteFile": "true",
         "encoding": "none",
         "x": 370,
-        "y": 180,
+        "y": 190,
         "wires": [
             [
                 "c3df676c.336198"
@@ -12006,7 +12079,7 @@
         "proxy": "",
         "authType": "",
         "x": 190,
-        "y": 180,
+        "y": 190,
         "wires": [
             [
                 "87e7f2f8.fa594"
@@ -12065,7 +12138,7 @@
         "id": "c3df676c.336198",
         "type": "exec",
         "z": "f3e4e663.9ecbb8",
-        "command": "rclone copy /mnt/dietpi_userdata/node-red/he_backups BH_3B_Backup:HE_backups",
+        "command": "rclone sync /home/pi/.node-red/he_backups BH_3B_Backup:HE_backups",
         "addpay": false,
         "append": "",
         "useSpawn": "false",
@@ -12073,7 +12146,7 @@
         "oldrc": false,
         "name": "Upload to GDrive",
         "x": 650,
-        "y": 220,
+        "y": 180,
         "wires": [
             [
                 "12b68123.0581bf"
@@ -12091,7 +12164,7 @@
         "type": "debug",
         "z": "f3e4e663.9ecbb8",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -12099,8 +12172,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 890,
-        "y": 200,
+        "x": 840,
+        "y": 180,
         "wires": []
     },
     {
@@ -12201,79 +12274,13 @@
         "type": "hubitat command",
         "z": "68ba5945.906288",
         "g": "641dcc83.ea3e04",
-        "deviceLabel": "",
         "name": "DB - Lights",
         "server": "b130c189.ea4d2",
         "deviceId": "1574",
         "command": "off",
         "commandArgs": "",
-        "x": 2990,
+        "x": 2410,
         "y": 400,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "934512e6.71049",
-        "type": "hubitat command",
-        "z": "68ba5945.906288",
-        "g": "c9e65dc5.3adf2",
-        "name": "GR - Lights",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1572",
-        "command": "on",
-        "commandArgs": "",
-        "x": 2230,
-        "y": 380,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "5545589a.449e08",
-        "type": "hubitat command",
-        "z": "68ba5945.906288",
-        "g": "c9e65dc5.3adf2",
-        "name": "DB - Lights",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1574",
-        "command": "on",
-        "commandArgs": "",
-        "x": 2230,
-        "y": 440,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "10274dad.3ea232",
-        "type": "hubitat command",
-        "z": "68ba5945.906288",
-        "g": "c9e65dc5.3adf2",
-        "deviceLabel": "",
-        "name": "KT - Lights",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1573",
-        "command": "on",
-        "commandArgs": "",
-        "x": 2230,
-        "y": 500,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "4beb3347.e3821c",
-        "type": "hubitat command",
-        "z": "68ba5945.906288",
-        "g": "c9e65dc5.3adf2",
-        "name": "MB - Lights",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1575",
-        "command": "on",
-        "commandArgs": "",
-        "x": 2230,
-        "y": 560,
         "wires": [
             []
         ]
@@ -12282,7 +12289,6 @@
         "id": "84eb190d.873ac8",
         "type": "hubitat device",
         "z": "16de2fad.7629a",
-        "deviceLabel": "",
         "name": "KT - MS Pantry",
         "server": "b130c189.ea4d2",
         "deviceId": "1795",
@@ -12300,7 +12306,6 @@
         "id": "c6c89dde.19eb6",
         "type": "hubitat device",
         "z": "16de2fad.7629a",
-        "deviceLabel": "",
         "name": "KT - MS Microwave",
         "server": "b130c189.ea4d2",
         "deviceId": "1794",
@@ -12405,7 +12410,6 @@
         "id": "7f4a5185.45e82",
         "type": "hubitat device",
         "z": "64781044.3bdae",
-        "deviceLabel": "",
         "name": "MB - MS Bath",
         "server": "b130c189.ea4d2",
         "deviceId": "1418",
@@ -12423,7 +12427,6 @@
         "id": "318d6656.4cc6ba",
         "type": "hubitat device",
         "z": "64781044.3bdae",
-        "deviceLabel": "",
         "name": "MB - MS Door",
         "server": "b130c189.ea4d2",
         "deviceId": "1354",
@@ -12539,16 +12542,19 @@
         "x": 660,
         "y": 100,
         "wires": [
+            [
+                "a88bd3c3.4aea"
+            ],
             [],
-            [],
-            []
+            [
+                "195d7e69.a3ffb2"
+            ]
         ]
     },
     {
         "id": "f67fb867.f5f0f8",
         "type": "hubitat device",
         "z": "d1d55504.1f3638",
-        "deviceLabel": "",
         "name": "GR - MS Clock",
         "server": "b130c189.ea4d2",
         "deviceId": "1413",
@@ -12566,7 +12572,6 @@
         "id": "8f4f5624.ac2e98",
         "type": "hubitat device",
         "z": "d1d55504.1f3638",
-        "deviceLabel": "",
         "name": "GR - MS Fireplace",
         "server": "b130c189.ea4d2",
         "deviceId": "162",
@@ -12668,172 +12673,6 @@
         ]
     },
     {
-        "id": "af75de6f.2641",
-        "type": "subflow:16de2fad.7629a",
-        "z": "68ba5945.906288",
-        "g": "c9e65dc5.3adf2",
-        "name": "",
-        "env": [],
-        "x": 1840,
-        "y": 500,
-        "wires": [
-            [],
-            [
-                "76a179c7.9945d8"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "d16ecda4.01cc7",
-        "type": "subflow:d1d55504.1f3638",
-        "z": "68ba5945.906288",
-        "g": "c9e65dc5.3adf2",
-        "name": "",
-        "x": 1850,
-        "y": 380,
-        "wires": [
-            [],
-            [
-                "9c9ffdd5.f3dfe"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "2d2dcea7.4096d2",
-        "type": "subflow:64781044.3bdae",
-        "z": "68ba5945.906288",
-        "g": "c9e65dc5.3adf2",
-        "name": "",
-        "x": 1870,
-        "y": 560,
-        "wires": [
-            [],
-            [
-                "c4fd27f6.48e488"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "c4fd27f6.48e488",
-        "type": "switch",
-        "z": "68ba5945.906288",
-        "g": "c9e65dc5.3adf2",
-        "name": "if motion",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "true"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 2080,
-        "y": 560,
-        "wires": [
-            [
-                "4beb3347.e3821c"
-            ]
-        ]
-    },
-    {
-        "id": "76a179c7.9945d8",
-        "type": "switch",
-        "z": "68ba5945.906288",
-        "g": "c9e65dc5.3adf2",
-        "name": "if motion",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "true"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 2080,
-        "y": 500,
-        "wires": [
-            [
-                "10274dad.3ea232"
-            ]
-        ]
-    },
-    {
-        "id": "f680cc.0634df38",
-        "type": "switch",
-        "z": "68ba5945.906288",
-        "g": "c9e65dc5.3adf2",
-        "name": "if motion",
-        "property": "payload.value",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "active",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 2080,
-        "y": 440,
-        "wires": [
-            [
-                "5545589a.449e08"
-            ]
-        ]
-    },
-    {
-        "id": "9c9ffdd5.f3dfe",
-        "type": "switch",
-        "z": "68ba5945.906288",
-        "g": "c9e65dc5.3adf2",
-        "name": "if motion",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "true"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 2080,
-        "y": 380,
-        "wires": [
-            [
-                "934512e6.71049"
-            ]
-        ]
-    },
-    {
-        "id": "20c82f9f.76e01",
-        "type": "hubitat device",
-        "z": "68ba5945.906288",
-        "g": "c9e65dc5.3adf2",
-        "deviceLabel": "Downstairs Bedroom - Motion Sensor",
-        "name": "DB - Motion Sensor",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1347",
-        "attribute": "motion",
-        "sendEvent": false,
-        "x": 1830,
-        "y": 440,
-        "wires": [
-            [
-                "f680cc.0634df38"
-            ]
-        ]
-    },
-    {
         "id": "daee8f2a.149f4",
         "type": "BooleanLogicUltimate",
         "z": "d1d55504.1f3638",
@@ -12845,12 +12684,18 @@
         "outputtriggeredby": "all",
         "inputCount": "2",
         "topic": "Great Room Motion",
-        "x": 660,
-        "y": 100,
+        "x": 640,
+        "y": 80,
         "wires": [
-            [],
-            [],
-            []
+            [
+                "7c485b28.fb8024"
+            ],
+            [
+                "a9808922.600738"
+            ],
+            [
+                "1b0b9ae3.fa88f5"
+            ]
         ]
     },
     {
@@ -12868,9 +12713,15 @@
         "x": 660,
         "y": 100,
         "wires": [
-            [],
-            [],
-            []
+            [
+                "143964c2.7e311b"
+            ],
+            [
+                "c23ae65.7420018"
+            ],
+            [
+                "e96109fa.be0a98"
+            ]
         ]
     },
     {
@@ -13249,7 +13100,6 @@
         "id": "7d1427e2.d9ac28",
         "type": "hubitat command",
         "z": "a36e04ad.fc4098",
-        "deviceLabel": "",
         "name": "DR - Motion Sensor",
         "server": "b130c189.ea4d2",
         "deviceId": "1348",
@@ -13297,7 +13147,6 @@
         "id": "2d2b066e.00430a",
         "type": "hubitat command",
         "z": "a36e04ad.fc4098",
-        "deviceLabel": "",
         "name": "DB - Motion Sensor",
         "server": "b130c189.ea4d2",
         "deviceId": "1347",
@@ -13313,7 +13162,6 @@
         "id": "ade6b80a.8da618",
         "type": "hubitat command",
         "z": "a36e04ad.fc4098",
-        "deviceLabel": "",
         "name": "GR - Motion Sensor Clock",
         "server": "b130c189.ea4d2",
         "deviceId": "1413",
@@ -13329,7 +13177,6 @@
         "id": "f4a4d2e8.ddb4b",
         "type": "hubitat command",
         "z": "a36e04ad.fc4098",
-        "deviceLabel": "",
         "name": "GR - Motion Sensor Fireplace",
         "server": "b130c189.ea4d2",
         "deviceId": "162",
@@ -13345,7 +13192,6 @@
         "id": "c2302937.22ae68",
         "type": "hubitat command",
         "z": "a36e04ad.fc4098",
-        "deviceLabel": "",
         "name": "KT - Motion Sensor Microwave",
         "server": "b130c189.ea4d2",
         "deviceId": "1794",
@@ -13361,7 +13207,6 @@
         "id": "abe68f3b.38f8a",
         "type": "hubitat command",
         "z": "a36e04ad.fc4098",
-        "deviceLabel": "",
         "name": "KT - Motion Sensor Pantry",
         "server": "b130c189.ea4d2",
         "deviceId": "1795",
@@ -13377,7 +13222,6 @@
         "id": "21acb091.d298",
         "type": "hubitat command",
         "z": "a36e04ad.fc4098",
-        "deviceLabel": "",
         "name": "MB - Motion Sensor Bath",
         "server": "b130c189.ea4d2",
         "deviceId": "1418",
@@ -13393,7 +13237,6 @@
         "id": "c98d8087.c6668",
         "type": "hubitat command",
         "z": "a36e04ad.fc4098",
-        "deviceLabel": "",
         "name": "MB - Motion Sensor Door",
         "server": "b130c189.ea4d2",
         "deviceId": "1354",
@@ -13404,76 +13247,6 @@
         "wires": [
             []
         ]
-    },
-    {
-        "id": "94c8bb0c.7defd8",
-        "type": "inject",
-        "z": "f3e4e663.9ecbb8",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 310,
-        "y": 380,
-        "wires": [
-            [
-                "a1f3edce.990c1"
-            ]
-        ]
-    },
-    {
-        "id": "a1f3edce.990c1",
-        "type": "exec",
-        "z": "f3e4e663.9ecbb8",
-        "command": "rclone config file",
-        "addpay": false,
-        "append": "",
-        "useSpawn": "false",
-        "timer": "",
-        "oldrc": false,
-        "name": "",
-        "x": 550,
-        "y": 400,
-        "wires": [
-            [
-                "7f28b44f.c55d4c"
-            ],
-            [
-                "7f28b44f.c55d4c"
-            ],
-            [
-                "7f28b44f.c55d4c"
-            ]
-        ]
-    },
-    {
-        "id": "7f28b44f.c55d4c",
-        "type": "debug",
-        "z": "f3e4e663.9ecbb8",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 880,
-        "y": 400,
-        "wires": []
     },
     {
         "id": "66e3a5b.1c3e25c",
@@ -13619,8 +13392,8 @@
         "start": "",
         "inout": "out",
         "property": "payload",
-        "x": 440,
-        "y": 760,
+        "x": 730,
+        "y": 620,
         "wires": [
             []
         ]
@@ -13990,6 +13763,839 @@
             [
                 "6c891bc6.bc8204"
             ]
+        ]
+    },
+    {
+        "id": "b3ee3e5d.0527c",
+        "type": "hubitat device",
+        "z": "cd3ea6b3.ac9c98",
+        "deviceLabel": "Downstairs Bedroom - Contact Entrance",
+        "name": "DB - Contact Door",
+        "server": "b130c189.ea4d2",
+        "deviceId": "2506",
+        "attribute": "contact",
+        "sendEvent": true,
+        "x": 130,
+        "y": 60,
+        "wires": [
+            [
+                "c408eea6.314db"
+            ]
+        ]
+    },
+    {
+        "id": "2e7635c7.a4f38a",
+        "type": "hubitat command",
+        "z": "cd3ea6b3.ac9c98",
+        "deviceLabel": "Downstairs Bedroom - Motion Detection Switch",
+        "name": "DB - Motion Detection",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1352",
+        "command": "on",
+        "commandArgs": "",
+        "x": 480,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "786f9006.70e82",
+        "type": "hubitat command",
+        "z": "cd3ea6b3.ac9c98",
+        "deviceLabel": "Downstairs Bedroom - Motion Detection Switch",
+        "name": "DB - Motion Detection",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1352",
+        "command": "off",
+        "commandArgs": "",
+        "x": 480,
+        "y": 110,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c408eea6.314db",
+        "type": "switch",
+        "z": "cd3ea6b3.ac9c98",
+        "name": "Contact",
+        "property": "payload.value",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "open",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "closed",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 300,
+        "y": 60,
+        "wires": [
+            [
+                "2e7635c7.a4f38a"
+            ],
+            [
+                "786f9006.70e82"
+            ]
+        ]
+    },
+    {
+        "id": "56d65e64.a20e2",
+        "type": "subflow:d1d55504.1f3638",
+        "z": "3b28216c.47740e",
+        "name": "",
+        "env": [],
+        "x": 400,
+        "y": 100,
+        "wires": [
+            [],
+            [
+                "9fe86edf.8193c"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "9fe86edf.8193c",
+        "type": "switch",
+        "z": "3b28216c.47740e",
+        "name": "if motion",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 600,
+        "y": 100,
+        "wires": [
+            [
+                "888cd483.dc7428"
+            ]
+        ]
+    },
+    {
+        "id": "888cd483.dc7428",
+        "type": "hubitat command",
+        "z": "3b28216c.47740e",
+        "deviceLabel": "",
+        "name": "GR - Lights",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1572",
+        "command": "on",
+        "commandArgs": "",
+        "x": 750,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "26c02d9b.35dbc2",
+        "type": "switch",
+        "z": "cd3ea6b3.ac9c98",
+        "name": "if motion",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 660,
+        "y": 200,
+        "wires": [
+            [
+                "269eac95.6ea204"
+            ]
+        ]
+    },
+    {
+        "id": "269eac95.6ea204",
+        "type": "hubitat command",
+        "z": "cd3ea6b3.ac9c98",
+        "deviceLabel": "",
+        "name": "DB - Lights",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1574",
+        "command": "on",
+        "commandArgs": "",
+        "x": 810,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "eedcd087.f5569",
+        "type": "subflow:64781044.3bdae",
+        "z": "a994b807.c93cc8",
+        "name": "",
+        "x": 410,
+        "y": 100,
+        "wires": [
+            [],
+            [
+                "9857e7fa.de15d8"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "9857e7fa.de15d8",
+        "type": "switch",
+        "z": "a994b807.c93cc8",
+        "name": "if motion",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 620,
+        "y": 100,
+        "wires": [
+            [
+                "6d439838.23e4b8"
+            ]
+        ]
+    },
+    {
+        "id": "6d439838.23e4b8",
+        "type": "hubitat command",
+        "z": "a994b807.c93cc8",
+        "name": "MB - Lights",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1575",
+        "command": "on",
+        "commandArgs": "",
+        "x": 770,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "299603b9.da77bc",
+        "type": "hubitat device",
+        "z": "a994b807.c93cc8",
+        "deviceLabel": "Master Bedroom - Motion Detection Switch",
+        "name": "MB - Motion Detection",
+        "server": "b130c189.ea4d2",
+        "deviceId": "385",
+        "attribute": "switch",
+        "sendEvent": true,
+        "x": 140,
+        "y": 60,
+        "wires": [
+            [
+                "a2aa6170.61ce2"
+            ]
+        ]
+    },
+    {
+        "id": "a2aa6170.61ce2",
+        "type": "switch",
+        "z": "a994b807.c93cc8",
+        "name": "Switch",
+        "property": "payload.value",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "on",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "off",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 210,
+        "y": 100,
+        "wires": [
+            [
+                "eedcd087.f5569"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "bb3d3008.6e329",
+        "type": "hubitat device",
+        "z": "cd3ea6b3.ac9c98",
+        "deviceLabel": "Master Bedroom - Motion Detection Switch",
+        "name": "DB - Motion Detection",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1352",
+        "attribute": "switch",
+        "sendEvent": true,
+        "x": 160,
+        "y": 160,
+        "wires": [
+            [
+                "68274698.bb88d8"
+            ]
+        ]
+    },
+    {
+        "id": "68274698.bb88d8",
+        "type": "switch",
+        "z": "cd3ea6b3.ac9c98",
+        "name": "Switch",
+        "property": "payload.value",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "on",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "off",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 230,
+        "y": 200,
+        "wires": [
+            [
+                "7f8efb69.193964"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "ec2bb1e7.0a978",
+        "type": "hubitat device",
+        "z": "3b28216c.47740e",
+        "deviceLabel": "Master Bedroom - Motion Detection Switch",
+        "name": "GR - Motion Detection",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1377",
+        "attribute": "switch",
+        "sendEvent": true,
+        "x": 140,
+        "y": 60,
+        "wires": [
+            [
+                "3aeba96b.d6e096"
+            ]
+        ]
+    },
+    {
+        "id": "3aeba96b.d6e096",
+        "type": "switch",
+        "z": "3b28216c.47740e",
+        "name": "Switch",
+        "property": "payload.value",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "on",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "off",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 210,
+        "y": 100,
+        "wires": [
+            [
+                "56d65e64.a20e2"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "1b0b9ae3.fa88f5",
+        "type": "rbe",
+        "z": "d1d55504.1f3638",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 790,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a9808922.600738",
+        "type": "rbe",
+        "z": "d1d55504.1f3638",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 790,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7c485b28.fb8024",
+        "type": "rbe",
+        "z": "d1d55504.1f3638",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 790,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e96109fa.be0a98",
+        "type": "rbe",
+        "z": "16de2fad.7629a",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 810,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c23ae65.7420018",
+        "type": "rbe",
+        "z": "16de2fad.7629a",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 810,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "143964c2.7e311b",
+        "type": "rbe",
+        "z": "16de2fad.7629a",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 810,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "195d7e69.a3ffb2",
+        "type": "rbe",
+        "z": "64781044.3bdae",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 810,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fff6235d.f8056",
+        "type": "rbe",
+        "z": "64781044.3bdae",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 810,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a88bd3c3.4aea",
+        "type": "rbe",
+        "z": "64781044.3bdae",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 810,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "18c2ec58.1c65b4",
+        "type": "hubitat device",
+        "z": "5adc90df.95129",
+        "deviceLabel": "",
+        "name": "DB - Corner",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1347",
+        "attribute": "motion",
+        "sendEvent": false,
+        "x": 170,
+        "y": 80,
+        "wires": [
+            [
+                "974a8468.2128c8"
+            ]
+        ]
+    },
+    {
+        "id": "974a8468.2128c8",
+        "type": "switch",
+        "z": "5adc90df.95129",
+        "name": "Motion",
+        "property": "payload.value",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "active",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "inactive",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 310,
+        "y": 80,
+        "wires": [
+            [
+                "a9516904.f6a4f8"
+            ],
+            [
+                "53f58cdc.8907a4"
+            ]
+        ]
+    },
+    {
+        "id": "a9516904.f6a4f8",
+        "type": "change",
+        "z": "5adc90df.95129",
+        "name": "active",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 430,
+        "y": 60,
+        "wires": [
+            [
+                "909b8ad4.ed8908"
+            ]
+        ]
+    },
+    {
+        "id": "53f58cdc.8907a4",
+        "type": "change",
+        "z": "5adc90df.95129",
+        "name": "inactive",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 440,
+        "y": 100,
+        "wires": [
+            [
+                "909b8ad4.ed8908"
+            ]
+        ]
+    },
+    {
+        "id": "909b8ad4.ed8908",
+        "type": "BooleanLogicUltimate",
+        "z": "5adc90df.95129",
+        "name": "",
+        "filtertrue": "both",
+        "persist": true,
+        "sInitializeWith": "false",
+        "triggertopic": "trigger",
+        "outputtriggeredby": "all",
+        "inputCount": "2",
+        "topic": "Downstairs Bedroom Motion",
+        "x": 620,
+        "y": 100,
+        "wires": [
+            [
+                "bb616c0c.54e21"
+            ],
+            [
+                "27f99255.fde67e"
+            ],
+            [
+                "9a908123.8f922"
+            ]
+        ]
+    },
+    {
+        "id": "97fbe5ee.4ed028",
+        "type": "status",
+        "z": "5adc90df.95129",
+        "name": "",
+        "scope": [
+            "909b8ad4.ed8908"
+        ],
+        "x": 640,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9a908123.8f922",
+        "type": "rbe",
+        "z": "5adc90df.95129",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 770,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "27f99255.fde67e",
+        "type": "rbe",
+        "z": "5adc90df.95129",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 770,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bb616c0c.54e21",
+        "type": "rbe",
+        "z": "5adc90df.95129",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 770,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7f8efb69.193964",
+        "type": "subflow:5adc90df.95129",
+        "z": "cd3ea6b3.ac9c98",
+        "name": "",
+        "env": [],
+        "x": 440,
+        "y": 200,
+        "wires": [
+            [],
+            [
+                "26c02d9b.35dbc2"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "233a8c04.c263b4",
+        "type": "switch",
+        "z": "d06ad5d7.7d1a38",
+        "name": "if motion",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 600,
+        "y": 780,
+        "wires": [
+            [
+                "60656dee.8f9114"
+            ]
+        ]
+    },
+    {
+        "id": "60656dee.8f9114",
+        "type": "hubitat command",
+        "z": "d06ad5d7.7d1a38",
+        "deviceLabel": "",
+        "name": "KT - Lights",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1573",
+        "command": "on",
+        "commandArgs": "",
+        "x": 750,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bea88ffc.2ff6b",
+        "type": "hubitat device",
+        "z": "d06ad5d7.7d1a38",
+        "deviceLabel": "Master Bedroom - Motion Detection Switch",
+        "name": "KT - Motion Detection",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1351",
+        "attribute": "switch",
+        "sendEvent": true,
+        "x": 180,
+        "y": 740,
+        "wires": [
+            [
+                "11b37f9f.ec32"
+            ]
+        ]
+    },
+    {
+        "id": "11b37f9f.ec32",
+        "type": "switch",
+        "z": "d06ad5d7.7d1a38",
+        "name": "Switch",
+        "property": "payload.value",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "on",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "off",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 250,
+        "y": 780,
+        "wires": [
+            [
+                "c41d1f3.e50e4e"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "c41d1f3.e50e4e",
+        "type": "subflow:16de2fad.7629a",
+        "z": "d06ad5d7.7d1a38",
+        "name": "",
+        "x": 420,
+        "y": 780,
+        "wires": [
+            [],
+            [
+                "233a8c04.c263b4"
+            ],
+            []
         ]
     }
 ]
