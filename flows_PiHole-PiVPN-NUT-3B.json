@@ -709,7 +709,7 @@
                 "y": 60,
                 "wires": [
                     {
-                        "id": "59439dff.859474"
+                        "id": "920bccd4.5a1f"
                     }
                 ]
             }
@@ -719,8 +719,8 @@
         "color": "#ACE043",
         "icon": "node-red-dashboard/ui_colour_picker.png",
         "status": {
-            "x": 1040,
-            "y": 400,
+            "x": 880,
+            "y": 380,
             "wires": [
                 {
                     "id": "edb7a7ed.2eb3e8",
@@ -1067,8 +1067,10 @@
             "f8ce7b3f.ff69a8",
             "cc3191b7.fe9bd"
         ],
-        "x": 34,
-        "y": 199
+        "x": 114,
+        "y": 299,
+        "w": 492,
+        "h": 229.5
     },
     {
         "id": "568533ed.18d81c",
@@ -1088,8 +1090,10 @@
             "e0fde455.a63148",
             "10f207f.699f0f8"
         ],
-        "x": 34,
-        "y": 39
+        "x": 74,
+        "y": 139,
+        "w": 532,
+        "h": 82
     },
     {
         "id": "313d11f.0a7dfee",
@@ -1108,8 +1112,10 @@
             "bf9bfc4d.29cbc",
             "346e72ef.2a49be"
         ],
-        "x": 34,
-        "y": 119
+        "x": 74,
+        "y": 219,
+        "w": 532,
+        "h": 82
     },
     {
         "id": "b3ea31b2.17afa",
@@ -1132,8 +1138,10 @@
             "109491e9.01648e",
             "7c3fac3c.7c1184"
         ],
-        "x": 614,
-        "y": 311.5
+        "x": 634,
+        "y": 411.5,
+        "w": 472,
+        "h": 277
     },
     {
         "id": "d79efd7b.7886b",
@@ -1156,8 +1164,10 @@
             "da0c9656.4c85a8",
             "946f40b0.810bf"
         ],
-        "x": 614,
-        "y": 54
+        "x": 634,
+        "y": 154,
+        "w": 472,
+        "h": 247
     },
     {
         "id": "bbd34e0c.99f3c",
@@ -1183,7 +1193,9 @@
             "824209e0.28ad48"
         ],
         "x": 1154,
-        "y": 59
+        "y": 159,
+        "w": 432,
+        "h": 342
     },
     {
         "id": "7b4c2b56.74bb34",
@@ -1208,38 +1220,9 @@
             "7dfd7833.207ba8"
         ],
         "x": 934,
-        "y": 639
-    },
-    {
-        "id": "911821c6.02bdd",
-        "type": "group",
-        "z": "d06ad5d7.7d1a38",
-        "style": {
-            "stroke": "#2e333a",
-            "stroke-opacity": "1",
-            "fill": "#2e333a",
-            "fill-opacity": "0.75",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "38cdc5a2.b7bf5a",
-            "185b0eb0.8c87e1",
-            "faba5db4.5e538",
-            "6f58cb1c.0479c4",
-            "6826bbfc.20a8b4",
-            "db14bbb8.fa7d38",
-            "c9f7daf5.c10e58",
-            "b6bec706.3933c8",
-            "f96a84.add1058",
-            "fca6d23.ec8263",
-            "fe04002.96a03",
-            "504ce0b.58c1a2",
-            "cb702f83.5dd9c"
-        ],
-        "x": 1614,
-        "y": 439
+        "y": 759,
+        "w": 672,
+        "h": 202
     },
     {
         "id": "6a56d8cc.28eeb8",
@@ -1270,7 +1253,9 @@
             "7b081796.d52a38"
         ],
         "x": 1849,
-        "y": 59
+        "y": 59,
+        "w": 512,
+        "h": 602
     },
     {
         "id": "26661ca0.b1d944",
@@ -1299,7 +1284,9 @@
             "8bbc4fd1.22f5b"
         ],
         "x": 1374,
-        "y": 159
+        "y": 159,
+        "w": 472,
+        "h": 402
     },
     {
         "id": "c9e65dc5.3adf2",
@@ -1328,7 +1315,9 @@
             "f8c72644.d4f038"
         ],
         "x": 294,
-        "y": 119
+        "y": 119,
+        "w": 532,
+        "h": 482
     },
     {
         "id": "8da5ebc3.3ce6e8",
@@ -1348,7 +1337,9 @@
             "de9ac35b.69b59"
         ],
         "x": 34,
-        "y": 39
+        "y": 39,
+        "w": 772,
+        "h": 82
     },
     {
         "id": "5caa8401.383fcc",
@@ -1377,7 +1368,9 @@
             "bdd15919.d7ef88"
         ],
         "x": 14,
-        "y": 19
+        "y": 19,
+        "w": 792,
+        "h": 302
     },
     {
         "id": "f39f7a5e.699568",
@@ -1401,7 +1394,9 @@
             "fa3f92ca.4c851"
         ],
         "x": 14,
-        "y": 579
+        "y": 579,
+        "w": 472,
+        "h": 222
     },
     {
         "id": "a952c5c.b3f9938",
@@ -1428,7 +1423,9 @@
             "33d41a55.b4e766"
         ],
         "x": 14,
-        "y": 339
+        "y": 339,
+        "w": 1072,
+        "h": 222
     },
     {
         "id": "da11bb5d.510958",
@@ -1466,7 +1463,9 @@
             "b3de46b2.1e5f58"
         ],
         "x": 2374,
-        "y": 59
+        "y": 59,
+        "w": 1072,
+        "h": 722
     },
     {
         "id": "d65ac224.03a1d",
@@ -1489,7 +1488,9 @@
             "402aab2c.6fc014"
         ],
         "x": 834,
-        "y": 159
+        "y": 159,
+        "w": 532,
+        "h": 397
     },
     {
         "id": "4f30f3e7.a65ebc",
@@ -1517,7 +1518,9 @@
             "3398a80e.aa6388"
         ],
         "x": 14,
-        "y": 119
+        "y": 119,
+        "w": 1292,
+        "h": 162
     },
     {
         "id": "4f97b3df.c6fc4c",
@@ -1540,7 +1543,9 @@
             "f8769ef9.eceea"
         ],
         "x": 14,
-        "y": 11.5
+        "y": 11.5,
+        "w": 932,
+        "h": 97
     },
     {
         "id": "945ba7ee.377858",
@@ -1565,8 +1570,10 @@
             "278e0987.6fb406",
             "86061c6.e0de2e"
         ],
-        "x": 14,
-        "y": 119
+        "x": 214,
+        "y": 19,
+        "w": 972,
+        "h": 162
     },
     {
         "id": "bc9da574.ee5618",
@@ -1588,8 +1595,10 @@
             "68274698.bb88d8",
             "7f8efb69.193964"
         ],
-        "x": 14,
-        "y": 11.5
+        "x": 34,
+        "y": 179,
+        "w": 832,
+        "h": 122
     },
     {
         "id": "9c26d0ef.cf203",
@@ -1611,51 +1620,10 @@
             "c41d1f3.e50e4e",
             "f9a42575.1dc5d8"
         ],
-        "x": 34,
-        "y": 651.5
-    },
-    {
-        "id": "8e58405c.ee3ec",
-        "type": "group",
-        "z": "d06ad5d7.7d1a38",
-        "style": {
-            "stroke": "#2e333a",
-            "stroke-opacity": "1",
-            "fill": "#2e333a",
-            "fill-opacity": "0.75",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "65a692c2.29e92c",
-            "fcb2b3d7.ea53",
-            "12822318.46878d"
-        ],
         "x": 14,
-        "y": 459
-    },
-    {
-        "id": "589c84b6.1e980c",
-        "type": "group",
-        "z": "d06ad5d7.7d1a38",
-        "style": {
-            "stroke": "#2e333a",
-            "stroke-opacity": "1",
-            "fill": "#2e333a",
-            "fill-opacity": "0.75",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "2cf6acef.7ff3b4",
-            "e168c7e9.7c0a58",
-            "ef0455d7.c394b8",
-            "ba96a7be.88a808"
-        ],
-        "x": 234,
-        "y": 439
+        "y": 19,
+        "w": 852,
+        "h": 122
     },
     {
         "id": "8849fbc8.b7a658",
@@ -1678,9 +1646,443 @@
             "bd1f42b9.3f392"
         ],
         "x": 14,
-        "y": 11.5,
-        "w": 912,
-        "h": 97
+        "y": 19,
+        "w": 832,
+        "h": 122
+    },
+    {
+        "id": "87724a3a.54b368",
+        "type": "group",
+        "z": "cd3ea6b3.ac9c98",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#2e333a",
+            "fill-opacity": "0.75",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "6b65c860.b2d778",
+            "6d1d5302.a8313c"
+        ],
+        "x": 254,
+        "y": 299,
+        "w": 372,
+        "h": 82
+    },
+    {
+        "id": "41d31a90.153274",
+        "type": "group",
+        "z": "cd3ea6b3.ac9c98",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#2e333a",
+            "fill-opacity": "0.75",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "fa4827ad.12a878",
+            "c864aae8.372fb8",
+            "5b93f5a6.a3e35c",
+            "2a4ad94a.708926"
+        ],
+        "x": 254,
+        "y": 619,
+        "w": 372,
+        "h": 202
+    },
+    {
+        "id": "3eb36652.08acaa",
+        "type": "group",
+        "z": "cd3ea6b3.ac9c98",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#2e333a",
+            "fill-opacity": "0.75",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "a93b865d.6b6148",
+            "fa05f5d3.e7d458",
+            "522a0c02.d68244",
+            "5345e3f7.81565c",
+            "6a2b9ed7.1eb76",
+            "7cb7ce8c.36a63",
+            "bcc03f54.fc087",
+            "4cfab87.c073f48"
+        ],
+        "x": 154,
+        "y": 379,
+        "w": 472,
+        "h": 229.5
+    },
+    {
+        "id": "1c12f84.6bbb608",
+        "type": "group",
+        "z": "cd3ea6b3.ac9c98",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#2e333a",
+            "fill-opacity": "0.75",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "86e2e478.407158",
+            "38bd91e4.e0ce2e",
+            "80bbf677.c25448"
+        ],
+        "x": 1154,
+        "y": 539,
+        "w": 412,
+        "h": 122
+    },
+    {
+        "id": "5f5255ea.d74b3c",
+        "type": "group",
+        "z": "cd3ea6b3.ac9c98",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#2e333a",
+            "fill-opacity": "0.75",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "c49c7565.6f6248",
+            "9538841e.5899f8",
+            "3885fcd3.09c4b4",
+            "808b1a5a.ebdd68",
+            "2c536329.8f5f9c",
+            "4f672bc8.2ea274"
+        ],
+        "x": 674,
+        "y": 531.5,
+        "w": 472,
+        "h": 277
+    },
+    {
+        "id": "2ebd8c4.bc57674",
+        "type": "group",
+        "z": "cd3ea6b3.ac9c98",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#2e333a",
+            "fill-opacity": "0.75",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "3cd29974.2b3ee6",
+            "cbce77f0.fe0458"
+        ],
+        "x": 1154,
+        "y": 399,
+        "w": 412,
+        "h": 82
+    },
+    {
+        "id": "42113567.c0564c",
+        "type": "group",
+        "z": "cd3ea6b3.ac9c98",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#2e333a",
+            "fill-opacity": "0.75",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "b00f545c.e6ed38",
+            "b64928a0.e9c988",
+            "28e09546.710aaa"
+        ],
+        "x": 654,
+        "y": 354,
+        "w": 492,
+        "h": 172
+    },
+    {
+        "id": "4094960e.2a7538",
+        "type": "group",
+        "z": "cd3ea6b3.ac9c98",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#2e333a",
+            "fill-opacity": "0.75",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "831eaaf4.0e6508",
+            "2957e500.b31e6c",
+            "f4b20b30.aa0cf8"
+        ],
+        "x": 54,
+        "y": 679,
+        "w": 192,
+        "h": 162
+    },
+    {
+        "id": "e569169e.a72868",
+        "type": "group",
+        "z": "d06ad5d7.7d1a38",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#2e333a",
+            "fill-opacity": "0.75",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "92192881.8f9608",
+            "f7b51f01.927fe",
+            "c7e23144.d4862"
+        ],
+        "x": 34,
+        "y": 599,
+        "w": 192,
+        "h": 162
+    },
+    {
+        "id": "b3a60908.2ed8a8",
+        "type": "group",
+        "z": "d06ad5d7.7d1a38",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#2e333a",
+            "fill-opacity": "0.75",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "cb80db7f.be3188",
+            "e9fe8523.c6d868",
+            "d4f17bed.4977e8",
+            "d6ad0fd7.6f324"
+        ],
+        "x": 234,
+        "y": 539,
+        "w": 372,
+        "h": 202
+    },
+    {
+        "id": "ef5b6a2b.40ecc8",
+        "type": "group",
+        "z": "3b28216c.47740e",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#2e333a",
+            "fill-opacity": "0.75",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "4651229.f0e59dc",
+            "1de249ee.9aa696",
+            "a0c83f72.fe08a"
+        ],
+        "x": 1134,
+        "y": 379,
+        "w": 552,
+        "h": 82
+    },
+    {
+        "id": "1aba0b50.058cc5",
+        "type": "group",
+        "z": "3b28216c.47740e",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#2e333a",
+            "fill-opacity": "0.75",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "4410a3fd.81854c",
+            "a71747f3.d468b8"
+        ],
+        "x": 1294,
+        "y": 259,
+        "w": 392,
+        "h": 82
+    },
+    {
+        "id": "85d61ece.1d40b",
+        "type": "group",
+        "z": "3b28216c.47740e",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#2e333a",
+            "fill-opacity": "0.75",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "a6dfdf08.964f",
+            "f046ada6.aeb4e",
+            "fc985154.0578c",
+            "b2292d7e.3d868",
+            "245bb6d6.b17f5a",
+            "940cba05.68c878",
+            "582b36c.a64cac8",
+            "c51af0a9.64471",
+            "af979da7.a9ec"
+        ],
+        "x": 74,
+        "y": 219,
+        "w": 532,
+        "h": 229.5
+    },
+    {
+        "id": "b55344eb.e17b58",
+        "type": "group",
+        "z": "3b28216c.47740e",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#2e333a",
+            "fill-opacity": "0.75",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "54f3e04a.1fe42",
+            "8b7b3ad6.2c6228",
+            "df33ce01.97c32"
+        ],
+        "x": 34,
+        "y": 519,
+        "w": 192,
+        "h": 162
+    },
+    {
+        "id": "df20c316.f11ae",
+        "type": "group",
+        "z": "3b28216c.47740e",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#2e333a",
+            "fill-opacity": "0.75",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "cdc6b99b.dda2a8",
+            "7a5efed1.f6bb3",
+            "c9de5cfc.c2a26",
+            "d1090ac5.42d928"
+        ],
+        "x": 234,
+        "y": 459,
+        "w": 372,
+        "h": 202
+    },
+    {
+        "id": "f6a993dd.06e9e",
+        "type": "group",
+        "z": "3b28216c.47740e",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#2e333a",
+            "fill-opacity": "0.75",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "b076fd2f.fc78b",
+            "6183c04f.57983",
+            "7df6f758.894eb8",
+            "d0aef1fc.3eaf9",
+            "1e95bbc4.02e424"
+        ],
+        "x": 614,
+        "y": 174,
+        "w": 632,
+        "h": 187
+    },
+    {
+        "id": "8967f411.5c9108",
+        "type": "group",
+        "z": "3b28216c.47740e",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#2e333a",
+            "fill-opacity": "0.75",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "9b89696e.75b7c8",
+            "75b92ecf.39bc9"
+        ],
+        "x": 234,
+        "y": 139,
+        "w": 372,
+        "h": 82
+    },
+    {
+        "id": "8ef56025.45bcb",
+        "type": "group",
+        "z": "3b28216c.47740e",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#2e333a",
+            "fill-opacity": "0.75",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "8935e344.75f3d",
+            "2c4cd2b2.686a2e",
+            "9d47bb71.593738",
+            "bcff3a1c.2b17b8",
+            "4222a4c7.f2480c",
+            "24f363b5.3810bc",
+            "a5e62b86.c9d8f8",
+            "cf785128.ac3d6"
+        ],
+        "x": 614,
+        "y": 371.5,
+        "w": 512,
+        "h": 329.5
     },
     {
         "id": "b130c189.ea4d2",
@@ -4011,7 +4413,7 @@
             [
                 "14b0e991.d2c5a6",
                 "7208a07e.4f6be",
-                "417da249.04b44c"
+                "90d94c12.d6102"
             ]
         ]
     },
@@ -4126,7 +4528,7 @@
             ],
             [
                 "85494f22.32e7f",
-                "c9290c6b.9022a"
+                "65a0c298.c38e3c"
             ]
         ]
     },
@@ -9850,7 +10252,6 @@
         "id": "e665fc05.8ac82",
         "type": "hubitat device",
         "z": "d06ad5d7.7d1a38",
-        "d": true,
         "g": "7a22a12f.dcfd3",
         "deviceLabel": "",
         "name": "KT - MS Pantry",
@@ -9858,8 +10259,8 @@
         "deviceId": "1795",
         "attribute": "motion",
         "sendEvent": true,
-        "x": 160,
-        "y": 240,
+        "x": 240,
+        "y": 340,
         "wires": [
             [
                 "61b718e4.b83798"
@@ -9870,7 +10271,6 @@
         "id": "f5de1a5c.bb3c88",
         "type": "hubitat device",
         "z": "d06ad5d7.7d1a38",
-        "d": true,
         "g": "7a22a12f.dcfd3",
         "deviceLabel": "",
         "name": "KT - MS Microwave",
@@ -9878,8 +10278,8 @@
         "deviceId": "1794",
         "attribute": "motion",
         "sendEvent": true,
-        "x": 150,
-        "y": 300,
+        "x": 230,
+        "y": 400,
         "wires": [
             [
                 "61b718e4.b83798"
@@ -9909,8 +10309,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 310,
-        "y": 260,
+        "x": 390,
+        "y": 360,
         "wires": [
             [
                 "da18749d.085f98"
@@ -9940,8 +10340,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 430,
-        "y": 240,
+        "x": 510,
+        "y": 340,
         "wires": [
             [
                 "7015b08c.1a59c"
@@ -9968,8 +10368,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 440,
-        "y": 280,
+        "x": 520,
+        "y": 380,
         "wires": [
             [
                 "7015b08c.1a59c"
@@ -9989,8 +10389,8 @@
         "outputtriggeredby": "all",
         "inputCount": "2",
         "topic": "Kitchen Motion",
-        "x": 160,
-        "y": 380,
+        "x": 240,
+        "y": 480,
         "wires": [
             [],
             [
@@ -10012,8 +10412,8 @@
         "name": "",
         "reporting": "last_minute_seconds",
         "persist": true,
-        "x": 980,
-        "y": 360,
+        "x": 1000,
+        "y": 460,
         "wires": [
             [
                 "7293a6a3.1913e8"
@@ -10029,8 +10429,8 @@
         "g": "d79efd7b.7886b",
         "name": "",
         "env": [],
-        "x": 720,
-        "y": 140,
+        "x": 740,
+        "y": 240,
         "wires": [
             [
                 "da0483c.0b8398"
@@ -10069,8 +10469,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 450,
-        "y": 340,
+        "x": 530,
+        "y": 440,
         "wires": [
             [
                 "946f40b0.810bf",
@@ -10088,8 +10488,8 @@
         "g": "b3ea31b2.17afa",
         "name": "",
         "env": [],
-        "x": 720,
-        "y": 440,
+        "x": 740,
+        "y": 540,
         "wires": [
             [],
             [
@@ -10122,8 +10522,8 @@
         "name": "",
         "reporting": "last_minute_seconds",
         "persist": true,
-        "x": 980,
-        "y": 420,
+        "x": 1000,
+        "y": 520,
         "wires": [
             [
                 "7293a6a3.1913e8"
@@ -10145,8 +10545,8 @@
         "name": "",
         "reporting": "last_minute_seconds",
         "persist": true,
-        "x": 980,
-        "y": 480,
+        "x": 1000,
+        "y": 580,
         "wires": [
             [
                 "7293a6a3.1913e8"
@@ -10168,8 +10568,8 @@
         "name": "",
         "reporting": "last_minute_seconds",
         "persist": true,
-        "x": 980,
-        "y": 540,
+        "x": 1000,
+        "y": 640,
         "wires": [
             [
                 "7293a6a3.1913e8"
@@ -10189,7 +10589,7 @@
         "command": "off",
         "commandArgs": "",
         "x": 1280,
-        "y": 680,
+        "y": 800,
         "wires": [
             [
                 "89490a2d.afc628",
@@ -10208,7 +10608,7 @@
         "command": "off",
         "commandArgs": "",
         "x": 1280,
-        "y": 720,
+        "y": 840,
         "wires": [
             [
                 "89490a2d.afc628",
@@ -10227,7 +10627,7 @@
         "command": "off",
         "commandArgs": "",
         "x": 1280,
-        "y": 760,
+        "y": 880,
         "wires": [
             [
                 "89490a2d.afc628",
@@ -10246,7 +10646,7 @@
         "command": "off",
         "commandArgs": "",
         "x": 1280,
-        "y": 800,
+        "y": 920,
         "wires": [
             [
                 "89490a2d.afc628",
@@ -10277,7 +10677,7 @@
         "repair": false,
         "outputs": 2,
         "x": 1270,
-        "y": 620,
+        "y": 720,
         "wires": [
             [
                 "f07ba3ca.98747",
@@ -10298,8 +10698,8 @@
         "deviceId": "2303",
         "attribute": "switch",
         "sendEvent": false,
-        "x": 1000,
-        "y": 620,
+        "x": 980,
+        "y": 720,
         "wires": [
             [
                 "5f6cf651.e5a838"
@@ -10363,8 +10763,8 @@
         "g": "d79efd7b.7886b",
         "name": "",
         "env": [],
-        "x": 960,
-        "y": 100,
+        "x": 980,
+        "y": 200,
         "wires": [
             [
                 "3b492c69.fad6d4",
@@ -10388,7 +10788,7 @@
         "command": "setLevel",
         "commandArgs": "",
         "x": 1280,
-        "y": 220,
+        "y": 320,
         "wires": [
             [
                 "824209e0.28ad48"
@@ -10406,7 +10806,7 @@
         "command": "setLevel",
         "commandArgs": "",
         "x": 1280,
-        "y": 180,
+        "y": 280,
         "wires": [
             [
                 "824209e0.28ad48"
@@ -10424,7 +10824,7 @@
         "command": "setLevel",
         "commandArgs": "",
         "x": 1280,
-        "y": 140,
+        "y": 240,
         "wires": [
             [
                 "824209e0.28ad48"
@@ -10442,7 +10842,7 @@
         "command": "setLevel",
         "commandArgs": "",
         "x": 1280,
-        "y": 100,
+        "y": 200,
         "wires": [
             [
                 "824209e0.28ad48"
@@ -10460,7 +10860,7 @@
         "command": "setColorTemperature",
         "commandArgs": "",
         "x": 1280,
-        "y": 360,
+        "y": 460,
         "wires": [
             [
                 "824209e0.28ad48"
@@ -10478,7 +10878,7 @@
         "command": "setColorTemperature",
         "commandArgs": "",
         "x": 1280,
-        "y": 320,
+        "y": 420,
         "wires": [
             [
                 "824209e0.28ad48"
@@ -10490,13 +10890,14 @@
         "type": "hubitat command",
         "z": "d06ad5d7.7d1a38",
         "g": "bbd34e0c.99f3c",
+        "deviceLabel": "",
         "name": "KT - Undercabinet LM",
         "server": "b130c189.ea4d2",
         "deviceId": "1090",
         "command": "setColorTemperature",
         "commandArgs": "",
         "x": 1280,
-        "y": 280,
+        "y": 380,
         "wires": [
             [
                 "824209e0.28ad48"
@@ -10508,13 +10909,14 @@
         "type": "hubitat device",
         "z": "d06ad5d7.7d1a38",
         "g": "d79efd7b.7886b",
+        "deviceLabel": "",
         "name": "KT - Christmas Mode",
         "server": "b130c189.ea4d2",
         "deviceId": "2303",
         "attribute": "switch",
         "sendEvent": false,
-        "x": 960,
-        "y": 160,
+        "x": 980,
+        "y": 260,
         "wires": [
             [
                 "aec974ed.66ef68"
@@ -10544,8 +10946,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 970,
-        "y": 220,
+        "x": 990,
+        "y": 320,
         "wires": [
             [
                 "1ce3011f.bfec4f",
@@ -10578,7 +10980,7 @@
         "to": "",
         "reg": false,
         "x": 1270,
-        "y": 580,
+        "y": 680,
         "wires": [
             [
                 "3169f08b.3f8f9"
@@ -10592,14 +10994,13 @@
         "name": "",
         "env": [],
         "x": 1300,
-        "y": 480,
+        "y": 580,
         "wires": []
     },
     {
         "id": "c77415ae.0c0898",
         "type": "hubitat device",
         "z": "d06ad5d7.7d1a38",
-        "d": true,
         "g": "568533ed.18d81c",
         "deviceLabel": "",
         "name": "KT - Christmas Mode",
@@ -10607,8 +11008,8 @@
         "deviceId": "2303",
         "attribute": "switch",
         "sendEvent": true,
-        "x": 160,
-        "y": 80,
+        "x": 200,
+        "y": 180,
         "wires": [
             [
                 "e0fde455.a63148"
@@ -10632,7 +11033,7 @@
         "randomUnits": "seconds",
         "drop": false,
         "x": 1030,
-        "y": 680,
+        "y": 800,
         "wires": [
             [
                 "bb819bb9.678df8",
@@ -10654,7 +11055,7 @@
         "initialize": "",
         "finalize": "",
         "x": 1500,
-        "y": 240,
+        "y": 340,
         "wires": []
     },
     {
@@ -10669,7 +11070,7 @@
         "initialize": "",
         "finalize": "",
         "x": 1500,
-        "y": 700,
+        "y": 820,
         "wires": []
     },
     {
@@ -10690,223 +11091,12 @@
         "to": "",
         "reg": false,
         "x": 1280,
-        "y": 540,
+        "y": 640,
         "wires": [
             [
-                "6baf946f.b2803c",
-                "c9f7daf5.c10e58"
+                "6baf946f.b2803c"
             ]
         ]
-    },
-    {
-        "id": "ab45d00b.e3243",
-        "type": "hubitat command",
-        "z": "836b4374.e4af2",
-        "name": "KT - RedH LM",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1090",
-        "command": "setHue",
-        "commandArgs": "100",
-        "x": 200,
-        "y": 160,
-        "wires": [
-            [
-                "54ca3400.3e792c"
-            ]
-        ]
-    },
-    {
-        "id": "f8c31b09.b1ec58",
-        "type": "hubitat command",
-        "z": "836b4374.e4af2",
-        "name": "KT - GreenH LM",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1090",
-        "command": "setHue",
-        "commandArgs": "33",
-        "x": 760,
-        "y": 160,
-        "wires": [
-            [
-                "3e399e6b.8035e2"
-            ]
-        ]
-    },
-    {
-        "id": "2c231d00.1fd8e4",
-        "type": "hubitat command",
-        "z": "836b4374.e4af2",
-        "name": "KT - GreenH LS",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1092",
-        "command": "setHue",
-        "commandArgs": "70",
-        "x": 200,
-        "y": 240,
-        "wires": [
-            [
-                "386168dc.7e7698"
-            ]
-        ]
-    },
-    {
-        "id": "ba4b84dd.9d8718",
-        "type": "hubitat command",
-        "z": "836b4374.e4af2",
-        "name": "KT - RedH LS",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1092",
-        "command": "setHue",
-        "commandArgs": "100",
-        "x": 760,
-        "y": 240,
-        "wires": [
-            [
-                "4f0c61a8.3a6c"
-            ]
-        ]
-    },
-    {
-        "id": "f3777aca.4bdc68",
-        "type": "hubitat command",
-        "z": "836b4374.e4af2",
-        "name": "KT - RedH LR",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1093",
-        "command": "setHue",
-        "commandArgs": "100",
-        "x": 200,
-        "y": 320,
-        "wires": [
-            [
-                "3c8e19ff.4a05c6"
-            ]
-        ]
-    },
-    {
-        "id": "555bd839.78a938",
-        "type": "hubitat command",
-        "z": "836b4374.e4af2",
-        "name": "KT - GreenH LR",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1093",
-        "command": "setHue",
-        "commandArgs": "33",
-        "x": 760,
-        "y": 320,
-        "wires": [
-            [
-                "a997a1a4.adac4"
-            ]
-        ]
-    },
-    {
-        "id": "59439dff.859474",
-        "type": "switch",
-        "z": "836b4374.e4af2",
-        "name": "STOP",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "stop",
-                "vt": "str"
-            },
-            {
-                "t": "else"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 150,
-        "y": 60,
-        "wires": [
-            [
-                "87cd9a5a.873738",
-                "722f9bca.dbc9a4",
-                "dbbb9989.d3edb8",
-                "6c0e6956.f086e8",
-                "aa4072d9.9fc7f",
-                "6d60329e.961f2c"
-            ],
-            [
-                "ab45d00b.e3243",
-                "2c231d00.1fd8e4",
-                "f3777aca.4bdc68"
-            ]
-        ]
-    },
-    {
-        "id": "2cf6acef.7ff3b4",
-        "type": "hubitat device",
-        "z": "d06ad5d7.7d1a38",
-        "d": true,
-        "g": "589c84b6.1e980c",
-        "deviceLabel": "",
-        "name": "KT - Motion Detection",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1351",
-        "attribute": "switch",
-        "sendEvent": true,
-        "x": 360,
-        "y": 540,
-        "wires": [
-            [
-                "e168c7e9.7c0a58"
-            ]
-        ]
-    },
-    {
-        "id": "e168c7e9.7c0a58",
-        "type": "switch",
-        "z": "d06ad5d7.7d1a38",
-        "g": "589c84b6.1e980c",
-        "name": "State",
-        "property": "payload.value",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "off",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "on",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 530,
-        "y": 540,
-        "wires": [
-            [
-                "ef0455d7.c394b8",
-                "7c3fac3c.7c1184"
-            ],
-            [
-                "ba96a7be.88a808"
-            ]
-        ]
-    },
-    {
-        "id": "ef0455d7.c394b8",
-        "type": "function",
-        "z": "d06ad5d7.7d1a38",
-        "g": "589c84b6.1e980c",
-        "name": "Disabled Status",
-        "func": "// initialise the counter to 0 if it doesn't exist already\nvar myKT_Motion = flow.get('KT_Motion',\"memoryOnly\")||0;\nmyKT_Motion = false\n// store the value back\nflow.set('KT_Motion',myKT_Motion,\"memoryOnly\");\nreturn msg",
-        "outputs": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 380,
-        "y": 480,
-        "wires": []
     },
     {
         "id": "7c3fac3c.7c1184",
@@ -10928,8 +11118,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 730,
-        "y": 360,
+        "x": 750,
+        "y": 460,
         "wires": [
             [
                 "6b7dc0d3.cd05c",
@@ -10940,25 +11130,9 @@
         ]
     },
     {
-        "id": "ba96a7be.88a808",
-        "type": "function",
-        "z": "d06ad5d7.7d1a38",
-        "g": "589c84b6.1e980c",
-        "name": "Enabled Status",
-        "func": "// initialise the counter to 0 if it doesn't exist already\nvar myKT_Motion = flow.get('KT_Motion',\"memoryOnly\")||0;\nmyKT_Motion = true\n// store the value back\nflow.set('KT_Motion',myKT_Motion,\"memoryOnly\");\nreturn msg",
-        "outputs": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 380,
-        "y": 600,
-        "wires": []
-    },
-    {
         "id": "bf9bfc4d.29cbc",
         "type": "hubitat device",
         "z": "d06ad5d7.7d1a38",
-        "d": true,
         "g": "313d11f.0a7dfee",
         "deviceLabel": "",
         "name": "KT - Overhead Lights",
@@ -10966,8 +11140,8 @@
         "deviceId": "68",
         "attribute": "switch",
         "sendEvent": true,
-        "x": 160,
-        "y": 160,
+        "x": 200,
+        "y": 260,
         "wires": [
             [
                 "346e72ef.2a49be"
@@ -10990,8 +11164,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1000,
-        "y": 260,
+        "x": 1020,
+        "y": 360,
         "wires": [
             [
                 "6baf946f.b2803c",
@@ -11022,8 +11196,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 490,
-        "y": 160,
+        "x": 530,
+        "y": 260,
         "wires": [
             [
                 "7c4a0dd4.f78404"
@@ -11049,8 +11223,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 440,
-        "y": 380,
+        "x": 520,
+        "y": 480,
         "wires": [
             [
                 "73992bfd.8673e4"
@@ -11073,8 +11247,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 330,
-        "y": 80,
+        "x": 370,
+        "y": 180,
         "wires": [
             [
                 "10f207f.699f0f8"
@@ -11092,8 +11266,8 @@
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 470,
-        "y": 80,
+        "x": 510,
+        "y": 180,
         "wires": [
             [
                 "7c4a0dd4.f78404"
@@ -11111,7 +11285,7 @@
         "initialize": "",
         "finalize": "",
         "x": 1510,
-        "y": 420,
+        "y": 520,
         "wires": []
     },
     {
@@ -11132,13 +11306,12 @@
         "to": "",
         "reg": false,
         "x": 1280,
-        "y": 420,
+        "y": 520,
         "wires": [
             [
                 "6baf946f.b2803c",
                 "824209e0.28ad48",
-                "30c4f419.ef0bbc",
-                "c9f7daf5.c10e58"
+                "30c4f419.ef0bbc"
             ]
         ]
     },
@@ -11240,532 +11413,6 @@
         ]
     },
     {
-        "id": "54ca3400.3e792c",
-        "type": "hubitat command",
-        "z": "836b4374.e4af2",
-        "name": "KT - RedS LM",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1090",
-        "command": "setSaturation",
-        "commandArgs": "100",
-        "x": 380,
-        "y": 160,
-        "wires": [
-            [
-                "87cd9a5a.873738"
-            ]
-        ]
-    },
-    {
-        "id": "386168dc.7e7698",
-        "type": "hubitat command",
-        "z": "836b4374.e4af2",
-        "name": "KT - GreenS LS",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1092",
-        "command": "setSaturation",
-        "commandArgs": "100",
-        "x": 380,
-        "y": 240,
-        "wires": [
-            [
-                "722f9bca.dbc9a4"
-            ]
-        ]
-    },
-    {
-        "id": "3c8e19ff.4a05c6",
-        "type": "hubitat command",
-        "z": "836b4374.e4af2",
-        "name": "KT - RedS LR",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1093",
-        "command": "setSaturation",
-        "commandArgs": "100",
-        "x": 380,
-        "y": 320,
-        "wires": [
-            [
-                "dbbb9989.d3edb8"
-            ]
-        ]
-    },
-    {
-        "id": "a997a1a4.adac4",
-        "type": "hubitat command",
-        "z": "836b4374.e4af2",
-        "name": "KT - GreenS LR",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1093",
-        "command": "setSaturation",
-        "commandArgs": "100",
-        "x": 940,
-        "y": 320,
-        "wires": [
-            [
-                "6d60329e.961f2c"
-            ]
-        ]
-    },
-    {
-        "id": "3e399e6b.8035e2",
-        "type": "hubitat command",
-        "z": "836b4374.e4af2",
-        "name": "KT - GreenS LM",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1090",
-        "command": "setSaturation",
-        "commandArgs": "100",
-        "x": 940,
-        "y": 160,
-        "wires": [
-            [
-                "6c0e6956.f086e8"
-            ]
-        ]
-    },
-    {
-        "id": "4f0c61a8.3a6c",
-        "type": "hubitat command",
-        "z": "836b4374.e4af2",
-        "name": "KT - RedS LM",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1092",
-        "command": "setSaturation",
-        "commandArgs": "100",
-        "x": 940,
-        "y": 240,
-        "wires": [
-            [
-                "aa4072d9.9fc7f"
-            ]
-        ]
-    },
-    {
-        "id": "87cd9a5a.873738",
-        "type": "stoptimer-varidelay",
-        "z": "836b4374.e4af2",
-        "duration": "15",
-        "durationType": "num",
-        "units": "Second",
-        "payloadtype": "num",
-        "payloadval": "0",
-        "name": "",
-        "reporting": "none",
-        "persist": true,
-        "x": 570,
-        "y": 180,
-        "wires": [
-            [
-                "f8c31b09.b1ec58"
-            ],
-            [],
-            []
-        ]
-    },
-    {
-        "id": "722f9bca.dbc9a4",
-        "type": "stoptimer-varidelay",
-        "z": "836b4374.e4af2",
-        "duration": "15",
-        "durationType": "num",
-        "units": "Second",
-        "payloadtype": "num",
-        "payloadval": "0",
-        "name": "",
-        "reporting": "none",
-        "persist": true,
-        "x": 570,
-        "y": 260,
-        "wires": [
-            [
-                "ba4b84dd.9d8718"
-            ],
-            [],
-            []
-        ]
-    },
-    {
-        "id": "dbbb9989.d3edb8",
-        "type": "stoptimer-varidelay",
-        "z": "836b4374.e4af2",
-        "duration": "15",
-        "durationType": "num",
-        "units": "Second",
-        "payloadtype": "num",
-        "payloadval": "0",
-        "name": "",
-        "reporting": "last_minute_seconds",
-        "persist": true,
-        "x": 570,
-        "y": 340,
-        "wires": [
-            [
-                "555bd839.78a938"
-            ],
-            [],
-            []
-        ]
-    },
-    {
-        "id": "6d60329e.961f2c",
-        "type": "stoptimer-varidelay",
-        "z": "836b4374.e4af2",
-        "duration": "15",
-        "durationType": "num",
-        "units": "Second",
-        "payloadtype": "num",
-        "payloadval": "0",
-        "name": "",
-        "reporting": "last_minute_seconds",
-        "persist": true,
-        "x": 1130,
-        "y": 300,
-        "wires": [
-            [
-                "f3777aca.4bdc68"
-            ],
-            [],
-            []
-        ]
-    },
-    {
-        "id": "aa4072d9.9fc7f",
-        "type": "stoptimer-varidelay",
-        "z": "836b4374.e4af2",
-        "duration": "15",
-        "durationType": "num",
-        "units": "Second",
-        "payloadtype": "num",
-        "payloadval": "0",
-        "name": "",
-        "reporting": "none",
-        "persist": true,
-        "x": 1130,
-        "y": 220,
-        "wires": [
-            [
-                "2c231d00.1fd8e4"
-            ],
-            [],
-            []
-        ]
-    },
-    {
-        "id": "6c0e6956.f086e8",
-        "type": "stoptimer-varidelay",
-        "z": "836b4374.e4af2",
-        "duration": "15",
-        "durationType": "num",
-        "units": "Second",
-        "payloadtype": "num",
-        "payloadval": "0",
-        "name": "",
-        "reporting": "none",
-        "persist": true,
-        "x": 1130,
-        "y": 140,
-        "wires": [
-            [
-                "ab45d00b.e3243"
-            ],
-            [],
-            []
-        ]
-    },
-    {
-        "id": "38cdc5a2.b7bf5a",
-        "type": "hubitat command",
-        "z": "d06ad5d7.7d1a38",
-        "g": "911821c6.02bdd",
-        "name": "KT - RedH LM",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1090",
-        "command": "setHue",
-        "commandArgs": "98",
-        "x": 1880,
-        "y": 560,
-        "wires": [
-            [
-                "b6bec706.3933c8"
-            ]
-        ]
-    },
-    {
-        "id": "185b0eb0.8c87e1",
-        "type": "hubitat command",
-        "z": "d06ad5d7.7d1a38",
-        "g": "911821c6.02bdd",
-        "name": "KT - GreenH LM",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1090",
-        "command": "setHue",
-        "commandArgs": "31",
-        "x": 2200,
-        "y": 560,
-        "wires": [
-            [
-                "fe04002.96a03"
-            ]
-        ]
-    },
-    {
-        "id": "faba5db4.5e538",
-        "type": "hubitat command",
-        "z": "d06ad5d7.7d1a38",
-        "g": "911821c6.02bdd",
-        "name": "KT - GreenH LS",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1092",
-        "command": "setHue",
-        "commandArgs": "31",
-        "x": 1880,
-        "y": 640,
-        "wires": [
-            [
-                "f96a84.add1058"
-            ]
-        ]
-    },
-    {
-        "id": "6f58cb1c.0479c4",
-        "type": "hubitat command",
-        "z": "d06ad5d7.7d1a38",
-        "g": "911821c6.02bdd",
-        "name": "KT - RedH LS",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1092",
-        "command": "setHue",
-        "commandArgs": "98",
-        "x": 2200,
-        "y": 640,
-        "wires": [
-            [
-                "504ce0b.58c1a2"
-            ]
-        ]
-    },
-    {
-        "id": "6826bbfc.20a8b4",
-        "type": "hubitat command",
-        "z": "d06ad5d7.7d1a38",
-        "g": "911821c6.02bdd",
-        "name": "KT - RedH LR",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1093",
-        "command": "setHue",
-        "commandArgs": "98",
-        "x": 1880,
-        "y": 720,
-        "wires": [
-            [
-                "fca6d23.ec8263"
-            ]
-        ]
-    },
-    {
-        "id": "db14bbb8.fa7d38",
-        "type": "hubitat command",
-        "z": "d06ad5d7.7d1a38",
-        "g": "911821c6.02bdd",
-        "name": "KT - GreenH LR",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1093",
-        "command": "setHue",
-        "commandArgs": "31",
-        "x": 2200,
-        "y": 720,
-        "wires": [
-            [
-                "cb702f83.5dd9c"
-            ]
-        ]
-    },
-    {
-        "id": "c9f7daf5.c10e58",
-        "type": "switch",
-        "z": "d06ad5d7.7d1a38",
-        "d": true,
-        "g": "911821c6.02bdd",
-        "name": "STOP",
-        "property": "reset",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "stop",
-                "vt": "str"
-            },
-            {
-                "t": "else"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 1690,
-        "y": 480,
-        "wires": [
-            [
-                "b6bec706.3933c8",
-                "f96a84.add1058",
-                "fca6d23.ec8263",
-                "fe04002.96a03",
-                "504ce0b.58c1a2",
-                "cb702f83.5dd9c"
-            ],
-            [
-                "38cdc5a2.b7bf5a",
-                "faba5db4.5e538",
-                "6826bbfc.20a8b4"
-            ]
-        ]
-    },
-    {
-        "id": "b6bec706.3933c8",
-        "type": "delay",
-        "z": "d06ad5d7.7d1a38",
-        "g": "911821c6.02bdd",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "15",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "x": 2040,
-        "y": 540,
-        "wires": [
-            [
-                "185b0eb0.8c87e1"
-            ]
-        ]
-    },
-    {
-        "id": "f96a84.add1058",
-        "type": "delay",
-        "z": "d06ad5d7.7d1a38",
-        "g": "911821c6.02bdd",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "15",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "x": 2040,
-        "y": 620,
-        "wires": [
-            [
-                "6f58cb1c.0479c4"
-            ]
-        ]
-    },
-    {
-        "id": "fca6d23.ec8263",
-        "type": "delay",
-        "z": "d06ad5d7.7d1a38",
-        "g": "911821c6.02bdd",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "15",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "x": 2040,
-        "y": 700,
-        "wires": [
-            [
-                "db14bbb8.fa7d38"
-            ]
-        ]
-    },
-    {
-        "id": "fe04002.96a03",
-        "type": "delay",
-        "z": "d06ad5d7.7d1a38",
-        "g": "911821c6.02bdd",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "15",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "x": 2380,
-        "y": 560,
-        "wires": [
-            [
-                "38cdc5a2.b7bf5a"
-            ]
-        ]
-    },
-    {
-        "id": "504ce0b.58c1a2",
-        "type": "delay",
-        "z": "d06ad5d7.7d1a38",
-        "g": "911821c6.02bdd",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "15",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "x": 2380,
-        "y": 640,
-        "wires": [
-            [
-                "faba5db4.5e538"
-            ]
-        ]
-    },
-    {
-        "id": "cb702f83.5dd9c",
-        "type": "delay",
-        "z": "d06ad5d7.7d1a38",
-        "g": "911821c6.02bdd",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "15",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "x": 2380,
-        "y": 720,
-        "wires": [
-            [
-                "6826bbfc.20a8b4"
-            ]
-        ]
-    },
-    {
         "id": "7dfd7833.207ba8",
         "type": "function",
         "z": "d06ad5d7.7d1a38",
@@ -11777,7 +11424,7 @@
         "initialize": "",
         "finalize": "",
         "x": 1510,
-        "y": 780,
+        "y": 900,
         "wires": []
     },
     {
@@ -11796,50 +11443,13 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 690,
-        "y": 260,
+        "x": 710,
+        "y": 360,
         "wires": [
             [
                 "7c4a0dd4.f78404"
             ]
         ]
-    },
-    {
-        "id": "65a692c2.29e92c",
-        "type": "function",
-        "z": "d06ad5d7.7d1a38",
-        "g": "8e58405c.ee3ec",
-        "name": "Initialize Variables",
-        "func": "// initialise the counter to 0 if it doesn't exist already\nvar myKT_Override = flow.get('KT_Override',\"memoryOnly\")||0;\nmyKT_Override = true\n// store the value back\nflow.set('KT_Override',myKT_Override,\"memoryOnly\");\n\n// initialise the counter to 0 if it doesn't exist already\nvar myKT_Light = flow.get('KT_Light',\"memoryOnly\")||0;\nmyKT_Light = false\n// store the value back\nflow.set('KT_Light',myKT_Light,\"memoryOnly\");\n\nreturn msg",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 130,
-        "y": 540,
-        "wires": [
-            [
-                "2cf6acef.7ff3b4"
-            ]
-        ]
-    },
-    {
-        "id": "fcb2b3d7.ea53",
-        "type": "link in",
-        "z": "d06ad5d7.7d1a38",
-        "g": "8e58405c.ee3ec",
-        "name": "HE Start",
-        "links": [
-            "d4bae9fc.dde7c8"
-        ],
-        "x": 140,
-        "y": 500,
-        "wires": [
-            [
-                "65a692c2.29e92c"
-            ]
-        ],
-        "l": true
     },
     {
         "id": "ed3dacdc.e614d",
@@ -11891,7 +11501,11 @@
         "links": [
             "a1e0216.9d6ffe",
             "fcb2b3d7.ea53",
-            "4c2797e8.326be8"
+            "4c2797e8.326be8",
+            "831eaaf4.0e6508",
+            "92192881.8f9608",
+            "d66ba30c.33138",
+            "54f3e04a.1fe42"
         ],
         "x": 370,
         "y": 160,
@@ -11969,29 +11583,15 @@
         "g": "5caa8401.383fcc",
         "name": "Node-RED Start",
         "links": [
-            "12822318.46878d"
+            "12822318.46878d",
+            "2957e500.b31e6c",
+            "f7b51f01.927fe",
+            "9542dda.5ede52",
+            "8b7b3ad6.2c6228"
         ],
         "x": 280,
         "y": 220,
         "wires": [],
-        "l": true
-    },
-    {
-        "id": "12822318.46878d",
-        "type": "link in",
-        "z": "d06ad5d7.7d1a38",
-        "g": "8e58405c.ee3ec",
-        "name": "NR Start",
-        "links": [
-            "72d1fff3.4f9c7"
-        ],
-        "x": 140,
-        "y": 580,
-        "wires": [
-            [
-                "65a692c2.29e92c"
-            ]
-        ],
         "l": true
     },
     {
@@ -13472,11 +13072,11 @@
         "z": "836b4374.e4af2",
         "name": "",
         "scope": [
-            "dbbb9989.d3edb8",
-            "6d60329e.961f2c"
+            "3d67f705.bb0958",
+            "967b42a9.58469"
         ],
-        "x": 940,
-        "y": 400,
+        "x": 780,
+        "y": 380,
         "wires": [
             []
         ]
@@ -13534,8 +13134,8 @@
         "start": "",
         "inout": "out",
         "property": "payload",
-        "x": 310,
-        "y": 380,
+        "x": 390,
+        "y": 480,
         "wires": [
             [
                 "f8ce7b3f.ff69a8"
@@ -13920,8 +13520,8 @@
         "deviceId": "2506",
         "attribute": "contact",
         "sendEvent": true,
-        "x": 130,
-        "y": 160,
+        "x": 330,
+        "y": 60,
         "wires": [
             [
                 "86061c6.e0de2e"
@@ -13939,26 +13539,27 @@
         "rules": [
             {
                 "t": "eq",
-                "v": "open",
+                "v": "closed",
                 "vt": "str"
             },
             {
                 "t": "eq",
-                "v": "closed",
+                "v": "open",
                 "vt": "str"
             }
         ],
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 340,
-        "y": 180,
+        "x": 540,
+        "y": 140,
         "wires": [
             [
-                "b503ca90.0b1f78"
+                "2e4c1ca0.f02994"
             ],
             [
-                "2e4c1ca0.f02994"
+                "b503ca90.0b1f78",
+                "b00f545c.e6ed38"
             ]
         ]
     },
@@ -13967,10 +13568,10 @@
         "type": "subflow:d1d55504.1f3638",
         "z": "3b28216c.47740e",
         "g": "8849fbc8.b7a658",
-        "name": "",
+        "name": "GR Motion Status",
         "env": [],
-        "x": 500,
-        "y": 60,
+        "x": 370,
+        "y": 80,
         "wires": [
             [],
             [
@@ -13983,6 +13584,7 @@
         "id": "888cd483.dc7428",
         "type": "hubitat command",
         "z": "3b28216c.47740e",
+        "d": true,
         "g": "8849fbc8.b7a658",
         "deviceLabel": "",
         "name": "GR - Lights",
@@ -13990,8 +13592,8 @@
         "deviceId": "1572",
         "command": "on",
         "commandArgs": "",
-        "x": 830,
-        "y": 60,
+        "x": 750,
+        "y": 80,
         "wires": [
             []
         ]
@@ -14015,11 +13617,12 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 730,
-        "y": 60,
+        "x": 550,
+        "y": 240,
         "wires": [
             [
-                "269eac95.6ea204"
+                "269eac95.6ea204",
+                "b00f545c.e6ed38"
             ],
             []
         ]
@@ -14028,6 +13631,7 @@
         "id": "269eac95.6ea204",
         "type": "hubitat command",
         "z": "cd3ea6b3.ac9c98",
+        "d": true,
         "g": "bc9da574.ee5618",
         "deviceLabel": "",
         "name": "DB - Lights",
@@ -14035,8 +13639,8 @@
         "deviceId": "1574",
         "command": "on",
         "commandArgs": "",
-        "x": 870,
-        "y": 60,
+        "x": 770,
+        "y": 240,
         "wires": [
             []
         ]
@@ -14047,6 +13651,7 @@
         "z": "a994b807.c93cc8",
         "g": "4f97b3df.c6fc4c",
         "name": "",
+        "env": [],
         "x": 510,
         "y": 60,
         "wires": [
@@ -14135,8 +13740,8 @@
         "deviceId": "1352",
         "attribute": "switch",
         "sendEvent": true,
-        "x": 140,
-        "y": 60,
+        "x": 160,
+        "y": 220,
         "wires": [
             [
                 "68274698.bb88d8"
@@ -14166,8 +13771,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 310,
-        "y": 60,
+        "x": 230,
+        "y": 260,
         "wires": [
             [
                 "7f8efb69.193964"
@@ -14217,8 +13822,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 310,
-        "y": 60,
+        "x": 210,
+        "y": 100,
         "wires": [
             [
                 "56d65e64.a20e2"
@@ -14568,10 +14173,10 @@
         "type": "subflow:5adc90df.95129",
         "z": "cd3ea6b3.ac9c98",
         "g": "bc9da574.ee5618",
-        "name": "",
+        "name": "DB Motion Status",
         "env": [],
-        "x": 520,
-        "y": 60,
+        "x": 390,
+        "y": 240,
         "wires": [
             [],
             [
@@ -14584,6 +14189,7 @@
         "id": "60656dee.8f9114",
         "type": "hubitat command",
         "z": "d06ad5d7.7d1a38",
+        "d": true,
         "g": "9c26d0ef.cf203",
         "deviceLabel": "",
         "name": "KT - Lights",
@@ -14591,8 +14197,8 @@
         "deviceId": "1573",
         "command": "on",
         "commandArgs": "",
-        "x": 810,
-        "y": 700,
+        "x": 770,
+        "y": 80,
         "wires": [
             []
         ]
@@ -14608,8 +14214,8 @@
         "deviceId": "1351",
         "attribute": "switch",
         "sendEvent": true,
-        "x": 160,
-        "y": 700,
+        "x": 140,
+        "y": 60,
         "wires": [
             [
                 "11b37f9f.ec32"
@@ -14639,8 +14245,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 330,
-        "y": 700,
+        "x": 210,
+        "y": 100,
         "wires": [
             [
                 "c41d1f3.e50e4e"
@@ -14653,9 +14259,10 @@
         "type": "subflow:16de2fad.7629a",
         "z": "d06ad5d7.7d1a38",
         "g": "9c26d0ef.cf203",
-        "name": "",
-        "x": 500,
-        "y": 700,
+        "name": "KT Motion Status",
+        "env": [],
+        "x": 370,
+        "y": 80,
         "wires": [
             [],
             [
@@ -14669,10 +14276,10 @@
         "type": "subflow:5adc90df.95129",
         "z": "cd3ea6b3.ac9c98",
         "g": "945ba7ee.377858",
-        "name": "",
+        "name": "DB Motion Status",
         "env": [],
-        "x": 580,
-        "y": 220,
+        "x": 730,
+        "y": 80,
         "wires": [
             [],
             [
@@ -14697,8 +14304,8 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
-        "x": 360,
-        "y": 220,
+        "x": 560,
+        "y": 80,
         "wires": [
             [
                 "9514e927.763a38"
@@ -14715,23 +14322,23 @@
         "propertyType": "msg",
         "rules": [
             {
-                "t": "false"
+                "t": "true"
             },
             {
-                "t": "true"
+                "t": "false"
             }
         ],
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 790,
-        "y": 220,
+        "x": 890,
+        "y": 80,
         "wires": [
             [
-                "b503ca90.0b1f78"
+                "278e0987.6fb406"
             ],
             [
-                "278e0987.6fb406"
+                "b503ca90.0b1f78"
             ]
         ]
     },
@@ -14746,8 +14353,8 @@
         "deviceId": "1352",
         "command": "on",
         "commandArgs": "",
-        "x": 960,
-        "y": 180,
+        "x": 1060,
+        "y": 140,
         "wires": [
             []
         ]
@@ -14763,8 +14370,8 @@
         "deviceId": "1352",
         "command": "off",
         "commandArgs": "",
-        "x": 960,
-        "y": 240,
+        "x": 1060,
+        "y": 80,
         "wires": [
             []
         ]
@@ -14957,11 +14564,12 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 670,
-        "y": 700,
+        "x": 530,
+        "y": 80,
         "wires": [
             [
-                "60656dee.8f9114"
+                "60656dee.8f9114",
+                "7c4a0dd4.f78404"
             ],
             []
         ]
@@ -14985,11 +14593,12 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 690,
-        "y": 60,
+        "x": 530,
+        "y": 80,
         "wires": [
             [
-                "888cd483.dc7428"
+                "888cd483.dc7428",
+                "b076fd2f.fc78b"
             ],
             []
         ]
@@ -15497,6 +15106,7 @@
         "id": "8b5522f9.a7572",
         "type": "hubitat command",
         "z": "73f998b9.8842a8",
+        "d": true,
         "deviceLabel": "",
         "name": "DB - Motion Detection",
         "server": "b130c189.ea4d2",
@@ -15513,13 +15123,14 @@
         "id": "c9290c6b.9022a",
         "type": "hubitat command",
         "z": "73f998b9.8842a8",
+        "d": true,
         "deviceLabel": "",
         "name": "MB - Motion Detection",
         "server": "b130c189.ea4d2",
         "deviceId": "385",
         "command": "on",
         "commandArgs": "",
-        "x": 660,
+        "x": 900,
         "y": 940,
         "wires": [
             []
@@ -15551,7 +15162,7 @@
         "deviceId": "385",
         "command": "off",
         "commandArgs": "",
-        "x": 660,
+        "x": 900,
         "y": 440,
         "wires": [
             []
@@ -15652,8 +15263,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 160,
-        "y": 220,
+        "x": 360,
+        "y": 120,
         "wires": [
             [
                 "c408eea6.314db"
@@ -15713,6 +15324,2281 @@
         "wires": [
             [
                 "3398a80e.aa6388"
+            ]
+        ]
+    },
+    {
+        "id": "90d94c12.d6102",
+        "type": "hubitat mode",
+        "z": "73f998b9.8842a8",
+        "name": "",
+        "server": "b130c189.ea4d2",
+        "sendEvent": false,
+        "x": 610,
+        "y": 440,
+        "wires": [
+            [
+                "9891c7f6.fed738"
+            ]
+        ]
+    },
+    {
+        "id": "9891c7f6.fed738",
+        "type": "switch",
+        "z": "73f998b9.8842a8",
+        "name": "!Night",
+        "property": "payload.value",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "Night",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 730,
+        "y": 440,
+        "wires": [
+            [
+                "417da249.04b44c"
+            ]
+        ]
+    },
+    {
+        "id": "65a0c298.c38e3c",
+        "type": "hubitat mode",
+        "z": "73f998b9.8842a8",
+        "name": "",
+        "server": "b130c189.ea4d2",
+        "sendEvent": false,
+        "x": 610,
+        "y": 940,
+        "wires": [
+            [
+                "b68ba181.bd5a4"
+            ]
+        ]
+    },
+    {
+        "id": "b68ba181.bd5a4",
+        "type": "switch",
+        "z": "73f998b9.8842a8",
+        "name": "!Day",
+        "property": "payload.value",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "Day",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 730,
+        "y": 940,
+        "wires": [
+            [
+                "c9290c6b.9022a"
+            ]
+        ]
+    },
+    {
+        "id": "6b65c860.b2d778",
+        "type": "hubitat device",
+        "z": "cd3ea6b3.ac9c98",
+        "g": "87724a3a.54b368",
+        "deviceLabel": "",
+        "name": "DB - Overhead Lights",
+        "server": "b130c189.ea4d2",
+        "deviceId": "69",
+        "attribute": "switch",
+        "sendEvent": true,
+        "x": 380,
+        "y": 340,
+        "wires": [
+            [
+                "6d1d5302.a8313c"
+            ]
+        ]
+    },
+    {
+        "id": "6d1d5302.a8313c",
+        "type": "switch",
+        "z": "cd3ea6b3.ac9c98",
+        "g": "87724a3a.54b368",
+        "name": "State",
+        "property": "payload.value",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "on",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "off",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 550,
+        "y": 340,
+        "wires": [
+            [
+                "b00f545c.e6ed38"
+            ],
+            [
+                "38bd91e4.e0ce2e"
+            ]
+        ]
+    },
+    {
+        "id": "c864aae8.372fb8",
+        "type": "switch",
+        "z": "cd3ea6b3.ac9c98",
+        "g": "41d31a90.153274",
+        "name": "State",
+        "property": "payload.value",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "off",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "on",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 550,
+        "y": 720,
+        "wires": [
+            [
+                "4f672bc8.2ea274",
+                "5b93f5a6.a3e35c"
+            ],
+            [
+                "2a4ad94a.708926"
+            ]
+        ]
+    },
+    {
+        "id": "a93b865d.6b6148",
+        "type": "switch",
+        "z": "cd3ea6b3.ac9c98",
+        "g": "3eb36652.08acaa",
+        "name": "Motion",
+        "property": "payload.value",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "active",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "inactive",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 390,
+        "y": 440,
+        "wires": [
+            [
+                "fa05f5d3.e7d458"
+            ],
+            [
+                "522a0c02.d68244"
+            ]
+        ]
+    },
+    {
+        "id": "fa05f5d3.e7d458",
+        "type": "change",
+        "z": "cd3ea6b3.ac9c98",
+        "g": "3eb36652.08acaa",
+        "name": "active",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 510,
+        "y": 420,
+        "wires": [
+            [
+                "5345e3f7.81565c"
+            ]
+        ]
+    },
+    {
+        "id": "522a0c02.d68244",
+        "type": "change",
+        "z": "cd3ea6b3.ac9c98",
+        "g": "3eb36652.08acaa",
+        "name": "inactive",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 460,
+        "wires": [
+            [
+                "5345e3f7.81565c"
+            ]
+        ]
+    },
+    {
+        "id": "5345e3f7.81565c",
+        "type": "BooleanLogicUltimate",
+        "z": "cd3ea6b3.ac9c98",
+        "g": "3eb36652.08acaa",
+        "name": "",
+        "filtertrue": "both",
+        "persist": true,
+        "sInitializeWith": "false",
+        "triggertopic": "trigger",
+        "outputtriggeredby": "all",
+        "inputCount": "2",
+        "topic": "Downstairs Bedroom Motion",
+        "x": 260,
+        "y": 560,
+        "wires": [
+            [],
+            [
+                "bcc03f54.fc087"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "6a2b9ed7.1eb76",
+        "type": "switch",
+        "z": "cd3ea6b3.ac9c98",
+        "g": "3eb36652.08acaa",
+        "name": "T/F",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 550,
+        "y": 520,
+        "wires": [
+            [
+                "b64928a0.e9c988",
+                "4f672bc8.2ea274"
+            ],
+            [
+                "9538841e.5899f8"
+            ]
+        ]
+    },
+    {
+        "id": "7cb7ce8c.36a63",
+        "type": "switch",
+        "z": "cd3ea6b3.ac9c98",
+        "g": "3eb36652.08acaa",
+        "name": "disabled?",
+        "property": "DB_Motion",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 540,
+        "y": 560,
+        "wires": [
+            [
+                "6a2b9ed7.1eb76"
+            ]
+        ]
+    },
+    {
+        "id": "bcc03f54.fc087",
+        "type": "rbe",
+        "z": "cd3ea6b3.ac9c98",
+        "g": "3eb36652.08acaa",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 410,
+        "y": 560,
+        "wires": [
+            [
+                "7cb7ce8c.36a63"
+            ]
+        ]
+    },
+    {
+        "id": "86e2e478.407158",
+        "type": "hubitat command",
+        "z": "cd3ea6b3.ac9c98",
+        "g": "1c12f84.6bbb608",
+        "deviceLabel": "",
+        "name": "DB - Overhead Lights",
+        "server": "b130c189.ea4d2",
+        "deviceId": "69",
+        "command": "off",
+        "commandArgs": "",
+        "x": 1280,
+        "y": 620,
+        "wires": [
+            [
+                "80bbf677.c25448"
+            ]
+        ]
+    },
+    {
+        "id": "38bd91e4.e0ce2e",
+        "type": "delay",
+        "z": "cd3ea6b3.ac9c98",
+        "g": "1c12f84.6bbb608",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "250",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 1250,
+        "y": 580,
+        "wires": [
+            [
+                "86e2e478.407158"
+            ]
+        ]
+    },
+    {
+        "id": "c49c7565.6f6248",
+        "type": "stoptimer-varidelay",
+        "z": "cd3ea6b3.ac9c98",
+        "g": "5f5255ea.d74b3c",
+        "duration": "1",
+        "durationType": "num",
+        "units": "Second",
+        "payloadtype": "num",
+        "payloadval": "0",
+        "name": "",
+        "reporting": "last_minute_seconds",
+        "persist": true,
+        "x": 1040,
+        "y": 580,
+        "wires": [
+            [
+                "38bd91e4.e0ce2e"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "9538841e.5899f8",
+        "type": "subflow:ac12c9d8.613d38",
+        "z": "cd3ea6b3.ac9c98",
+        "g": "5f5255ea.d74b3c",
+        "name": "",
+        "env": [],
+        "x": 800,
+        "y": 660,
+        "wires": [
+            [],
+            [
+                "c49c7565.6f6248"
+            ],
+            [],
+            [
+                "3885fcd3.09c4b4"
+            ],
+            [],
+            [
+                "808b1a5a.ebdd68"
+            ],
+            [],
+            [
+                "2c536329.8f5f9c"
+            ]
+        ]
+    },
+    {
+        "id": "3885fcd3.09c4b4",
+        "type": "stoptimer-varidelay",
+        "z": "cd3ea6b3.ac9c98",
+        "g": "5f5255ea.d74b3c",
+        "duration": "1",
+        "durationType": "num",
+        "units": "Second",
+        "payloadtype": "num",
+        "payloadval": "0",
+        "name": "",
+        "reporting": "last_minute_seconds",
+        "persist": true,
+        "x": 1040,
+        "y": 640,
+        "wires": [
+            [
+                "38bd91e4.e0ce2e"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "808b1a5a.ebdd68",
+        "type": "stoptimer-varidelay",
+        "z": "cd3ea6b3.ac9c98",
+        "g": "5f5255ea.d74b3c",
+        "duration": "1",
+        "durationType": "num",
+        "units": "Second",
+        "payloadtype": "num",
+        "payloadval": "0",
+        "name": "",
+        "reporting": "last_minute_seconds",
+        "persist": true,
+        "x": 1040,
+        "y": 700,
+        "wires": [
+            [
+                "38bd91e4.e0ce2e"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "2c536329.8f5f9c",
+        "type": "stoptimer-varidelay",
+        "z": "cd3ea6b3.ac9c98",
+        "g": "5f5255ea.d74b3c",
+        "duration": "1",
+        "durationType": "num",
+        "units": "Second",
+        "payloadtype": "num",
+        "payloadval": "0",
+        "name": "",
+        "reporting": "last_minute_seconds",
+        "persist": true,
+        "x": 1040,
+        "y": 760,
+        "wires": [
+            [
+                "38bd91e4.e0ce2e"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "4f672bc8.2ea274",
+        "type": "change",
+        "z": "cd3ea6b3.ac9c98",
+        "g": "5f5255ea.d74b3c",
+        "name": "Stop Motion Timer",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "stop",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 790,
+        "y": 580,
+        "wires": [
+            [
+                "c49c7565.6f6248",
+                "3885fcd3.09c4b4",
+                "808b1a5a.ebdd68",
+                "2c536329.8f5f9c"
+            ]
+        ]
+    },
+    {
+        "id": "3cd29974.2b3ee6",
+        "type": "hubitat command",
+        "z": "cd3ea6b3.ac9c98",
+        "g": "2ebd8c4.bc57674",
+        "deviceLabel": "",
+        "name": "DB - Overhead Lights",
+        "server": "b130c189.ea4d2",
+        "deviceId": "69",
+        "command": "setLevel",
+        "commandArgs": "",
+        "x": 1280,
+        "y": 440,
+        "wires": [
+            [
+                "cbce77f0.fe0458"
+            ]
+        ]
+    },
+    {
+        "id": "b00f545c.e6ed38",
+        "type": "subflow:ac12c9d8.613d38",
+        "z": "cd3ea6b3.ac9c98",
+        "g": "42113567.c0564c",
+        "name": "",
+        "env": [],
+        "x": 880,
+        "y": 440,
+        "wires": [
+            [
+                "28e09546.710aaa"
+            ],
+            [],
+            [
+                "28e09546.710aaa"
+            ],
+            [],
+            [
+                "28e09546.710aaa"
+            ],
+            [],
+            [
+                "28e09546.710aaa"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "b64928a0.e9c988",
+        "type": "switch",
+        "z": "cd3ea6b3.ac9c98",
+        "g": "42113567.c0564c",
+        "name": "!light",
+        "property": "DB_Light",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 730,
+        "y": 460,
+        "wires": [
+            [
+                "b00f545c.e6ed38"
+            ]
+        ]
+    },
+    {
+        "id": "4cfab87.c073f48",
+        "type": "hubitat device",
+        "z": "cd3ea6b3.ac9c98",
+        "g": "3eb36652.08acaa",
+        "deviceLabel": "",
+        "name": "DB - Motion",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1347",
+        "attribute": "motion",
+        "sendEvent": true,
+        "x": 250,
+        "y": 440,
+        "wires": [
+            [
+                "a93b865d.6b6148"
+            ]
+        ]
+    },
+    {
+        "id": "fa4827ad.12a878",
+        "type": "hubitat device",
+        "z": "cd3ea6b3.ac9c98",
+        "g": "41d31a90.153274",
+        "deviceLabel": "",
+        "name": "DB - Motion Detection",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1352",
+        "attribute": "switch",
+        "sendEvent": true,
+        "x": 380,
+        "y": 720,
+        "wires": [
+            [
+                "c864aae8.372fb8"
+            ]
+        ]
+    },
+    {
+        "id": "28e09546.710aaa",
+        "type": "change",
+        "z": "cd3ea6b3.ac9c98",
+        "g": "42113567.c0564c",
+        "name": "DB Level",
+        "rules": [
+            {
+                "t": "set",
+                "p": "arguments",
+                "pt": "msg",
+                "to": "payload.db.level",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1060,
+        "y": 440,
+        "wires": [
+            [
+                "3cd29974.2b3ee6"
+            ]
+        ]
+    },
+    {
+        "id": "5b93f5a6.a3e35c",
+        "type": "change",
+        "z": "cd3ea6b3.ac9c98",
+        "g": "41d31a90.153274",
+        "name": "DB_Motion Off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "DB_Motion",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 420,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2a4ad94a.708926",
+        "type": "change",
+        "z": "cd3ea6b3.ac9c98",
+        "g": "41d31a90.153274",
+        "name": "DB_Motion On",
+        "rules": [
+            {
+                "t": "set",
+                "p": "DB_Motion",
+                "pt": "flow",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 420,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "831eaaf4.0e6508",
+        "type": "link in",
+        "z": "cd3ea6b3.ac9c98",
+        "g": "4094960e.2a7538",
+        "name": "HE Start",
+        "links": [
+            "d4bae9fc.dde7c8"
+        ],
+        "x": 160,
+        "y": 760,
+        "wires": [
+            [
+                "fa4827ad.12a878",
+                "1e8d4760.a596a9"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "2957e500.b31e6c",
+        "type": "link in",
+        "z": "cd3ea6b3.ac9c98",
+        "g": "4094960e.2a7538",
+        "name": "NR Start",
+        "links": [
+            "72d1fff3.4f9c7"
+        ],
+        "x": 160,
+        "y": 800,
+        "wires": [
+            [
+                "fa4827ad.12a878",
+                "1e8d4760.a596a9"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "f4b20b30.aa0cf8",
+        "type": "inject",
+        "z": "cd3ea6b3.ac9c98",
+        "g": "4094960e.2a7538",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 720,
+        "wires": [
+            [
+                "fa4827ad.12a878",
+                "1e8d4760.a596a9"
+            ]
+        ]
+    },
+    {
+        "id": "cbce77f0.fe0458",
+        "type": "change",
+        "z": "cd3ea6b3.ac9c98",
+        "g": "2ebd8c4.bc57674",
+        "name": "DB_Light On",
+        "rules": [
+            {
+                "t": "set",
+                "p": "DB_Light",
+                "pt": "flow",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1470,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "80bbf677.c25448",
+        "type": "change",
+        "z": "cd3ea6b3.ac9c98",
+        "g": "1c12f84.6bbb608",
+        "name": "DB_Light Off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "DB_Light",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1470,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "92192881.8f9608",
+        "type": "link in",
+        "z": "d06ad5d7.7d1a38",
+        "g": "e569169e.a72868",
+        "name": "HE Start",
+        "links": [
+            "d4bae9fc.dde7c8"
+        ],
+        "x": 140,
+        "y": 680,
+        "wires": [
+            [
+                "cb80db7f.be3188",
+                "c47bd2bc.b052c"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "f7b51f01.927fe",
+        "type": "link in",
+        "z": "d06ad5d7.7d1a38",
+        "g": "e569169e.a72868",
+        "name": "NR Start",
+        "links": [
+            "72d1fff3.4f9c7"
+        ],
+        "x": 140,
+        "y": 720,
+        "wires": [
+            [
+                "cb80db7f.be3188",
+                "c47bd2bc.b052c"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "c7e23144.d4862",
+        "type": "inject",
+        "z": "d06ad5d7.7d1a38",
+        "g": "e569169e.a72868",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 640,
+        "wires": [
+            [
+                "cb80db7f.be3188",
+                "c47bd2bc.b052c"
+            ]
+        ]
+    },
+    {
+        "id": "cb80db7f.be3188",
+        "type": "hubitat device",
+        "z": "d06ad5d7.7d1a38",
+        "g": "b3a60908.2ed8a8",
+        "deviceLabel": "",
+        "name": "KT - Motion Detection",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1351",
+        "attribute": "switch",
+        "sendEvent": true,
+        "x": 360,
+        "y": 640,
+        "wires": [
+            [
+                "e9fe8523.c6d868"
+            ]
+        ]
+    },
+    {
+        "id": "e9fe8523.c6d868",
+        "type": "switch",
+        "z": "d06ad5d7.7d1a38",
+        "g": "b3a60908.2ed8a8",
+        "name": "State",
+        "property": "payload.value",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "off",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "on",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 530,
+        "y": 640,
+        "wires": [
+            [
+                "d4f17bed.4977e8",
+                "7c3fac3c.7c1184"
+            ],
+            [
+                "d6ad0fd7.6f324"
+            ]
+        ]
+    },
+    {
+        "id": "d4f17bed.4977e8",
+        "type": "change",
+        "z": "d06ad5d7.7d1a38",
+        "g": "b3a60908.2ed8a8",
+        "name": "KT_Motion Off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "KT_Motion",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 400,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d6ad0fd7.6f324",
+        "type": "change",
+        "z": "d06ad5d7.7d1a38",
+        "g": "b3a60908.2ed8a8",
+        "name": "KT_Motion On",
+        "rules": [
+            {
+                "t": "set",
+                "p": "KT_Motion",
+                "pt": "flow",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 400,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c47bd2bc.b052c",
+        "type": "change",
+        "z": "d06ad5d7.7d1a38",
+        "name": "KT_Light Off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "KT_Light",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 330,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1e8d4760.a596a9",
+        "type": "change",
+        "z": "cd3ea6b3.ac9c98",
+        "name": "DB_Light Off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "DB_Light",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 350,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c2f4c61c.a66ef8",
+        "type": "hubitat command",
+        "z": "836b4374.e4af2",
+        "name": "KT - RedH LM",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1090",
+        "command": "setHue",
+        "commandArgs": "98",
+        "x": 340,
+        "y": 140,
+        "wires": [
+            [
+                "db6e4de1.f8464"
+            ]
+        ]
+    },
+    {
+        "id": "aedaf30f.1a9ee",
+        "type": "hubitat command",
+        "z": "836b4374.e4af2",
+        "name": "KT - GreenH LM",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1090",
+        "command": "setHue",
+        "commandArgs": "31",
+        "x": 660,
+        "y": 140,
+        "wires": [
+            [
+                "b5994075.4afe6"
+            ]
+        ]
+    },
+    {
+        "id": "8cef1bc1.f542b8",
+        "type": "hubitat command",
+        "z": "836b4374.e4af2",
+        "name": "KT - GreenH LS",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1092",
+        "command": "setHue",
+        "commandArgs": "31",
+        "x": 340,
+        "y": 220,
+        "wires": [
+            [
+                "19620ea0.f5f411"
+            ]
+        ]
+    },
+    {
+        "id": "b64f4329.3f267",
+        "type": "hubitat command",
+        "z": "836b4374.e4af2",
+        "name": "KT - RedH LS",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1092",
+        "command": "setHue",
+        "commandArgs": "98",
+        "x": 660,
+        "y": 220,
+        "wires": [
+            [
+                "a82d053.b703cf8"
+            ]
+        ]
+    },
+    {
+        "id": "4271eaf2.60ecd4",
+        "type": "hubitat command",
+        "z": "836b4374.e4af2",
+        "name": "KT - RedH LR",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1093",
+        "command": "setHue",
+        "commandArgs": "98",
+        "x": 340,
+        "y": 300,
+        "wires": [
+            [
+                "967b42a9.58469"
+            ]
+        ]
+    },
+    {
+        "id": "b98c4e9b.abae4",
+        "type": "hubitat command",
+        "z": "836b4374.e4af2",
+        "name": "KT - GreenH LR",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1093",
+        "command": "setHue",
+        "commandArgs": "31",
+        "x": 660,
+        "y": 300,
+        "wires": [
+            [
+                "3d67f705.bb0958"
+            ]
+        ]
+    },
+    {
+        "id": "920bccd4.5a1f",
+        "type": "switch",
+        "z": "836b4374.e4af2",
+        "name": "STOP",
+        "property": "reset",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "stop",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 150,
+        "y": 60,
+        "wires": [
+            [
+                "db6e4de1.f8464",
+                "19620ea0.f5f411",
+                "967b42a9.58469",
+                "b5994075.4afe6",
+                "a82d053.b703cf8",
+                "3d67f705.bb0958"
+            ],
+            [
+                "c2f4c61c.a66ef8",
+                "8cef1bc1.f542b8",
+                "4271eaf2.60ecd4"
+            ]
+        ]
+    },
+    {
+        "id": "db6e4de1.f8464",
+        "type": "delay",
+        "z": "836b4374.e4af2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "15",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 500,
+        "y": 120,
+        "wires": [
+            [
+                "aedaf30f.1a9ee"
+            ]
+        ]
+    },
+    {
+        "id": "19620ea0.f5f411",
+        "type": "delay",
+        "z": "836b4374.e4af2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "15",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 500,
+        "y": 200,
+        "wires": [
+            [
+                "b64f4329.3f267"
+            ]
+        ]
+    },
+    {
+        "id": "967b42a9.58469",
+        "type": "delay",
+        "z": "836b4374.e4af2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "15",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 500,
+        "y": 280,
+        "wires": [
+            [
+                "b98c4e9b.abae4"
+            ]
+        ]
+    },
+    {
+        "id": "b5994075.4afe6",
+        "type": "delay",
+        "z": "836b4374.e4af2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "15",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 840,
+        "y": 140,
+        "wires": [
+            [
+                "c2f4c61c.a66ef8"
+            ]
+        ]
+    },
+    {
+        "id": "a82d053.b703cf8",
+        "type": "delay",
+        "z": "836b4374.e4af2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "15",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 840,
+        "y": 220,
+        "wires": [
+            [
+                "8cef1bc1.f542b8"
+            ]
+        ]
+    },
+    {
+        "id": "3d67f705.bb0958",
+        "type": "delay",
+        "z": "836b4374.e4af2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "15",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 840,
+        "y": 300,
+        "wires": [
+            [
+                "4271eaf2.60ecd4"
+            ]
+        ]
+    },
+    {
+        "id": "ff44d56e.aa1be8",
+        "type": "change",
+        "z": "3b28216c.47740e",
+        "name": "GR_Light Off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "GR_Light",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 330,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4651229.f0e59dc",
+        "type": "hubitat command",
+        "z": "3b28216c.47740e",
+        "g": "ef5b6a2b.40ecc8",
+        "deviceLabel": "",
+        "name": "GR - Chandeliers",
+        "server": "b130c189.ea4d2",
+        "deviceId": "67",
+        "command": "off",
+        "commandArgs": "",
+        "x": 1410,
+        "y": 420,
+        "wires": [
+            [
+                "a0c83f72.fe08a"
+            ]
+        ]
+    },
+    {
+        "id": "1de249ee.9aa696",
+        "type": "delay",
+        "z": "3b28216c.47740e",
+        "g": "ef5b6a2b.40ecc8",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "250",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 1230,
+        "y": 420,
+        "wires": [
+            [
+                "4651229.f0e59dc"
+            ]
+        ]
+    },
+    {
+        "id": "a0c83f72.fe08a",
+        "type": "change",
+        "z": "3b28216c.47740e",
+        "g": "ef5b6a2b.40ecc8",
+        "name": "GR_Light Off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "GR_Light",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1590,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4410a3fd.81854c",
+        "type": "hubitat command",
+        "z": "3b28216c.47740e",
+        "g": "1aba0b50.058cc5",
+        "deviceLabel": "",
+        "name": "GR - Chandeliers",
+        "server": "b130c189.ea4d2",
+        "deviceId": "67",
+        "command": "setLevel",
+        "commandArgs": "",
+        "x": 1410,
+        "y": 300,
+        "wires": [
+            [
+                "a71747f3.d468b8"
+            ]
+        ]
+    },
+    {
+        "id": "a71747f3.d468b8",
+        "type": "change",
+        "z": "3b28216c.47740e",
+        "g": "1aba0b50.058cc5",
+        "name": "GR_Light On",
+        "rules": [
+            {
+                "t": "set",
+                "p": "GR_Light",
+                "pt": "flow",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1590,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a6dfdf08.964f",
+        "type": "switch",
+        "z": "3b28216c.47740e",
+        "g": "85d61ece.1d40b",
+        "name": "Motion",
+        "property": "payload.value",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "active",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "inactive",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 370,
+        "y": 280,
+        "wires": [
+            [
+                "f046ada6.aeb4e"
+            ],
+            [
+                "fc985154.0578c"
+            ]
+        ]
+    },
+    {
+        "id": "f046ada6.aeb4e",
+        "type": "change",
+        "z": "3b28216c.47740e",
+        "g": "85d61ece.1d40b",
+        "name": "active",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 490,
+        "y": 260,
+        "wires": [
+            [
+                "b2292d7e.3d868"
+            ]
+        ]
+    },
+    {
+        "id": "fc985154.0578c",
+        "type": "change",
+        "z": "3b28216c.47740e",
+        "g": "85d61ece.1d40b",
+        "name": "inactive",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 300,
+        "wires": [
+            [
+                "b2292d7e.3d868"
+            ]
+        ]
+    },
+    {
+        "id": "b2292d7e.3d868",
+        "type": "BooleanLogicUltimate",
+        "z": "3b28216c.47740e",
+        "g": "85d61ece.1d40b",
+        "name": "",
+        "filtertrue": "both",
+        "persist": true,
+        "sInitializeWith": "false",
+        "triggertopic": "trigger",
+        "outputtriggeredby": "all",
+        "inputCount": "2",
+        "topic": "Downstairs Bedroom Motion",
+        "x": 240,
+        "y": 400,
+        "wires": [
+            [],
+            [
+                "582b36c.a64cac8"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "245bb6d6.b17f5a",
+        "type": "switch",
+        "z": "3b28216c.47740e",
+        "g": "85d61ece.1d40b",
+        "name": "T/F",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 530,
+        "y": 360,
+        "wires": [
+            [
+                "a5e62b86.c9d8f8",
+                "d0aef1fc.3eaf9"
+            ],
+            [
+                "9d47bb71.593738"
+            ]
+        ]
+    },
+    {
+        "id": "940cba05.68c878",
+        "type": "switch",
+        "z": "3b28216c.47740e",
+        "g": "85d61ece.1d40b",
+        "name": "disabled?",
+        "property": "DB_Motion",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 520,
+        "y": 400,
+        "wires": [
+            [
+                "245bb6d6.b17f5a"
+            ]
+        ]
+    },
+    {
+        "id": "582b36c.a64cac8",
+        "type": "rbe",
+        "z": "3b28216c.47740e",
+        "g": "85d61ece.1d40b",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 390,
+        "y": 400,
+        "wires": [
+            [
+                "940cba05.68c878"
+            ]
+        ]
+    },
+    {
+        "id": "c51af0a9.64471",
+        "type": "hubitat device",
+        "z": "3b28216c.47740e",
+        "g": "85d61ece.1d40b",
+        "deviceLabel": "",
+        "name": "GR - Motion Fireplace",
+        "server": "b130c189.ea4d2",
+        "deviceId": "162",
+        "attribute": "motion",
+        "sendEvent": true,
+        "x": 200,
+        "y": 260,
+        "wires": [
+            [
+                "a6dfdf08.964f"
+            ]
+        ]
+    },
+    {
+        "id": "54f3e04a.1fe42",
+        "type": "link in",
+        "z": "3b28216c.47740e",
+        "g": "b55344eb.e17b58",
+        "name": "HE Start",
+        "links": [
+            "d4bae9fc.dde7c8"
+        ],
+        "x": 140,
+        "y": 600,
+        "wires": [
+            [
+                "cdc6b99b.dda2a8",
+                "ff44d56e.aa1be8"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "8b7b3ad6.2c6228",
+        "type": "link in",
+        "z": "3b28216c.47740e",
+        "g": "b55344eb.e17b58",
+        "name": "NR Start",
+        "links": [
+            "72d1fff3.4f9c7"
+        ],
+        "x": 140,
+        "y": 640,
+        "wires": [
+            [
+                "cdc6b99b.dda2a8",
+                "ff44d56e.aa1be8"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "df33ce01.97c32",
+        "type": "inject",
+        "z": "3b28216c.47740e",
+        "g": "b55344eb.e17b58",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 560,
+        "wires": [
+            [
+                "cdc6b99b.dda2a8",
+                "ff44d56e.aa1be8"
+            ]
+        ]
+    },
+    {
+        "id": "cdc6b99b.dda2a8",
+        "type": "hubitat device",
+        "z": "3b28216c.47740e",
+        "g": "df20c316.f11ae",
+        "deviceLabel": "",
+        "name": "GR - Motion Detection",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1377",
+        "attribute": "switch",
+        "sendEvent": true,
+        "x": 360,
+        "y": 560,
+        "wires": [
+            [
+                "7a5efed1.f6bb3"
+            ]
+        ]
+    },
+    {
+        "id": "7a5efed1.f6bb3",
+        "type": "switch",
+        "z": "3b28216c.47740e",
+        "g": "df20c316.f11ae",
+        "name": "State",
+        "property": "payload.value",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "off",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "on",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 530,
+        "y": 560,
+        "wires": [
+            [
+                "a5e62b86.c9d8f8",
+                "c9de5cfc.c2a26"
+            ],
+            [
+                "d1090ac5.42d928"
+            ]
+        ]
+    },
+    {
+        "id": "c9de5cfc.c2a26",
+        "type": "change",
+        "z": "3b28216c.47740e",
+        "g": "df20c316.f11ae",
+        "name": "GR_Motion Off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "GR_Motion",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 400,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d1090ac5.42d928",
+        "type": "change",
+        "z": "3b28216c.47740e",
+        "g": "df20c316.f11ae",
+        "name": "GR_Motion On",
+        "rules": [
+            {
+                "t": "set",
+                "p": "GR_Motion",
+                "pt": "flow",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 400,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b076fd2f.fc78b",
+        "type": "subflow:ac12c9d8.613d38",
+        "z": "3b28216c.47740e",
+        "g": "f6a993dd.06e9e",
+        "name": "",
+        "env": [],
+        "x": 980,
+        "y": 260,
+        "wires": [
+            [
+                "7df6f758.894eb8"
+            ],
+            [],
+            [
+                "7df6f758.894eb8"
+            ],
+            [],
+            [
+                "7df6f758.894eb8"
+            ],
+            [],
+            [
+                "7df6f758.894eb8"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "6183c04f.57983",
+        "type": "switch",
+        "z": "3b28216c.47740e",
+        "g": "f6a993dd.06e9e",
+        "name": "!light",
+        "property": "DB_Light",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 830,
+        "y": 320,
+        "wires": [
+            [
+                "b076fd2f.fc78b"
+            ]
+        ]
+    },
+    {
+        "id": "7df6f758.894eb8",
+        "type": "change",
+        "z": "3b28216c.47740e",
+        "g": "f6a993dd.06e9e",
+        "name": "GR Level",
+        "rules": [
+            {
+                "t": "set",
+                "p": "arguments",
+                "pt": "msg",
+                "to": "payload.gr.level",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1160,
+        "y": 300,
+        "wires": [
+            [
+                "4410a3fd.81854c"
+            ]
+        ]
+    },
+    {
+        "id": "2c4cd2b2.686a2e",
+        "type": "stoptimer-varidelay",
+        "z": "3b28216c.47740e",
+        "g": "8ef56025.45bcb",
+        "duration": "10",
+        "durationType": "num",
+        "units": "Minute",
+        "payloadtype": "num",
+        "payloadval": "0",
+        "name": "",
+        "reporting": "last_minute_seconds",
+        "persist": true,
+        "x": 1020,
+        "y": 420,
+        "wires": [
+            [
+                "1de249ee.9aa696"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "9d47bb71.593738",
+        "type": "subflow:ac12c9d8.613d38",
+        "z": "3b28216c.47740e",
+        "g": "8ef56025.45bcb",
+        "name": "",
+        "env": [],
+        "x": 780,
+        "y": 500,
+        "wires": [
+            [],
+            [
+                "2c4cd2b2.686a2e"
+            ],
+            [],
+            [
+                "bcff3a1c.2b17b8"
+            ],
+            [],
+            [
+                "4222a4c7.f2480c"
+            ],
+            [],
+            [
+                "24f363b5.3810bc"
+            ]
+        ]
+    },
+    {
+        "id": "bcff3a1c.2b17b8",
+        "type": "stoptimer-varidelay",
+        "z": "3b28216c.47740e",
+        "g": "8ef56025.45bcb",
+        "duration": "10",
+        "durationType": "num",
+        "units": "Minute",
+        "payloadtype": "num",
+        "payloadval": "0",
+        "name": "",
+        "reporting": "last_minute_seconds",
+        "persist": true,
+        "x": 1020,
+        "y": 480,
+        "wires": [
+            [
+                "1de249ee.9aa696"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "4222a4c7.f2480c",
+        "type": "stoptimer-varidelay",
+        "z": "3b28216c.47740e",
+        "g": "8ef56025.45bcb",
+        "duration": "1",
+        "durationType": "num",
+        "units": "Second",
+        "payloadtype": "num",
+        "payloadval": "0",
+        "name": "",
+        "reporting": "last_minute_seconds",
+        "persist": true,
+        "x": 1020,
+        "y": 540,
+        "wires": [
+            [
+                "1de249ee.9aa696"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "24f363b5.3810bc",
+        "type": "stoptimer-varidelay",
+        "z": "3b28216c.47740e",
+        "g": "8ef56025.45bcb",
+        "duration": "1",
+        "durationType": "num",
+        "units": "Second",
+        "payloadtype": "num",
+        "payloadval": "0",
+        "name": "",
+        "reporting": "last_minute_seconds",
+        "persist": true,
+        "x": 1020,
+        "y": 600,
+        "wires": [
+            [
+                "1de249ee.9aa696"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "a5e62b86.c9d8f8",
+        "type": "change",
+        "z": "3b28216c.47740e",
+        "g": "8ef56025.45bcb",
+        "name": "Stop Motion Timer",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "stop",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 770,
+        "y": 420,
+        "wires": [
+            [
+                "2c4cd2b2.686a2e",
+                "bcff3a1c.2b17b8",
+                "4222a4c7.f2480c",
+                "24f363b5.3810bc"
+            ]
+        ]
+    },
+    {
+        "id": "9b89696e.75b7c8",
+        "type": "hubitat device",
+        "z": "3b28216c.47740e",
+        "g": "8967f411.5c9108",
+        "deviceLabel": "",
+        "name": "GR - Chandeliers",
+        "server": "b130c189.ea4d2",
+        "deviceId": "67",
+        "attribute": "switch",
+        "sendEvent": true,
+        "x": 350,
+        "y": 180,
+        "wires": [
+            [
+                "75b92ecf.39bc9"
+            ]
+        ]
+    },
+    {
+        "id": "75b92ecf.39bc9",
+        "type": "switch",
+        "z": "3b28216c.47740e",
+        "g": "8967f411.5c9108",
+        "name": "State",
+        "property": "payload.value",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "on",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "off",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 530,
+        "y": 180,
+        "wires": [
+            [
+                "b076fd2f.fc78b"
+            ],
+            [
+                "1de249ee.9aa696"
+            ]
+        ]
+    },
+    {
+        "id": "af979da7.a9ec",
+        "type": "hubitat device",
+        "z": "3b28216c.47740e",
+        "g": "85d61ece.1d40b",
+        "deviceLabel": "",
+        "name": "GR - Motion Clock",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1413",
+        "attribute": "motion",
+        "sendEvent": true,
+        "x": 210,
+        "y": 320,
+        "wires": [
+            [
+                "a6dfdf08.964f"
+            ]
+        ]
+    },
+    {
+        "id": "d0aef1fc.3eaf9",
+        "type": "hubitat device",
+        "z": "3b28216c.47740e",
+        "g": "f6a993dd.06e9e",
+        "deviceLabel": "",
+        "name": "GR - Motion Fireplace",
+        "server": "b130c189.ea4d2",
+        "deviceId": "162",
+        "attribute": "illuminance",
+        "sendEvent": false,
+        "x": 740,
+        "y": 260,
+        "wires": [
+            [
+                "1e95bbc4.02e424"
+            ]
+        ]
+    },
+    {
+        "id": "1e95bbc4.02e424",
+        "type": "switch",
+        "z": "3b28216c.47740e",
+        "g": "f6a993dd.06e9e",
+        "name": "≤ 30",
+        "property": "payload.value",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lte",
+                "v": "30",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 710,
+        "y": 320,
+        "wires": [
+            [
+                "6183c04f.57983"
+            ]
+        ]
+    },
+    {
+        "id": "cf785128.ac3d6",
+        "type": "hubitat device",
+        "z": "3b28216c.47740e",
+        "g": "8ef56025.45bcb",
+        "deviceLabel": "",
+        "name": "GR - Motion Fireplace",
+        "server": "b130c189.ea4d2",
+        "deviceId": "162",
+        "attribute": "illuminance",
+        "sendEvent": true,
+        "x": 740,
+        "y": 660,
+        "wires": [
+            [
+                "8935e344.75f3d"
+            ]
+        ]
+    },
+    {
+        "id": "8935e344.75f3d",
+        "type": "switch",
+        "z": "3b28216c.47740e",
+        "g": "8ef56025.45bcb",
+        "name": "≥ 100",
+        "property": "payload.value",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gte",
+                "v": "100",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1050,
+        "y": 660,
+        "wires": [
+            [
+                "1de249ee.9aa696"
             ]
         ]
     }
