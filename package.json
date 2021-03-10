@@ -1,7 +1,7 @@
 {
     "name": "node_red_bhFlows",
     "description": "This is a collection of flows that I am using to control my beach house smart home powered by Hubitat",
-    "version": "1.0",
+    "version": "1.5",
     "dependencies": {
         "node-red-contrib-hubitat": "1.2.1",
         "node-red-contrib-simpletime": "2.10.0",

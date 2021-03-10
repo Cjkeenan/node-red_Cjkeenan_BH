@@ -1318,8 +1318,8 @@
             "f8ce7b3f.ff69a8",
             "cc3191b7.fe9bd"
         ],
-        "x": 114,
-        "y": 299,
+        "x": 14,
+        "y": 19,
         "w": 492,
         "h": 229.5
     },
@@ -1339,11 +1339,12 @@
         "nodes": [
             "c77415ae.0c0898",
             "e0fde455.a63148",
-            "10f207f.699f0f8"
+            "9febae80.20461",
+            "3556984e.4f1698"
         ],
-        "x": 74,
-        "y": 139,
-        "w": 532,
+        "x": 14,
+        "y": 739,
+        "w": 792,
         "h": 82
     },
     {
@@ -1361,12 +1362,14 @@
         },
         "nodes": [
             "bf9bfc4d.29cbc",
-            "346e72ef.2a49be"
+            "346e72ef.2a49be",
+            "74225776.27d268",
+            "4e81438c.dd674c"
         ],
-        "x": 74,
-        "y": 219,
-        "w": 532,
-        "h": 82
+        "x": 14,
+        "y": 819,
+        "w": 552,
+        "h": 122
     },
     {
         "id": "b3ea31b2.17afa",
@@ -1389,8 +1392,8 @@
             "109491e9.01648e",
             "7c3fac3c.7c1184"
         ],
-        "x": 634,
-        "y": 411.5,
+        "x": 614,
+        "y": 251.5,
         "w": 472,
         "h": 277
     },
@@ -1413,12 +1416,13 @@
             "57054319.8ca22c",
             "aec974ed.66ef68",
             "da0c9656.4c85a8",
-            "946f40b0.810bf"
+            "946f40b0.810bf",
+            "89797b83.362f58"
         ],
-        "x": 634,
-        "y": 154,
-        "w": 472,
-        "h": 247
+        "x": 534,
+        "y": 19,
+        "w": 612,
+        "h": 222
     },
     {
         "id": "bbd34e0c.99f3c",
@@ -1441,39 +1445,12 @@
             "1ce3011f.bfec4f",
             "b5b9ce22.740c1",
             "654e6235.7b1b6c",
-            "824209e0.28ad48"
+            "dac948cc.0a7d58"
         ],
-        "x": 1154,
-        "y": 159,
-        "w": 432,
+        "x": 1174,
+        "y": 19,
+        "w": 472,
         "h": 342
-    },
-    {
-        "id": "7b4c2b56.74bb34",
-        "type": "group",
-        "z": "d06ad5d7.7d1a38",
-        "style": {
-            "stroke": "#2e333a",
-            "stroke-opacity": "1",
-            "fill": "#2e333a",
-            "fill-opacity": "0.75",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "bb819bb9.678df8",
-            "661c4f62.8ac28",
-            "992229ca.2f4a18",
-            "a2573f76.c6d4",
-            "73396064.ff8d",
-            "89490a2d.afc628",
-            "7dfd7833.207ba8"
-        ],
-        "x": 934,
-        "y": 759,
-        "w": 672,
-        "h": 202
     },
     {
         "id": "6a56d8cc.28eeb8",
@@ -1503,72 +1480,10 @@
             "1fa92018.0c3ec",
             "7b081796.d52a38"
         ],
-        "x": 1849,
+        "x": 2329,
         "y": 59,
         "w": 512,
         "h": 602
-    },
-    {
-        "id": "26661ca0.b1d944",
-        "type": "group",
-        "z": "68ba5945.906288",
-        "style": {
-            "stroke": "#2e333a",
-            "stroke-opacity": "1",
-            "fill": "#2e333a",
-            "fill-opacity": "0.75",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "80bb010d.082ce",
-            "1737ebff.565734",
-            "6f6ae5ea.792f9c",
-            "c73b5d38.e4ed6",
-            "83b32c58.41ce",
-            "666629d2.9fdf18",
-            "a4468c2.dde517",
-            "5b9d4c70.22d984",
-            "cd66091.af90cf8",
-            "df44fb1a.f08208",
-            "8bbc4fd1.22f5b"
-        ],
-        "x": 1374,
-        "y": 159,
-        "w": 472,
-        "h": 402
-    },
-    {
-        "id": "c9e65dc5.3adf2",
-        "type": "group",
-        "z": "68ba5945.906288",
-        "style": {
-            "stroke": "#2e333a",
-            "stroke-opacity": "1",
-            "fill": "#2e333a",
-            "fill-opacity": "0.75",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "ef0c564a.379998",
-            "aa0f1e83.d2a4e",
-            "af7899d5.486ec8",
-            "52e80eaf.ec2ec",
-            "4b3df96e.0ee398",
-            "89ab5121.73a8e",
-            "bf9090fa.4d232",
-            "b0f6010d.eac1c",
-            "2a1a8e4b.ce15b2",
-            "f0bb1ed4.befeb",
-            "f8c72644.d4f038"
-        ],
-        "x": 294,
-        "y": 119,
-        "w": 532,
-        "h": 482
     },
     {
         "id": "8da5ebc3.3ce6e8",
@@ -1650,35 +1565,6 @@
         "h": 222
     },
     {
-        "id": "a952c5c.b3f9938",
-        "type": "group",
-        "z": "4702b097.59f3b",
-        "style": {
-            "stroke": "#2e333a",
-            "stroke-opacity": "1",
-            "fill": "#2e333a",
-            "fill-opacity": "0.75",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "e4621cce.8a0bf",
-            "4a5cb884.1e7138",
-            "4fd665fb.d2931c",
-            "34b254a5.01834c",
-            "1dc43bb8.2f8664",
-            "7a804f31.2c7bd",
-            "a20605b2.226368",
-            "dbad589d.897ba8",
-            "33d41a55.b4e766"
-        ],
-        "x": 14,
-        "y": 339,
-        "w": 1072,
-        "h": 222
-    },
-    {
         "id": "da11bb5d.510958",
         "type": "group",
         "z": "68ba5945.906288",
@@ -1693,12 +1579,6 @@
         },
         "nodes": [
             "241e69db.e11a06",
-            "ecbbc81f.d7d568",
-            "6fde834f.86af3c",
-            "1e8a631a.86fd0d",
-            "81c44ec6.0ea8f",
-            "bcf3c847.be6068",
-            "8b221812.24a128",
             "4ef9f1f6.6c8db",
             "21d751c8.f7de4e",
             "82e3eab1.1d37d8",
@@ -1707,41 +1587,17 @@
             "4386551f.5c679c",
             "8447f4.cf02d81",
             "c00fd277.ad2e8",
-            "43f1bb07.4c8404",
             "a162b372.c3e24",
             "e6a752cf.4f145",
             "9ff9ea72.fd16d8",
-            "b3de46b2.1e5f58"
+            "b3de46b2.1e5f58",
+            "3c4f33fe.6a41bc",
+            "1117c764.14e249"
         ],
-        "x": 2374,
-        "y": 59,
-        "w": 1072,
-        "h": 722
-    },
-    {
-        "id": "d65ac224.03a1d",
-        "type": "group",
-        "z": "68ba5945.906288",
-        "style": {
-            "stroke": "#2e333a",
-            "stroke-opacity": "1",
-            "fill": "#2e333a",
-            "fill-opacity": "0.75",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "1ce0483c.2e83a8",
-            "d2522981.a56338",
-            "7e96d357.d5628c",
-            "1d1e6c3f.22b234",
-            "402aab2c.6fc014"
-        ],
-        "x": 834,
-        "y": 159,
-        "w": 532,
-        "h": 397
+        "x": 2854,
+        "y": 119,
+        "w": 812,
+        "h": 602
     },
     {
         "id": "4f30f3e7.a65ebc",
@@ -1761,16 +1617,15 @@
             "11984bf4.df55d4",
             "fa81ff97.75bfe",
             "eb90d063.760ce",
-            "e925ecde.40d49",
             "b0d6136.1c12ef",
             "eefe48a0.ed3718",
-            "d2683971.de9c08",
-            "d4c9d85.b312428",
-            "3398a80e.aa6388"
+            "78bae1e6.7ec47",
+            "8fe05310.43fc7",
+            "4cf5ec3a.03c674"
         ],
         "x": 14,
-        "y": 11.5,
-        "w": 1292,
+        "y": 591.5,
+        "w": 1172,
         "h": 149.5
     },
     {
@@ -1795,8 +1650,8 @@
             "7c575d7b.4ea964"
         ],
         "x": 14,
-        "y": 159,
-        "w": 972,
+        "y": 739,
+        "w": 952,
         "h": 122
     },
     {
@@ -1818,14 +1673,15 @@
             "9514e927.763a38",
             "2e4c1ca0.f02994",
             "dcafbed0.117e1",
-            "b503ca90.0b1f78",
-            "278e0987.6fb406",
-            "86061c6.e0de2e"
+            "86061c6.e0de2e",
+            "722c8abb.c856e4",
+            "ce516fb9.1019d",
+            "34ca6e6c.4eba52"
         ],
-        "x": 214,
-        "y": 19,
-        "w": 972,
-        "h": 162
+        "x": 14,
+        "y": 571.5,
+        "w": 1092,
+        "h": 149.5
     },
     {
         "id": "bc9da574.ee5618",
@@ -1845,11 +1701,12 @@
             "269eac95.6ea204",
             "bb3d3008.6e329",
             "68274698.bb88d8",
-            "7f8efb69.193964"
+            "7f8efb69.193964",
+            "e78f62b4.61d97"
         ],
-        "x": 34,
-        "y": 179,
-        "w": 832,
+        "x": 14,
+        "y": 719,
+        "w": 792,
         "h": 122
     },
     {
@@ -1870,11 +1727,12 @@
             "bea88ffc.2ff6b",
             "11b37f9f.ec32",
             "c41d1f3.e50e4e",
-            "f9a42575.1dc5d8"
+            "f9a42575.1dc5d8",
+            "f05db464.9f0d08"
         ],
         "x": 14,
-        "y": 19,
-        "w": 852,
+        "y": 619,
+        "w": 792,
         "h": 122
     },
     {
@@ -1899,8 +1757,8 @@
             "83226588.608178"
         ],
         "x": 14,
-        "y": 19,
-        "w": 832,
+        "y": 739,
+        "w": 792,
         "h": 122
     },
     {
@@ -1918,12 +1776,14 @@
         },
         "nodes": [
             "6b65c860.b2d778",
-            "6d1d5302.a8313c"
+            "6d1d5302.a8313c",
+            "fa287b92.be3a08",
+            "79936916.eae628"
         ],
-        "x": 254,
-        "y": 339,
-        "w": 372,
-        "h": 82
+        "x": 14,
+        "y": 839,
+        "w": 552,
+        "h": 122
     },
     {
         "id": "41d31a90.153274",
@@ -1945,8 +1805,8 @@
             "2a4ad94a.708926",
             "1e8d4760.a596a9"
         ],
-        "x": 254,
-        "y": 659,
+        "x": 214,
+        "y": 259,
         "w": 372,
         "h": 242
     },
@@ -1973,8 +1833,8 @@
             "bcc03f54.fc087",
             "4cfab87.c073f48"
         ],
-        "x": 154,
-        "y": 419,
+        "x": 74,
+        "y": 19,
         "w": 472,
         "h": 229.5
     },
@@ -1996,8 +1856,8 @@
             "38bd91e4.e0ce2e",
             "80bbf677.c25448"
         ],
-        "x": 1154,
-        "y": 579,
+        "x": 1134,
+        "y": 239,
         "w": 412,
         "h": 122
     },
@@ -2020,11 +1880,12 @@
             "3885fcd3.09c4b4",
             "808b1a5a.ebdd68",
             "2c536329.8f5f9c",
-            "4f672bc8.2ea274"
+            "4f672bc8.2ea274",
+            "587bbe72.0bb02"
         ],
-        "x": 674,
-        "y": 571.5,
-        "w": 472,
+        "x": 634,
+        "y": 231.5,
+        "w": 452,
         "h": 277
     },
     {
@@ -2044,8 +1905,8 @@
             "3cd29974.2b3ee6",
             "cbce77f0.fe0458"
         ],
-        "x": 1154,
-        "y": 439,
+        "x": 1134,
+        "y": 99,
         "w": 412,
         "h": 82
     },
@@ -2065,11 +1926,12 @@
         "nodes": [
             "b00f545c.e6ed38",
             "b64928a0.e9c988",
-            "28e09546.710aaa"
+            "28e09546.710aaa",
+            "ba1a874e.d831e8"
         ],
-        "x": 654,
-        "y": 394,
-        "w": 492,
+        "x": 574,
+        "y": 54,
+        "w": 552,
         "h": 172
     },
     {
@@ -2089,8 +1951,8 @@
             "831eaaf4.0e6508",
             "f4b20b30.aa0cf8"
         ],
-        "x": 114,
-        "y": 899,
+        "x": 14,
+        "y": 319,
         "w": 192,
         "h": 122
     },
@@ -2111,8 +1973,8 @@
             "92192881.8f9608",
             "c7e23144.d4862"
         ],
-        "x": 94,
-        "y": 779,
+        "x": 14,
+        "y": 319,
         "w": 192,
         "h": 122
     },
@@ -2136,8 +1998,8 @@
             "d6ad0fd7.6f324",
             "c47bd2bc.b052c"
         ],
-        "x": 254,
-        "y": 539,
+        "x": 214,
+        "y": 259,
         "w": 372,
         "h": 242
     },
@@ -2160,8 +2022,8 @@
             "a0c83f72.fe08a",
             "f9ee0570.6a9018"
         ],
-        "x": 1134,
-        "y": 379,
+        "x": 1074,
+        "y": 219,
         "w": 552,
         "h": 122
     },
@@ -2182,8 +2044,8 @@
             "4410a3fd.81854c",
             "a71747f3.d468b8"
         ],
-        "x": 1294,
-        "y": 259,
+        "x": 1234,
+        "y": 99,
         "w": 392,
         "h": 82
     },
@@ -2211,8 +2073,8 @@
             "c51af0a9.64471",
             "af979da7.a9ec"
         ],
-        "x": 74,
-        "y": 219,
+        "x": 54,
+        "y": 19,
         "w": 532,
         "h": 229.5
     },
@@ -2230,11 +2092,11 @@
             "color": "#a4a4a4"
         },
         "nodes": [
-            "54f3e04a.1fe42",
-            "df33ce01.97c32"
+            "df33ce01.97c32",
+            "54f3e04a.1fe42"
         ],
-        "x": 114,
-        "y": 699,
+        "x": 14,
+        "y": 319,
         "w": 192,
         "h": 122
     },
@@ -2258,8 +2120,8 @@
             "d1090ac5.42d928",
             "ff44d56e.aa1be8"
         ],
-        "x": 234,
-        "y": 459,
+        "x": 214,
+        "y": 259,
         "w": 372,
         "h": 242
     },
@@ -2284,8 +2146,8 @@
             "1e95bbc4.02e424",
             "4eefd7e6.10b848"
         ],
-        "x": 614,
-        "y": 174,
+        "x": 594,
+        "y": 14,
         "w": 632,
         "h": 187
     },
@@ -2304,12 +2166,14 @@
         },
         "nodes": [
             "9b89696e.75b7c8",
-            "75b92ecf.39bc9"
+            "75b92ecf.39bc9",
+            "e677acf6.3ca9a",
+            "ee4d418a.13eb8"
         ],
-        "x": 234,
-        "y": 139,
-        "w": 372,
-        "h": 82
+        "x": 14,
+        "y": 619,
+        "w": 572,
+        "h": 122
     },
     {
         "id": "8ef56025.45bcb",
@@ -2325,19 +2189,17 @@
             "color": "#a4a4a4"
         },
         "nodes": [
-            "8935e344.75f3d",
             "2c4cd2b2.686a2e",
             "9d47bb71.593738",
             "bcff3a1c.2b17b8",
             "4222a4c7.f2480c",
             "24f363b5.3810bc",
-            "a5e62b86.c9d8f8",
-            "cf785128.ac3d6"
+            "a5e62b86.c9d8f8"
         ],
-        "x": 614,
-        "y": 371.5,
-        "w": 512,
-        "h": 329.5
+        "x": 594,
+        "y": 211.5,
+        "w": 472,
+        "h": 277
     },
     {
         "id": "8a3e7f98.11b62",
@@ -2361,14 +2223,13 @@
             "6bf984ac.0bba4c",
             "e67f38f5.2be928",
             "ea0c8e97.28f7c",
-            "6792a0bb.ee36c",
-            "c5053b7e.eb5e68",
-            "7c3ca0d5.17ee2"
+            "7c3ca0d5.17ee2",
+            "f9d8202e.f8619"
         ],
-        "x": 334,
-        "y": 719,
+        "x": 14,
+        "y": 859,
         "w": 712,
-        "h": 282
+        "h": 262
     },
     {
         "id": "e183e469.1831a8",
@@ -2392,8 +2253,8 @@
             "6d62560d.8dff78",
             "199b8aed.cd9715"
         ],
-        "x": 1114,
-        "y": 279,
+        "x": 1214,
+        "y": 19,
         "w": 452,
         "h": 302
     },
@@ -2422,7 +2283,7 @@
             "7c6c548b.88d9dc"
         ],
         "x": 54,
-        "y": 339,
+        "y": 19,
         "w": 512,
         "h": 229.5
     },
@@ -2447,8 +2308,8 @@
             "48910f0.99003f",
             "1da6321b.e8eb1e"
         ],
-        "x": 614,
-        "y": 491.5,
+        "x": 654,
+        "y": 211.5,
         "w": 472,
         "h": 277
     },
@@ -2469,8 +2330,8 @@
             "d3cea35e.89c33",
             "77a0f8f1.a4b2c8"
         ],
-        "x": 114,
-        "y": 819,
+        "x": 14,
+        "y": 319,
         "w": 192,
         "h": 122
     },
@@ -2494,8 +2355,8 @@
             "a5b41f5a.84c2b",
             "5d67e783.42a2e8"
         ],
-        "x": 194,
-        "y": 579,
+        "x": 214,
+        "y": 259,
         "w": 372,
         "h": 242
     },
@@ -2519,9 +2380,9 @@
             "47acf468.1e5d8c",
             "1b0af88b.872397"
         ],
-        "x": 574,
-        "y": 314,
-        "w": 532,
+        "x": 594,
+        "y": 34,
+        "w": 592,
         "h": 172
     },
     {
@@ -2545,8 +2406,8 @@
             "ae05c33b.0f89b",
             "75d807a6.6e70c8"
         ],
-        "x": 1114,
-        "y": 579,
+        "x": 1174,
+        "y": 319,
         "w": 452,
         "h": 242
     },
@@ -2571,10 +2432,337 @@
             "3d32d340.505f7c",
             "e741fd60.6660f"
         ],
-        "x": 414,
-        "y": 999,
-        "w": 482,
+        "x": 14,
+        "y": 864,
+        "w": 652,
         "h": 237
+    },
+    {
+        "id": "545c7835.85a538",
+        "type": "group",
+        "z": "3b28216c.47740e",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#2e333a",
+            "fill-opacity": "0.75",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "2cb79ef6.9a7412",
+            "249aceb4.ae7cf2",
+            "de171cf9.08a35"
+        ],
+        "x": 14,
+        "y": 539,
+        "w": 592,
+        "h": 82
+    },
+    {
+        "id": "7b4c2b56.74bb34",
+        "type": "group",
+        "z": "d06ad5d7.7d1a38",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#2e333a",
+            "fill-opacity": "0.75",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "bb819bb9.678df8",
+            "661c4f62.8ac28",
+            "992229ca.2f4a18",
+            "a2573f76.c6d4",
+            "73396064.ff8d",
+            "62430807.b53408",
+            "725d002.21285"
+        ],
+        "x": 954,
+        "y": 619,
+        "w": 692,
+        "h": 202
+    },
+    {
+        "id": "74399a57.0db384",
+        "type": "group",
+        "z": "a994b807.c93cc8",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#2e333a",
+            "fill-opacity": "0.75",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "bdfbc339.36391",
+            "56039830.692118",
+            "d768ea79.4a2018",
+            "f97d0cf0.32ff3"
+        ],
+        "x": 1174,
+        "y": 939,
+        "w": 532,
+        "h": 162
+    },
+    {
+        "id": "8096faa5.6b5388",
+        "type": "group",
+        "z": "cd3ea6b3.ac9c98",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#2e333a",
+            "fill-opacity": "0.75",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "c30ab909.9e8df8",
+            "fdbe462d.dfd4b8",
+            "a41d3d35.af9da",
+            "da7dcbb8.019288"
+        ],
+        "x": 1274,
+        "y": 759,
+        "w": 532,
+        "h": 162
+    },
+    {
+        "id": "3bee8d81.8ab112",
+        "type": "group",
+        "z": "d06ad5d7.7d1a38",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#2e333a",
+            "fill-opacity": "0.75",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "a8ce4670.643ff8",
+            "5a99ec6.b352714"
+        ],
+        "x": 734,
+        "y": 899,
+        "w": 492,
+        "h": 82
+    },
+    {
+        "id": "360d4537.9f891a",
+        "type": "group",
+        "z": "d06ad5d7.7d1a38",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#2e333a",
+            "fill-opacity": "0.75",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "7b58d492.7cd49c",
+            "2f87f4c6.74ffac"
+        ],
+        "x": 734,
+        "y": 999,
+        "w": 492,
+        "h": 82
+    },
+    {
+        "id": "da7af52e.669f48",
+        "type": "group",
+        "z": "3b28216c.47740e",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#2e333a",
+            "fill-opacity": "0.75",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "923f971d.86c708",
+            "b55537fa.6b8e58"
+        ],
+        "x": 754,
+        "y": 559,
+        "w": 492,
+        "h": 82
+    },
+    {
+        "id": "4f54b8d1.2cc298",
+        "type": "group",
+        "z": "3b28216c.47740e",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#2e333a",
+            "fill-opacity": "0.75",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "75a8111f.de1e3",
+            "ba433501.c4c018"
+        ],
+        "x": 754,
+        "y": 659,
+        "w": 492,
+        "h": 82
+    },
+    {
+        "id": "2bd064b4.4083ac",
+        "type": "group",
+        "z": "68ba5945.906288",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#2e333a",
+            "fill-opacity": "0.75",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "422b2e52.dff8d",
+            "97d61af1.614d08",
+            "1ce0483c.2e83a8",
+            "d2522981.a56338",
+            "7e96d357.d5628c",
+            "1d1e6c3f.22b234",
+            "402aab2c.6fc014"
+        ],
+        "x": 1054,
+        "y": 159,
+        "w": 572,
+        "h": 402
+    },
+    {
+        "id": "bae12151.13267",
+        "type": "group",
+        "z": "68ba5945.906288",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#2e333a",
+            "fill-opacity": "0.75",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "ef0c564a.379998",
+            "f0bb1ed4.befeb",
+            "f8c72644.d4f038",
+            "75d9354c.30dd4c",
+            "2e91eb2.be14e14",
+            "117f4b98.92de44",
+            "1bdf9e11.77a652",
+            "e543b651.5d0228",
+            "e24d6cb2.36dad",
+            "9efb5534.4c1d78",
+            "5e914a44.f00a24"
+        ],
+        "x": 374,
+        "y": 119,
+        "w": 552,
+        "h": 482
+    },
+    {
+        "id": "c13bd32d.ee4ea",
+        "type": "group",
+        "z": "68ba5945.906288",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#2e333a",
+            "fill-opacity": "0.75",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "b0025216.3a383",
+            "d1b4041a.df37c8",
+            "264551bf.aecece",
+            "3a5449f6.fb5806",
+            "65f263c6.39da6c",
+            "84c147b7.49c348",
+            "80bb010d.082ce",
+            "df44fb1a.f08208",
+            "8bbc4fd1.22f5b",
+            "858e18d4.616f68",
+            "d60e0d66.777e4"
+        ],
+        "x": 1734,
+        "y": 159,
+        "w": 472,
+        "h": 402
+    },
+    {
+        "id": "ae3e8560.434b78",
+        "type": "group",
+        "z": "cd3ea6b3.ac9c98",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#2e333a",
+            "fill-opacity": "0.75",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "884b7694.b2cda8",
+            "fe31135.fe579f",
+            "423316c8.10ae78",
+            "d150e7cf.727c88"
+        ],
+        "x": 1274,
+        "y": 559,
+        "w": 492,
+        "h": 182
+    },
+    {
+        "id": "2d154e9c.4ad022",
+        "type": "group",
+        "z": "a994b807.c93cc8",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#2e333a",
+            "fill-opacity": "0.75",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "d2683971.de9c08",
+            "90945ae4.a7c238",
+            "d4c9d85.b312428",
+            "3398a80e.aa6388",
+            "859ce00a.3ba88",
+            "7183aa46.afea54",
+            "2597c7a3.ec5828",
+            "8147b739.0acfb8"
+        ],
+        "x": 1174,
+        "y": 759,
+        "w": 732,
+        "h": 182
     },
     {
         "id": "b130c189.ea4d2",
@@ -2895,7 +3083,7 @@
         "id": "80bb010d.082ce",
         "type": "switch",
         "z": "68ba5945.906288",
-        "g": "26661ca0.b1d944",
+        "g": "c13bd32d.ee4ea",
         "name": "Light Phrase Handler",
         "property": "payload.description.summary",
         "propertyType": "msg",
@@ -2916,7 +3104,7 @@
         "checkall": "false",
         "repair": false,
         "outputs": 2,
-        "x": 1500,
+        "x": 1860,
         "y": 360,
         "wires": [
             [
@@ -2925,142 +3113,6 @@
             [
                 "8bbc4fd1.22f5b"
             ]
-        ]
-    },
-    {
-        "id": "1737ebff.565734",
-        "type": "hubitat command",
-        "z": "68ba5945.906288",
-        "g": "26661ca0.b1d944",
-        "deviceLabel": "",
-        "name": "GR - Lights",
-        "server": "b130c189.ea4d2",
-        "deviceId": "67",
-        "command": "off",
-        "commandArgs": "",
-        "x": 1750,
-        "y": 200,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "6f6ae5ea.792f9c",
-        "type": "hubitat command",
-        "z": "68ba5945.906288",
-        "g": "26661ca0.b1d944",
-        "deviceLabel": "",
-        "name": "DB - Lights",
-        "server": "b130c189.ea4d2",
-        "deviceId": "69",
-        "command": "off",
-        "commandArgs": "",
-        "x": 1750,
-        "y": 240,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "c73b5d38.e4ed6",
-        "type": "hubitat command",
-        "z": "68ba5945.906288",
-        "g": "26661ca0.b1d944",
-        "deviceLabel": "",
-        "name": "KT - Lights",
-        "server": "b130c189.ea4d2",
-        "deviceId": "68",
-        "command": "off",
-        "commandArgs": "",
-        "x": 1750,
-        "y": 280,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "83b32c58.41ce",
-        "type": "hubitat command",
-        "z": "68ba5945.906288",
-        "g": "26661ca0.b1d944",
-        "deviceLabel": "",
-        "name": "MB - Lights",
-        "server": "b130c189.ea4d2",
-        "deviceId": "501",
-        "command": "off",
-        "commandArgs": "",
-        "x": 1750,
-        "y": 320,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "666629d2.9fdf18",
-        "type": "hubitat command",
-        "z": "68ba5945.906288",
-        "g": "26661ca0.b1d944",
-        "deviceLabel": "",
-        "name": "DB - Lights",
-        "server": "b130c189.ea4d2",
-        "deviceId": "69",
-        "command": "on",
-        "commandArgs": "",
-        "x": 1750,
-        "y": 440,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "a4468c2.dde517",
-        "type": "hubitat command",
-        "z": "68ba5945.906288",
-        "g": "26661ca0.b1d944",
-        "deviceLabel": "",
-        "name": "KT - Lights",
-        "server": "b130c189.ea4d2",
-        "deviceId": "68",
-        "command": "on",
-        "commandArgs": "",
-        "x": 1750,
-        "y": 480,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "5b9d4c70.22d984",
-        "type": "hubitat command",
-        "z": "68ba5945.906288",
-        "g": "26661ca0.b1d944",
-        "deviceLabel": "",
-        "name": "MB - Lights",
-        "server": "b130c189.ea4d2",
-        "deviceId": "501",
-        "command": "on",
-        "commandArgs": "",
-        "x": 1750,
-        "y": 520,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "cd66091.af90cf8",
-        "type": "hubitat command",
-        "z": "68ba5945.906288",
-        "g": "26661ca0.b1d944",
-        "deviceLabel": "",
-        "name": "GR - Lights",
-        "server": "b130c189.ea4d2",
-        "deviceId": "67",
-        "command": "on",
-        "commandArgs": "",
-        "x": 1750,
-        "y": 400,
-        "wires": [
-            []
         ]
     },
     {
@@ -3271,23 +3323,23 @@
         "id": "df44fb1a.f08208",
         "type": "subflow:cb4b5b0a.f09b68",
         "z": "68ba5945.906288",
-        "g": "26661ca0.b1d944",
+        "g": "c13bd32d.ee4ea",
         "name": "",
         "env": [],
-        "x": 1520,
+        "x": 1880,
         "y": 260,
         "wires": [
             [
-                "1737ebff.565734"
+                "3a5449f6.fb5806"
             ],
             [
-                "6f6ae5ea.792f9c"
+                "65f263c6.39da6c"
             ],
             [
-                "c73b5d38.e4ed6"
+                "84c147b7.49c348"
             ],
             [
-                "83b32c58.41ce"
+                "858e18d4.616f68"
             ]
         ]
     },
@@ -3295,22 +3347,22 @@
         "id": "8bbc4fd1.22f5b",
         "type": "subflow:cb4b5b0a.f09b68",
         "z": "68ba5945.906288",
-        "g": "26661ca0.b1d944",
+        "g": "c13bd32d.ee4ea",
         "name": "",
-        "x": 1520,
+        "x": 1880,
         "y": 460,
         "wires": [
             [
-                "cd66091.af90cf8"
+                "b0025216.3a383"
             ],
             [
-                "666629d2.9fdf18"
+                "d1b4041a.df37c8"
             ],
             [
-                "a4468c2.dde517"
+                "264551bf.aecece"
             ],
             [
-                "5b9d4c70.22d984"
+                "d60e0d66.777e4"
             ]
         ]
     },
@@ -3419,7 +3471,7 @@
         "checkall": "false",
         "repair": false,
         "outputs": 4,
-        "x": 2040,
+        "x": 2520,
         "y": 360,
         "wires": [
             [
@@ -3442,7 +3494,7 @@
         "z": "68ba5945.906288",
         "g": "6a56d8cc.28eeb8",
         "name": "",
-        "x": 2000,
+        "x": 2480,
         "y": 160,
         "wires": [
             [],
@@ -3460,7 +3512,7 @@
         "g": "6a56d8cc.28eeb8",
         "name": "",
         "env": [],
-        "x": 2000,
+        "x": 2480,
         "y": 260,
         "wires": [
             [],
@@ -4750,8 +4802,8 @@
         "checkall": "false",
         "repair": false,
         "outputs": 2,
-        "x": 360,
-        "y": 580,
+        "x": 280,
+        "y": 260,
         "wires": [
             [
                 "94023e4c.b2b4d",
@@ -4764,36 +4816,6 @@
         ]
     },
     {
-        "id": "9cb3b387.dc6da",
-        "type": "hubitat command",
-        "z": "73f998b9.8842a8",
-        "name": "GR - Motion Detection",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1377",
-        "command": "off",
-        "commandArgs": "",
-        "x": 660,
-        "y": 60,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "901f1a7f.229298",
-        "type": "hubitat command",
-        "z": "73f998b9.8842a8",
-        "name": "KT - Motion Detection",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1351",
-        "command": "off",
-        "commandArgs": "",
-        "x": 660,
-        "y": 300,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "1f860f1a.769fd1",
         "type": "hubitat command",
         "z": "73f998b9.8842a8",
@@ -4803,8 +4825,8 @@
         "deviceId": "2410",
         "command": "lock",
         "commandArgs": "",
-        "x": 1170,
-        "y": 540,
+        "x": 1090,
+        "y": 220,
         "wires": [
             [
                 "d0a50d7b.fbee6"
@@ -4821,8 +4843,8 @@
         "deviceId": "86",
         "attribute": "alarm",
         "sendEvent": false,
-        "x": 770,
-        "y": 600,
+        "x": 690,
+        "y": 280,
         "wires": [
             [
                 "cab7e870.5e4e98"
@@ -4846,8 +4868,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 930,
-        "y": 600,
+        "x": 850,
+        "y": 280,
         "wires": [
             [
                 "7896d4be.8fce0c"
@@ -4863,8 +4885,8 @@
         "deviceId": "86",
         "command": "home",
         "commandArgs": "",
-        "x": 1080,
-        "y": 600,
+        "x": 1000,
+        "y": 280,
         "wires": [
             [
                 "68ee95d1.8d744c"
@@ -4880,8 +4902,8 @@
         "deviceId": "86",
         "command": "poll",
         "commandArgs": "",
-        "x": 590,
-        "y": 600,
+        "x": 510,
+        "y": 280,
         "wires": [
             [
                 "ed251d47.20d8e"
@@ -4894,117 +4916,21 @@
         "z": "73f998b9.8842a8",
         "name": "",
         "env": [],
-        "x": 360,
-        "y": 200,
-        "wires": [
-            [
-                "410479d9.0625d8",
-                "9cb3b387.dc6da"
-            ],
-            [
-                "be21259d.1ec948",
-                "679dfd2f.fcdc74",
-                "734ac2b4.bcf5dc"
-            ],
-            [
-                "62e2193c.2b9368",
-                "901f1a7f.229298"
-            ],
-            [
-                "14b0e991.d2c5a6",
-                "7208a07e.4f6be",
-                "90d94c12.d6102"
-            ]
-        ]
-    },
-    {
-        "id": "410479d9.0625d8",
-        "type": "hubitat command",
-        "z": "73f998b9.8842a8",
-        "name": "GR - Lights",
-        "server": "b130c189.ea4d2",
-        "deviceId": "67",
-        "command": "off",
-        "commandArgs": "",
-        "x": 630,
+        "x": 300,
         "y": 100,
         "wires": [
-            []
-        ]
-    },
-    {
-        "id": "be21259d.1ec948",
-        "type": "hubitat command",
-        "z": "73f998b9.8842a8",
-        "name": "DB - Lights",
-        "server": "b130c189.ea4d2",
-        "deviceId": "69",
-        "command": "off",
-        "commandArgs": "",
-        "x": 630,
-        "y": 240,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "62e2193c.2b9368",
-        "type": "hubitat command",
-        "z": "73f998b9.8842a8",
-        "name": "KT - Lights",
-        "server": "b130c189.ea4d2",
-        "deviceId": "68",
-        "command": "off",
-        "commandArgs": "",
-        "x": 630,
-        "y": 340,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "14b0e991.d2c5a6",
-        "type": "hubitat command",
-        "z": "73f998b9.8842a8",
-        "name": "MB - Lights",
-        "server": "b130c189.ea4d2",
-        "deviceId": "501",
-        "command": "off",
-        "commandArgs": "",
-        "x": 630,
-        "y": 480,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "e87b6f2.9c7329",
-        "type": "hubitat command",
-        "z": "73f998b9.8842a8",
-        "name": "GR - Motion Detection",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1377",
-        "command": "on",
-        "commandArgs": "",
-        "x": 660,
-        "y": 680,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "f8082117.809db",
-        "type": "hubitat command",
-        "z": "73f998b9.8842a8",
-        "name": "KT - Motion Detection",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1351",
-        "command": "on",
-        "commandArgs": "",
-        "x": 660,
-        "y": 840,
-        "wires": [
-            []
+            [
+                "9a8963b8.95506"
+            ],
+            [
+                "452c0e86.53716"
+            ],
+            [
+                "3b2a283.a0b8dd8"
+            ],
+            [
+                "452e14b.d9ef1ec"
+            ]
         ]
     },
     {
@@ -5013,22 +4939,20 @@
         "z": "73f998b9.8842a8",
         "name": "",
         "env": [],
-        "x": 360,
-        "y": 820,
+        "x": 300,
+        "y": 400,
         "wires": [
             [
-                "e87b6f2.9c7329"
+                "67e086dd.c817f8"
             ],
             [
-                "c22c9e42.2e8d6",
-                "8b5522f9.a7572"
+                "bf4dda67.e41fe8"
             ],
             [
-                "f8082117.809db"
+                "b14d2db6.c672c"
             ],
             [
-                "85494f22.32e7f",
-                "65a0c298.c38e3c"
+                "cc0f6e65.cb36e"
             ]
         ]
     },
@@ -6449,35 +6373,33 @@
         "id": "e3edea19.a9c2f8",
         "type": "link in",
         "z": "d61084e.39e0678",
-        "name": "Voice Trigger",
+        "name": "Alexa Voice Command",
         "links": [
             "da6ac8d6.218fe8"
         ],
-        "x": 230,
-        "y": 60,
+        "x": 275,
+        "y": 80,
         "wires": [
             [
                 "6118732f.6ede7c"
             ]
-        ],
-        "l": true
+        ]
     },
     {
         "id": "8b6715e.c7095e8",
         "type": "link in",
         "z": "73f998b9.8842a8",
-        "name": "Voice Trigger",
+        "name": "Alexa Voice Command",
         "links": [
             "da6ac8d6.218fe8"
         ],
-        "x": 190,
-        "y": 580,
+        "x": 155,
+        "y": 260,
         "wires": [
             [
                 "e96cba5a.0480d8"
             ]
-        ],
-        "l": true
+        ]
     },
     {
         "id": "f59f40fd.ccc8f",
@@ -7120,7 +7042,7 @@
         "id": "ef0c564a.379998",
         "type": "switch",
         "z": "68ba5945.906288",
-        "g": "c9e65dc5.3adf2",
+        "g": "bae12151.13267",
         "name": "Motion Phrase Handler",
         "property": "payload.description.summary",
         "propertyType": "msg",
@@ -7141,7 +7063,7 @@
         "checkall": "false",
         "repair": false,
         "outputs": 2,
-        "x": 420,
+        "x": 500,
         "y": 360,
         "wires": [
             [
@@ -7153,155 +7075,26 @@
         ]
     },
     {
-        "id": "aa0f1e83.d2a4e",
-        "type": "hubitat command",
-        "z": "68ba5945.906288",
-        "g": "c9e65dc5.3adf2",
-        "name": "GR - Motion Detection",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1377",
-        "command": "off",
-        "commandArgs": "",
-        "x": 700,
-        "y": 160,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "af7899d5.486ec8",
-        "type": "hubitat command",
-        "z": "68ba5945.906288",
-        "g": "c9e65dc5.3adf2",
-        "name": "DB - Motion Detection",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1352",
-        "command": "off",
-        "commandArgs": "",
-        "x": 700,
-        "y": 200,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "52e80eaf.ec2ec",
-        "type": "hubitat command",
-        "z": "68ba5945.906288",
-        "g": "c9e65dc5.3adf2",
-        "name": "KT - Motion Detection",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1351",
-        "command": "off",
-        "commandArgs": "",
-        "x": 700,
-        "y": 240,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "4b3df96e.0ee398",
-        "type": "hubitat command",
-        "z": "68ba5945.906288",
-        "g": "c9e65dc5.3adf2",
-        "name": "MB - Motion Detection",
-        "server": "b130c189.ea4d2",
-        "deviceId": "385",
-        "command": "off",
-        "commandArgs": "",
-        "x": 700,
-        "y": 280,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "89ab5121.73a8e",
-        "type": "hubitat command",
-        "z": "68ba5945.906288",
-        "g": "c9e65dc5.3adf2",
-        "deviceLabel": "",
-        "name": "GR - Motion Detection",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1377",
-        "command": "on",
-        "commandArgs": "",
-        "x": 700,
-        "y": 440,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "bf9090fa.4d232",
-        "type": "hubitat command",
-        "z": "68ba5945.906288",
-        "g": "c9e65dc5.3adf2",
-        "name": "DB - Motion Detection",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1352",
-        "command": "on",
-        "commandArgs": "",
-        "x": 700,
-        "y": 480,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "b0f6010d.eac1c",
-        "type": "hubitat command",
-        "z": "68ba5945.906288",
-        "g": "c9e65dc5.3adf2",
-        "name": "KT - Motion Detection",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1351",
-        "command": "on",
-        "commandArgs": "",
-        "x": 700,
-        "y": 520,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "2a1a8e4b.ce15b2",
-        "type": "hubitat command",
-        "z": "68ba5945.906288",
-        "g": "c9e65dc5.3adf2",
-        "name": "MB - Motion Detection",
-        "server": "b130c189.ea4d2",
-        "deviceId": "385",
-        "command": "on",
-        "commandArgs": "",
-        "x": 700,
-        "y": 560,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "f0bb1ed4.befeb",
         "type": "subflow:cb4b5b0a.f09b68",
         "z": "68ba5945.906288",
-        "g": "c9e65dc5.3adf2",
+        "g": "bae12151.13267",
         "name": "",
         "env": [],
-        "x": 440,
+        "x": 520,
         "y": 220,
         "wires": [
             [
-                "aa0f1e83.d2a4e"
+                "e543b651.5d0228"
             ],
             [
-                "af7899d5.486ec8"
+                "e24d6cb2.36dad"
             ],
             [
-                "52e80eaf.ec2ec"
+                "9efb5534.4c1d78"
             ],
             [
-                "4b3df96e.0ee398"
+                "5e914a44.f00a24"
             ]
         ]
     },
@@ -7309,22 +7102,22 @@
         "id": "f8c72644.d4f038",
         "type": "subflow:cb4b5b0a.f09b68",
         "z": "68ba5945.906288",
-        "g": "c9e65dc5.3adf2",
+        "g": "bae12151.13267",
         "name": "",
-        "x": 440,
+        "x": 520,
         "y": 500,
         "wires": [
             [
-                "89ab5121.73a8e"
+                "75d9354c.30dd4c"
             ],
             [
-                "bf9090fa.4d232"
+                "2e91eb2.be14e14"
             ],
             [
-                "b0f6010d.eac1c"
+                "117f4b98.92de44"
             ],
             [
-                "2a1a8e4b.ce15b2"
+                "1bdf9e11.77a652"
             ]
         ]
     },
@@ -7332,11 +7125,11 @@
         "id": "a8a82044.dc145",
         "type": "link in",
         "z": "68ba5945.906288",
-        "name": "Voice Trigger",
+        "name": "Alexa Voice Command",
         "links": [
             "da6ac8d6.218fe8"
         ],
-        "x": 190,
+        "x": 235,
         "y": 360,
         "wires": [
             [
@@ -7345,11 +7138,10 @@
                 "ef0c564a.379998",
                 "241e69db.e11a06",
                 "1ce0483c.2e83a8",
-                "6c4f8b82.166fd4",
-                "5faf0b68.46edf4"
+                "5faf0b68.46edf4",
+                "6c4f8b82.166fd4"
             ]
-        ],
-        "l": true
+        ]
     },
     {
         "id": "37b3e0d2.a9e47",
@@ -7450,7 +7242,7 @@
         "g": "6a56d8cc.28eeb8",
         "name": "",
         "env": [],
-        "x": 1995,
+        "x": 2475,
         "y": 460,
         "wires": [
             [
@@ -7470,7 +7262,7 @@
         "g": "6a56d8cc.28eeb8",
         "name": "",
         "env": [],
-        "x": 1995,
+        "x": 2475,
         "y": 560,
         "wires": [
             [
@@ -8143,38 +7935,6 @@
         ]
     },
     {
-        "id": "674868ad.e357e8",
-        "type": "hubitat command",
-        "z": "345f283.d5796d8",
-        "name": "KT - Motion Detection",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1351",
-        "command": "on",
-        "commandArgs": "",
-        "x": 820,
-        "y": 440,
-        "wires": [
-            [
-                "cc5ec2c5.eb254"
-            ]
-        ]
-    },
-    {
-        "id": "cc5ec2c5.eb254",
-        "type": "hubitat command",
-        "z": "345f283.d5796d8",
-        "name": "MB - Motion Detection",
-        "server": "b130c189.ea4d2",
-        "deviceId": "385",
-        "command": "on",
-        "commandArgs": "",
-        "x": 1040,
-        "y": 440,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "ee75fe96.c668b",
         "type": "subflow:ac12c9d8.613d38",
         "z": "345f283.d5796d8",
@@ -8190,7 +7950,7 @@
             ],
             [
                 "799c021a.c9142c",
-                "bae4798b.ce1e98"
+                "ec05df2f.c57ce"
             ],
             [
                 "6c8244ba.e4142c",
@@ -8198,7 +7958,7 @@
             ],
             [
                 "799c021a.c9142c",
-                "f3418bfa.79d2f8"
+                "c7ba1ba7.053658"
             ],
             [
                 "6c8244ba.e4142c",
@@ -8207,7 +7967,7 @@
             ],
             [
                 "799c021a.c9142c",
-                "674868ad.e357e8"
+                "e3ee01ca.572"
             ],
             [
                 "6c8244ba.e4142c",
@@ -8244,38 +8004,6 @@
         ]
     },
     {
-        "id": "bae4798b.ce1e98",
-        "type": "hubitat command",
-        "z": "345f283.d5796d8",
-        "name": "MB - Motion Detection",
-        "server": "b130c189.ea4d2",
-        "deviceId": "385",
-        "command": "off",
-        "commandArgs": "",
-        "x": 820,
-        "y": 320,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "f3418bfa.79d2f8",
-        "type": "hubitat command",
-        "z": "345f283.d5796d8",
-        "name": "MB - Motion Detection",
-        "server": "b130c189.ea4d2",
-        "deviceId": "385",
-        "command": "on",
-        "commandArgs": "",
-        "x": 820,
-        "y": 380,
-        "wires": [
-            [
-                "c7ba1ba7.053658"
-            ]
-        ]
-    },
-    {
         "id": "a7bacbdc.967fb8",
         "type": "link in",
         "z": "345f283.d5796d8",
@@ -8283,14 +8011,15 @@
         "links": [
             "19c790a8.4f13cf"
         ],
-        "x": 215,
+        "x": 210,
         "y": 260,
         "wires": [
             [
                 "11291787.f81d18",
                 "ee75fe96.c668b"
             ]
-        ]
+        ],
+        "l": true
     },
     {
         "id": "13e3388f.1cc2b7",
@@ -8597,6 +8326,7 @@
         "id": "28b240a7.18b6a",
         "type": "subflow:1b6cb505.3a434b",
         "z": "345f283.d5796d8",
+        "d": true,
         "name": "",
         "env": [],
         "x": 820,
@@ -10392,7 +10122,7 @@
         "checkall": "false",
         "repair": false,
         "outputs": 2,
-        "x": 2510,
+        "x": 2990,
         "y": 360,
         "wires": [
             [
@@ -10404,129 +10134,23 @@
         ]
     },
     {
-        "id": "ecbbc81f.d7d568",
-        "type": "hubitat command",
-        "z": "68ba5945.906288",
-        "g": "da11bb5d.510958",
-        "name": "GR - Motion Detection",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1377",
-        "command": "on",
-        "commandArgs": "",
-        "x": 2840,
-        "y": 100,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "6fde834f.86af3c",
-        "type": "hubitat command",
-        "z": "68ba5945.906288",
-        "g": "da11bb5d.510958",
-        "name": "DB - Motion Detection",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1352",
-        "command": "on",
-        "commandArgs": "",
-        "x": 2840,
-        "y": 200,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "1e8a631a.86fd0d",
-        "type": "hubitat command",
-        "z": "68ba5945.906288",
-        "g": "da11bb5d.510958",
-        "name": "MB - Motion Detection",
-        "server": "b130c189.ea4d2",
-        "deviceId": "385",
-        "command": "on",
-        "commandArgs": "",
-        "x": 2840,
-        "y": 300,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "81c44ec6.0ea8f",
-        "type": "hubitat command",
-        "z": "68ba5945.906288",
-        "g": "da11bb5d.510958",
-        "name": "GR - Motion Detection",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1377",
-        "command": "off",
-        "commandArgs": "",
-        "x": 2840,
-        "y": 400,
-        "wires": [
-            [
-                "82e3eab1.1d37d8"
-            ]
-        ]
-    },
-    {
-        "id": "bcf3c847.be6068",
-        "type": "hubitat command",
-        "z": "68ba5945.906288",
-        "g": "da11bb5d.510958",
-        "name": "DB - Motion Detection",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1352",
-        "command": "off",
-        "commandArgs": "",
-        "x": 2840,
-        "y": 520,
-        "wires": [
-            [
-                "43f1bb07.4c8404"
-            ]
-        ]
-    },
-    {
-        "id": "8b221812.24a128",
-        "type": "hubitat command",
-        "z": "68ba5945.906288",
-        "g": "da11bb5d.510958",
-        "name": "MB - Motion Detection",
-        "server": "b130c189.ea4d2",
-        "deviceId": "385",
-        "command": "off",
-        "commandArgs": "",
-        "x": 2840,
-        "y": 640,
-        "wires": [
-            [
-                "7420ed20.3c1374",
-                "d35e8c19.84041",
-                "4386551f.5c679c"
-            ]
-        ]
-    },
-    {
         "id": "4ef9f1f6.6c8db",
         "type": "subflow:cb4b5b0a.f09b68",
         "z": "68ba5945.906288",
         "g": "da11bb5d.510958",
         "name": "",
         "env": [],
-        "x": 2540,
+        "x": 3020,
         "y": 200,
         "wires": [
             [
-                "ecbbc81f.d7d568"
+                "3c4f33fe.6a41bc"
             ],
             [
-                "6fde834f.86af3c",
                 "9ff9ea72.fd16d8"
             ],
             [],
             [
-                "1e8a631a.86fd0d",
                 "e6a752cf.4f145"
             ]
         ]
@@ -10537,20 +10161,22 @@
         "z": "68ba5945.906288",
         "g": "da11bb5d.510958",
         "name": "",
-        "x": 2540,
+        "x": 3020,
         "y": 520,
         "wires": [
             [
-                "81c44ec6.0ea8f"
+                "1117c764.14e249",
+                "82e3eab1.1d37d8"
             ],
             [
-                "bcf3c847.be6068",
                 "b3de46b2.1e5f58"
             ],
             [],
             [
-                "8b221812.24a128",
-                "a162b372.c3e24"
+                "a162b372.c3e24",
+                "d35e8c19.84041",
+                "7420ed20.3c1374",
+                "4386551f.5c679c"
             ]
         ]
     },
@@ -10564,8 +10190,8 @@
         "deviceId": "1572",
         "command": "setLevel",
         "commandArgs": "75",
-        "x": 3070,
-        "y": 400,
+        "x": 3290,
+        "y": 420,
         "wires": [
             []
         ]
@@ -10580,8 +10206,8 @@
         "deviceId": "22",
         "command": "setColorTemperature",
         "commandArgs": "3500",
-        "x": 3100,
-        "y": 640,
+        "x": 3320,
+        "y": 580,
         "wires": [
             [
                 "8447f4.cf02d81"
@@ -10598,8 +10224,8 @@
         "deviceId": "23",
         "command": "setColorTemperature",
         "commandArgs": "3500",
-        "x": 3100,
-        "y": 680,
+        "x": 3320,
+        "y": 620,
         "wires": [
             [
                 "c00fd277.ad2e8"
@@ -10616,8 +10242,8 @@
         "deviceId": "21",
         "command": "off",
         "commandArgs": "",
-        "x": 3090,
-        "y": 740,
+        "x": 3310,
+        "y": 680,
         "wires": [
             []
         ]
@@ -10632,8 +10258,8 @@
         "deviceId": "22",
         "command": "setLevel",
         "commandArgs": "100",
-        "x": 3320,
-        "y": 640,
+        "x": 3540,
+        "y": 580,
         "wires": [
             []
         ]
@@ -10648,8 +10274,8 @@
         "deviceId": "23",
         "command": "setLevel",
         "commandArgs": "100",
-        "x": 3320,
-        "y": 680,
+        "x": 3540,
+        "y": 620,
         "wires": [
             []
         ]
@@ -10671,8 +10297,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 940,
-        "y": 540,
+        "x": 860,
+        "y": 220,
         "wires": [
             [
                 "1f860f1a.769fd1"
@@ -10689,8 +10315,8 @@
         "deviceId": "2410",
         "attribute": "lock",
         "sendEvent": false,
-        "x": 770,
-        "y": 540,
+        "x": 690,
+        "y": 220,
         "wires": [
             [
                 "7c5a13ee.cbb74c"
@@ -10706,8 +10332,8 @@
         "deviceId": "2410",
         "command": "refresh",
         "commandArgs": "",
-        "x": 600,
-        "y": 540,
+        "x": 520,
+        "y": 220,
         "wires": [
             [
                 "8a6fbfea.46e12"
@@ -10729,8 +10355,8 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
-        "x": 1380,
-        "y": 540,
+        "x": 1300,
+        "y": 220,
         "wires": [
             [
                 "b674ffb.99ca3"
@@ -10752,8 +10378,8 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
-        "x": 1240,
-        "y": 600,
+        "x": 1160,
+        "y": 280,
         "wires": [
             [
                 "94023e4c.b2b4d"
@@ -10771,8 +10397,8 @@
         "deviceId": "1795",
         "attribute": "motion",
         "sendEvent": true,
-        "x": 240,
-        "y": 340,
+        "x": 140,
+        "y": 60,
         "wires": [
             [
                 "61b718e4.b83798"
@@ -10790,8 +10416,8 @@
         "deviceId": "1794",
         "attribute": "motion",
         "sendEvent": true,
-        "x": 230,
-        "y": 400,
+        "x": 130,
+        "y": 120,
         "wires": [
             [
                 "61b718e4.b83798"
@@ -10821,8 +10447,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 390,
-        "y": 360,
+        "x": 290,
+        "y": 80,
         "wires": [
             [
                 "da18749d.085f98"
@@ -10852,8 +10478,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 510,
-        "y": 340,
+        "x": 410,
+        "y": 60,
         "wires": [
             [
                 "7015b08c.1a59c"
@@ -10880,8 +10506,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 520,
-        "y": 380,
+        "x": 420,
+        "y": 100,
         "wires": [
             [
                 "7015b08c.1a59c"
@@ -10901,8 +10527,8 @@
         "outputtriggeredby": "all",
         "inputCount": "2",
         "topic": "Kitchen Motion",
-        "x": 240,
-        "y": 480,
+        "x": 140,
+        "y": 200,
         "wires": [
             [],
             [
@@ -10924,8 +10550,8 @@
         "name": "",
         "reporting": "last_minute_seconds",
         "persist": true,
-        "x": 1000,
-        "y": 460,
+        "x": 980,
+        "y": 300,
         "wires": [
             [
                 "7293a6a3.1913e8"
@@ -10941,8 +10567,8 @@
         "g": "d79efd7b.7886b",
         "name": "",
         "env": [],
-        "x": 740,
-        "y": 240,
+        "x": 800,
+        "y": 120,
         "wires": [
             [
                 "da0483c.0b8398"
@@ -10981,8 +10607,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 530,
-        "y": 440,
+        "x": 430,
+        "y": 160,
         "wires": [
             [
                 "946f40b0.810bf",
@@ -11000,8 +10626,8 @@
         "g": "b3ea31b2.17afa",
         "name": "",
         "env": [],
-        "x": 740,
-        "y": 540,
+        "x": 720,
+        "y": 380,
         "wires": [
             [],
             [
@@ -11034,8 +10660,8 @@
         "name": "",
         "reporting": "last_minute_seconds",
         "persist": true,
-        "x": 1000,
-        "y": 520,
+        "x": 980,
+        "y": 360,
         "wires": [
             [
                 "7293a6a3.1913e8"
@@ -11057,8 +10683,8 @@
         "name": "",
         "reporting": "last_minute_seconds",
         "persist": true,
-        "x": 1000,
-        "y": 580,
+        "x": 980,
+        "y": 420,
         "wires": [
             [
                 "7293a6a3.1913e8"
@@ -11080,8 +10706,8 @@
         "name": "",
         "reporting": "last_minute_seconds",
         "persist": true,
-        "x": 1000,
-        "y": 640,
+        "x": 980,
+        "y": 480,
         "wires": [
             [
                 "7293a6a3.1913e8"
@@ -11100,12 +10726,12 @@
         "deviceId": "68",
         "command": "off",
         "commandArgs": "",
-        "x": 1280,
-        "y": 800,
+        "x": 1300,
+        "y": 660,
         "wires": [
             [
-                "89490a2d.afc628",
-                "7dfd7833.207ba8"
+                "62430807.b53408",
+                "725d002.21285"
             ]
         ]
     },
@@ -11119,12 +10745,12 @@
         "deviceId": "1090",
         "command": "off",
         "commandArgs": "",
-        "x": 1280,
-        "y": 840,
+        "x": 1300,
+        "y": 700,
         "wires": [
             [
-                "89490a2d.afc628",
-                "7dfd7833.207ba8"
+                "62430807.b53408",
+                "725d002.21285"
             ]
         ]
     },
@@ -11138,12 +10764,12 @@
         "deviceId": "1092",
         "command": "off",
         "commandArgs": "",
-        "x": 1280,
-        "y": 880,
+        "x": 1300,
+        "y": 740,
         "wires": [
             [
-                "89490a2d.afc628",
-                "7dfd7833.207ba8"
+                "62430807.b53408",
+                "725d002.21285"
             ]
         ]
     },
@@ -11157,12 +10783,12 @@
         "deviceId": "1093",
         "command": "off",
         "commandArgs": "",
-        "x": 1280,
-        "y": 920,
+        "x": 1300,
+        "y": 780,
         "wires": [
             [
-                "89490a2d.afc628",
-                "7dfd7833.207ba8"
+                "62430807.b53408",
+                "725d002.21285"
             ]
         ]
     },
@@ -11188,8 +10814,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1270,
-        "y": 720,
+        "x": 1290,
+        "y": 580,
         "wires": [
             [
                 "f07ba3ca.98747",
@@ -11210,8 +10836,8 @@
         "deviceId": "2303",
         "attribute": "switch",
         "sendEvent": false,
-        "x": 980,
-        "y": 720,
+        "x": 1080,
+        "y": 580,
         "wires": [
             [
                 "5f6cf651.e5a838"
@@ -11275,8 +10901,8 @@
         "g": "d79efd7b.7886b",
         "name": "",
         "env": [],
-        "x": 980,
-        "y": 200,
+        "x": 1020,
+        "y": 60,
         "wires": [
             [
                 "3b492c69.fad6d4",
@@ -11299,11 +10925,11 @@
         "deviceId": "1093",
         "command": "setLevel",
         "commandArgs": "",
-        "x": 1280,
-        "y": 320,
+        "x": 1300,
+        "y": 180,
         "wires": [
             [
-                "824209e0.28ad48"
+                "dac948cc.0a7d58"
             ]
         ]
     },
@@ -11317,11 +10943,11 @@
         "deviceId": "1092",
         "command": "setLevel",
         "commandArgs": "",
-        "x": 1280,
-        "y": 280,
+        "x": 1300,
+        "y": 140,
         "wires": [
             [
-                "824209e0.28ad48"
+                "dac948cc.0a7d58"
             ]
         ]
     },
@@ -11335,11 +10961,11 @@
         "deviceId": "1090",
         "command": "setLevel",
         "commandArgs": "",
-        "x": 1280,
-        "y": 240,
+        "x": 1300,
+        "y": 100,
         "wires": [
             [
-                "824209e0.28ad48"
+                "dac948cc.0a7d58"
             ]
         ]
     },
@@ -11353,11 +10979,11 @@
         "deviceId": "68",
         "command": "setLevel",
         "commandArgs": "",
-        "x": 1280,
-        "y": 200,
+        "x": 1300,
+        "y": 60,
         "wires": [
             [
-                "824209e0.28ad48"
+                "dac948cc.0a7d58"
             ]
         ]
     },
@@ -11371,11 +10997,11 @@
         "deviceId": "1093",
         "command": "setColorTemperature",
         "commandArgs": "",
-        "x": 1280,
-        "y": 460,
+        "x": 1300,
+        "y": 320,
         "wires": [
             [
-                "824209e0.28ad48"
+                "dac948cc.0a7d58"
             ]
         ]
     },
@@ -11389,11 +11015,11 @@
         "deviceId": "1092",
         "command": "setColorTemperature",
         "commandArgs": "",
-        "x": 1280,
-        "y": 420,
+        "x": 1300,
+        "y": 280,
         "wires": [
             [
-                "824209e0.28ad48"
+                "dac948cc.0a7d58"
             ]
         ]
     },
@@ -11408,11 +11034,11 @@
         "deviceId": "1090",
         "command": "setColorTemperature",
         "commandArgs": "",
-        "x": 1280,
-        "y": 380,
+        "x": 1300,
+        "y": 240,
         "wires": [
             [
-                "824209e0.28ad48"
+                "dac948cc.0a7d58"
             ]
         ]
     },
@@ -11427,8 +11053,8 @@
         "deviceId": "2303",
         "attribute": "switch",
         "sendEvent": false,
-        "x": 980,
-        "y": 260,
+        "x": 1020,
+        "y": 100,
         "wires": [
             [
                 "aec974ed.66ef68"
@@ -11458,8 +11084,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 990,
-        "y": 320,
+        "x": 1030,
+        "y": 160,
         "wires": [
             [
                 "1ce3011f.bfec4f",
@@ -11491,8 +11117,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1270,
-        "y": 680,
+        "x": 1290,
+        "y": 540,
         "wires": [
             [
                 "3169f08b.3f8f9"
@@ -11505,8 +11131,8 @@
         "z": "d06ad5d7.7d1a38",
         "name": "",
         "env": [],
-        "x": 1300,
-        "y": 580,
+        "x": 1320,
+        "y": 440,
         "wires": []
     },
     {
@@ -11520,8 +11146,8 @@
         "deviceId": "2303",
         "attribute": "switch",
         "sendEvent": true,
-        "x": 200,
-        "y": 180,
+        "x": 140,
+        "y": 780,
         "wires": [
             [
                 "e0fde455.a63148"
@@ -11544,8 +11170,8 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
-        "x": 1030,
-        "y": 800,
+        "x": 1050,
+        "y": 660,
         "wires": [
             [
                 "bb819bb9.678df8",
@@ -11554,36 +11180,6 @@
                 "a2573f76.c6d4"
             ]
         ]
-    },
-    {
-        "id": "824209e0.28ad48",
-        "type": "function",
-        "z": "d06ad5d7.7d1a38",
-        "g": "bbd34e0c.99f3c",
-        "name": "On Status",
-        "func": "// initialise the counter to 0 if it doesn't exist already\nvar myKT_Light = flow.get('KT_Light',\"memoryOnly\")||0;\nmyKT_Light = true\n// store the value back\nflow.set('KT_Light',myKT_Light,\"memoryOnly\");",
-        "outputs": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1500,
-        "y": 340,
-        "wires": []
-    },
-    {
-        "id": "89490a2d.afc628",
-        "type": "function",
-        "z": "d06ad5d7.7d1a38",
-        "g": "7b4c2b56.74bb34",
-        "name": "Off Status",
-        "func": "// initialise the counter to 0 if it doesn't exist already\nvar myKT_Light = flow.get('KT_Light',\"memoryOnly\")||0;\nmyKT_Light = false\n// store the value back\nflow.set('KT_Light',myKT_Light,\"memoryOnly\");",
-        "outputs": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1500,
-        "y": 820,
-        "wires": []
     },
     {
         "id": "3169f08b.3f8f9",
@@ -11602,8 +11198,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1280,
-        "y": 640,
+        "x": 1300,
+        "y": 500,
         "wires": [
             [
                 "6baf946f.b2803c"
@@ -11630,8 +11226,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 750,
-        "y": 460,
+        "x": 730,
+        "y": 300,
         "wires": [
             [
                 "6b7dc0d3.cd05c",
@@ -11652,8 +11248,8 @@
         "deviceId": "68",
         "attribute": "switch",
         "sendEvent": true,
-        "x": 200,
-        "y": 260,
+        "x": 140,
+        "y": 880,
         "wires": [
             [
                 "346e72ef.2a49be"
@@ -11676,8 +11272,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1020,
-        "y": 360,
+        "x": 1060,
+        "y": 200,
         "wires": [
             [
                 "6baf946f.b2803c",
@@ -11708,14 +11304,14 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 530,
-        "y": 260,
+        "x": 310,
+        "y": 880,
         "wires": [
             [
-                "7c4a0dd4.f78404"
+                "74225776.27d268"
             ],
             [
-                "7293a6a3.1913e8"
+                "4e81438c.dd674c"
             ]
         ]
     },
@@ -11735,8 +11331,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 520,
-        "y": 480,
+        "x": 420,
+        "y": 200,
         "wires": [
             [
                 "73992bfd.8673e4"
@@ -11759,46 +11355,13 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 370,
-        "y": 180,
+        "x": 310,
+        "y": 780,
         "wires": [
             [
-                "10f207f.699f0f8"
+                "3556984e.4f1698"
             ]
         ]
-    },
-    {
-        "id": "10f207f.699f0f8",
-        "type": "function",
-        "z": "d06ad5d7.7d1a38",
-        "g": "568533ed.18d81c",
-        "name": "Override On",
-        "func": "// initialise the counter to 0 if it doesn't exist already\nvar myKT_Override = flow.get('KT_Override',\"memoryOnly\")||0;\nmyKT_Override = true\n// store the value back\nflow.set('KT_Override',myKT_Override,\"memoryOnly\");\nreturn msg",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 510,
-        "y": 180,
-        "wires": [
-            [
-                "7c4a0dd4.f78404"
-            ]
-        ]
-    },
-    {
-        "id": "30c4f419.ef0bbc",
-        "type": "function",
-        "z": "d06ad5d7.7d1a38",
-        "name": "Override Off",
-        "func": "// initialise the counter to 0 if it doesn't exist already\nvar myKT_Override = flow.get('KT_Override',\"memoryOnly\")||0;\nmyKT_Override = false\n// store the value back\nflow.set('KT_Override',myKT_Override,\"memoryOnly\");",
-        "outputs": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1510,
-        "y": 520,
-        "wires": []
     },
     {
         "id": "e23f207d.05956",
@@ -11817,13 +11380,13 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1280,
-        "y": 520,
+        "x": 1300,
+        "y": 380,
         "wires": [
             [
                 "6baf946f.b2803c",
-                "824209e0.28ad48",
-                "30c4f419.ef0bbc"
+                "a40cfea5.8d1bf",
+                "dac948cc.0a7d58"
             ]
         ]
     },
@@ -11837,7 +11400,7 @@
         "deviceId": "2060",
         "command": "off",
         "commandArgs": "",
-        "x": 2240,
+        "x": 2720,
         "y": 580,
         "wires": [
             []
@@ -11853,7 +11416,7 @@
         "deviceId": "2059",
         "command": "off",
         "commandArgs": "",
-        "x": 2240,
+        "x": 2720,
         "y": 540,
         "wires": [
             []
@@ -11869,7 +11432,7 @@
         "deviceId": "2060",
         "command": "heat",
         "commandArgs": "",
-        "x": 2240,
+        "x": 2720,
         "y": 480,
         "wires": [
             []
@@ -11886,7 +11449,7 @@
         "deviceId": "2059",
         "command": "heat",
         "commandArgs": "",
-        "x": 2240,
+        "x": 2720,
         "y": 440,
         "wires": [
             []
@@ -11902,7 +11465,7 @@
         "deviceId": "2060",
         "command": "off",
         "commandArgs": "",
-        "x": 2245,
+        "x": 2725,
         "y": 180,
         "wires": [
             []
@@ -11918,26 +11481,11 @@
         "deviceId": "2060",
         "command": "cool",
         "commandArgs": "",
-        "x": 2245,
+        "x": 2725,
         "y": 280,
         "wires": [
             []
         ]
-    },
-    {
-        "id": "7dfd7833.207ba8",
-        "type": "function",
-        "z": "d06ad5d7.7d1a38",
-        "g": "7b4c2b56.74bb34",
-        "name": "Override On",
-        "func": "// initialise the counter to 0 if it doesn't exist already\nvar myKT_Override = flow.get('KT_Override',\"memoryOnly\")||0;\nmyKT_Override = true\n// store the value back\nflow.set('KT_Override',myKT_Override,\"memoryOnly\");\nreturn msg",
-        "outputs": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1510,
-        "y": 900,
-        "wires": []
     },
     {
         "id": "946f40b0.810bf",
@@ -11955,8 +11503,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 710,
-        "y": 360,
+        "x": 650,
+        "y": 160,
         "wires": [
             [
                 "7c4a0dd4.f78404"
@@ -12527,22 +12075,6 @@
         "x": 310,
         "y": 760,
         "wires": []
-    },
-    {
-        "id": "43f1bb07.4c8404",
-        "type": "hubitat command",
-        "z": "68ba5945.906288",
-        "g": "da11bb5d.510958",
-        "name": "DB - Lights",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1574",
-        "command": "off",
-        "commandArgs": "",
-        "x": 3070,
-        "y": 520,
-        "wires": [
-            []
-        ]
     },
     {
         "id": "84eb190d.873ac8",
@@ -13654,8 +13186,8 @@
         "start": "",
         "inout": "out",
         "property": "payload",
-        "x": 390,
-        "y": 480,
+        "x": 290,
+        "y": 200,
         "wires": [
             [
                 "f8ce7b3f.ff69a8"
@@ -14040,8 +13572,8 @@
         "deviceId": "2506",
         "attribute": "contact",
         "sendEvent": true,
-        "x": 330,
-        "y": 60,
+        "x": 130,
+        "y": 620,
         "wires": [
             [
                 "86061c6.e0de2e"
@@ -14071,15 +13603,14 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 540,
-        "y": 140,
+        "x": 340,
+        "y": 680,
         "wires": [
             [
                 "2e4c1ca0.f02994"
             ],
             [
-                "b503ca90.0b1f78",
-                "b00f545c.e6ed38"
+                "722c8abb.c856e4"
             ]
         ]
     },
@@ -14091,7 +13622,7 @@
         "name": "GR Motion Status",
         "env": [],
         "x": 370,
-        "y": 80,
+        "y": 800,
         "wires": [
             [],
             [
@@ -14112,8 +13643,8 @@
         "deviceId": "1572",
         "command": "on",
         "commandArgs": "",
-        "x": 750,
-        "y": 60,
+        "x": 690,
+        "y": 780,
         "wires": [
             []
         ]
@@ -14137,12 +13668,12 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 550,
-        "y": 240,
+        "x": 530,
+        "y": 780,
         "wires": [
             [
                 "269eac95.6ea204",
-                "b00f545c.e6ed38"
+                "e78f62b4.61d97"
             ],
             []
         ]
@@ -14159,8 +13690,8 @@
         "deviceId": "1574",
         "command": "on",
         "commandArgs": "",
-        "x": 770,
-        "y": 240,
+        "x": 690,
+        "y": 760,
         "wires": [
             []
         ]
@@ -14173,7 +13704,7 @@
         "name": "",
         "env": [],
         "x": 510,
-        "y": 220,
+        "y": 800,
         "wires": [
             [],
             [
@@ -14186,14 +13717,16 @@
         "id": "6d439838.23e4b8",
         "type": "hubitat command",
         "z": "a994b807.c93cc8",
+        "d": true,
         "g": "4f97b3df.c6fc4c",
+        "deviceLabel": "",
         "name": "MB - Lights",
         "server": "b130c189.ea4d2",
         "deviceId": "1575",
         "command": "on",
         "commandArgs": "",
-        "x": 890,
-        "y": 200,
+        "x": 850,
+        "y": 780,
         "wires": [
             []
         ]
@@ -14210,7 +13743,7 @@
         "attribute": "switch",
         "sendEvent": true,
         "x": 140,
-        "y": 220,
+        "y": 800,
         "wires": [
             [
                 "a2aa6170.61ce2"
@@ -14241,7 +13774,7 @@
         "repair": false,
         "outputs": 2,
         "x": 310,
-        "y": 220,
+        "y": 800,
         "wires": [
             [
                 "eedcd087.f5569"
@@ -14260,8 +13793,8 @@
         "deviceId": "1352",
         "attribute": "switch",
         "sendEvent": true,
-        "x": 160,
-        "y": 220,
+        "x": 140,
+        "y": 760,
         "wires": [
             [
                 "68274698.bb88d8"
@@ -14291,8 +13824,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 230,
-        "y": 260,
+        "x": 210,
+        "y": 800,
         "wires": [
             [
                 "7f8efb69.193964"
@@ -14312,7 +13845,7 @@
         "attribute": "switch",
         "sendEvent": true,
         "x": 140,
-        "y": 60,
+        "y": 780,
         "wires": [
             [
                 "3aeba96b.d6e096"
@@ -14343,7 +13876,7 @@
         "repair": false,
         "outputs": 2,
         "x": 210,
-        "y": 100,
+        "y": 820,
         "wires": [
             [
                 "56d65e64.a20e2"
@@ -14503,8 +14036,8 @@
         "g": "bc9da574.ee5618",
         "name": "DB Motion Status",
         "env": [],
-        "x": 390,
-        "y": 240,
+        "x": 370,
+        "y": 780,
         "wires": [
             [],
             [
@@ -14525,8 +14058,8 @@
         "deviceId": "1573",
         "command": "on",
         "commandArgs": "",
-        "x": 770,
-        "y": 80,
+        "x": 690,
+        "y": 660,
         "wires": [
             []
         ]
@@ -14543,7 +14076,7 @@
         "attribute": "switch",
         "sendEvent": true,
         "x": 140,
-        "y": 60,
+        "y": 660,
         "wires": [
             [
                 "11b37f9f.ec32"
@@ -14574,7 +14107,7 @@
         "repair": false,
         "outputs": 2,
         "x": 210,
-        "y": 100,
+        "y": 700,
         "wires": [
             [
                 "c41d1f3.e50e4e"
@@ -14590,7 +14123,7 @@
         "name": "KT Motion Status",
         "env": [],
         "x": 370,
-        "y": 80,
+        "y": 680,
         "wires": [
             [],
             [
@@ -14606,8 +14139,8 @@
         "g": "945ba7ee.377858",
         "name": "DB Motion Status",
         "env": [],
-        "x": 730,
-        "y": 80,
+        "x": 530,
+        "y": 620,
         "wires": [
             [],
             [
@@ -14632,8 +14165,8 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
-        "x": 560,
-        "y": 80,
+        "x": 360,
+        "y": 620,
         "wires": [
             [
                 "9514e927.763a38"
@@ -14650,58 +14183,24 @@
         "propertyType": "msg",
         "rules": [
             {
-                "t": "true"
+                "t": "false"
             },
             {
-                "t": "false"
+                "t": "true"
             }
         ],
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 890,
-        "y": 80,
+        "x": 690,
+        "y": 620,
         "wires": [
             [
-                "278e0987.6fb406"
+                "34ca6e6c.4eba52"
             ],
             [
-                "b503ca90.0b1f78"
+                "ce516fb9.1019d"
             ]
-        ]
-    },
-    {
-        "id": "b503ca90.0b1f78",
-        "type": "hubitat command",
-        "z": "cd3ea6b3.ac9c98",
-        "g": "945ba7ee.377858",
-        "deviceLabel": "Downstairs Bedroom - Motion Detection Switch",
-        "name": "DB - Motion Detection",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1352",
-        "command": "on",
-        "commandArgs": "",
-        "x": 1060,
-        "y": 140,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "278e0987.6fb406",
-        "type": "hubitat command",
-        "z": "cd3ea6b3.ac9c98",
-        "g": "945ba7ee.377858",
-        "deviceLabel": "Downstairs Bedroom - Motion Detection Switch",
-        "name": "DB - Motion Detection",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1352",
-        "command": "off",
-        "commandArgs": "",
-        "x": 1060,
-        "y": 80,
-        "wires": [
-            []
         ]
     },
     {
@@ -14716,7 +14215,7 @@
         "attribute": "contact",
         "sendEvent": true,
         "x": 130,
-        "y": 60,
+        "y": 640,
         "wires": [
             [
                 "eefe48a0.ed3718"
@@ -14727,15 +14226,15 @@
         "id": "3398a80e.aa6388",
         "type": "hubitat command",
         "z": "a994b807.c93cc8",
-        "g": "4f30f3e7.a65ebc",
+        "g": "2d154e9c.4ad022",
         "deviceLabel": "Downstairs Bedroom - Motion Detection Switch",
         "name": "MB - Motion Detection",
         "server": "b130c189.ea4d2",
         "deviceId": "385",
         "command": "on",
         "commandArgs": "",
-        "x": 1180,
-        "y": 120,
+        "x": 1780,
+        "y": 800,
         "wires": [
             []
         ]
@@ -14764,13 +14263,13 @@
         "repair": false,
         "outputs": 2,
         "x": 340,
-        "y": 120,
+        "y": 700,
         "wires": [
             [
                 "fa81ff97.75bfe"
             ],
             [
-                "d2683971.de9c08"
+                "78bae1e6.7ec47"
             ]
         ]
     },
@@ -14791,7 +14290,7 @@
         "randomUnits": "seconds",
         "drop": false,
         "x": 360,
-        "y": 60,
+        "y": 640,
         "wires": [
             [
                 "b0d6136.1c12ef"
@@ -14808,41 +14307,24 @@
         "propertyType": "msg",
         "rules": [
             {
-                "t": "true"
+                "t": "false"
             },
             {
-                "t": "false"
+                "t": "true"
             }
         ],
         "checkall": "true",
         "repair": false,
         "outputs": 2,
         "x": 770,
-        "y": 60,
+        "y": 640,
         "wires": [
             [
-                "e925ecde.40d49"
+                "8fe05310.43fc7"
             ],
             [
-                "d2683971.de9c08"
+                "4cf5ec3a.03c674"
             ]
-        ]
-    },
-    {
-        "id": "e925ecde.40d49",
-        "type": "hubitat command",
-        "z": "a994b807.c93cc8",
-        "g": "4f30f3e7.a65ebc",
-        "deviceLabel": "Downstairs Bedroom - Motion Detection Switch",
-        "name": "MB - Motion Detection",
-        "server": "b130c189.ea4d2",
-        "deviceId": "385",
-        "command": "off",
-        "commandArgs": "",
-        "x": 940,
-        "y": 60,
-        "wires": [
-            []
         ]
     },
     {
@@ -14865,7 +14347,7 @@
         "repair": false,
         "outputs": 2,
         "x": 710,
-        "y": 220,
+        "y": 800,
         "wires": [
             [
                 "6d439838.23e4b8"
@@ -14895,11 +14377,11 @@
         "repair": false,
         "outputs": 2,
         "x": 530,
-        "y": 80,
+        "y": 680,
         "wires": [
             [
                 "60656dee.8f9114",
-                "7c4a0dd4.f78404"
+                "f05db464.9f0d08"
             ],
             []
         ]
@@ -14924,7 +14406,7 @@
         "repair": false,
         "outputs": 2,
         "x": 530,
-        "y": 80,
+        "y": 800,
         "wires": [
             [
                 "888cd483.dc7428",
@@ -14941,7 +14423,7 @@
         "name": "",
         "env": [],
         "x": 570,
-        "y": 60,
+        "y": 640,
         "wires": [
             [],
             [
@@ -14962,17 +14444,6 @@
         "wires": []
     },
     {
-        "id": "e4621cce.8a0bf",
-        "type": "comment",
-        "z": "4702b097.59f3b",
-        "g": "a952c5c.b3f9938",
-        "name": "Link Ins",
-        "info": "",
-        "x": 90,
-        "y": 380,
-        "wires": []
-    },
-    {
         "id": "fa3f92ca.4c851",
         "type": "comment",
         "z": "4702b097.59f3b",
@@ -14984,200 +14455,17 @@
         "wires": []
     },
     {
-        "id": "4a5cb884.1e7138",
-        "type": "link in",
-        "z": "4702b097.59f3b",
-        "g": "a952c5c.b3f9938",
-        "name": "Master Bedroom Contact Detection On",
-        "links": [
-            "422b2e52.dff8d",
-            "85494f22.32e7f",
-            "a162b372.c3e24",
-            "c7ba1ba7.053658"
-        ],
-        "x": 255,
-        "y": 440,
-        "wires": [
-            [
-                "dbad589d.897ba8"
-            ]
-        ]
-    },
-    {
-        "id": "4fd665fb.d2931c",
-        "type": "link in",
-        "z": "4702b097.59f3b",
-        "g": "a952c5c.b3f9938",
-        "name": "Master Bedroom Contact Detection Off",
-        "links": [
-            "9a7171f8.cbd9",
-            "e6a752cf.4f145",
-            "402aab2c.6fc014",
-            "7208a07e.4f6be"
-        ],
-        "x": 255,
-        "y": 520,
-        "wires": [
-            [
-                "33d41a55.b4e766"
-            ]
-        ]
-    },
-    {
-        "id": "34b254a5.01834c",
-        "type": "link in",
-        "z": "4702b097.59f3b",
-        "g": "a952c5c.b3f9938",
-        "name": "Downstairs Bedroom Contact Detection On",
-        "links": [
-            "97d61af1.614d08",
-            "b3de46b2.1e5f58",
-            "d6be9d17.56057",
-            "c22c9e42.2e8d6"
-        ],
-        "x": 775,
-        "y": 440,
-        "wires": [
-            [
-                "7a804f31.2c7bd"
-            ]
-        ]
-    },
-    {
-        "id": "1dc43bb8.2f8664",
-        "type": "link in",
-        "z": "4702b097.59f3b",
-        "g": "a952c5c.b3f9938",
-        "name": "Downstairs Bedroom Contact Detection Off",
-        "links": [
-            "9ff9ea72.fd16d8",
-            "c759a041.ee0ea",
-            "1d1e6c3f.22b234",
-            "679dfd2f.fcdc74"
-        ],
-        "x": 775,
-        "y": 520,
-        "wires": [
-            [
-                "a20605b2.226368"
-            ]
-        ]
-    },
-    {
-        "id": "7a804f31.2c7bd",
-        "type": "change",
-        "z": "4702b097.59f3b",
-        "g": "a952c5c.b3f9938",
-        "name": "DB - Contact Detection On",
-        "rules": [
-            {
-                "t": "set",
-                "p": "#:(file)::contactDetection_DB",
-                "pt": "global",
-                "to": "true",
-                "tot": "bool"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 940,
-        "y": 440,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "a20605b2.226368",
-        "type": "change",
-        "z": "4702b097.59f3b",
-        "g": "a952c5c.b3f9938",
-        "name": "DB Contact Detection Off",
-        "rules": [
-            {
-                "t": "set",
-                "p": "#:(file)::contactDetection_DB",
-                "pt": "global",
-                "to": "false",
-                "tot": "bool"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 930,
-        "y": 520,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "dbad589d.897ba8",
-        "type": "change",
-        "z": "4702b097.59f3b",
-        "g": "a952c5c.b3f9938",
-        "name": "MB - Contact Detection On",
-        "rules": [
-            {
-                "t": "set",
-                "p": "#:(file)::contactDetection_MB",
-                "pt": "global",
-                "to": "true",
-                "tot": "bool"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 420,
-        "y": 440,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "33d41a55.b4e766",
-        "type": "change",
-        "z": "4702b097.59f3b",
-        "g": "a952c5c.b3f9938",
-        "name": "MB - Contact Detection Off",
-        "rules": [
-            {
-                "t": "set",
-                "p": "#:(file)::contactDetection_MB",
-                "pt": "global",
-                "to": "false",
-                "tot": "bool"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 420,
-        "y": 520,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "a162b372.c3e24",
         "type": "link out",
         "z": "68ba5945.906288",
         "g": "da11bb5d.510958",
-        "name": "MB Contact Detection On",
+        "name": "MB - Reading Mode On",
         "links": [
-            "4a5cb884.1e7138"
+            "8147b739.0acfb8",
+            "d768ea79.4a2018"
         ],
-        "x": 2850,
-        "y": 600,
+        "x": 3330,
+        "y": 540,
         "wires": [],
         "l": true
     },
@@ -15186,12 +14474,13 @@
         "type": "link out",
         "z": "68ba5945.906288",
         "g": "da11bb5d.510958",
-        "name": "MB Contact Detection Off",
+        "name": "MB - Reading Mode Off",
         "links": [
-            "4fd665fb.d2931c"
+            "90945ae4.a7c238",
+            "f97d0cf0.32ff3"
         ],
-        "x": 2850,
-        "y": 260,
+        "x": 3330,
+        "y": 240,
         "wires": [],
         "l": true
     },
@@ -15200,12 +14489,13 @@
         "type": "link out",
         "z": "68ba5945.906288",
         "g": "da11bb5d.510958",
-        "name": "DB Contact Detection Off",
+        "name": "DB - Reading Mode Off",
         "links": [
-            "1dc43bb8.2f8664"
+            "fdbe462d.dfd4b8",
+            "fe31135.fe579f"
         ],
-        "x": 2850,
-        "y": 160,
+        "x": 3330,
+        "y": 200,
         "wires": [],
         "l": true
     },
@@ -15214,64 +14504,14 @@
         "type": "link out",
         "z": "68ba5945.906288",
         "g": "da11bb5d.510958",
-        "name": "DB Contact Detection On",
+        "name": "DB - Reading Mode On",
         "links": [
-            "34b254a5.01834c"
+            "587bbe72.0bb02",
+            "a41d3d35.af9da",
+            "d150e7cf.727c88"
         ],
-        "x": 2850,
+        "x": 3330,
         "y": 480,
-        "wires": [],
-        "l": true
-    },
-    {
-        "id": "7208a07e.4f6be",
-        "type": "link out",
-        "z": "73f998b9.8842a8",
-        "name": "MB - Contact Sensor Off",
-        "links": [
-            "4fd665fb.d2931c"
-        ],
-        "x": 670,
-        "y": 400,
-        "wires": [],
-        "l": true
-    },
-    {
-        "id": "679dfd2f.fcdc74",
-        "type": "link out",
-        "z": "73f998b9.8842a8",
-        "name": "DB - Contact Sensor Off",
-        "links": [
-            "1dc43bb8.2f8664"
-        ],
-        "x": 670,
-        "y": 160,
-        "wires": [],
-        "l": true
-    },
-    {
-        "id": "85494f22.32e7f",
-        "type": "link out",
-        "z": "73f998b9.8842a8",
-        "name": "MB - Contact Sensor On",
-        "links": [
-            "4a5cb884.1e7138"
-        ],
-        "x": 670,
-        "y": 900,
-        "wires": [],
-        "l": true
-    },
-    {
-        "id": "c22c9e42.2e8d6",
-        "type": "link out",
-        "z": "73f998b9.8842a8",
-        "name": "DB - Contact Sensor On",
-        "links": [
-            "34b254a5.01834c"
-        ],
-        "x": 670,
-        "y": 740,
         "wires": [],
         "l": true
     },
@@ -15295,7 +14535,7 @@
         "repair": false,
         "outputs": 2,
         "x": 150,
-        "y": 120,
+        "y": 700,
         "wires": [
             [
                 "11984bf4.df55d4"
@@ -15307,7 +14547,7 @@
         "id": "1ce0483c.2e83a8",
         "type": "switch",
         "z": "68ba5945.906288",
-        "g": "d65ac224.03a1d",
+        "g": "2bd064b4.4083ac",
         "name": "Contact Phrase Handler",
         "property": "payload.description.summary",
         "propertyType": "msg",
@@ -15328,7 +14568,7 @@
         "checkall": "false",
         "repair": false,
         "outputs": 2,
-        "x": 970,
+        "x": 1190,
         "y": 360,
         "wires": [
             [
@@ -15343,10 +14583,10 @@
         "id": "d2522981.a56338",
         "type": "subflow:cb4b5b0a.f09b68",
         "z": "68ba5945.906288",
-        "g": "d65ac224.03a1d",
+        "g": "2bd064b4.4083ac",
         "name": "",
         "env": [],
-        "x": 980,
+        "x": 1200,
         "y": 220,
         "wires": [
             [],
@@ -15363,9 +14603,9 @@
         "id": "7e96d357.d5628c",
         "type": "subflow:cb4b5b0a.f09b68",
         "z": "68ba5945.906288",
-        "g": "d65ac224.03a1d",
+        "g": "2bd064b4.4083ac",
         "name": "",
-        "x": 980,
+        "x": 1200,
         "y": 500,
         "wires": [
             [],
@@ -15382,11 +14622,12 @@
         "id": "97d61af1.614d08",
         "type": "link out",
         "z": "68ba5945.906288",
-        "name": "DB Contact Detection On",
+        "g": "2bd064b4.4083ac",
+        "name": "DB - Alexa Contact Detection On",
         "links": [
-            "34b254a5.01834c"
+            "fdbe462d.dfd4b8"
         ],
-        "x": 1230,
+        "x": 1460,
         "y": 480,
         "wires": [],
         "l": true
@@ -15395,11 +14636,12 @@
         "id": "422b2e52.dff8d",
         "type": "link out",
         "z": "68ba5945.906288",
-        "name": "MB Contact Detection On",
+        "g": "2bd064b4.4083ac",
+        "name": "MB - Alexa Contact Detection On",
         "links": [
-            "4a5cb884.1e7138"
+            "f97d0cf0.32ff3"
         ],
-        "x": 1230,
+        "x": 1460,
         "y": 520,
         "wires": [],
         "l": true
@@ -15408,12 +14650,12 @@
         "id": "402aab2c.6fc014",
         "type": "link out",
         "z": "68ba5945.906288",
-        "g": "d65ac224.03a1d",
-        "name": "MB Contact Detection Off",
+        "g": "2bd064b4.4083ac",
+        "name": "MB - Alexa Contact Detection Off",
         "links": [
-            "4fd665fb.d2931c"
+            "d768ea79.4a2018"
         ],
-        "x": 1230,
+        "x": 1460,
         "y": 240,
         "wires": [],
         "l": true
@@ -15422,81 +14664,15 @@
         "id": "1d1e6c3f.22b234",
         "type": "link out",
         "z": "68ba5945.906288",
-        "g": "d65ac224.03a1d",
-        "name": "DB Contact Detection Off",
+        "g": "2bd064b4.4083ac",
+        "name": "DB - Alexa Contact Detection Off",
         "links": [
-            "1dc43bb8.2f8664"
+            "a41d3d35.af9da"
         ],
-        "x": 1230,
+        "x": 1460,
         "y": 200,
         "wires": [],
         "l": true
-    },
-    {
-        "id": "8b5522f9.a7572",
-        "type": "hubitat command",
-        "z": "73f998b9.8842a8",
-        "d": true,
-        "deviceLabel": "",
-        "name": "DB - Motion Detection",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1352",
-        "command": "on",
-        "commandArgs": "",
-        "x": 660,
-        "y": 780,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "c9290c6b.9022a",
-        "type": "hubitat command",
-        "z": "73f998b9.8842a8",
-        "d": true,
-        "deviceLabel": "",
-        "name": "MB - Motion Detection",
-        "server": "b130c189.ea4d2",
-        "deviceId": "385",
-        "command": "on",
-        "commandArgs": "",
-        "x": 900,
-        "y": 940,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "734ac2b4.bcf5dc",
-        "type": "hubitat command",
-        "z": "73f998b9.8842a8",
-        "deviceLabel": "",
-        "name": "DB - Motion Detection",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1352",
-        "command": "off",
-        "commandArgs": "",
-        "x": 660,
-        "y": 200,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "417da249.04b44c",
-        "type": "hubitat command",
-        "z": "73f998b9.8842a8",
-        "deviceLabel": "",
-        "name": "MB - Motion Detection",
-        "server": "b130c189.ea4d2",
-        "deviceId": "385",
-        "command": "off",
-        "commandArgs": "",
-        "x": 900,
-        "y": 440,
-        "wires": [
-            []
-        ]
     },
     {
         "id": "5faf0b68.46edf4",
@@ -15516,39 +14692,12 @@
         "checkall": "false",
         "repair": false,
         "outputs": 1,
-        "x": 410,
+        "x": 590,
         "y": 640,
         "wires": [
             [
                 "f8c72644.d4f038",
                 "7e96d357.d5628c"
-            ]
-        ]
-    },
-    {
-        "id": "6c4f8b82.166fd4",
-        "type": "switch",
-        "z": "68ba5945.906288",
-        "name": "DnD On Phrase Handler",
-        "property": "payload.description.summary",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "regex",
-                "v": "(enable|turn on) (the )?do not disturb( mode)?",
-                "vt": "str",
-                "case": false
-            }
-        ],
-        "checkall": "false",
-        "repair": false,
-        "outputs": 1,
-        "x": 410,
-        "y": 80,
-        "wires": [
-            [
-                "f0bb1ed4.befeb",
-                "d2522981.a56338"
             ]
         ]
     },
@@ -15559,7 +14708,7 @@
         "g": "6a56d8cc.28eeb8",
         "name": "Heater",
         "info": "",
-        "x": 1925,
+        "x": 2405,
         "y": 620,
         "wires": []
     },
@@ -15570,7 +14719,7 @@
         "g": "6a56d8cc.28eeb8",
         "name": "Fan",
         "info": "",
-        "x": 1925,
+        "x": 2405,
         "y": 100,
         "wires": []
     },
@@ -15593,8 +14742,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 360,
-        "y": 120,
+        "x": 160,
+        "y": 680,
         "wires": [
             [
                 "c408eea6.314db"
@@ -15606,11 +14755,12 @@
         "id": "c7ba1ba7.053658",
         "type": "link out",
         "z": "345f283.d5796d8",
-        "name": "MB - Contact Detection On",
+        "name": "Evening Mode",
         "links": [
-            "4a5cb884.1e7138"
+            "90945ae4.a7c238",
+            "f97d0cf0.32ff3"
         ],
-        "x": 1060,
+        "x": 800,
         "y": 380,
         "wires": [],
         "l": true
@@ -15619,12 +14769,12 @@
         "id": "d2683971.de9c08",
         "type": "hubitat mode",
         "z": "a994b807.c93cc8",
-        "g": "4f30f3e7.a65ebc",
+        "g": "2d154e9c.4ad022",
         "name": "",
         "server": "b130c189.ea4d2",
         "sendEvent": false,
-        "x": 890,
-        "y": 120,
+        "x": 1490,
+        "y": 800,
         "wires": [
             [
                 "d4c9d85.b312428"
@@ -15635,7 +14785,7 @@
         "id": "d4c9d85.b312428",
         "type": "switch",
         "z": "a994b807.c93cc8",
-        "g": "4f30f3e7.a65ebc",
+        "g": "2d154e9c.4ad022",
         "name": "!Day",
         "property": "payload.value",
         "propertyType": "msg",
@@ -15649,91 +14799,11 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1010,
-        "y": 120,
+        "x": 1610,
+        "y": 800,
         "wires": [
             [
                 "3398a80e.aa6388"
-            ]
-        ]
-    },
-    {
-        "id": "90d94c12.d6102",
-        "type": "hubitat mode",
-        "z": "73f998b9.8842a8",
-        "name": "",
-        "server": "b130c189.ea4d2",
-        "sendEvent": false,
-        "x": 610,
-        "y": 440,
-        "wires": [
-            [
-                "9891c7f6.fed738"
-            ]
-        ]
-    },
-    {
-        "id": "9891c7f6.fed738",
-        "type": "switch",
-        "z": "73f998b9.8842a8",
-        "name": "!Night",
-        "property": "payload.value",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "neq",
-                "v": "Night",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 730,
-        "y": 440,
-        "wires": [
-            [
-                "417da249.04b44c"
-            ]
-        ]
-    },
-    {
-        "id": "65a0c298.c38e3c",
-        "type": "hubitat mode",
-        "z": "73f998b9.8842a8",
-        "name": "",
-        "server": "b130c189.ea4d2",
-        "sendEvent": false,
-        "x": 610,
-        "y": 940,
-        "wires": [
-            [
-                "b68ba181.bd5a4"
-            ]
-        ]
-    },
-    {
-        "id": "b68ba181.bd5a4",
-        "type": "switch",
-        "z": "73f998b9.8842a8",
-        "name": "!Day",
-        "property": "payload.value",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "neq",
-                "v": "Day",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 730,
-        "y": 940,
-        "wires": [
-            [
-                "c9290c6b.9022a"
             ]
         ]
     },
@@ -15748,8 +14818,8 @@
         "deviceId": "69",
         "attribute": "switch",
         "sendEvent": true,
-        "x": 380,
-        "y": 380,
+        "x": 140,
+        "y": 900,
         "wires": [
             [
                 "6d1d5302.a8313c"
@@ -15779,14 +14849,14 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 550,
-        "y": 380,
+        "x": 310,
+        "y": 900,
         "wires": [
             [
-                "b00f545c.e6ed38"
+                "79936916.eae628"
             ],
             [
-                "38bd91e4.e0ce2e"
+                "fa287b92.be3a08"
             ]
         ]
     },
@@ -15813,8 +14883,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 550,
-        "y": 760,
+        "x": 510,
+        "y": 360,
         "wires": [
             [
                 "4f672bc8.2ea274",
@@ -15848,8 +14918,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 390,
-        "y": 480,
+        "x": 310,
+        "y": 80,
         "wires": [
             [
                 "fa05f5d3.e7d458"
@@ -15879,8 +14949,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 510,
-        "y": 460,
+        "x": 430,
+        "y": 60,
         "wires": [
             [
                 "5345e3f7.81565c"
@@ -15907,8 +14977,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 520,
-        "y": 500,
+        "x": 440,
+        "y": 100,
         "wires": [
             [
                 "5345e3f7.81565c"
@@ -15928,8 +14998,8 @@
         "outputtriggeredby": "all",
         "inputCount": "2",
         "topic": "Downstairs Bedroom Motion",
-        "x": 260,
-        "y": 600,
+        "x": 180,
+        "y": 200,
         "wires": [
             [],
             [
@@ -15957,8 +15027,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 550,
-        "y": 560,
+        "x": 470,
+        "y": 160,
         "wires": [
             [
                 "b64928a0.e9c988",
@@ -15985,8 +15055,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 540,
-        "y": 600,
+        "x": 460,
+        "y": 200,
         "wires": [
             [
                 "6a2b9ed7.1eb76"
@@ -16004,8 +15074,8 @@
         "start": "",
         "inout": "out",
         "property": "payload",
-        "x": 410,
-        "y": 600,
+        "x": 330,
+        "y": 200,
         "wires": [
             [
                 "7cb7ce8c.36a63"
@@ -16023,8 +15093,8 @@
         "deviceId": "69",
         "command": "off",
         "commandArgs": "",
-        "x": 1280,
-        "y": 660,
+        "x": 1260,
+        "y": 320,
         "wires": [
             [
                 "80bbf677.c25448"
@@ -16047,8 +15117,8 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
-        "x": 1250,
-        "y": 620,
+        "x": 1230,
+        "y": 280,
         "wires": [
             [
                 "86e2e478.407158"
@@ -16068,8 +15138,8 @@
         "name": "",
         "reporting": "last_minute_seconds",
         "persist": true,
-        "x": 1040,
-        "y": 620,
+        "x": 980,
+        "y": 280,
         "wires": [
             [
                 "38bd91e4.e0ce2e"
@@ -16085,8 +15155,8 @@
         "g": "5f5255ea.d74b3c",
         "name": "",
         "env": [],
-        "x": 800,
-        "y": 700,
+        "x": 760,
+        "y": 360,
         "wires": [
             [],
             [
@@ -16119,8 +15189,8 @@
         "name": "",
         "reporting": "last_minute_seconds",
         "persist": true,
-        "x": 1040,
-        "y": 680,
+        "x": 980,
+        "y": 340,
         "wires": [
             [
                 "38bd91e4.e0ce2e"
@@ -16142,8 +15212,8 @@
         "name": "",
         "reporting": "last_minute_seconds",
         "persist": true,
-        "x": 1040,
-        "y": 740,
+        "x": 980,
+        "y": 400,
         "wires": [
             [
                 "38bd91e4.e0ce2e"
@@ -16165,8 +15235,8 @@
         "name": "",
         "reporting": "last_minute_seconds",
         "persist": true,
-        "x": 1040,
-        "y": 800,
+        "x": 980,
+        "y": 460,
         "wires": [
             [
                 "38bd91e4.e0ce2e"
@@ -16195,8 +15265,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 790,
-        "y": 620,
+        "x": 750,
+        "y": 280,
         "wires": [
             [
                 "c49c7565.6f6248",
@@ -16217,8 +15287,8 @@
         "deviceId": "69",
         "command": "setLevel",
         "commandArgs": "",
-        "x": 1280,
-        "y": 480,
+        "x": 1260,
+        "y": 140,
         "wires": [
             [
                 "cbce77f0.fe0458"
@@ -16232,8 +15302,8 @@
         "g": "42113567.c0564c",
         "name": "",
         "env": [],
-        "x": 880,
-        "y": 480,
+        "x": 860,
+        "y": 140,
         "wires": [
             [
                 "28e09546.710aaa"
@@ -16269,8 +15339,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 730,
-        "y": 500,
+        "x": 710,
+        "y": 180,
         "wires": [
             [
                 "b00f545c.e6ed38"
@@ -16288,8 +15358,8 @@
         "deviceId": "1347",
         "attribute": "motion",
         "sendEvent": true,
-        "x": 250,
-        "y": 480,
+        "x": 170,
+        "y": 80,
         "wires": [
             [
                 "a93b865d.6b6148"
@@ -16307,8 +15377,8 @@
         "deviceId": "1352",
         "attribute": "switch",
         "sendEvent": true,
-        "x": 380,
-        "y": 760,
+        "x": 340,
+        "y": 360,
         "wires": [
             [
                 "c864aae8.372fb8"
@@ -16335,8 +15405,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1060,
-        "y": 480,
+        "x": 1040,
+        "y": 140,
         "wires": [
             [
                 "3cd29974.2b3ee6"
@@ -16363,8 +15433,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 420,
-        "y": 700,
+        "x": 380,
+        "y": 300,
         "wires": [
             []
         ]
@@ -16389,8 +15459,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 420,
-        "y": 820,
+        "x": 380,
+        "y": 420,
         "wires": [
             []
         ]
@@ -16400,20 +15470,19 @@
         "type": "link in",
         "z": "cd3ea6b3.ac9c98",
         "g": "4094960e.2a7538",
-        "name": "Initialize DB",
+        "name": "DB - Initalize",
         "links": [
             "72d1fff3.4f9c7",
             "d4bae9fc.dde7c8"
         ],
-        "x": 210,
-        "y": 980,
+        "x": 155,
+        "y": 400,
         "wires": [
             [
                 "fa4827ad.12a878",
                 "1e8d4760.a596a9"
             ]
-        ],
-        "l": true
+        ]
     },
     {
         "id": "f4b20b30.aa0cf8",
@@ -16437,8 +15506,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 220,
-        "y": 940,
+        "x": 120,
+        "y": 360,
         "wires": [
             [
                 "fa4827ad.12a878",
@@ -16466,8 +15535,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1470,
-        "y": 480,
+        "x": 1450,
+        "y": 140,
         "wires": [
             []
         ]
@@ -16492,8 +15561,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1470,
-        "y": 660,
+        "x": 1450,
+        "y": 320,
         "wires": [
             []
         ]
@@ -16503,20 +15572,19 @@
         "type": "link in",
         "z": "d06ad5d7.7d1a38",
         "g": "e569169e.a72868",
-        "name": "Initalize KT",
+        "name": "KT - Initalize",
         "links": [
             "72d1fff3.4f9c7",
             "d4bae9fc.dde7c8"
         ],
-        "x": 200,
-        "y": 860,
+        "x": 155,
+        "y": 400,
         "wires": [
             [
                 "cb80db7f.be3188",
                 "c47bd2bc.b052c"
             ]
-        ],
-        "l": true
+        ]
     },
     {
         "id": "c7e23144.d4862",
@@ -16540,8 +15608,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 200,
-        "y": 820,
+        "x": 120,
+        "y": 360,
         "wires": [
             [
                 "cb80db7f.be3188",
@@ -16560,8 +15628,8 @@
         "deviceId": "1351",
         "attribute": "switch",
         "sendEvent": true,
-        "x": 380,
-        "y": 640,
+        "x": 340,
+        "y": 360,
         "wires": [
             [
                 "e9fe8523.c6d868"
@@ -16591,8 +15659,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 550,
-        "y": 640,
+        "x": 510,
+        "y": 360,
         "wires": [
             [
                 "d4f17bed.4977e8",
@@ -16623,8 +15691,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 420,
-        "y": 580,
+        "x": 380,
+        "y": 300,
         "wires": [
             []
         ]
@@ -16649,8 +15717,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 420,
-        "y": 700,
+        "x": 380,
+        "y": 420,
         "wires": [
             []
         ]
@@ -16675,8 +15743,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 350,
-        "y": 740,
+        "x": 310,
+        "y": 460,
         "wires": [
             []
         ]
@@ -16701,8 +15769,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 350,
-        "y": 860,
+        "x": 310,
+        "y": 460,
         "wires": [
             []
         ]
@@ -17005,8 +16073,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 330,
-        "y": 660,
+        "x": 310,
+        "y": 460,
         "wires": [
             []
         ]
@@ -17022,8 +16090,8 @@
         "deviceId": "67",
         "command": "off",
         "commandArgs": "",
-        "x": 1410,
-        "y": 460,
+        "x": 1350,
+        "y": 300,
         "wires": [
             [
                 "a0c83f72.fe08a"
@@ -17046,8 +16114,8 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
-        "x": 1230,
-        "y": 460,
+        "x": 1170,
+        "y": 300,
         "wires": [
             [
                 "4651229.f0e59dc"
@@ -17074,8 +16142,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1590,
-        "y": 460,
+        "x": 1530,
+        "y": 300,
         "wires": [
             []
         ]
@@ -17091,8 +16159,8 @@
         "deviceId": "67",
         "command": "setLevel",
         "commandArgs": "",
-        "x": 1410,
-        "y": 300,
+        "x": 1350,
+        "y": 140,
         "wires": [
             [
                 "a71747f3.d468b8"
@@ -17119,8 +16187,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1590,
-        "y": 300,
+        "x": 1530,
+        "y": 140,
         "wires": [
             []
         ]
@@ -17148,8 +16216,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 370,
-        "y": 280,
+        "x": 350,
+        "y": 80,
         "wires": [
             [
                 "f046ada6.aeb4e"
@@ -17179,8 +16247,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 490,
-        "y": 260,
+        "x": 470,
+        "y": 60,
         "wires": [
             [
                 "b2292d7e.3d868"
@@ -17207,8 +16275,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 500,
-        "y": 300,
+        "x": 480,
+        "y": 100,
         "wires": [
             [
                 "b2292d7e.3d868"
@@ -17228,8 +16296,8 @@
         "outputtriggeredby": "all",
         "inputCount": "2",
         "topic": "Downstairs Bedroom Motion",
-        "x": 240,
-        "y": 400,
+        "x": 220,
+        "y": 200,
         "wires": [
             [],
             [
@@ -17257,8 +16325,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 530,
-        "y": 360,
+        "x": 510,
+        "y": 160,
         "wires": [
             [
                 "a5e62b86.c9d8f8",
@@ -17285,8 +16353,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 520,
-        "y": 400,
+        "x": 500,
+        "y": 200,
         "wires": [
             [
                 "245bb6d6.b17f5a"
@@ -17304,8 +16372,8 @@
         "start": "",
         "inout": "out",
         "property": "payload",
-        "x": 390,
-        "y": 400,
+        "x": 370,
+        "y": 200,
         "wires": [
             [
                 "940cba05.68c878"
@@ -17323,33 +16391,13 @@
         "deviceId": "162",
         "attribute": "motion",
         "sendEvent": true,
-        "x": 200,
-        "y": 260,
+        "x": 180,
+        "y": 60,
         "wires": [
             [
                 "a6dfdf08.964f"
             ]
         ]
-    },
-    {
-        "id": "54f3e04a.1fe42",
-        "type": "link in",
-        "z": "3b28216c.47740e",
-        "g": "b55344eb.e17b58",
-        "name": "Initialize GR",
-        "links": [
-            "72d1fff3.4f9c7",
-            "d4bae9fc.dde7c8"
-        ],
-        "x": 210,
-        "y": 780,
-        "wires": [
-            [
-                "cdc6b99b.dda2a8",
-                "ff44d56e.aa1be8"
-            ]
-        ],
-        "l": true
     },
     {
         "id": "df33ce01.97c32",
@@ -17373,8 +16421,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 220,
-        "y": 740,
+        "x": 120,
+        "y": 360,
         "wires": [
             [
                 "cdc6b99b.dda2a8",
@@ -17393,8 +16441,8 @@
         "deviceId": "1377",
         "attribute": "switch",
         "sendEvent": true,
-        "x": 360,
-        "y": 560,
+        "x": 340,
+        "y": 360,
         "wires": [
             [
                 "7a5efed1.f6bb3"
@@ -17424,8 +16472,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 530,
-        "y": 560,
+        "x": 510,
+        "y": 360,
         "wires": [
             [
                 "a5e62b86.c9d8f8",
@@ -17456,8 +16504,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 400,
-        "y": 500,
+        "x": 380,
+        "y": 300,
         "wires": [
             []
         ]
@@ -17482,8 +16530,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 400,
-        "y": 620,
+        "x": 380,
+        "y": 420,
         "wires": [
             []
         ]
@@ -17495,8 +16543,8 @@
         "g": "f6a993dd.06e9e",
         "name": "",
         "env": [],
-        "x": 980,
-        "y": 260,
+        "x": 960,
+        "y": 100,
         "wires": [
             [
                 "7df6f758.894eb8"
@@ -17532,8 +16580,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 830,
-        "y": 320,
+        "x": 810,
+        "y": 160,
         "wires": [
             [
                 "b076fd2f.fc78b"
@@ -17560,8 +16608,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1160,
-        "y": 300,
+        "x": 1140,
+        "y": 140,
         "wires": [
             [
                 "4410a3fd.81854c"
@@ -17581,8 +16629,8 @@
         "name": "",
         "reporting": "last_minute_seconds",
         "persist": true,
-        "x": 1020,
-        "y": 420,
+        "x": 960,
+        "y": 260,
         "wires": [
             [
                 "1de249ee.9aa696"
@@ -17598,8 +16646,8 @@
         "g": "8ef56025.45bcb",
         "name": "",
         "env": [],
-        "x": 780,
-        "y": 500,
+        "x": 720,
+        "y": 340,
         "wires": [
             [],
             [
@@ -17632,8 +16680,8 @@
         "name": "",
         "reporting": "last_minute_seconds",
         "persist": true,
-        "x": 1020,
-        "y": 480,
+        "x": 960,
+        "y": 320,
         "wires": [
             [
                 "1de249ee.9aa696"
@@ -17655,8 +16703,8 @@
         "name": "",
         "reporting": "last_minute_seconds",
         "persist": true,
-        "x": 1020,
-        "y": 540,
+        "x": 960,
+        "y": 380,
         "wires": [
             [
                 "1de249ee.9aa696"
@@ -17678,8 +16726,8 @@
         "name": "",
         "reporting": "last_minute_seconds",
         "persist": true,
-        "x": 1020,
-        "y": 600,
+        "x": 960,
+        "y": 440,
         "wires": [
             [
                 "1de249ee.9aa696"
@@ -17708,8 +16756,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 770,
-        "y": 420,
+        "x": 710,
+        "y": 260,
         "wires": [
             [
                 "2c4cd2b2.686a2e",
@@ -17730,8 +16778,8 @@
         "deviceId": "67",
         "attribute": "switch",
         "sendEvent": true,
-        "x": 350,
-        "y": 180,
+        "x": 130,
+        "y": 680,
         "wires": [
             [
                 "75b92ecf.39bc9"
@@ -17761,14 +16809,14 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 530,
-        "y": 180,
+        "x": 310,
+        "y": 680,
         "wires": [
             [
-                "b076fd2f.fc78b"
+                "ee4d418a.13eb8"
             ],
             [
-                "1de249ee.9aa696"
+                "e677acf6.3ca9a"
             ]
         ]
     },
@@ -17783,8 +16831,8 @@
         "deviceId": "1413",
         "attribute": "motion",
         "sendEvent": true,
-        "x": 210,
-        "y": 320,
+        "x": 190,
+        "y": 120,
         "wires": [
             [
                 "a6dfdf08.964f"
@@ -17802,8 +16850,8 @@
         "deviceId": "162",
         "attribute": "illuminance",
         "sendEvent": false,
-        "x": 740,
-        "y": 260,
+        "x": 720,
+        "y": 100,
         "wires": [
             [
                 "1e95bbc4.02e424"
@@ -17828,56 +16876,11 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 710,
-        "y": 320,
+        "x": 690,
+        "y": 160,
         "wires": [
             [
                 "6183c04f.57983"
-            ]
-        ]
-    },
-    {
-        "id": "cf785128.ac3d6",
-        "type": "hubitat device",
-        "z": "3b28216c.47740e",
-        "g": "8ef56025.45bcb",
-        "deviceLabel": "",
-        "name": "GR - Motion Fireplace",
-        "server": "b130c189.ea4d2",
-        "deviceId": "162",
-        "attribute": "illuminance",
-        "sendEvent": true,
-        "x": 740,
-        "y": 660,
-        "wires": [
-            [
-                "8935e344.75f3d"
-            ]
-        ]
-    },
-    {
-        "id": "8935e344.75f3d",
-        "type": "switch",
-        "z": "3b28216c.47740e",
-        "g": "8ef56025.45bcb",
-        "name": "≥ 100",
-        "property": "payload.value",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "gte",
-                "v": "100",
-                "vt": "num"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 1050,
-        "y": 660,
-        "wires": [
-            [
-                "1de249ee.9aa696"
             ]
         ]
     },
@@ -17892,8 +16895,8 @@
         "deviceId": "130",
         "attribute": "switch",
         "sendEvent": true,
-        "x": 440,
-        "y": 920,
+        "x": 120,
+        "y": 1060,
         "wires": [
             [
                 "b60924b0.f58d88"
@@ -17923,15 +16926,14 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 570,
-        "y": 920,
+        "x": 250,
+        "y": 1060,
         "wires": [
             [
-                "ea0c8e97.28f7c",
-                "6792a0bb.ee36c"
+                "ea0c8e97.28f7c"
             ],
             [
-                "c5053b7e.eb5e68"
+                "f9d8202e.f8619"
             ]
         ]
     },
@@ -17946,8 +16948,8 @@
         "deviceId": "130",
         "command": "refresh",
         "commandArgs": "",
-        "x": 960,
-        "y": 780,
+        "x": 640,
+        "y": 920,
         "wires": [
             []
         ]
@@ -17963,8 +16965,8 @@
         "start": "",
         "inout": "out",
         "property": "payload",
-        "x": 830,
-        "y": 780,
+        "x": 510,
+        "y": 920,
         "wires": [
             [
                 "49050d61.ea3684"
@@ -17982,8 +16984,8 @@
         "deviceId": "353",
         "attribute": "power",
         "sendEvent": true,
-        "x": 430,
-        "y": 780,
+        "x": 110,
+        "y": 920,
         "wires": [
             [
                 "6bf984ac.0bba4c"
@@ -18013,8 +17015,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 570,
-        "y": 780,
+        "x": 250,
+        "y": 920,
         "wires": [
             [
                 "7c3ca0d5.17ee2"
@@ -18044,8 +17046,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 700,
-        "y": 760,
+        "x": 380,
+        "y": 900,
         "wires": [
             [
                 "e008b282.7087e"
@@ -18072,8 +17074,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 700,
-        "y": 800,
+        "x": 380,
+        "y": 940,
         "wires": [
             [
                 "e008b282.7087e"
@@ -18085,94 +17087,71 @@
         "type": "link in",
         "z": "3b28216c.47740e",
         "g": "f6a993dd.06e9e",
-        "name": "Turn on Great Room Lights",
+        "name": "GR - Lights On",
         "links": [
-            "83226588.608178"
+            "83226588.608178",
+            "b0025216.3a383",
+            "ee4d418a.13eb8"
         ],
-        "x": 815,
-        "y": 220,
+        "x": 740,
+        "y": 60,
         "wires": [
             [
                 "b076fd2f.fc78b"
             ]
-        ]
+        ],
+        "l": true
     },
     {
         "id": "f9ee0570.6a9018",
         "type": "link in",
         "z": "3b28216c.47740e",
         "g": "ef5b6a2b.40ecc8",
-        "name": "Turn off Great Room Lights",
+        "name": "GR - Lights Off",
         "links": [
-            "ea0c8e97.28f7c"
+            "3a5449f6.fb5806",
+            "de171cf9.08a35",
+            "e677acf6.3ca9a",
+            "ea0c8e97.28f7c",
+            "9a8963b8.95506"
         ],
-        "x": 1175,
-        "y": 420,
+        "x": 1180,
+        "y": 260,
         "wires": [
             [
                 "1de249ee.9aa696"
             ]
-        ]
+        ],
+        "l": true
     },
     {
         "id": "83226588.608178",
         "type": "link out",
         "z": "3b28216c.47740e",
         "g": "8849fbc8.b7a658",
-        "name": "Occupied Room",
+        "name": "GR - Occupied",
         "links": [
             "4eefd7e6.10b848"
         ],
-        "x": 695,
-        "y": 100,
-        "wires": []
+        "x": 700,
+        "y": 820,
+        "wires": [],
+        "l": true
     },
     {
         "id": "ea0c8e97.28f7c",
         "type": "link out",
         "z": "3b28216c.47740e",
         "g": "8a3e7f98.11b62",
-        "name": "TV On",
+        "name": "GR - TV On",
         "links": [
+            "ba433501.c4c018",
             "f9ee0570.6a9018"
         ],
-        "x": 675,
-        "y": 860,
-        "wires": []
-    },
-    {
-        "id": "6792a0bb.ee36c",
-        "type": "hubitat command",
-        "z": "3b28216c.47740e",
-        "g": "8a3e7f98.11b62",
-        "deviceLabel": "",
-        "name": "GR - Motion Detection",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1377",
-        "command": "off",
-        "commandArgs": "",
-        "x": 760,
-        "y": 900,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "c5053b7e.eb5e68",
-        "type": "hubitat command",
-        "z": "3b28216c.47740e",
-        "g": "8a3e7f98.11b62",
-        "deviceLabel": "",
-        "name": "GR - Motion Detection",
-        "server": "b130c189.ea4d2",
-        "deviceId": "1377",
-        "command": "on",
-        "commandArgs": "",
-        "x": 760,
-        "y": 960,
-        "wires": [
-            []
-        ]
+        "x": 390,
+        "y": 1040,
+        "wires": [],
+        "l": true
     },
     {
         "id": "412d7cae.06a824",
@@ -18437,8 +17416,8 @@
         "deviceId": "23",
         "command": "setLevel",
         "commandArgs": "",
-        "x": 1240,
-        "y": 320,
+        "x": 1340,
+        "y": 60,
         "wires": [
             [
                 "4e6f0358.8363cc"
@@ -18465,8 +17444,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1470,
-        "y": 440,
+        "x": 1570,
+        "y": 180,
         "wires": [
             []
         ]
@@ -18495,7 +17474,7 @@
         "repair": false,
         "outputs": 2,
         "x": 330,
-        "y": 400,
+        "y": 80,
         "wires": [
             [
                 "5fceb606.bdebd8"
@@ -18526,7 +17505,7 @@
         "to": "",
         "reg": false,
         "x": 450,
-        "y": 380,
+        "y": 60,
         "wires": [
             [
                 "493aa802.df1458"
@@ -18554,7 +17533,7 @@
         "to": "",
         "reg": false,
         "x": 460,
-        "y": 420,
+        "y": 100,
         "wires": [
             [
                 "493aa802.df1458"
@@ -18575,7 +17554,7 @@
         "inputCount": "2",
         "topic": "Downstairs Bedroom Motion",
         "x": 200,
-        "y": 520,
+        "y": 200,
         "wires": [
             [],
             [
@@ -18604,7 +17583,7 @@
         "repair": false,
         "outputs": 2,
         "x": 490,
-        "y": 480,
+        "y": 160,
         "wires": [
             [
                 "1da6321b.e8eb1e",
@@ -18632,7 +17611,7 @@
         "repair": false,
         "outputs": 1,
         "x": 480,
-        "y": 520,
+        "y": 200,
         "wires": [
             [
                 "e76b4b73.7c37e8"
@@ -18651,7 +17630,7 @@
         "inout": "out",
         "property": "payload",
         "x": 350,
-        "y": 520,
+        "y": 200,
         "wires": [
             [
                 "2c42f304.fa4bcc"
@@ -18670,7 +17649,7 @@
         "attribute": "motion",
         "sendEvent": true,
         "x": 170,
-        "y": 380,
+        "y": 60,
         "wires": [
             [
                 "83401c25.dadd1"
@@ -18689,7 +17668,7 @@
         "attribute": "motion",
         "sendEvent": true,
         "x": 170,
-        "y": 440,
+        "y": 120,
         "wires": [
             [
                 "83401c25.dadd1"
@@ -18709,8 +17688,8 @@
         "name": "",
         "reporting": "last_minute_seconds",
         "persist": true,
-        "x": 980,
-        "y": 540,
+        "x": 1020,
+        "y": 260,
         "wires": [
             [
                 "d0261c40.936fd"
@@ -18726,8 +17705,8 @@
         "g": "576b4eea.4733b",
         "name": "",
         "env": [],
-        "x": 740,
-        "y": 620,
+        "x": 780,
+        "y": 340,
         "wires": [
             [],
             [
@@ -18760,8 +17739,8 @@
         "name": "",
         "reporting": "last_minute_seconds",
         "persist": true,
-        "x": 980,
-        "y": 600,
+        "x": 1020,
+        "y": 320,
         "wires": [
             [
                 "d0261c40.936fd"
@@ -18783,8 +17762,8 @@
         "name": "",
         "reporting": "last_minute_seconds",
         "persist": true,
-        "x": 980,
-        "y": 660,
+        "x": 1020,
+        "y": 380,
         "wires": [
             [
                 "d0261c40.936fd"
@@ -18806,8 +17785,8 @@
         "name": "",
         "reporting": "last_minute_seconds",
         "persist": true,
-        "x": 980,
-        "y": 720,
+        "x": 1020,
+        "y": 440,
         "wires": [
             [
                 "d0261c40.936fd"
@@ -18836,8 +17815,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 730,
-        "y": 540,
+        "x": 770,
+        "y": 260,
         "wires": [
             [
                 "e50ffab4.b7a888",
@@ -18857,15 +17836,14 @@
             "72d1fff3.4f9c7",
             "d4bae9fc.dde7c8"
         ],
-        "x": 210,
-        "y": 900,
+        "x": 155,
+        "y": 400,
         "wires": [
             [
                 "c928db66.bfbef8",
                 "5d67e783.42a2e8"
             ]
-        ],
-        "l": true
+        ]
     },
     {
         "id": "77a0f8f1.a4b2c8",
@@ -18889,8 +17867,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 220,
-        "y": 860,
+        "x": 120,
+        "y": 360,
         "wires": [
             [
                 "c928db66.bfbef8",
@@ -18909,8 +17887,8 @@
         "deviceId": "385",
         "attribute": "switch",
         "sendEvent": true,
-        "x": 320,
-        "y": 680,
+        "x": 340,
+        "y": 360,
         "wires": [
             [
                 "312293ec.5b6c6c"
@@ -18940,8 +17918,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 490,
-        "y": 680,
+        "x": 510,
+        "y": 360,
         "wires": [
             [
                 "1da6321b.e8eb1e",
@@ -18972,8 +17950,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 360,
-        "y": 620,
+        "x": 380,
+        "y": 300,
         "wires": [
             []
         ]
@@ -18998,8 +17976,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 360,
-        "y": 740,
+        "x": 380,
+        "y": 420,
         "wires": [
             []
         ]
@@ -19024,8 +18002,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 290,
-        "y": 780,
+        "x": 310,
+        "y": 460,
         "wires": [
             []
         ]
@@ -19042,12 +18020,12 @@
         "rate": "1",
         "nbRateUnits": "1",
         "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
+        "randomFirst": "10",
+        "randomLast": "50",
+        "randomUnits": "milliseconds",
         "drop": false,
-        "x": 1230,
-        "y": 660,
+        "x": 1290,
+        "y": 400,
         "wires": [
             [
                 "99fb8edb.39489",
@@ -19076,8 +18054,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1470,
-        "y": 740,
+        "x": 1530,
+        "y": 480,
         "wires": [
             []
         ]
@@ -19087,17 +18065,20 @@
         "type": "link in",
         "z": "a994b807.c93cc8",
         "g": "cab496aa.ce6c08",
-        "name": "Turn off Master Bedroom Lights",
+        "name": "MB - Lights Off",
         "links": [
-            "e741fd60.6660f"
+            "858e18d4.616f68",
+            "e741fd60.6660f",
+            "452e14b.d9ef1ec"
         ],
-        "x": 1155,
-        "y": 620,
+        "x": 1280,
+        "y": 360,
         "wires": [
             [
                 "d0261c40.936fd"
             ]
-        ]
+        ],
+        "l": true
     },
     {
         "id": "bfe83434.2b4158",
@@ -19106,8 +18087,8 @@
         "g": "d3c5f467.c11a78",
         "name": "",
         "env": [],
-        "x": 800,
-        "y": 400,
+        "x": 880,
+        "y": 120,
         "wires": [
             [
                 "47acf468.1e5d8c"
@@ -19143,8 +18124,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 650,
-        "y": 440,
+        "x": 730,
+        "y": 160,
         "wires": [
             [
                 "bfe83434.2b4158"
@@ -19156,18 +18137,21 @@
         "type": "link in",
         "z": "a994b807.c93cc8",
         "g": "d3c5f467.c11a78",
-        "name": "Turn on Master Bedroom Lights",
+        "name": "MB - Lights On",
         "links": [
+            "3d32d340.505f7c",
+            "78bae1e6.7ec47",
             "7c575d7b.4ea964",
-            "3d32d340.505f7c"
+            "d60e0d66.777e4"
         ],
-        "x": 675,
-        "y": 400,
+        "x": 700,
+        "y": 120,
         "wires": [
             [
                 "bfe83434.2b4158"
             ]
-        ]
+        ],
+        "l": true
     },
     {
         "id": "9ea050a0.a61d1",
@@ -19226,8 +18210,8 @@
         "g": "d3c5f467.c11a78",
         "name": "MB Arguments",
         "env": [],
-        "x": 1000,
-        "y": 380,
+        "x": 1080,
+        "y": 100,
         "wires": [
             [
                 "4047c95.b0e2b38",
@@ -19248,8 +18232,8 @@
         "g": "d3c5f467.c11a78",
         "name": "MB Arguments",
         "env": [],
-        "x": 1000,
-        "y": 420,
+        "x": 1080,
+        "y": 140,
         "wires": [
             [
                 "4496c9a8.77cc48"
@@ -19265,13 +18249,13 @@
         "z": "a994b807.c93cc8",
         "g": "e183e469.1831a8",
         "deviceLabel": "",
-        "name": "MB - Left Niightstand",
+        "name": "MB - Left Nightstand",
         "server": "b130c189.ea4d2",
         "deviceId": "22",
         "command": "setLevel",
         "commandArgs": "",
-        "x": 1240,
-        "y": 360,
+        "x": 1340,
+        "y": 100,
         "wires": [
             [
                 "4e6f0358.8363cc"
@@ -19289,8 +18273,8 @@
         "deviceId": "21",
         "command": "setLevel",
         "commandArgs": "",
-        "x": 1230,
-        "y": 400,
+        "x": 1330,
+        "y": 140,
         "wires": [
             [
                 "4e6f0358.8363cc"
@@ -19308,8 +18292,8 @@
         "deviceId": "21",
         "command": "setColorTemperature",
         "commandArgs": "",
-        "x": 1230,
-        "y": 460,
+        "x": 1330,
+        "y": 200,
         "wires": [
             [
                 "4e6f0358.8363cc"
@@ -19324,11 +18308,11 @@
         "deviceLabel": "",
         "name": "MB - Left Nightstand",
         "server": "b130c189.ea4d2",
-        "deviceId": "21",
+        "deviceId": "22",
         "command": "setColorTemperature",
         "commandArgs": "",
-        "x": 1240,
-        "y": 500,
+        "x": 1340,
+        "y": 240,
         "wires": [
             [
                 "4e6f0358.8363cc"
@@ -19343,11 +18327,11 @@
         "deviceLabel": "",
         "name": "MB - Right Nightstand",
         "server": "b130c189.ea4d2",
-        "deviceId": "21",
+        "deviceId": "23",
         "command": "setColorTemperature",
         "commandArgs": "",
-        "x": 1240,
-        "y": 540,
+        "x": 1340,
+        "y": 280,
         "wires": [
             [
                 "4e6f0358.8363cc"
@@ -19365,8 +18349,8 @@
         "deviceId": "21",
         "command": "off",
         "commandArgs": "",
-        "x": 1250,
-        "y": 780,
+        "x": 1310,
+        "y": 520,
         "wires": [
             [
                 "ae05c33b.0f89b"
@@ -19379,13 +18363,13 @@
         "z": "a994b807.c93cc8",
         "g": "cab496aa.ce6c08",
         "deviceLabel": "",
-        "name": "MB - Left Niightstand",
+        "name": "MB - Left Nightstand",
         "server": "b130c189.ea4d2",
         "deviceId": "22",
         "command": "off",
         "commandArgs": "",
-        "x": 1260,
-        "y": 740,
+        "x": 1320,
+        "y": 480,
         "wires": [
             [
                 "ae05c33b.0f89b"
@@ -19403,8 +18387,8 @@
         "deviceId": "23",
         "command": "off",
         "commandArgs": "",
-        "x": 1260,
-        "y": 700,
+        "x": 1320,
+        "y": 440,
         "wires": [
             [
                 "ae05c33b.0f89b"
@@ -19416,13 +18400,14 @@
         "type": "link out",
         "z": "a994b807.c93cc8",
         "g": "4f97b3df.c6fc4c",
-        "name": "Occupied Room",
+        "name": "MB - Occupied",
         "links": [
             "2e7b1c4.4932fe4"
         ],
-        "x": 875,
-        "y": 240,
-        "wires": []
+        "x": 860,
+        "y": 820,
+        "wires": [],
+        "l": true
     },
     {
         "id": "348abf65.b7b89",
@@ -19435,8 +18420,8 @@
         "deviceId": "163",
         "attribute": "",
         "sendEvent": true,
-        "x": 540,
-        "y": 1180,
+        "x": 140,
+        "y": 920,
         "wires": [
             [
                 "1fa42885.feaad7",
@@ -19478,8 +18463,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 4,
-        "x": 720,
-        "y": 1060,
+        "x": 320,
+        "y": 1040,
         "wires": [
             [
                 "3d32d340.505f7c"
@@ -19528,8 +18513,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 4,
-        "x": 720,
-        "y": 1120,
+        "x": 320,
+        "y": 980,
         "wires": [
             [],
             [],
@@ -19570,8 +18555,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 4,
-        "x": 730,
-        "y": 1180,
+        "x": 330,
+        "y": 920,
         "wires": [
             [],
             [],
@@ -19584,25 +18569,1480 @@
         "type": "link out",
         "z": "a994b807.c93cc8",
         "g": "6e41d20e.ae9f3c",
-        "name": "1/2/3 Pushed",
+        "name": "MB - Dimmer 1/2/3 Pushed",
         "links": [
             "2e7b1c4.4932fe4"
         ],
-        "x": 855,
-        "y": 1040,
-        "wires": []
+        "x": 520,
+        "y": 1020,
+        "wires": [],
+        "l": true
     },
     {
         "id": "e741fd60.6660f",
         "type": "link out",
         "z": "a994b807.c93cc8",
         "g": "6e41d20e.ae9f3c",
-        "name": "4 Pushed",
+        "name": "MB - Dimmer 4 Pushed",
         "links": [
             "75d807a6.6e70c8"
         ],
-        "x": 855,
+        "x": 510,
+        "y": 1060,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "858e18d4.616f68",
+        "type": "link out",
+        "z": "68ba5945.906288",
+        "g": "c13bd32d.ee4ea",
+        "name": "MB - Lights Off",
+        "links": [
+            "75d807a6.6e70c8"
+        ],
+        "x": 2100,
+        "y": 320,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "d60e0d66.777e4",
+        "type": "link out",
+        "z": "68ba5945.906288",
+        "g": "c13bd32d.ee4ea",
+        "name": "MB - Lights On",
+        "links": [
+            "2e7b1c4.4932fe4"
+        ],
+        "x": 2100,
+        "y": 520,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "54f3e04a.1fe42",
+        "type": "link in",
+        "z": "3b28216c.47740e",
+        "g": "b55344eb.e17b58",
+        "name": "GR - Initalize",
+        "links": [
+            "72d1fff3.4f9c7",
+            "d4bae9fc.dde7c8"
+        ],
+        "x": 155,
+        "y": 400,
+        "wires": [
+            [
+                "cdc6b99b.dda2a8",
+                "ff44d56e.aa1be8"
+            ]
+        ]
+    },
+    {
+        "id": "e677acf6.3ca9a",
+        "type": "link out",
+        "z": "3b28216c.47740e",
+        "g": "8967f411.5c9108",
+        "name": "GR - Switch Off",
+        "links": [
+            "f9ee0570.6a9018"
+        ],
+        "x": 480,
+        "y": 700,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "ee4d418a.13eb8",
+        "type": "link out",
+        "z": "3b28216c.47740e",
+        "g": "8967f411.5c9108",
+        "name": "GR - Switch On",
+        "links": [
+            "4eefd7e6.10b848"
+        ],
+        "x": 480,
+        "y": 660,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "2cb79ef6.9a7412",
+        "type": "hubitat device",
+        "z": "3b28216c.47740e",
+        "g": "545c7835.85a538",
+        "deviceLabel": "",
+        "name": "GR - Motion Fireplace",
+        "server": "b130c189.ea4d2",
+        "deviceId": "162",
+        "attribute": "illuminance",
+        "sendEvent": true,
+        "x": 140,
+        "y": 580,
+        "wires": [
+            [
+                "249aceb4.ae7cf2"
+            ]
+        ]
+    },
+    {
+        "id": "249aceb4.ae7cf2",
+        "type": "switch",
+        "z": "3b28216c.47740e",
+        "g": "545c7835.85a538",
+        "name": "≥ 100",
+        "property": "payload.value",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gte",
+                "v": "100",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 310,
+        "y": 580,
+        "wires": [
+            [
+                "de171cf9.08a35"
+            ]
+        ]
+    },
+    {
+        "id": "de171cf9.08a35",
+        "type": "link out",
+        "z": "3b28216c.47740e",
+        "g": "545c7835.85a538",
+        "name": "GR - Illuminance ≥ 100",
+        "links": [
+            "f9ee0570.6a9018"
+        ],
+        "x": 480,
+        "y": 580,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "f05db464.9f0d08",
+        "type": "link out",
+        "z": "d06ad5d7.7d1a38",
+        "g": "9c26d0ef.cf203",
+        "name": "KT - Occupied",
+        "links": [
+            "89797b83.362f58"
+        ],
+        "x": 700,
+        "y": 700,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "89797b83.362f58",
+        "type": "link in",
+        "z": "d06ad5d7.7d1a38",
+        "g": "d79efd7b.7886b",
+        "name": "KT - Lights On",
+        "links": [
+            "264551bf.aecece",
+            "74225776.27d268",
+            "9febae80.20461",
+            "f05db464.9f0d08"
+        ],
+        "x": 630,
+        "y": 120,
+        "wires": [
+            [
+                "7c4a0dd4.f78404"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "e5bc4256.4c553",
+        "type": "link in",
+        "z": "d06ad5d7.7d1a38",
+        "name": "KT - Lights Off",
+        "links": [
+            "4e81438c.dd674c",
+            "84c147b7.49c348",
+            "3b2a283.a0b8dd8"
+        ],
+        "x": 870,
+        "y": 580,
+        "wires": [
+            [
+                "7293a6a3.1913e8"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "74225776.27d268",
+        "type": "link out",
+        "z": "d06ad5d7.7d1a38",
+        "g": "313d11f.0a7dfee",
+        "name": "KT - Switch On",
+        "links": [
+            "89797b83.362f58"
+        ],
+        "x": 460,
+        "y": 860,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "4e81438c.dd674c",
+        "type": "link out",
+        "z": "d06ad5d7.7d1a38",
+        "g": "313d11f.0a7dfee",
+        "name": "KT - Switch Off",
+        "links": [
+            "e5bc4256.4c553"
+        ],
+        "x": 460,
+        "y": 900,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "9febae80.20461",
+        "type": "link out",
+        "z": "d06ad5d7.7d1a38",
+        "g": "568533ed.18d81c",
+        "name": "KT - Christmas Mode On",
+        "links": [
+            "89797b83.362f58"
+        ],
+        "x": 670,
+        "y": 780,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "e78f62b4.61d97",
+        "type": "link out",
+        "z": "cd3ea6b3.ac9c98",
+        "g": "bc9da574.ee5618",
+        "name": "DB - Occupied",
+        "links": [
+            "ba1a874e.d831e8"
+        ],
+        "x": 700,
+        "y": 800,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "ba1a874e.d831e8",
+        "type": "link in",
+        "z": "cd3ea6b3.ac9c98",
+        "g": "42113567.c0564c",
+        "name": "DB - Lights On",
+        "links": [
+            "722c8abb.c856e4",
+            "79936916.eae628",
+            "d1b4041a.df37c8",
+            "e78f62b4.61d97"
+        ],
+        "x": 680,
+        "y": 140,
+        "wires": [
+            [
+                "b00f545c.e6ed38"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "587bbe72.0bb02",
+        "type": "link in",
+        "z": "cd3ea6b3.ac9c98",
+        "g": "5f5255ea.d74b3c",
+        "name": "DB - Lights Off",
+        "links": [
+            "65f263c6.39da6c",
+            "fa287b92.be3a08",
+            "b3de46b2.1e5f58",
+            "452c0e86.53716"
+        ],
+        "x": 740,
+        "y": 460,
+        "wires": [
+            [
+                "9538841e.5899f8"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "fa287b92.be3a08",
+        "type": "link out",
+        "z": "cd3ea6b3.ac9c98",
+        "g": "87724a3a.54b368",
+        "name": "DB - Switch Off",
+        "links": [
+            "587bbe72.0bb02"
+        ],
+        "x": 460,
+        "y": 920,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "79936916.eae628",
+        "type": "link out",
+        "z": "cd3ea6b3.ac9c98",
+        "g": "87724a3a.54b368",
+        "name": "DB - Switch On",
+        "links": [
+            "ba1a874e.d831e8"
+        ],
+        "x": 460,
+        "y": 880,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "722c8abb.c856e4",
+        "type": "link out",
+        "z": "cd3ea6b3.ac9c98",
+        "g": "945ba7ee.377858",
+        "name": "DB - Enabled Contact Open",
+        "links": [
+            "ba1a874e.d831e8",
+            "fe31135.fe579f"
+        ],
+        "x": 560,
+        "y": 680,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "78bae1e6.7ec47",
+        "type": "link out",
+        "z": "a994b807.c93cc8",
+        "g": "4f30f3e7.a65ebc",
+        "name": "MB - Enabled Contact Open",
+        "links": [
+            "2e7b1c4.4932fe4",
+            "90945ae4.a7c238"
+        ],
+        "x": 560,
+        "y": 700,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "90945ae4.a7c238",
+        "type": "link in",
+        "z": "a994b807.c93cc8",
+        "g": "2d154e9c.4ad022",
+        "name": "MB - Motion Detection On",
+        "links": [
+            "1bdf9e11.77a652",
+            "33c46b52.42e644",
+            "78bae1e6.7ec47",
+            "8fe05310.43fc7",
+            "c7ba1ba7.053658",
+            "e6a752cf.4f145",
+            "e3ee01ca.572"
+        ],
+        "x": 1310,
+        "y": 800,
+        "wires": [
+            [
+                "d2683971.de9c08"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "8fe05310.43fc7",
+        "type": "link out",
+        "z": "a994b807.c93cc8",
+        "g": "4f30f3e7.a65ebc",
+        "name": "MB - Enabled Contact Closed Unoccupied",
+        "links": [
+            "90945ae4.a7c238"
+        ],
+        "x": 1000,
+        "y": 640,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "bdfbc339.36391",
+        "type": "change",
+        "z": "a994b807.c93cc8",
+        "g": "74399a57.0db384",
+        "name": "MB - Contact Detection On",
+        "rules": [
+            {
+                "t": "set",
+                "p": "#:(file)::contactDetection_MB",
+                "pt": "global",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1560,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "56039830.692118",
+        "type": "change",
+        "z": "a994b807.c93cc8",
+        "g": "74399a57.0db384",
+        "name": "MB - Contact Detection Off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "#:(file)::contactDetection_MB",
+                "pt": "global",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1560,
+        "y": 1060,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d768ea79.4a2018",
+        "type": "link in",
+        "z": "a994b807.c93cc8",
+        "g": "74399a57.0db384",
+        "name": "MB - Contact Detection Off",
+        "links": [
+            "402aab2c.6fc014",
+            "7208a07e.4f6be",
+            "a162b372.c3e24",
+            "452e14b.d9ef1ec"
+        ],
+        "x": 1310,
+        "y": 1060,
+        "wires": [
+            [
+                "56039830.692118"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "f97d0cf0.32ff3",
+        "type": "link in",
+        "z": "a994b807.c93cc8",
+        "g": "74399a57.0db384",
+        "name": "MB - Contact Detection On",
+        "links": [
+            "422b2e52.dff8d",
+            "85494f22.32e7f",
+            "c7ba1ba7.053658",
+            "e6a752cf.4f145",
+            "cc0f6e65.cb36e"
+        ],
+        "x": 1310,
+        "y": 980,
+        "wires": [
+            [
+                "bdfbc339.36391"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "c30ab909.9e8df8",
+        "type": "change",
+        "z": "cd3ea6b3.ac9c98",
+        "g": "8096faa5.6b5388",
+        "name": "DB - Contact Detection On",
+        "rules": [
+            {
+                "t": "set",
+                "p": "#:(file)::contactDetection_DB",
+                "pt": "global",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1660,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fdbe462d.dfd4b8",
+        "type": "link in",
+        "z": "cd3ea6b3.ac9c98",
+        "g": "8096faa5.6b5388",
+        "name": "DB - Contact Detection On",
+        "links": [
+            "97d61af1.614d08",
+            "9ff9ea72.fd16d8",
+            "c22c9e42.2e8d6",
+            "bf4dda67.e41fe8"
+        ],
+        "x": 1410,
+        "y": 800,
+        "wires": [
+            [
+                "c30ab909.9e8df8"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "a41d3d35.af9da",
+        "type": "link in",
+        "z": "cd3ea6b3.ac9c98",
+        "g": "8096faa5.6b5388",
+        "name": "DB - Contact Detection Off",
+        "links": [
+            "1d1e6c3f.22b234",
+            "679dfd2f.fcdc74",
+            "b3de46b2.1e5f58",
+            "452c0e86.53716"
+        ],
+        "x": 1410,
+        "y": 880,
+        "wires": [
+            [
+                "da7dcbb8.019288"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "da7dcbb8.019288",
+        "type": "change",
+        "z": "cd3ea6b3.ac9c98",
+        "g": "8096faa5.6b5388",
+        "name": "DB Contact Detection Off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "#:(file)::contactDetection_DB",
+                "pt": "global",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1650,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cc0f6e65.cb36e",
+        "type": "link out",
+        "z": "73f998b9.8842a8",
+        "name": "MB - Good Morning",
+        "links": [
+            "f97d0cf0.32ff3"
+        ],
+        "x": 530,
+        "y": 460,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "859ce00a.3ba88",
+        "type": "hubitat mode",
+        "z": "a994b807.c93cc8",
+        "g": "2d154e9c.4ad022",
+        "name": "",
+        "server": "b130c189.ea4d2",
+        "sendEvent": false,
+        "x": 1490,
+        "y": 900,
+        "wires": [
+            [
+                "7183aa46.afea54"
+            ]
+        ]
+    },
+    {
+        "id": "7183aa46.afea54",
+        "type": "switch",
+        "z": "a994b807.c93cc8",
+        "g": "2d154e9c.4ad022",
+        "name": "!Night",
+        "property": "payload.value",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "Night",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1610,
+        "y": 900,
+        "wires": [
+            [
+                "2597c7a3.ec5828"
+            ]
+        ]
+    },
+    {
+        "id": "2597c7a3.ec5828",
+        "type": "hubitat command",
+        "z": "a994b807.c93cc8",
+        "g": "2d154e9c.4ad022",
+        "deviceLabel": "",
+        "name": "MB - Motion Detection",
+        "server": "b130c189.ea4d2",
+        "deviceId": "385",
+        "command": "off",
+        "commandArgs": "",
+        "x": 1780,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8147b739.0acfb8",
+        "type": "link in",
+        "z": "a994b807.c93cc8",
+        "g": "2d154e9c.4ad022",
+        "name": "MB - Motion Detection Off",
+        "links": [
+            "4cf5ec3a.03c674",
+            "5e914a44.f00a24",
+            "7208a07e.4f6be",
+            "a162b372.c3e24",
+            "452e14b.d9ef1ec",
+            "ec05df2f.c57ce"
+        ],
+        "x": 1310,
+        "y": 900,
+        "wires": [
+            [
+                "859ce00a.3ba88"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "423316c8.10ae78",
+        "type": "hubitat command",
+        "z": "cd3ea6b3.ac9c98",
+        "g": "ae3e8560.434b78",
+        "deviceLabel": "",
+        "name": "DB - Motion Detection",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1352",
+        "command": "off",
+        "commandArgs": "",
+        "x": 1640,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d150e7cf.727c88",
+        "type": "link in",
+        "z": "cd3ea6b3.ac9c98",
+        "g": "ae3e8560.434b78",
+        "name": "DB - Motion Detection Off",
+        "links": [
+            "ce516fb9.1019d",
+            "e24d6cb2.36dad",
+            "b3de46b2.1e5f58",
+            "452c0e86.53716"
+        ],
+        "x": 1410,
+        "y": 700,
+        "wires": [
+            [
+                "423316c8.10ae78"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "fe31135.fe579f",
+        "type": "link in",
+        "z": "cd3ea6b3.ac9c98",
+        "g": "ae3e8560.434b78",
+        "name": "DB - Motion Detection On",
+        "links": [
+            "2e91eb2.be14e14",
+            "34ca6e6c.4eba52",
+            "722c8abb.c856e4",
+            "9ff9ea72.fd16d8"
+        ],
+        "x": 1410,
+        "y": 600,
+        "wires": [
+            [
+                "884b7694.b2cda8"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "884b7694.b2cda8",
+        "type": "hubitat command",
+        "z": "cd3ea6b3.ac9c98",
+        "g": "ae3e8560.434b78",
+        "deviceLabel": "Downstairs Bedroom - Motion Detection Switch",
+        "name": "DB - Motion Detection",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1352",
+        "command": "on",
+        "commandArgs": "",
+        "x": 1640,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a8ce4670.643ff8",
+        "type": "link in",
+        "z": "d06ad5d7.7d1a38",
+        "g": "3bee8d81.8ab112",
+        "name": "KT - Motion Detection On",
+        "links": [
+            "117f4b98.92de44",
+            "b14d2db6.c672c",
+            "e3ee01ca.572"
+        ],
+        "x": 870,
+        "y": 940,
+        "wires": [
+            [
+                "5a99ec6.b352714"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "5a99ec6.b352714",
+        "type": "hubitat command",
+        "z": "d06ad5d7.7d1a38",
+        "g": "3bee8d81.8ab112",
+        "deviceLabel": "Downstairs Bedroom - Motion Detection Switch",
+        "name": "KT - Motion Detection",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1351",
+        "command": "on",
+        "commandArgs": "",
+        "x": 1100,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7b58d492.7cd49c",
+        "type": "hubitat command",
+        "z": "d06ad5d7.7d1a38",
+        "g": "360d4537.9f891a",
+        "deviceLabel": "",
+        "name": "KT - Motion Detection",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1351",
+        "command": "off",
+        "commandArgs": "",
+        "x": 1100,
+        "y": 1040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2f87f4c6.74ffac",
+        "type": "link in",
+        "z": "d06ad5d7.7d1a38",
+        "g": "360d4537.9f891a",
+        "name": "KT - Motion Detection Off",
+        "links": [
+            "9efb5534.4c1d78",
+            "3b2a283.a0b8dd8"
+        ],
+        "x": 870,
+        "y": 1040,
+        "wires": [
+            [
+                "7b58d492.7cd49c"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "923f971d.86c708",
+        "type": "link in",
+        "z": "3b28216c.47740e",
+        "g": "da7af52e.669f48",
+        "name": "GR - Motion Detection On",
+        "links": [
+            "75d9354c.30dd4c",
+            "f9d8202e.f8619",
+            "3c4f33fe.6a41bc",
+            "67e086dd.c817f8"
+        ],
+        "x": 890,
+        "y": 600,
+        "wires": [
+            [
+                "b55537fa.6b8e58"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "b55537fa.6b8e58",
+        "type": "hubitat command",
+        "z": "3b28216c.47740e",
+        "g": "da7af52e.669f48",
+        "deviceLabel": "Downstairs Bedroom - Motion Detection Switch",
+        "name": "GR - Motion Detection",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1377",
+        "command": "on",
+        "commandArgs": "",
+        "x": 1120,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "75a8111f.de1e3",
+        "type": "hubitat command",
+        "z": "3b28216c.47740e",
+        "g": "4f54b8d1.2cc298",
+        "deviceLabel": "",
+        "name": "GR - Motion Detection",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1377",
+        "command": "off",
+        "commandArgs": "",
+        "x": 1120,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ba433501.c4c018",
+        "type": "link in",
+        "z": "3b28216c.47740e",
+        "g": "4f54b8d1.2cc298",
+        "name": "GR - Motion Detection Off",
+        "links": [
+            "e543b651.5d0228",
+            "ea0c8e97.28f7c",
+            "1117c764.14e249",
+            "9a8963b8.95506"
+        ],
+        "x": 890,
+        "y": 700,
+        "wires": [
+            [
+                "75a8111f.de1e3"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "f9d8202e.f8619",
+        "type": "link out",
+        "z": "3b28216c.47740e",
+        "g": "8a3e7f98.11b62",
+        "name": "GR - TV Off",
+        "links": [
+            "923f971d.86c708"
+        ],
+        "x": 390,
         "y": 1080,
-        "wires": []
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "ce516fb9.1019d",
+        "type": "link out",
+        "z": "cd3ea6b3.ac9c98",
+        "g": "945ba7ee.377858",
+        "name": "DB - Enabled Contact Closed Occupied",
+        "links": [
+            "d150e7cf.727c88"
+        ],
+        "x": 920,
+        "y": 680,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "34ca6e6c.4eba52",
+        "type": "link out",
+        "z": "cd3ea6b3.ac9c98",
+        "g": "945ba7ee.377858",
+        "name": "DB - Enabled Contact Closed Unoccupied",
+        "links": [
+            "fe31135.fe579f"
+        ],
+        "x": 920,
+        "y": 620,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "4cf5ec3a.03c674",
+        "type": "link out",
+        "z": "a994b807.c93cc8",
+        "g": "4f30f3e7.a65ebc",
+        "name": "MB - Enabled Contact Closed Occupied",
+        "links": [
+            "8147b739.0acfb8"
+        ],
+        "x": 1000,
+        "y": 700,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "75d9354c.30dd4c",
+        "type": "link out",
+        "z": "68ba5945.906288",
+        "g": "bae12151.13267",
+        "name": "GR - Alexa Motion Detection On",
+        "links": [
+            "923f971d.86c708"
+        ],
+        "x": 770,
+        "y": 440,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "2e91eb2.be14e14",
+        "type": "link out",
+        "z": "68ba5945.906288",
+        "g": "bae12151.13267",
+        "name": "DB - Alexa Motion Detection On",
+        "links": [
+            "fe31135.fe579f"
+        ],
+        "x": 770,
+        "y": 480,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "117f4b98.92de44",
+        "type": "link out",
+        "z": "68ba5945.906288",
+        "g": "bae12151.13267",
+        "name": "KT - Alexa Motion Detection On",
+        "links": [
+            "a8ce4670.643ff8"
+        ],
+        "x": 770,
+        "y": 520,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "1bdf9e11.77a652",
+        "type": "link out",
+        "z": "68ba5945.906288",
+        "g": "bae12151.13267",
+        "name": "MB - Alexa Motion Detection On",
+        "links": [
+            "90945ae4.a7c238"
+        ],
+        "x": 770,
+        "y": 560,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "e543b651.5d0228",
+        "type": "link out",
+        "z": "68ba5945.906288",
+        "g": "bae12151.13267",
+        "name": "GR - Alexa Motion Detection Off",
+        "links": [
+            "ba433501.c4c018"
+        ],
+        "x": 770,
+        "y": 160,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "e24d6cb2.36dad",
+        "type": "link out",
+        "z": "68ba5945.906288",
+        "g": "bae12151.13267",
+        "name": "DB - Alexa Motion Detection Off",
+        "links": [
+            "d150e7cf.727c88"
+        ],
+        "x": 770,
+        "y": 200,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "9efb5534.4c1d78",
+        "type": "link out",
+        "z": "68ba5945.906288",
+        "g": "bae12151.13267",
+        "name": "KT - Alexa Motion Detection Off",
+        "links": [
+            "2f87f4c6.74ffac"
+        ],
+        "x": 770,
+        "y": 240,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "5e914a44.f00a24",
+        "type": "link out",
+        "z": "68ba5945.906288",
+        "g": "bae12151.13267",
+        "name": "MB - Alexa Motion Detection Off",
+        "links": [
+            "8147b739.0acfb8"
+        ],
+        "x": 770,
+        "y": 280,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "6c4f8b82.166fd4",
+        "type": "switch",
+        "z": "68ba5945.906288",
+        "name": "DnD On Phrase Handler",
+        "property": "payload.description.summary",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "regex",
+                "v": "(enable|turn on) (the )?do not disturb( mode)?",
+                "vt": "str",
+                "case": false
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 1,
+        "x": 590,
+        "y": 80,
+        "wires": [
+            [
+                "f0bb1ed4.befeb",
+                "d2522981.a56338"
+            ]
+        ]
+    },
+    {
+        "id": "b0025216.3a383",
+        "type": "link out",
+        "z": "68ba5945.906288",
+        "g": "c13bd32d.ee4ea",
+        "name": "GR - Lights On",
+        "links": [
+            "4eefd7e6.10b848"
+        ],
+        "x": 2100,
+        "y": 400,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "d1b4041a.df37c8",
+        "type": "link out",
+        "z": "68ba5945.906288",
+        "g": "c13bd32d.ee4ea",
+        "name": "DB - Lights On",
+        "links": [
+            "ba1a874e.d831e8"
+        ],
+        "x": 2100,
+        "y": 440,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "264551bf.aecece",
+        "type": "link out",
+        "z": "68ba5945.906288",
+        "g": "c13bd32d.ee4ea",
+        "name": "KT - Lights On",
+        "links": [
+            "89797b83.362f58"
+        ],
+        "x": 2100,
+        "y": 480,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "3a5449f6.fb5806",
+        "type": "link out",
+        "z": "68ba5945.906288",
+        "g": "c13bd32d.ee4ea",
+        "name": "GR - Lights Off",
+        "links": [
+            "f9ee0570.6a9018"
+        ],
+        "x": 2100,
+        "y": 200,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "65f263c6.39da6c",
+        "type": "link out",
+        "z": "68ba5945.906288",
+        "g": "c13bd32d.ee4ea",
+        "name": "DB - Lights Off",
+        "links": [
+            "587bbe72.0bb02"
+        ],
+        "x": 2100,
+        "y": 240,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "84c147b7.49c348",
+        "type": "link out",
+        "z": "68ba5945.906288",
+        "g": "c13bd32d.ee4ea",
+        "name": "KT - Lights Off",
+        "links": [
+            "e5bc4256.4c553"
+        ],
+        "x": 2100,
+        "y": 280,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "3556984e.4f1698",
+        "type": "change",
+        "z": "d06ad5d7.7d1a38",
+        "g": "568533ed.18d81c",
+        "name": "KT_Override On",
+        "rules": [
+            {
+                "t": "set",
+                "p": "KT_Override",
+                "pt": "flow",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 460,
+        "y": 780,
+        "wires": [
+            [
+                "9febae80.20461"
+            ]
+        ]
+    },
+    {
+        "id": "a40cfea5.8d1bf",
+        "type": "change",
+        "z": "d06ad5d7.7d1a38",
+        "name": "KT_Override Off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "KT_Override",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1520,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "62430807.b53408",
+        "type": "change",
+        "z": "d06ad5d7.7d1a38",
+        "g": "7b4c2b56.74bb34",
+        "name": "KT_Override On",
+        "rules": [
+            {
+                "t": "set",
+                "p": "KT_Override",
+                "pt": "flow",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1540,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dac948cc.0a7d58",
+        "type": "change",
+        "z": "d06ad5d7.7d1a38",
+        "g": "bbd34e0c.99f3c",
+        "name": "KT_Light On",
+        "rules": [
+            {
+                "t": "set",
+                "p": "KT_Light",
+                "pt": "flow",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1550,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "725d002.21285",
+        "type": "change",
+        "z": "d06ad5d7.7d1a38",
+        "g": "7b4c2b56.74bb34",
+        "name": "KT_Light Off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "KT_Light",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1530,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3c4f33fe.6a41bc",
+        "type": "link out",
+        "z": "68ba5945.906288",
+        "g": "da11bb5d.510958",
+        "name": "GR - Reading Mode Off",
+        "links": [
+            "923f971d.86c708"
+        ],
+        "x": 3330,
+        "y": 160,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "1117c764.14e249",
+        "type": "link out",
+        "z": "68ba5945.906288",
+        "g": "da11bb5d.510958",
+        "name": "GR - Reading Mode On",
+        "links": [
+            "ba433501.c4c018"
+        ],
+        "x": 3330,
+        "y": 380,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "b14d2db6.c672c",
+        "type": "link out",
+        "z": "73f998b9.8842a8",
+        "name": "KT - Good Morning",
+        "links": [
+            "a8ce4670.643ff8"
+        ],
+        "x": 530,
+        "y": 420,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "bf4dda67.e41fe8",
+        "type": "link out",
+        "z": "73f998b9.8842a8",
+        "name": "DB - Good Morning",
+        "links": [
+            "fdbe462d.dfd4b8"
+        ],
+        "x": 530,
+        "y": 380,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "67e086dd.c817f8",
+        "type": "link out",
+        "z": "73f998b9.8842a8",
+        "name": "GR - Good Morning",
+        "links": [
+            "923f971d.86c708"
+        ],
+        "x": 530,
+        "y": 340,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "452e14b.d9ef1ec",
+        "type": "link out",
+        "z": "73f998b9.8842a8",
+        "name": "MB - Goodnight",
+        "links": [
+            "75d807a6.6e70c8",
+            "8147b739.0acfb8",
+            "d768ea79.4a2018"
+        ],
+        "x": 520,
+        "y": 160,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "3b2a283.a0b8dd8",
+        "type": "link out",
+        "z": "73f998b9.8842a8",
+        "name": "KT - Goodnight",
+        "links": [
+            "2f87f4c6.74ffac",
+            "e5bc4256.4c553"
+        ],
+        "x": 520,
+        "y": 120,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "452c0e86.53716",
+        "type": "link out",
+        "z": "73f998b9.8842a8",
+        "name": "DB - Goodnight",
+        "links": [
+            "587bbe72.0bb02",
+            "a41d3d35.af9da",
+            "d150e7cf.727c88"
+        ],
+        "x": 520,
+        "y": 80,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "9a8963b8.95506",
+        "type": "link out",
+        "z": "73f998b9.8842a8",
+        "name": "GR - Goodnight",
+        "links": [
+            "ba433501.c4c018",
+            "f9ee0570.6a9018"
+        ],
+        "x": 520,
+        "y": 40,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "ec05df2f.c57ce",
+        "type": "link out",
+        "z": "345f283.d5796d8",
+        "name": "Day Mode",
+        "links": [
+            "8147b739.0acfb8"
+        ],
+        "x": 790,
+        "y": 340,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "e3ee01ca.572",
+        "type": "link out",
+        "z": "345f283.d5796d8",
+        "name": "Night Mode",
+        "links": [
+            "90945ae4.a7c238",
+            "a8ce4670.643ff8"
+        ],
+        "x": 790,
+        "y": 420,
+        "wires": [],
+        "l": true
     }
 ]
