@@ -5,7 +5,6 @@
     "dependencies": {
         "node-red-contrib-hubitat": "1.2.1",
         "node-red-contrib-simpletime": "2.10.0",
-        "node-red-contrib-speedtest-updated": "2.0.2",
         "node-red-dashboard": "2.23.0",
         "node-red-contrib-sun-position": "1.1.6",
         "node-red-contrib-arlo": "0.0.4",
@@ -16,7 +15,8 @@
         "node-red-contrib-influxdb": "0.5.4",
         "node-red-contrib-moment": "4.0.0",
         "node-red-contrib-virtual-smart-home": "1.21.2",
-        "node-red-node-rbe": "0.2.9"
+        "node-red-node-rbe": "0.2.9",
+        "node-red-contrib-speedtest": "1.1.0"
     },
     "node-red": {
         "settings": {

@@ -101,7 +101,7 @@
         "id": "e1557285.e3f86",
         "type": "tab",
         "label": "LF - Colin's Bedroom",
-        "disabled": false,
+        "disabled": true,
         "info": ""
     },
     {
@@ -173,10 +173,6 @@
                     {
                         "id": "e67c4d69.4d19c",
                         "port": "3"
-                    },
-                    {
-                        "id": "e67c4d69.4d19c",
-                        "port": 4
                     }
                 ]
             }
@@ -422,7 +418,7 @@
         "in": [
             {
                 "x": 60,
-                "y": 80,
+                "y": 60,
                 "wires": [
                     {
                         "id": "1001ff60.ab0351"
@@ -432,8 +428,8 @@
         ],
         "out": [
             {
-                "x": 760,
-                "y": 80,
+                "x": 800,
+                "y": 60,
                 "wires": [
                     {
                         "id": "39d6afc6.5b413",
@@ -456,6 +452,25 @@
                     "opts": {
                         "types": [
                             "num",
+                            "json",
+                            "env"
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "gr_poll",
+                "type": "str",
+                "value": "5 seconds",
+                "ui": {
+                    "icon": "font-awesome/fa-refresh",
+                    "label": {
+                        "en-US": "GR Poll"
+                    },
+                    "type": "input",
+                    "opts": {
+                        "types": [
+                            "str",
                             "json",
                             "env"
                         ]
@@ -672,6 +687,25 @@
                 }
             },
             {
+                "name": "kt_poll",
+                "type": "str",
+                "value": "5 seconds",
+                "ui": {
+                    "icon": "font-awesome/fa-refresh",
+                    "label": {
+                        "en-US": "KT Poll"
+                    },
+                    "type": "input",
+                    "opts": {
+                        "types": [
+                            "str",
+                            "json",
+                            "env"
+                        ]
+                    }
+                }
+            },
+            {
                 "name": "kt_ct",
                 "type": "num",
                 "value": "4000",
@@ -729,6 +763,25 @@
                 }
             },
             {
+                "name": "db_poll",
+                "type": "str",
+                "value": "5 seconds",
+                "ui": {
+                    "icon": "font-awesome/fa-refresh",
+                    "label": {
+                        "en-US": "DB Poll"
+                    },
+                    "type": "input",
+                    "opts": {
+                        "types": [
+                            "str",
+                            "json",
+                            "env"
+                        ]
+                    }
+                }
+            },
+            {
                 "name": "db_volume",
                 "type": "num",
                 "value": "75",
@@ -748,6 +801,7 @@
                 }
             }
         ],
+        "meta": {},
         "color": "#ACE043",
         "icon": "node-red/db.svg"
     },
@@ -1614,6 +1668,71 @@
         }
     },
     {
+        "id": "ead5e3aa.de963",
+        "type": "subflow",
+        "name": "Kasa Poll Arguments",
+        "info": "",
+        "category": "hubitat",
+        "in": [
+            {
+                "x": 60,
+                "y": 120,
+                "wires": [
+                    {
+                        "id": "6355e5bb.e1f94c"
+                    },
+                    {
+                        "id": "2e6cfb05.110404"
+                    },
+                    {
+                        "id": "68b3724b.abe14c"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 320,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "6355e5bb.e1f94c",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 320,
+                "y": 120,
+                "wires": [
+                    {
+                        "id": "2e6cfb05.110404",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 320,
+                "y": 160,
+                "wires": [
+                    {
+                        "id": "68b3724b.abe14c",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#ACE043",
+        "outputLabels": [
+            "GR",
+            "KT",
+            "DB"
+        ],
+        "icon": "node-red/swap.svg"
+    },
+    {
         "id": "7a22a12f.dcfd3",
         "type": "group",
         "z": "d06ad5d7.7d1a38",
@@ -1636,7 +1755,7 @@
             "73992bfd.8673e4",
             "f8ce7b3f.ff69a8"
         ],
-        "x": 14,
+        "x": 4,
         "y": 19
     },
     {
@@ -1730,7 +1849,7 @@
             "946f40b0.810bf",
             "89797b83.362f58"
         ],
-        "x": 534,
+        "x": 524,
         "y": 34
     },
     {
@@ -2472,7 +2591,9 @@
             "e67f38f5.2be928",
             "ea0c8e97.28f7c",
             "7c3ca0d5.17ee2",
-            "f9d8202e.f8619"
+            "f9d8202e.f8619",
+            "c37bc730.6c77a8",
+            "1e1ab817.4ce738"
         ],
         "x": 14,
         "y": 859
@@ -2902,7 +3023,7 @@
             "ba433501.c4c018"
         ],
         "x": 834,
-        "y": 559
+        "y": 539
     },
     {
         "id": "b32ebab8.81e098",
@@ -3244,6 +3365,197 @@
         "y": 59
     },
     {
+        "id": "40733171.c8f4",
+        "type": "group",
+        "z": "d61084e.39e0678",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#2e333a",
+            "fill-opacity": "0.75",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "f3a46699.643ff8",
+            "e5e03de2.fc1c1",
+            "eb4583fa.1861b",
+            "2931e256.cec95e",
+            "169e9dfb.2ef7b2"
+        ],
+        "x": 34,
+        "y": 279
+    },
+    {
+        "id": "8d064e9c.b161d",
+        "type": "group",
+        "z": "d61084e.39e0678",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#2e333a",
+            "fill-opacity": "0.75",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "57115256.c8f83c",
+            "3bd73cb0.773a34",
+            "ea17f4a9.8a2408",
+            "29113ff2.7a2d1",
+            "f81bf876.428948",
+            "9434928a.e846d",
+            "77edd238.0d301c",
+            "26fc474d.0dffe8",
+            "8cbf13ee.6bece",
+            "3f1bb185.ee904e",
+            "37b3e0d2.a9e47",
+            "29191bda.024fd4"
+        ],
+        "x": 194,
+        "y": 459
+    },
+    {
+        "id": "313a5cb2.04a3c4",
+        "type": "group",
+        "z": "d61084e.39e0678",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#2e333a",
+            "fill-opacity": "0.75",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "c0f915b6.e62fb8",
+            "68e807d.954b0f8",
+            "e4e76245.3c42",
+            "eb6d4a12.1e44f8",
+            "afd82140.f445b",
+            "6118732f.6ede7c",
+            "3f333fa.be852c",
+            "e97ff3a7.a2ed5",
+            "e3958915.0a6308",
+            "d92d6856.919638",
+            "704d4696.7b2828",
+            "b5615238.4cef5",
+            "e3edea19.a9c2f8"
+        ],
+        "x": 34,
+        "y": 19
+    },
+    {
+        "id": "a1669ec1.f7a8a",
+        "type": "group",
+        "z": "66eb8402.daa4fc",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#2e333a",
+            "fill-opacity": "0.75",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "90ec36f0.76ff08",
+            "a03f104b.58ff8",
+            "e682d7ac.220ae8",
+            "836dbe75.14f81",
+            "1f71ef48.e3d2b1",
+            "20d947ba.574ff8",
+            "f79e586b.bb5f98"
+        ],
+        "x": 294,
+        "y": 559,
+        "w": 752,
+        "h": 182
+    },
+    {
+        "id": "e8a7a092.8f771",
+        "type": "group",
+        "z": "66eb8402.daa4fc",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#2e333a",
+            "fill-opacity": "0.75",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "8c49c54d.a02b68",
+            "1856e740.6b09b9",
+            "c4940128.b9dac",
+            "564197da.5d0ba8",
+            "6c200357.e2310c",
+            "8fcd7abe.4ee4a8"
+        ],
+        "x": 294,
+        "y": 19,
+        "w": 392,
+        "h": 162
+    },
+    {
+        "id": "7ff813df.d98dac",
+        "type": "group",
+        "z": "66eb8402.daa4fc",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#2e333a",
+            "fill-opacity": "0.75",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "583d4a26.363c14",
+            "72e2a082.86ed4",
+            "e1ab8c2f.e392",
+            "b94b3762.47e0c8"
+        ],
+        "x": 294,
+        "y": 419,
+        "w": 432,
+        "h": 122
+    },
+    {
+        "id": "6c48e49a.83776c",
+        "type": "group",
+        "z": "66eb8402.daa4fc",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#2e333a",
+            "fill-opacity": "0.75",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "e9e02950.ff4b58",
+            "f1bcce6.7a6d13",
+            "fd73f8a9.7fb728",
+            "fe5f21f9.428d3",
+            "843d210e.9fb6c",
+            "98b4afc6.146f9",
+            "728a94dc.939e4c",
+            "c4e0dc5d.f843a",
+            "1950af5f.5c2901",
+            "7e16bc06.b15ad4"
+        ],
+        "x": 294,
+        "y": 199,
+        "w": 732,
+        "h": 202
+    },
+    {
         "id": "b130c189.ea4d2",
         "type": "hubitat config",
         "name": "Beach House Hubitat Config",
@@ -3349,7 +3661,8 @@
                 "primary": "indigo",
                 "accents": "blue",
                 "warn": "red",
-                "background": "grey"
+                "background": "grey",
+                "palette": "light"
             }
         },
         "site": {
@@ -3770,20 +4083,14 @@
                 "t": "eq",
                 "v": "G090U509911620T7",
                 "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "G090U509912424HF",
-                "vt": "str"
             }
         ],
         "checkall": "false",
         "repair": false,
-        "outputs": 5,
+        "outputs": 4,
         "x": 460,
         "y": 140,
         "wires": [
-            [],
             [],
             [],
             [],
@@ -3796,8 +4103,7 @@
             "Great Room",
             "Downstairs Bedroom",
             "Kitchen",
-            "Master Bedroom L",
-            "Master Bedroom R"
+            "Master Bedroom L"
         ],
         "info": "Great Room - G090U509912423CC\nDownstairs Bedroom 1 - G6G0XG100134018V\nDownstairs Bedroom 2 - G090U509912424HF\nKitchen - G090U5099117264T\nMaster Bedroom - G090U509911620T7"
     },
@@ -4009,6 +4315,7 @@
         "id": "1f71ef48.e3d2b1",
         "type": "template",
         "z": "66eb8402.daa4fc",
+        "g": "a1669ec1.f7a8a",
         "name": "time",
         "field": "payload",
         "fieldType": "msg",
@@ -4016,8 +4323,8 @@
         "syntax": "mustache",
         "template": "{{mydate}} {{myhourpm}}:{{myminute}} {{mypm}}",
         "output": "str",
-        "x": 330,
-        "y": 380,
+        "x": 570,
+        "y": 700,
         "wires": [
             [
                 "20d947ba.574ff8"
@@ -4028,8 +4335,9 @@
         "id": "90ec36f0.76ff08",
         "type": "switch",
         "z": "66eb8402.daa4fc",
+        "g": "a1669ec1.f7a8a",
         "name": "down < 75",
-        "property": "payload.speeds.download",
+        "property": "payload.dl",
         "propertyType": "msg",
         "rules": [
             {
@@ -4041,8 +4349,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 350,
-        "y": 560,
+        "x": 590,
+        "y": 600,
         "wires": [
             [
                 "a03f104b.58ff8"
@@ -4053,6 +4361,7 @@
         "id": "20d947ba.574ff8",
         "type": "ui_text",
         "z": "66eb8402.daa4fc",
+        "g": "a1669ec1.f7a8a",
         "group": "bbc70dcb.af9b1",
         "order": 5,
         "width": 0,
@@ -4061,14 +4370,15 @@
         "label": "Last Speedtest",
         "format": "<font color=\"cyan\">{{msg.payload}}</font>",
         "layout": "col-center",
-        "x": 560,
-        "y": 380,
+        "x": 720,
+        "y": 700,
         "wires": []
     },
     {
         "id": "583d4a26.363c14",
         "type": "change",
         "z": "66eb8402.daa4fc",
+        "g": "7ff813df.d98dac",
         "name": "download",
         "rules": [
             {
@@ -4082,8 +4392,8 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "payload.speeds.download",
-                "tot": "msg"
+                "to": "$round((payload.download.bandwidth) * (8/1000000),2)",
+                "tot": "jsonata"
             }
         ],
         "action": "",
@@ -4091,8 +4401,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 340,
-        "y": 300,
+        "x": 380,
+        "y": 460,
         "wires": [
             [
                 "e1ab8c2f.e392",
@@ -4104,6 +4414,7 @@
         "id": "72e2a082.86ed4",
         "type": "change",
         "z": "66eb8402.daa4fc",
+        "g": "7ff813df.d98dac",
         "name": "upload",
         "rules": [
             {
@@ -4117,8 +4428,8 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "payload.speeds.upload",
-                "tot": "msg"
+                "to": "$round((payload.upload.bandwidth) * (8/1000000),2)",
+                "tot": "jsonata"
             }
         ],
         "action": "",
@@ -4126,8 +4437,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 330,
-        "y": 340,
+        "x": 370,
+        "y": 500,
         "wires": [
             [
                 "b94b3762.47e0c8",
@@ -4139,20 +4450,21 @@
         "id": "8c49c54d.a02b68",
         "type": "change",
         "z": "66eb8402.daa4fc",
+        "g": "e8a7a092.8f771",
         "name": "ping",
         "rules": [
             {
                 "t": "set",
                 "p": "topic",
                 "pt": "msg",
-                "to": "Ping",
+                "to": "Latency",
                 "tot": "str"
             },
             {
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "payload.server.ping",
+                "to": "payload.ping.latency",
                 "tot": "msg"
             }
         ],
@@ -4161,8 +4473,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 330,
-        "y": 420,
+        "x": 370,
+        "y": 60,
         "wires": [
             [
                 "c4940128.b9dac",
@@ -4171,51 +4483,17 @@
         ]
     },
     {
-        "id": "bded1eb.dfb7ce",
-        "type": "change",
-        "z": "66eb8402.daa4fc",
-        "name": "distance",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "payload.server.distanceMi",
-                "tot": "msg"
-            },
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "Distance",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 340,
-        "y": 460,
-        "wires": [
-            [
-                "b583a0fc.628e4",
-                "f1bcce6.7a6d13"
-            ]
-        ]
-    },
-    {
         "id": "1856e740.6b09b9",
         "type": "change",
         "z": "66eb8402.daa4fc",
+        "g": "e8a7a092.8f771",
         "name": "ISP",
         "rules": [
             {
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "payload.server.sponsor",
+                "to": "payload.server.name",
                 "tot": "msg"
             }
         ],
@@ -4224,8 +4502,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 330,
-        "y": 500,
+        "x": 370,
+        "y": 140,
         "wires": [
             [
                 "564197da.5d0ba8"
@@ -4250,7 +4528,8 @@
         "payload": "",
         "payloadType": "date",
         "topic": "",
-        "x": 200,
+        "topicType": "str",
+        "x": 100,
         "y": 60,
         "wires": [
             [
@@ -4262,15 +4541,16 @@
         "id": "a03f104b.58ff8",
         "type": "template",
         "z": "66eb8402.daa4fc",
+        "g": "a1669ec1.f7a8a",
         "name": "Message",
         "field": "arguments",
         "fieldType": "msg",
         "format": "handlebars",
         "syntax": "mustache",
-        "template": "Internet speed was {{payload.speeds.download}}/{{payload.speeds.upload}} (down/up Mbits/s) at {{mytimes}} on {{mymonthn}}/{{mydom}}. Speedtest server was {{payload.server.sponsor}}.",
+        "template": "Internet speed was {{payload.dl}}/{{payload.ul}} (down/up Mbits/s) at {{mytimes}} on {{mymonthn}}/{{mydom}}. Speedtest server was {{payload.server.name}}.",
         "output": "str",
-        "x": 500,
-        "y": 580,
+        "x": 740,
+        "y": 620,
         "wires": [
             [
                 "e682d7ac.220ae8"
@@ -4281,6 +4561,7 @@
         "id": "e1ab8c2f.e392",
         "type": "ui_gauge",
         "z": "66eb8402.daa4fc",
+        "g": "7ff813df.d98dac",
         "name": "",
         "group": "bbc70dcb.af9b1",
         "order": 6,
@@ -4299,25 +4580,26 @@
         ],
         "seg1": "50",
         "seg2": "100",
-        "x": 570,
-        "y": 300,
+        "x": 610,
+        "y": 460,
         "wires": []
     },
     {
         "id": "e9e02950.ff4b58",
         "type": "ui_chart",
         "z": "66eb8402.daa4fc",
+        "g": "6c48e49a.83776c",
         "name": "Performance Chart",
         "group": "8ea90f55.6cdc8",
         "order": 1,
-        "width": 12,
-        "height": 6,
+        "width": "0",
+        "height": "0",
         "label": "Performance Chart",
         "chartType": "line",
         "legend": "true",
         "xformat": "HH:mm:ss",
         "interpolate": "linear",
-        "nodata": "",
+        "nodata": "No Data!",
         "dot": true,
         "ymin": "",
         "ymax": "",
@@ -4341,7 +4623,7 @@
         "outputs": 1,
         "useDifferentColor": false,
         "x": 570,
-        "y": 120,
+        "y": 360,
         "wires": [
             [
                 "fd73f8a9.7fb728"
@@ -4352,6 +4634,7 @@
         "id": "b94b3762.47e0c8",
         "type": "ui_gauge",
         "z": "66eb8402.daa4fc",
+        "g": "7ff813df.d98dac",
         "name": "",
         "group": "bbc70dcb.af9b1",
         "order": 7,
@@ -4359,7 +4642,7 @@
         "height": 0,
         "gtype": "gage",
         "title": "Upload Speed",
-        "label": "Upload MBits",
+        "label": "Upload Mbits",
         "format": "{{value}}",
         "min": 0,
         "max": "1000",
@@ -4370,41 +4653,43 @@
         ],
         "seg1": "50",
         "seg2": "100",
-        "x": 560,
-        "y": 340,
+        "x": 600,
+        "y": 500,
         "wires": []
     },
     {
         "id": "c4940128.b9dac",
         "type": "ui_text",
         "z": "66eb8402.daa4fc",
+        "g": "e8a7a092.8f771",
         "group": "bbc70dcb.af9b1",
         "order": 3,
         "width": 0,
         "height": 0,
         "name": "",
-        "label": "Ping (ms)",
+        "label": "Latency (ms)",
         "format": "<font color=\"cyan\">{{msg.payload}}</font>",
         "layout": "col-center",
-        "x": 540,
-        "y": 420,
+        "x": 590,
+        "y": 60,
         "wires": []
     },
     {
         "id": "f1bcce6.7a6d13",
         "type": "ui_chart",
         "z": "66eb8402.daa4fc",
-        "name": "Latency Chart",
+        "g": "6c48e49a.83776c",
+        "name": "Ping Chart",
         "group": "8ea90f55.6cdc8",
         "order": 2,
-        "width": 12,
-        "height": 6,
-        "label": "Latency Chart",
+        "width": "0",
+        "height": "0",
+        "label": "Ping Chart",
         "chartType": "line",
         "legend": "true",
         "xformat": "HH:mm:ss",
         "interpolate": "linear",
-        "nodata": "",
+        "nodata": "No Data!",
         "dot": true,
         "ymin": "",
         "ymax": "",
@@ -4426,7 +4711,8 @@
             "#c5b0d5"
         ],
         "outputs": 1,
-        "x": 560,
+        "useDifferentColor": false,
+        "x": 550,
         "y": 240,
         "wires": [
             [
@@ -4435,25 +4721,10 @@
         ]
     },
     {
-        "id": "b583a0fc.628e4",
-        "type": "ui_text",
-        "z": "66eb8402.daa4fc",
-        "group": "bbc70dcb.af9b1",
-        "order": 4,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "Distance",
-        "format": "<font color=\"cyan\">{{msg.payload}} mi</font>",
-        "layout": "col-center",
-        "x": 540,
-        "y": 460,
-        "wires": []
-    },
-    {
         "id": "564197da.5d0ba8",
         "type": "ui_text",
         "z": "66eb8402.daa4fc",
+        "g": "e8a7a092.8f771",
         "group": "bbc70dcb.af9b1",
         "order": 1,
         "width": 0,
@@ -4462,14 +4733,15 @@
         "label": "Hosted By",
         "format": "<font color=\"cyan\">{{msg.payload}}</font>",
         "layout": "col-center",
-        "x": 550,
-        "y": 500,
+        "x": 590,
+        "y": 140,
         "wires": []
     },
     {
         "id": "fd73f8a9.7fb728",
         "type": "file",
         "z": "66eb8402.daa4fc",
+        "g": "6c48e49a.83776c",
         "name": "Speed Test Data Save",
         "filename": "/home/pi/.node-red/data/speedtest/speedtestData.json",
         "appendNewline": false,
@@ -4477,7 +4749,7 @@
         "overwriteFile": "true",
         "encoding": "none",
         "x": 780,
-        "y": 120,
+        "y": 360,
         "wires": [
             []
         ]
@@ -4486,12 +4758,13 @@
         "id": "fe5f21f9.428d3",
         "type": "json",
         "z": "66eb8402.daa4fc",
+        "g": "6c48e49a.83776c",
         "name": "",
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 930,
-        "y": 160,
+        "x": 950,
+        "y": 320,
         "wires": [
             [
                 "e9e02950.ff4b58"
@@ -4502,6 +4775,7 @@
         "id": "843d210e.9fb6c",
         "type": "file",
         "z": "66eb8402.daa4fc",
+        "g": "6c48e49a.83776c",
         "name": "Speed Test Data Save",
         "filename": "/home/pi/.node-red/data/speedtest/speedtestDataPD.json",
         "appendNewline": false,
@@ -4517,12 +4791,13 @@
         "id": "98b4afc6.146f9",
         "type": "json",
         "z": "66eb8402.daa4fc",
+        "g": "6c48e49a.83776c",
         "name": "",
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 930,
-        "y": 200,
+        "x": 950,
+        "y": 280,
         "wires": [
             [
                 "f1bcce6.7a6d13"
@@ -4533,11 +4808,12 @@
         "id": "728a94dc.939e4c",
         "type": "file in",
         "z": "66eb8402.daa4fc",
+        "g": "6c48e49a.83776c",
         "name": "Speed Test Data Restore",
         "filename": "/home/pi/.node-red/data/speedtest/speedtestData.json",
         "format": "utf8",
-        "x": 750,
-        "y": 160,
+        "x": 770,
+        "y": 320,
         "wires": [
             [
                 "fe5f21f9.428d3"
@@ -4548,11 +4824,12 @@
         "id": "c4e0dc5d.f843a",
         "type": "file in",
         "z": "66eb8402.daa4fc",
+        "g": "6c48e49a.83776c",
         "name": "Speed Test Data Restore",
         "filename": "/home/pi/.node-red/data/speedtest/speedtestDataPD.json",
         "format": "utf8",
-        "x": 750,
-        "y": 200,
+        "x": 770,
+        "y": 280,
         "wires": [
             [
                 "98b4afc6.146f9"
@@ -4563,6 +4840,7 @@
         "id": "1950af5f.5c2901",
         "type": "inject",
         "z": "66eb8402.daa4fc",
+        "g": "6c48e49a.83776c",
         "name": "",
         "props": [
             {
@@ -4580,8 +4858,8 @@
         "topic": "",
         "payload": "restore",
         "payloadType": "str",
-        "x": 560,
-        "y": 180,
+        "x": 580,
+        "y": 300,
         "wires": [
             [
                 "728a94dc.939e4c",
@@ -4593,6 +4871,7 @@
         "id": "f79e586b.bb5f98",
         "type": "simpletime",
         "z": "66eb8402.daa4fc",
+        "g": "a1669ec1.f7a8a",
         "name": "",
         "mydate": true,
         "myymd": true,
@@ -4613,8 +4892,8 @@
         "myepoch": true,
         "myrawdate": true,
         "mypm": true,
-        "x": 130,
-        "y": 460,
+        "x": 390,
+        "y": 600,
         "wires": [
             [
                 "1f71ef48.e3d2b1",
@@ -4628,18 +4907,19 @@
         "type": "speedtest",
         "z": "66eb8402.daa4fc",
         "name": "Speedtest",
-        "serverId": "",
         "maxTime": "120000",
+        "serverId": "16620",
+        "acceptLicense": true,
+        "acceptGdpr": true,
         "x": 140,
         "y": 300,
         "wires": [
             [
-                "583d4a26.363c14",
-                "72e2a082.86ed4",
                 "8c49c54d.a02b68",
-                "bded1eb.dfb7ce",
                 "1856e740.6b09b9",
-                "f79e586b.bb5f98"
+                "e4c2f790.2fc578",
+                "6c200357.e2310c",
+                "8c90fda1.bd53e"
             ]
         ]
     },
@@ -4647,13 +4927,14 @@
         "id": "e682d7ac.220ae8",
         "type": "hubitat command",
         "z": "66eb8402.daa4fc",
+        "g": "a1669ec1.f7a8a",
         "name": "Notify Colin's Phone",
         "server": "b130c189.ea4d2",
         "deviceId": "70",
         "command": "deviceNotification",
         "commandArgs": "",
-        "x": 680,
-        "y": 580,
+        "x": 920,
+        "y": 620,
         "wires": [
             []
         ]
@@ -4662,8 +4943,9 @@
         "id": "836dbe75.14f81",
         "type": "switch",
         "z": "66eb8402.daa4fc",
+        "g": "a1669ec1.f7a8a",
         "name": "upload < 15",
-        "property": "payload.speeds.upload",
+        "property": "payload.ul",
         "propertyType": "msg",
         "rules": [
             {
@@ -4675,8 +4957,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 350,
-        "y": 600,
+        "x": 590,
+        "y": 640,
         "wires": [
             [
                 "a03f104b.58ff8"
@@ -4687,6 +4969,7 @@
         "id": "c0f915b6.e62fb8",
         "type": "alexa-remote-echo",
         "z": "d61084e.39e0678",
+        "g": "313a5cb2.04a3c4",
         "name": "GR - Echo Play",
         "account": "4553eef5.ffc05",
         "config": {
@@ -4706,7 +4989,7 @@
                 }
             }
         },
-        "x": 480,
+        "x": 440,
         "y": 60,
         "wires": [
             [
@@ -4718,6 +5001,7 @@
         "id": "68e807d.954b0f8",
         "type": "alexa-remote-echo",
         "z": "d61084e.39e0678",
+        "g": "313a5cb2.04a3c4",
         "name": "KT - Echo Play",
         "account": "4553eef5.ffc05",
         "config": {
@@ -4737,7 +5021,7 @@
                 }
             }
         },
-        "x": 480,
+        "x": 440,
         "y": 140,
         "wires": [
             [
@@ -4749,6 +5033,7 @@
         "id": "e4e76245.3c42",
         "type": "alexa-remote-echo",
         "z": "d61084e.39e0678",
+        "g": "313a5cb2.04a3c4",
         "name": "DB - Echo Play",
         "account": "4553eef5.ffc05",
         "config": {
@@ -4768,7 +5053,7 @@
                 }
             }
         },
-        "x": 480,
+        "x": 440,
         "y": 100,
         "wires": [
             [
@@ -4780,6 +5065,7 @@
         "id": "eb6d4a12.1e44f8",
         "type": "alexa-remote-echo",
         "z": "d61084e.39e0678",
+        "g": "313a5cb2.04a3c4",
         "name": "MB - Echo R Play",
         "account": "4553eef5.ffc05",
         "config": {
@@ -4799,7 +5085,7 @@
                 }
             }
         },
-        "x": 470,
+        "x": 430,
         "y": 220,
         "wires": [
             [
@@ -4811,6 +5097,7 @@
         "id": "afd82140.f445b",
         "type": "alexa-remote-echo",
         "z": "d61084e.39e0678",
+        "g": "313a5cb2.04a3c4",
         "name": "MB - Echo L Play",
         "account": "4553eef5.ffc05",
         "config": {
@@ -4830,7 +5117,7 @@
                 }
             }
         },
-        "x": 470,
+        "x": 430,
         "y": 180,
         "wires": [
             [
@@ -4842,6 +5129,7 @@
         "id": "6118732f.6ede7c",
         "type": "switch",
         "z": "d61084e.39e0678",
+        "g": "313a5cb2.04a3c4",
         "name": "Phrase Handler",
         "property": "payload.description.summary",
         "propertyType": "msg",
@@ -4862,7 +5150,7 @@
         "checkall": "false",
         "repair": false,
         "outputs": 2,
-        "x": 220,
+        "x": 180,
         "y": 120,
         "wires": [
             [
@@ -4881,9 +5169,10 @@
         "id": "3f333fa.be852c",
         "type": "subflow:cb4b5b0a.f09b68",
         "z": "d61084e.39e0678",
+        "g": "313a5cb2.04a3c4",
         "name": "",
         "env": [],
-        "x": 200,
+        "x": 160,
         "y": 200,
         "wires": [
             [
@@ -4905,11 +5194,12 @@
         "id": "57115256.c8f83c",
         "type": "alexa-remote-event",
         "z": "d61084e.39e0678",
+        "g": "8d064e9c.b161d",
         "name": "",
         "account": "4553eef5.ffc05",
         "event": "ws-media-change",
-        "x": 210,
-        "y": 340,
+        "x": 310,
+        "y": 520,
         "wires": [
             [
                 "3f1bb185.ee904e",
@@ -4921,6 +5211,7 @@
         "id": "3bd73cb0.773a34",
         "type": "alexa-remote-echo",
         "z": "d61084e.39e0678",
+        "g": "8d064e9c.b161d",
         "name": "GR - Echo Pause",
         "account": "4553eef5.ffc05",
         "config": {
@@ -4933,8 +5224,8 @@
                 "what": "pause"
             }
         },
-        "x": 690,
-        "y": 320,
+        "x": 790,
+        "y": 500,
         "wires": [
             [
                 "37b3e0d2.a9e47"
@@ -4945,6 +5236,7 @@
         "id": "ea17f4a9.8a2408",
         "type": "alexa-remote-echo",
         "z": "d61084e.39e0678",
+        "g": "8d064e9c.b161d",
         "name": "DB - Echo Pause",
         "account": "4553eef5.ffc05",
         "config": {
@@ -4957,8 +5249,8 @@
                 "what": "pause"
             }
         },
-        "x": 690,
-        "y": 360,
+        "x": 790,
+        "y": 540,
         "wires": [
             [
                 "37b3e0d2.a9e47"
@@ -4969,6 +5261,7 @@
         "id": "29113ff2.7a2d1",
         "type": "alexa-remote-echo",
         "z": "d61084e.39e0678",
+        "g": "8d064e9c.b161d",
         "name": "MB - Echo R Pause",
         "account": "4553eef5.ffc05",
         "config": {
@@ -4981,8 +5274,8 @@
                 "what": "pause"
             }
         },
-        "x": 690,
-        "y": 480,
+        "x": 790,
+        "y": 660,
         "wires": [
             [
                 "37b3e0d2.a9e47"
@@ -4993,6 +5286,7 @@
         "id": "f81bf876.428948",
         "type": "alexa-remote-echo",
         "z": "d61084e.39e0678",
+        "g": "8d064e9c.b161d",
         "name": "KT - Echo Pause",
         "account": "4553eef5.ffc05",
         "config": {
@@ -5005,8 +5299,8 @@
                 "what": "pause"
             }
         },
-        "x": 690,
-        "y": 400,
+        "x": 790,
+        "y": 580,
         "wires": [
             [
                 "37b3e0d2.a9e47"
@@ -5017,6 +5311,7 @@
         "id": "9434928a.e846d",
         "type": "alexa-remote-echo",
         "z": "d61084e.39e0678",
+        "g": "8d064e9c.b161d",
         "name": "MB - Echo L Pause",
         "account": "4553eef5.ffc05",
         "config": {
@@ -5029,8 +5324,8 @@
                 "what": "pause"
             }
         },
-        "x": 690,
-        "y": 440,
+        "x": 790,
+        "y": 620,
         "wires": [
             [
                 "37b3e0d2.a9e47"
@@ -5041,10 +5336,11 @@
         "id": "77edd238.0d301c",
         "type": "subflow:cb4b5b0a.f09b68",
         "z": "d61084e.39e0678",
+        "g": "8d064e9c.b161d",
         "name": "",
         "env": [],
-        "x": 440,
-        "y": 340,
+        "x": 540,
+        "y": 520,
         "wires": [
             [
                 "3bd73cb0.773a34"
@@ -5065,6 +5361,7 @@
         "id": "26fc474d.0dffe8",
         "type": "inject",
         "z": "d61084e.39e0678",
+        "g": "8d064e9c.b161d",
         "name": "",
         "props": [
             {
@@ -5082,8 +5379,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 480,
-        "y": 480,
+        "x": 580,
+        "y": 660,
         "wires": [
             [
                 "9434928a.e846d",
@@ -5098,10 +5395,11 @@
         "id": "8cbf13ee.6bece",
         "type": "subflow:ac12c9d8.613d38",
         "z": "d61084e.39e0678",
+        "g": "8d064e9c.b161d",
         "name": "",
         "env": [],
-        "x": 960,
-        "y": 380,
+        "x": 1060,
+        "y": 560,
         "wires": [
             [
                 "29191bda.024fd4"
@@ -5125,13 +5423,14 @@
         "id": "3f1bb185.ee904e",
         "type": "hubitat command",
         "z": "d61084e.39e0678",
+        "g": "8d064e9c.b161d",
         "name": "Colin Notification",
         "server": "b130c189.ea4d2",
         "deviceId": "70",
         "command": "deviceNotification",
         "commandArgs": "Alexa \"On Media Change\" Triggered",
-        "x": 310,
-        "y": 420,
+        "x": 410,
+        "y": 600,
         "wires": [
             []
         ]
@@ -5140,6 +5439,7 @@
         "id": "e97ff3a7.a2ed5",
         "type": "delay",
         "z": "d61084e.39e0678",
+        "g": "313a5cb2.04a3c4",
         "name": "",
         "pauseType": "delay",
         "timeout": "10",
@@ -5151,7 +5451,7 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
-        "x": 660,
+        "x": 620,
         "y": 140,
         "wires": [
             [
@@ -5163,6 +5463,7 @@
         "id": "e3958915.0a6308",
         "type": "delay",
         "z": "d61084e.39e0678",
+        "g": "313a5cb2.04a3c4",
         "name": "",
         "pauseType": "delay",
         "timeout": "10",
@@ -5174,7 +5475,7 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
-        "x": 660,
+        "x": 620,
         "y": 140,
         "wires": [
             [
@@ -5186,6 +5487,7 @@
         "id": "d92d6856.919638",
         "type": "delay",
         "z": "d61084e.39e0678",
+        "g": "313a5cb2.04a3c4",
         "name": "",
         "pauseType": "delay",
         "timeout": "10",
@@ -5197,7 +5499,7 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
-        "x": 660,
+        "x": 620,
         "y": 140,
         "wires": [
             [
@@ -5209,6 +5511,7 @@
         "id": "704d4696.7b2828",
         "type": "delay",
         "z": "d61084e.39e0678",
+        "g": "313a5cb2.04a3c4",
         "name": "",
         "pauseType": "delay",
         "timeout": "10",
@@ -5220,7 +5523,7 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
-        "x": 660,
+        "x": 620,
         "y": 140,
         "wires": [
             [
@@ -5232,6 +5535,7 @@
         "id": "b5615238.4cef5",
         "type": "delay",
         "z": "d61084e.39e0678",
+        "g": "313a5cb2.04a3c4",
         "name": "",
         "pauseType": "delay",
         "timeout": "10",
@@ -5243,7 +5547,7 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
-        "x": 660,
+        "x": 620,
         "y": 140,
         "wires": [
             [
@@ -6861,11 +7165,12 @@
         "id": "e3edea19.a9c2f8",
         "type": "link in",
         "z": "d61084e.39e0678",
+        "g": "313a5cb2.04a3c4",
         "name": "Alexa Voice Command",
         "links": [
             "da6ac8d6.218fe8"
         ],
-        "x": 275,
+        "x": 235,
         "y": 80,
         "wires": [
             [
@@ -7348,19 +7653,23 @@
         "id": "f3a46699.643ff8",
         "type": "alexa-remote-init",
         "z": "d61084e.39e0678",
+        "g": "40733171.c8f4",
         "name": "",
         "account": "4553eef5.ffc05",
         "option": "initialise",
-        "x": 1080,
-        "y": 120,
+        "x": 280,
+        "y": 320,
         "wires": [
-            []
+            [
+                "3f333fa.be852c"
+            ]
         ]
     },
     {
         "id": "e5e03de2.fc1c1",
         "type": "inject",
         "z": "d61084e.39e0678",
+        "g": "40733171.c8f4",
         "name": "",
         "props": [
             {
@@ -7378,8 +7687,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 940,
-        "y": 120,
+        "x": 140,
+        "y": 320,
         "wires": [
             [
                 "f3a46699.643ff8"
@@ -7390,6 +7699,7 @@
         "id": "eb4583fa.1861b",
         "type": "catch",
         "z": "d61084e.39e0678",
+        "g": "40733171.c8f4",
         "name": "catch: Alexa",
         "scope": [
             "c0f915b6.e62fb8",
@@ -7407,8 +7717,8 @@
             "944292c6.6bb64"
         ],
         "uncaught": false,
-        "x": 930,
-        "y": 160,
+        "x": 130,
+        "y": 360,
         "wires": [
             [
                 "f3a46699.643ff8",
@@ -7435,14 +7745,15 @@
         "id": "2931e256.cec95e",
         "type": "function",
         "z": "d61084e.39e0678",
+        "g": "40733171.c8f4",
         "name": "Error Count",
         "func": "// initialise the counter to 0 if it doesn't exist already\nvar myRemote2_error = global.get('BH_remote2_error',\"file\")||0;\nmyRemote2_error = myRemote2_error + 1\n// store the value back\nglobal.set('BH_remote2_error',myRemote2_error,\"file\");\n// make it part of the outgoing msg object\nmsg.payload.errorCount = myRemote2_error;\nreturn msg;",
         "outputs": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 1150,
-        "y": 160,
+        "x": 350,
+        "y": 360,
         "wires": []
     },
     {
@@ -7466,6 +7777,7 @@
         "id": "169e9dfb.2ef7b2",
         "type": "debug",
         "z": "d61084e.39e0678",
+        "g": "40733171.c8f4",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -7475,8 +7787,8 @@
         "targetType": "full",
         "statusVal": "payload",
         "statusType": "auto",
-        "x": 1070,
-        "y": 200,
+        "x": 270,
+        "y": 400,
         "wires": []
     },
     {
@@ -7635,6 +7947,7 @@
         "id": "37b3e0d2.a9e47",
         "type": "delay",
         "z": "d61084e.39e0678",
+        "g": "8d064e9c.b161d",
         "name": "",
         "pauseType": "rate",
         "timeout": "5",
@@ -7646,8 +7959,8 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": true,
-        "x": 930,
-        "y": 480,
+        "x": 1030,
+        "y": 660,
         "wires": [
             [
                 "8cbf13ee.6bece"
@@ -7778,6 +8091,13 @@
             },
             {
                 "t": "set",
+                "p": "payload.gr.poll",
+                "pt": "msg",
+                "to": "gr_poll",
+                "tot": "env"
+            },
+            {
+                "t": "set",
                 "p": "payload.gr.volume",
                 "pt": "msg",
                 "to": "gr_volume",
@@ -7810,8 +8130,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 170,
-        "y": 80,
+        "x": 180,
+        "y": 60,
         "wires": [
             [
                 "a8d9925.003c07"
@@ -7872,8 +8192,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 330,
-        "y": 80,
+        "x": 360,
+        "y": 60,
         "wires": [
             [
                 "d191d0ac.a3a19"
@@ -7891,6 +8211,13 @@
                 "p": "payload.kt.level",
                 "pt": "msg",
                 "to": "kt_level",
+                "tot": "env"
+            },
+            {
+                "t": "set",
+                "p": "payload.kt.poll",
+                "pt": "msg",
+                "to": "kt_poll",
                 "tot": "env"
             },
             {
@@ -7913,8 +8240,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 490,
-        "y": 80,
+        "x": 530,
+        "y": 60,
         "wires": [
             [
                 "39d6afc6.5b413"
@@ -7936,6 +8263,13 @@
             },
             {
                 "t": "set",
+                "p": "payload.db.poll",
+                "pt": "msg",
+                "to": "db_poll",
+                "tot": "env"
+            },
+            {
+                "t": "set",
                 "p": "payload.db.volume",
                 "pt": "msg",
                 "to": "db_volume",
@@ -7947,8 +8281,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 650,
-        "y": 80,
+        "x": 690,
+        "y": 60,
         "wires": [
             []
         ]
@@ -8101,6 +8435,11 @@
         "name": "Away",
         "env": [
             {
+                "name": "gr_poll",
+                "value": "default",
+                "type": "str"
+            },
+            {
                 "name": "gr_heatSetpoint",
                 "value": "45",
                 "type": "num"
@@ -8133,6 +8472,16 @@
             {
                 "name": "mb_thermostatMode",
                 "value": "auto",
+                "type": "str"
+            },
+            {
+                "name": "kt_poll",
+                "value": "default",
+                "type": "str"
+            },
+            {
+                "name": "db_poll",
+                "value": "default",
                 "type": "str"
             },
             {
@@ -8462,14 +8811,16 @@
         "wires": [
             [
                 "6c8244ba.e4142c",
-                "28b240a7.18b6a"
+                "28b240a7.18b6a",
+                "20f88b3b.3d2434"
             ],
             [
                 "799c021a.c9142c",
                 "ec05df2f.c57ce"
             ],
             [
-                "6c8244ba.e4142c"
+                "6c8244ba.e4142c",
+                "20f88b3b.3d2434"
             ],
             [
                 "799c021a.c9142c",
@@ -8477,7 +8828,8 @@
             ],
             [
                 "6c8244ba.e4142c",
-                "28b240a7.18b6a"
+                "28b240a7.18b6a",
+                "20f88b3b.3d2434"
             ],
             [
                 "799c021a.c9142c",
@@ -8485,7 +8837,8 @@
             ],
             [
                 "6c8244ba.e4142c",
-                "28b240a7.18b6a"
+                "28b240a7.18b6a",
+                "20f88b3b.3d2434"
             ],
             [
                 "41126615.b6a478"
@@ -8544,7 +8897,9 @@
         "x": 400,
         "y": 360,
         "wires": [
-            []
+            [
+                "ee75fe96.c668b"
+            ]
         ]
     },
     {
@@ -8672,7 +9027,9 @@
         "x": 980,
         "y": 60,
         "wires": [
-            []
+            [
+                "5270606e.29c1a"
+            ]
         ]
     },
     {
@@ -8687,7 +9044,9 @@
         "x": 980,
         "y": 120,
         "wires": [
-            []
+            [
+                "1c038cdf.7117a3"
+            ]
         ]
     },
     {
@@ -8800,6 +9159,7 @@
         "id": "29191bda.024fd4",
         "type": "alexa-remote-routine",
         "z": "d61084e.39e0678",
+        "g": "8d064e9c.b161d",
         "name": "Echo Volumes",
         "account": "4553eef5.ffc05",
         "routineNode": {
@@ -8874,8 +9234,8 @@
                 ]
             }
         },
-        "x": 1180,
-        "y": 380,
+        "x": 1280,
+        "y": 560,
         "wires": [
             []
         ]
@@ -10722,8 +11082,8 @@
         "z": "73f998b9.8842a8",
         "name": "",
         "pauseType": "delay",
-        "timeout": "1",
-        "timeoutUnits": "minutes",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
         "rate": "1",
         "nbRateUnits": "1",
         "rateUnits": "second",
@@ -13573,7 +13933,7 @@
         "type": "alexa-remote-echo",
         "z": "5618f29.6116b0c",
         "name": "",
-        "account": "d452a9d3.7a4488",
+        "account": "4553eef5.ffc05",
         "config": {
             "option": "get",
             "value": {
@@ -13863,7 +14223,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 170,
+        "x": 130,
         "y": 100,
         "wires": [
             [
@@ -17138,7 +17498,7 @@
         "deviceId": "130",
         "attribute": "switch",
         "sendEvent": true,
-        "x": 120,
+        "x": 100,
         "y": 1060,
         "wires": [
             [
@@ -17169,14 +17529,14 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 250,
+        "x": 230,
         "y": 1060,
         "wires": [
             [
-                "ea0c8e97.28f7c"
+                "c37bc730.6c77a8"
             ],
             [
-                "f9d8202e.f8619"
+                "1e1ab817.4ce738"
             ]
         ]
     },
@@ -17207,6 +17567,7 @@
         "gap": "",
         "start": "",
         "inout": "out",
+        "septopics": true,
         "property": "payload",
         "x": 510,
         "y": 920,
@@ -17391,7 +17752,7 @@
             "ba433501.c4c018",
             "f9ee0570.6a9018"
         ],
-        "x": 390,
+        "x": 570,
         "y": 1040,
         "wires": [],
         "l": true
@@ -19607,7 +19968,7 @@
             "67e086dd.c817f8"
         ],
         "x": 970,
-        "y": 600,
+        "y": 580,
         "wires": [
             [
                 "b55537fa.6b8e58"
@@ -19627,7 +19988,7 @@
         "command": "on",
         "commandArgs": "",
         "x": 1200,
-        "y": 600,
+        "y": 580,
         "wires": [
             []
         ]
@@ -19644,7 +20005,7 @@
         "command": "off",
         "commandArgs": "",
         "x": 1200,
-        "y": 680,
+        "y": 660,
         "wires": [
             []
         ]
@@ -19662,7 +20023,7 @@
             "9a8963b8.95506"
         ],
         "x": 970,
-        "y": 680,
+        "y": 660,
         "wires": [
             [
                 "75a8111f.de1e3"
@@ -19679,7 +20040,7 @@
         "links": [
             "923f971d.86c708"
         ],
-        "x": 390,
+        "x": 570,
         "y": 1080,
         "wires": [],
         "l": true
@@ -21603,7 +21964,7 @@
         "y": 120,
         "wires": [
             [
-                "a73e0946.bb4cc8"
+                "727ccf10.3f139"
             ]
         ]
     },
@@ -21617,7 +21978,7 @@
         "deviceId": "70",
         "command": "deviceNotification",
         "commandArgs": "",
-        "x": 1050,
+        "x": 1190,
         "y": 180,
         "wires": [
             []
@@ -21633,7 +21994,7 @@
         "deviceId": "101",
         "command": "deviceNotification",
         "commandArgs": "",
-        "x": 1050,
+        "x": 1190,
         "y": 220,
         "wires": [
             []
@@ -21649,7 +22010,7 @@
         "deviceId": "100",
         "command": "deviceNotification",
         "commandArgs": "",
-        "x": 1050,
+        "x": 1190,
         "y": 260,
         "wires": [
             []
@@ -21665,7 +22026,7 @@
         "deviceId": "198",
         "attribute": "presence",
         "sendEvent": false,
-        "x": 690,
+        "x": 850,
         "y": 220,
         "wires": [
             [
@@ -21695,7 +22056,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 860,
+        "x": 1020,
         "y": 220,
         "wires": [
             [],
@@ -21845,7 +22206,7 @@
         "y": 340,
         "wires": [
             [
-                "a73e0946.bb4cc8"
+                "727ccf10.3f139"
             ]
         ]
     },
@@ -21872,7 +22233,7 @@
         "y": 220,
         "wires": [
             [
-                "a73e0946.bb4cc8"
+                "727ccf10.3f139"
             ]
         ]
     },
@@ -26013,59 +26374,6 @@
         ]
     },
     {
-        "id": "193b4391.68a7bc",
-        "type": "hubitat device",
-        "z": "3b28216c.47740e",
-        "deviceLabel": "",
-        "name": "GR - Chandeliers",
-        "server": "b130c189.ea4d2",
-        "deviceId": "67",
-        "attribute": "switch",
-        "sendEvent": true,
-        "x": 990,
-        "y": 1120,
-        "wires": [
-            [
-                "f04cf28e.95ed8"
-            ]
-        ]
-    },
-    {
-        "id": "f04cf28e.95ed8",
-        "type": "debug",
-        "z": "3b28216c.47740e",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1150,
-        "y": 1140,
-        "wires": []
-    },
-    {
-        "id": "11869b58.a067b5",
-        "type": "hubitat device",
-        "z": "3b28216c.47740e",
-        "deviceLabel": "",
-        "name": "GR - Chandeliers",
-        "server": "b130c189.ea4d2",
-        "deviceId": "67",
-        "attribute": "level",
-        "sendEvent": true,
-        "x": 990,
-        "y": 1180,
-        "wires": [
-            [
-                "f04cf28e.95ed8"
-            ]
-        ]
-    },
-    {
         "id": "4b8fa1d2.81189",
         "type": "inject",
         "z": "e1557285.e3f86",
@@ -26178,6 +26486,377 @@
         "wires": [
             [
                 "f2d6a1e1.a6f4a"
+            ]
+        ]
+    },
+    {
+        "id": "c37bc730.6c77a8",
+        "type": "hubitat command",
+        "z": "3b28216c.47740e",
+        "g": "8a3e7f98.11b62",
+        "deviceLabel": "",
+        "name": "GR - TV Backlight",
+        "server": "b130c189.ea4d2",
+        "deviceId": "2571",
+        "command": "on",
+        "commandArgs": "",
+        "x": 390,
+        "y": 1040,
+        "wires": [
+            [
+                "ea0c8e97.28f7c"
+            ]
+        ]
+    },
+    {
+        "id": "1e1ab817.4ce738",
+        "type": "hubitat command",
+        "z": "3b28216c.47740e",
+        "g": "8a3e7f98.11b62",
+        "deviceLabel": "",
+        "name": "GR - TV Backlight",
+        "server": "b130c189.ea4d2",
+        "deviceId": "2571",
+        "command": "off",
+        "commandArgs": "",
+        "x": 390,
+        "y": 1080,
+        "wires": [
+            [
+                "f9d8202e.f8619"
+            ]
+        ]
+    },
+    {
+        "id": "1c038cdf.7117a3",
+        "type": "hubitat command",
+        "z": "345f283.d5796d8",
+        "deviceLabel": "",
+        "name": "DB - Speakers",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1923",
+        "command": "off",
+        "commandArgs": "",
+        "x": 1160,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5270606e.29c1a",
+        "type": "hubitat command",
+        "z": "345f283.d5796d8",
+        "deviceLabel": "",
+        "name": "DB - Speakers",
+        "server": "b130c189.ea4d2",
+        "deviceId": "1923",
+        "command": "on",
+        "commandArgs": "",
+        "x": 1160,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a39a3b66.0f6198",
+        "type": "hubitat command",
+        "z": "345f283.d5796d8",
+        "deviceLabel": "",
+        "name": "GR - Kasa Dimmer",
+        "server": "b130c189.ea4d2",
+        "deviceId": "67",
+        "command": "setPollInterval",
+        "commandArgs": "5 seconds",
+        "x": 1030,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7e5dc441.13620c",
+        "type": "hubitat command",
+        "z": "345f283.d5796d8",
+        "deviceLabel": "",
+        "name": "KT - Kasa Dimmer",
+        "server": "b130c189.ea4d2",
+        "deviceId": "68",
+        "command": "setPollInterval",
+        "commandArgs": "5 seconds",
+        "x": 1030,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "79298ad4.6d2174",
+        "type": "hubitat command",
+        "z": "345f283.d5796d8",
+        "deviceLabel": "",
+        "name": "DB - Kasa Dimmer",
+        "server": "b130c189.ea4d2",
+        "deviceId": "69",
+        "command": "setPollInterval",
+        "commandArgs": "5 seconds",
+        "x": 1030,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6355e5bb.e1f94c",
+        "type": "change",
+        "z": "ead5e3aa.de963",
+        "name": "GR Light Level",
+        "rules": [
+            {
+                "t": "set",
+                "p": "arguments",
+                "pt": "msg",
+                "to": "payload.gr.poll",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 200,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2e6cfb05.110404",
+        "type": "change",
+        "z": "ead5e3aa.de963",
+        "name": "KT Light Level",
+        "rules": [
+            {
+                "t": "set",
+                "p": "arguments",
+                "pt": "msg",
+                "to": "payload.kt.poll",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 200,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "68b3724b.abe14c",
+        "type": "change",
+        "z": "ead5e3aa.de963",
+        "name": "DB Light Level",
+        "rules": [
+            {
+                "t": "set",
+                "p": "arguments",
+                "pt": "msg",
+                "to": "payload.db.poll",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 200,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "20f88b3b.3d2434",
+        "type": "subflow:ead5e3aa.de963",
+        "z": "345f283.d5796d8",
+        "name": "",
+        "env": [],
+        "x": 810,
+        "y": 520,
+        "wires": [
+            [
+                "a39a3b66.0f6198"
+            ],
+            [
+                "7e5dc441.13620c"
+            ],
+            [
+                "79298ad4.6d2174"
+            ]
+        ]
+    },
+    {
+        "id": "727ccf10.3f139",
+        "type": "delay",
+        "z": "71d264d.39fc69c",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "x": 670,
+        "y": 220,
+        "wires": [
+            [
+                "a73e0946.bb4cc8"
+            ]
+        ]
+    },
+    {
+        "id": "e4c2f790.2fc578",
+        "type": "debug",
+        "z": "66eb8402.daa4fc",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 150,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "6c200357.e2310c",
+        "type": "change",
+        "z": "66eb8402.daa4fc",
+        "g": "e8a7a092.8f771",
+        "name": "jitter",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Jitter",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.ping.jitter",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 370,
+        "y": 100,
+        "wires": [
+            [
+                "8fcd7abe.4ee4a8",
+                "f1bcce6.7a6d13"
+            ]
+        ]
+    },
+    {
+        "id": "8fcd7abe.4ee4a8",
+        "type": "ui_text",
+        "z": "66eb8402.daa4fc",
+        "g": "e8a7a092.8f771",
+        "group": "bbc70dcb.af9b1",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Jitter",
+        "format": "<font color=\"cyan\">{{msg.payload}}</font>",
+        "layout": "col-center",
+        "x": 570,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "7e16bc06.b15ad4",
+        "type": "ui_button",
+        "z": "66eb8402.daa4fc",
+        "g": "6c48e49a.83776c",
+        "name": "Clear Charts",
+        "group": "8ea90f55.6cdc8",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Clear Charts",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "[]",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 390,
+        "y": 300,
+        "wires": [
+            [
+                "f1bcce6.7a6d13",
+                "e9e02950.ff4b58"
+            ]
+        ]
+    },
+    {
+        "id": "8c90fda1.bd53e",
+        "type": "change",
+        "z": "66eb8402.daa4fc",
+        "name": "Bandwidth Math",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.ul",
+                "pt": "msg",
+                "to": "$round((payload.upload.bandwidth) * (8/1000000),2)",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "payload.dl",
+                "pt": "msg",
+                "to": "$round((payload.download.bandwidth) * (8/1000000),2)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 120,
+        "y": 360,
+        "wires": [
+            [
+                "583d4a26.363c14",
+                "72e2a082.86ed4",
+                "f79e586b.bb5f98"
             ]
         ]
     }
