@@ -10,13 +10,16 @@
         "node-red-contrib-arlo": "0.0.4",
         "node-red-contrib-boolean-logic-ultimate": "1.0.20",
         "node-red-contrib-stoptimer-varidelay": "0.4.4",
-        "node-red-contrib-alexa-cakebaked": "4.0.2",
         "node-red-contrib-filter": "0.1.3",
         "node-red-contrib-influxdb": "0.5.4",
         "node-red-contrib-moment": "4.0.0",
         "node-red-contrib-virtual-smart-home": "1.21.2",
         "node-red-node-rbe": "0.2.9",
-        "node-red-contrib-speedtest": "1.1.0"
+        "node-red-contrib-speedtest": "1.1.0",
+        "node-red-contrib-alexa-remote2-applestrudel": "5.0.9",
+        "node-red-contrib-home-assistant-websocket": "0.43.1",
+        "node-red-contrib-lutron": "1.2.0",
+        "node-red-contrib-throttle": "0.1.7"
     },
     "node-red": {
         "settings": {
